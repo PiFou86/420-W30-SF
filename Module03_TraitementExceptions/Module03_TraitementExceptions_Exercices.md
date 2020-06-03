@@ -22,6 +22,10 @@ using (StreamReader sr = new StreamReader(nomFichier))
 
 ## Exercice 2 - Matrices
 
+Le but de l'exercice est de se doter d'une bibliothèque permettant de faire des calculs sur des matrices 2D.
+
+En cas de paramètres incorrectes, vous devez créer vos propres exceptions. Créez la classe d'exception "DimensionsNonConcordantesException". Elle devrait vous servir pour les préconditions. (De quelle classe vos classes d'exception vont hériter ?)
+
 Créez la classe "Matrice2D" qui permet de représenter des matrices 2D. Le type de valeurs de votre matrice est générique.
 
 Les données peuvent être représentées par une tableau à deux dimensions. Pour cela, vous pouvez vous inspirer de l'exemple suivant sur les tableaux 2D :
@@ -43,6 +47,7 @@ for (int indiceLigne = 0; indiceLigne < tableau2D.GetLength(0); indiceLigne++)
 ```
 
 Écrivez les propriétés suivantes :
+
 - [int p_ligne, int p_colonne] : permet d'accèder à une valeur par sa ligne et sa colonne
 - NombreDeLignes (get seulement) : permet de connaitre le nombre de lignes de la matrice
 - NombreDeColonnes (get seulement) : permet de connaitre le nombre de colonnes de la matrice
@@ -57,3 +62,4 @@ for (int indiceLigne = 0; indiceLigne < tableau2D.GetLength(0); indiceLigne++)
 - \* : prend deux matrices en paramètres et renvoie le résultat de la multiplication de ces deux matrices
 - \* : prend une matrice et une valeur v en paramètres et renvoie le résultat de la multiplication de chaque valeur de la matrice par la valeur v
 - +/-: prend deux matrices en paramètres et renvoie une nouvelle matrice dont chaque case correspond à la somme des cases aux mêmes coordonnées prisent dans les deux opérandes
+
