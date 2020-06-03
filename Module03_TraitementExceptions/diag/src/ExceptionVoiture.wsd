@@ -1,0 +1,31 @@
+@startuml ExceptionVoiture
+
+
+Object <|-- Voiture
+
+class Voiture {
+    + Demarree : bool <<get>> <<private set>>
+    + Demarrer()
+    + Arreter()
+}
+
+' Exception <|-- SystemException
+
+' SystemException <|-- InvalidOperationException
+
+InvalidOperationException <|-- VoitureDejaArreteeException
+InvalidOperationException <|-- VoitureDejaDemarreeException
+
+class VoitureDejaDemarreeException {
+    + VoitureDejaDemarreeException()
+    + VoitureDejaDemarreeException(p_message : string)
+    + VoitureDejaDemarreeException(p_message : string, p_innerException : Exception)
+}
+
+class VoitureDejaArreteeException {
+    + VoitureDejaArreteeException()
+    + VoitureDejaArreteeException(p_message : string)
+    + VoitureDejaArreteeException(p_message : string, p_innerException : Exception)
+}
+
+@enduml

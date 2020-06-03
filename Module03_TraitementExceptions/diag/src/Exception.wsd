@@ -1,0 +1,28 @@
+@startuml Exception
+
+Object <|-- Exception
+
+Exception <|-- SystemException
+
+SystemException <|-- IndexOutOfRangeException
+SystemException <|-- NullReferenceException
+SystemException <|-- InvalidOperationException
+
+SystemException <|-- ArgumentException
+ArgumentException <|-- ArgumentNullException
+ArgumentException <|-- ArgumentOutOfRangeException
+
+SystemException <|-- ArithmeticException
+ArithmeticException <|-- DivideByZeroException
+ArithmeticException <|-- NotFiniteNumberException
+ArithmeticException <|-- OverflowException
+
+SystemException <|-- IOException
+IOException <|-- DirectoryNotFoundException
+IOException <|-- DriveNotFoundException
+IOException <|-- EndOfStreamException
+IOException <|-- FileNotFoundException
+IOException <|-- PathTooLongException
+IOException <|-- PipeException
+
+@enduml
