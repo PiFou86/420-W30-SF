@@ -63,3 +63,32 @@ for (int indiceLigne = 0; indiceLigne < tableau2D.GetLength(0); indiceLigne++)
 - \* : prend une matrice et une valeur v en paramètres et renvoie le résultat de la multiplication de chaque valeur de la matrice par la valeur v
 - +/-: prend deux matrices en paramètres et renvoie une nouvelle matrice dont chaque case correspond à la somme des cases aux mêmes coordonnées prisent dans les deux opérandes
 
+## Exercice 3 - Voiture (Optionnel)
+
+![Digramme de classes de Voiture](../images/Module03_TraitementExceptions/diag/src/Voiture_exercice01/Voiture.png)
+
+Créez la classe "Voiture" en suivant le modèle de classes fourni.
+
+La voiture a une vitesse à 0 quand elle est à l'arrêt. La voiture ne peut s'arrêter qu'une fois la vitesse inférieure à 5 km/h et sa vitesse devient nulle.
+
+La voiture ne peut pas accélerer au delà de 230 km / h et ne peut pas avoir une vitesse inférieure à 0 km / h.
+
+La méthode "AfficherEtat" affiche la marque de la voiture, son modèle, son statut d'alimentation et sa vitesse.
+
+Le constructeur initialise les valeurs de marque et de modèle en utilisant les valeurs passées en paramètres. Vous devez aussi mettre la valeur de vitesse à 0 et le statut de démarrage à faux.
+
+Vos méthodes doivent lever des exceptions personnalisées comme : VoitureDemarreeException, VoitureArreteeException, VitesseMaximaleAtteinteException, etc.
+
+Écrivez un sous-programme qui permet de :
+
+1. Créer une nouvelle voiture
+2. Démarrer la voiture
+3. Arreter la voiture
+4. Accelerer
+5. Freiner
+6. Afficher l'état
+7. Quitter
+
+Le programme ne doit pas planter aux yeux de l'utilisateur.
+
+Écrivez les tests unitaires des méthodes testables, c'est à dire celles qui n'affiche pas d'information et n'en demande pas à l'utilisateur.
