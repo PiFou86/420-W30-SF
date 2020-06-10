@@ -31,15 +31,44 @@ Chaque pièce a une description, un numéro de série et une référence. Chaque
 
 Afin de rendre compte de la hiérarchie des pièces (pièces composées de pièces, etc.), les chaînes doivent être préfixées par des espaces dépendants de leur niveau. (2 espaces par niveau)
 
-Exemple :
+Exemple basé sur l'illustration proposée par Eder Rafael Do Monte Melo ([fichier PowerPoint plus détaillé](Illustration_Piece_Eder/Assemblage.pptx)) :
+
+![Valve d'eau](../images/Module01_Revisions/pieces_illustration_Eder.png)
+
 ```console
-Pièce : Axe Y, part - #2351, numéro série -  #0481
-  Pièce : Vis sans fin avec écrou T8, part - #2251, numéro série -  #0235
-    Pièce : Écrou laiton , part - #2253, numéro série -  #0233
-    Pièce : Vis sans fin , part - #2257, numéro série -  #0230
-  Pièce : Vis sans fin avec écrou T8, part - #2251, numéro série -  #1235
-    Pièce : Écrou laiton , part - #2253, numéro série -  #1233
-    Pièce : Vis sans fin , part - #2257, numéro série -  #1230
-  Pièce : Moteur Nema 23, part - #2051, numero serie - #9571
-  Pièce : Moteur Nema 23, part - #2051, numero serie - #9574
+Pièce : Valve à eau, part - #1234, numéro série -  #0481
+  Pièce : Base, part - #1387, numéro série -  #0474
+  Pièce : Système d'activation, part - #1887, numéro série -  #0574
+    Pièce : Pin, part - #1687, numéro série -  #0974
+    Pièce : Plug, part - #1657, numéro série -  #0964
+    Pièce : Poigné, part - #3157, numéro série -  #2547
+  Pièce : Couvercle latérale, part - #1987, numéro série -  #0374
+    Pièce : Couvercle Monobloc, part - #1257, numéro série -  #9874
+    Pièce : Visse M8, part - #8757, numéro série -  #3774
+    Pièce : Visse M8, part - #8757, numéro série -  #3774
+    Pièce : Visse M8, part - #8757, numéro série -  #3774
+    Pièce : Visse M8, part - #8757, numéro série -  #3774
+  Pièce : Couvercle latérale, part - #1987, numéro série -  #0374
+    Pièce : Couvercle Monobloc, part - #1257, numéro série -  #9874
+    Pièce : Visse M8, part - #8757, numéro série -  #3774
+    Pièce : Visse M8, part - #8757, numéro série -  #3774
+    Pièce : Visse M8, part - #8757, numéro série -  #3774
+    Pièce : Visse M8, part - #8757, numéro série -  #3774
+```
+
+**Pour les plus téméraires** : écrivez une méthode qui, à partir du pièce, renvoie sa nomenclature (BOM : Bill of Materials)
+
+Toujours avec le même exemple :
+
+```console
+Description                             Référence  Nombre
+Valve à eau                             1234       1
+Couvercle Monobloc                      1257       2
+Base                                    1387       1
+Plug                                    1657       1
+Pin                                     1687       1
+Système d'activation                    1887       1
+Couvercle latérale                      1987       2
+Poigné                                  3157       1
+Visse M8                                8757       8
 ```
