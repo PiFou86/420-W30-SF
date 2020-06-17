@@ -6,8 +6,8 @@ namespace POOII_Module02_TestsUnitaires
 {
 public interface IQuestion
 {
-    public int NombrePointsTotal { get; }
-    public void PoserQuestion();
-    public int CorrigerReponse();
+    int NombrePointsTotal { get; }
+    void PoserQuestion();
+    int CorrigerReponse();
 }
 }
