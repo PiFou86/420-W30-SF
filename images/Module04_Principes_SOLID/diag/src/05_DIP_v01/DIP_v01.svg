@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="226px" preserveAspectRatio="none" style="width:294px;height:226px;" version="1.1" viewBox="0 0 294 226" width="294px" zoomAndPan="magnify"><defs><filter height="300%" id="f1f8bin5ytj8lm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[69f39c98b910ab356626cb51e90db7a7]
+class Inventaire--><rect fill="#FFFFFF" filter="url(#f1f8bin5ytj8lm)" height="48" id="Inventaire" style="stroke: #000000; stroke-width: 1.5;" width="88" x="100.5" y="8"/><ellipse cx="115.5" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M117.9731,30.1431 Q117.3921,30.4419 116.7529,30.5913 Q116.1138,30.7407 115.4082,30.7407 Q112.9014,30.7407 111.5815,29.0889 Q110.2617,27.437 110.2617,24.3159 Q110.2617,21.1865 111.5815,19.5347 Q112.9014,17.8828 115.4082,17.8828 Q116.1138,17.8828 116.7612,18.0322 Q117.4087,18.1816 117.9731,18.4805 L117.9731,21.2031 Q117.3423,20.6221 116.7488,20.3523 Q116.1553,20.0825 115.5244,20.0825 Q114.1797,20.0825 113.4949,21.1492 Q112.8101,22.2158 112.8101,24.3159 Q112.8101,26.4077 113.4949,27.4744 Q114.1797,28.541 115.5244,28.541 Q116.1553,28.541 116.7488,28.2712 Q117.3423,28.0015 117.9731,27.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="129.5" y="28.5352">Inventaire</text><line style="stroke: #000000; stroke-width: 1.5;" x1="101.5" x2="187.5" y1="40" y2="40"/><line style="stroke: #000000; stroke-width: 1.5;" x1="101.5" x2="187.5" y1="48" y2="48"/><!--MD5=[ac07786003e17263790142ea24ec1f2f]
+class DepotArticleSQL--><rect fill="#FFFFFF" filter="url(#f1f8bin5ytj8lm)" height="99.8203" id="DepotArticleSQL" style="stroke: #000000; stroke-width: 1.5;" width="277" x="6" y="116"/><ellipse cx="94.25" cy="132" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M96.7231,138.1431 Q96.1421,138.4419 95.5029,138.5913 Q94.8638,138.7407 94.1582,138.7407 Q91.6514,138.7407 90.3315,137.0889 Q89.0117,135.437 89.0117,132.3159 Q89.0117,129.1865 90.3315,127.5347 Q91.6514,125.8828 94.1582,125.8828 Q94.8638,125.8828 95.5112,126.0322 Q96.1587,126.1816 96.7231,126.4805 L96.7231,129.2031 Q96.0923,128.6221 95.4988,128.3523 Q94.9053,128.0825 94.2744,128.0825 Q92.9297,128.0825 92.2449,129.1492 Q91.5601,130.2158 91.5601,132.3159 Q91.5601,134.4077 92.2449,135.4744 Q92.9297,136.541 94.2744,136.541 Q94.9053,136.541 95.4988,136.2712 Q96.0923,136.0015 96.7231,135.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="92" x="114.75" y="136.5352">DepotArticleSQL</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="282" y1="148" y2="148"/><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="282" y1="156" y2="156"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="12" y="170.6348">+Rechercher(p_motCles : string[]) : List&lt;Article&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="12" y="183.5898">+Enregistrer(p_article : Article)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="12" y="196.5449">+Obtenir(p_identifiantArticle: Guid) : Article</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="12" y="209.5">+Supprimer(p_identifiantArticle: Guid) : Article</text><!--MD5=[68c9a0c114e8b26bbc4939e4bafe2202]
+link Inventaire to DepotArticleSQL--><path d="M144.5,56.3 C144.5,71.38 144.5,91.69 144.5,110.66 " fill="none" id="Inventaire-&gt;DepotArticleSQL" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="144.5,115.97,148.5,106.97,144.5,110.97,140.5,106.97,144.5,115.97" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[597d7298343eb82bb21647dbe188bd1e]
+@startuml DIP_v01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+' skinparam linetype ortho
+
+Inventaire - -> DepotArticleSQL
+
+class Inventaire {
+
+}
+
+class DepotArticleSQL {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+@enduml
+
+@startuml DIP_v01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+Inventaire - -> DepotArticleSQL
+
+class Inventaire {
+
+}
+
+class DepotArticleSQL {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

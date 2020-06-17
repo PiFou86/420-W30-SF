@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="278px" preserveAspectRatio="none" style="width:1230px;height:278px;" version="1.1" viewBox="0 0 1230 278" width="1230px" zoomAndPan="magnify"><defs><filter height="300%" id="f19jsk5ram4x5e" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[22d4027e885d823f9a1056087fb224a7]
+class DepotArticle--><rect fill="#FFFFFF" filter="url(#f19jsk5ram4x5e)" height="99.8203" id="DepotArticle" style="stroke: #000000; stroke-width: 1.5;" width="277" x="474" y="8"/><ellipse cx="572.75" cy="24" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M569.1777,20.2651 L569.1777,18.1069 L576.5571,18.1069 L576.5571,20.2651 L574.0918,20.2651 L574.0918,28.3418 L576.5571,28.3418 L576.5571,30.5 L569.1777,30.5 L569.1777,28.3418 L571.6431,28.3418 L571.6431,20.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="71" x="593.25" y="28.5352">DepotArticle</text><line style="stroke: #000000; stroke-width: 1.5;" x1="475" x2="750" y1="40" y2="40"/><line style="stroke: #000000; stroke-width: 1.5;" x1="475" x2="750" y1="48" y2="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="480" y="62.6348">+Rechercher(p_motCles : string[]) : List&lt;Article&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="480" y="75.5898">+Enregistrer(p_article : Article)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="480" y="88.5449">+Obtenir(p_identifiantArticle: Guid) : Article</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="480" y="101.5">+Supprimer(p_identifiantArticle: Guid) : Article</text><!--MD5=[5a7d681d5c40f4305476c30498d6c30f]
+class DepotArticleCSV--><rect fill="#FFFFFF" filter="url(#f19jsk5ram4x5e)" height="99.8203" id="DepotArticleCSV" style="stroke: #000000; stroke-width: 1.5;" width="277" x="6" y="168"/><ellipse cx="93.75" cy="184" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M96.2231,190.1431 Q95.6421,190.4419 95.0029,190.5913 Q94.3638,190.7407 93.6582,190.7407 Q91.1514,190.7407 89.8315,189.0889 Q88.5117,187.437 88.5117,184.3159 Q88.5117,181.1865 89.8315,179.5347 Q91.1514,177.8828 93.6582,177.8828 Q94.3638,177.8828 95.0112,178.0322 Q95.6587,178.1816 96.2231,178.4805 L96.2231,181.2031 Q95.5923,180.6221 94.9988,180.3523 Q94.4053,180.0825 93.7744,180.0825 Q92.4297,180.0825 91.7449,181.1492 Q91.0601,182.2158 91.0601,184.3159 Q91.0601,186.4077 91.7449,187.4744 Q92.4297,188.541 93.7744,188.541 Q94.4053,188.541 94.9988,188.2712 Q95.5923,188.0015 96.2231,187.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="93" x="114.25" y="188.5352">DepotArticleCSV</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="282" y1="200" y2="200"/><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="282" y1="208" y2="208"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="12" y="222.6348">+Rechercher(p_motCles : string[]) : List&lt;Article&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="12" y="235.5898">+Enregistrer(p_article : Article)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="12" y="248.5449">+Obtenir(p_identifiantArticle: Guid) : Article</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="12" y="261.5">+Supprimer(p_identifiantArticle: Guid) : Article</text><!--MD5=[beccfbd9eceee9b74af68a13f47ca75b]
+class DepotArticleXML--><rect fill="#FFFFFF" filter="url(#f19jsk5ram4x5e)" height="99.8203" id="DepotArticleXML" style="stroke: #000000; stroke-width: 1.5;" width="277" x="318" y="168"/><ellipse cx="404.75" cy="184" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M407.2231,190.1431 Q406.6421,190.4419 406.0029,190.5913 Q405.3638,190.7407 404.6582,190.7407 Q402.1514,190.7407 400.8315,189.0889 Q399.5117,187.437 399.5117,184.3159 Q399.5117,181.1865 400.8315,179.5347 Q402.1514,177.8828 404.6582,177.8828 Q405.3638,177.8828 406.0112,178.0322 Q406.6587,178.1816 407.2231,178.4805 L407.2231,181.2031 Q406.5923,180.6221 405.9988,180.3523 Q405.4053,180.0825 404.7744,180.0825 Q403.4297,180.0825 402.7449,181.1492 Q402.0601,182.2158 402.0601,184.3159 Q402.0601,186.4077 402.7449,187.4744 Q403.4297,188.541 404.7744,188.541 Q405.4053,188.541 405.9988,188.2712 Q406.5923,188.0015 407.2231,187.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="95" x="425.25" y="188.5352">DepotArticleXML</text><line style="stroke: #000000; stroke-width: 1.5;" x1="319" x2="594" y1="200" y2="200"/><line style="stroke: #000000; stroke-width: 1.5;" x1="319" x2="594" y1="208" y2="208"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="324" y="222.6348">+Rechercher(p_motCles : string[]) : List&lt;Article&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="324" y="235.5898">+Enregistrer(p_article : Article)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="324" y="248.5449">+Obtenir(p_identifiantArticle: Guid) : Article</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="324" y="261.5">+Supprimer(p_identifiantArticle: Guid) : Article</text><!--MD5=[be8cf0fa2e2131ed42e73631fed558ae]
+class DepotArticleJSON--><rect fill="#FFFFFF" filter="url(#f19jsk5ram4x5e)" height="99.8203" id="DepotArticleJSON" style="stroke: #000000; stroke-width: 1.5;" width="277" x="630" y="168"/><ellipse cx="714.75" cy="184" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M717.2231,190.1431 Q716.6421,190.4419 716.0029,190.5913 Q715.3638,190.7407 714.6582,190.7407 Q712.1514,190.7407 710.8315,189.0889 Q709.5117,187.437 709.5117,184.3159 Q709.5117,181.1865 710.8315,179.5347 Q712.1514,177.8828 714.6582,177.8828 Q715.3638,177.8828 716.0112,178.0322 Q716.6587,178.1816 717.2231,178.4805 L717.2231,181.2031 Q716.5923,180.6221 715.9988,180.3523 Q715.4053,180.0825 714.7744,180.0825 Q713.4297,180.0825 712.7449,181.1492 Q712.0601,182.2158 712.0601,184.3159 Q712.0601,186.4077 712.7449,187.4744 Q713.4297,188.541 714.7744,188.541 Q715.4053,188.541 715.9988,188.2712 Q716.5923,188.0015 717.2231,187.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="99" x="735.25" y="188.5352">DepotArticleJSON</text><line style="stroke: #000000; stroke-width: 1.5;" x1="631" x2="906" y1="200" y2="200"/><line style="stroke: #000000; stroke-width: 1.5;" x1="631" x2="906" y1="208" y2="208"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="636" y="222.6348">+Rechercher(p_motCles : string[]) : List&lt;Article&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="636" y="235.5898">+Enregistrer(p_article : Article)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="636" y="248.5449">+Obtenir(p_identifiantArticle: Guid) : Article</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="636" y="261.5">+Supprimer(p_identifiantArticle: Guid) : Article</text><!--MD5=[ac07786003e17263790142ea24ec1f2f]
+class DepotArticleSQL--><rect fill="#FFFFFF" filter="url(#f19jsk5ram4x5e)" height="99.8203" id="DepotArticleSQL" style="stroke: #000000; stroke-width: 1.5;" width="277" x="942" y="168"/><ellipse cx="1030.25" cy="184" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1032.7231,190.1431 Q1032.1421,190.4419 1031.5029,190.5913 Q1030.8638,190.7407 1030.1582,190.7407 Q1027.6514,190.7407 1026.3315,189.0889 Q1025.0117,187.437 1025.0117,184.3159 Q1025.0117,181.1865 1026.3315,179.5347 Q1027.6514,177.8828 1030.1582,177.8828 Q1030.8638,177.8828 1031.5112,178.0322 Q1032.1587,178.1816 1032.7231,178.4805 L1032.7231,181.2031 Q1032.0923,180.6221 1031.4988,180.3523 Q1030.9053,180.0825 1030.2744,180.0825 Q1028.9297,180.0825 1028.2449,181.1492 Q1027.5601,182.2158 1027.5601,184.3159 Q1027.5601,186.4077 1028.2449,187.4744 Q1028.9297,188.541 1030.2744,188.541 Q1030.9053,188.541 1031.4988,188.2712 Q1032.0923,188.0015 1032.7231,187.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="92" x="1050.75" y="188.5352">DepotArticleSQL</text><line style="stroke: #000000; stroke-width: 1.5;" x1="943" x2="1218" y1="200" y2="200"/><line style="stroke: #000000; stroke-width: 1.5;" x1="943" x2="1218" y1="208" y2="208"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="948" y="222.6348">+Rechercher(p_motCles : string[]) : List&lt;Article&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="948" y="235.5898">+Enregistrer(p_article : Article)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="948" y="248.5449">+Obtenir(p_identifiantArticle: Guid) : Article</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="948" y="261.5">+Supprimer(p_identifiantArticle: Guid) : Article</text><!--MD5=[e2768c2fea54c15b93d72ebd0b08f366]
+reverse link DepotArticle to DepotArticleCSV--><path d="M454.97,112.18 C399.27,130.99 337.07,151.99 283.06,170.22 " fill="none" id="DepotArticle&lt;-DepotArticleCSV" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="452.8,105.53,473.98,105.76,457.27,118.79,452.8,105.53" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[351fc0aaccd5105295dff0159513a14e]
+reverse link DepotArticle to DepotArticleXML--><path d="M549.49,122.82 C534.65,137.85 519.06,153.64 504.97,167.9 " fill="none" id="DepotArticle&lt;-DepotArticleXML" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="544.96,117.44,564,108.13,554.93,127.28,544.96,117.44" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4ded851b3b212670f55bc389c15e23c0]
+reverse link DepotArticle to DepotArticleJSON--><path d="M675.51,122.82 C690.35,137.85 705.94,153.64 720.03,167.9 " fill="none" id="DepotArticle&lt;-DepotArticleJSON" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="670.07,127.28,661,108.13,680.04,117.44,670.07,127.28" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[531864fedc6a1dea8ce35abff5bb3779]
+reverse link DepotArticle to DepotArticleSQL--><path d="M770.03,112.18 C825.73,130.99 887.93,151.99 941.94,170.22 " fill="none" id="DepotArticle&lt;-DepotArticleSQL" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="767.73,118.79,751.02,105.76,772.2,105.53,767.73,118.79" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[dde47c102289aea7c1a4c9e06d461f33]
+@startuml LSP_v01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+'skinparam linetype ortho
+
+interface DepotArticle {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleCSV {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleXML {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleJSON {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleSQL {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+DepotArticle <|.. DepotArticleCSV
+DepotArticle <|.. DepotArticleXML
+DepotArticle <|.. DepotArticleJSON
+DepotArticle <|.. DepotArticleSQL
+
+@enduml
+
+@startuml LSP_v01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+interface DepotArticle {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleCSV {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleXML {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleJSON {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleSQL {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+DepotArticle <|.. DepotArticleCSV
+DepotArticle <|.. DepotArticleXML
+DepotArticle <|.. DepotArticleJSON
+DepotArticle <|.. DepotArticleSQL
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

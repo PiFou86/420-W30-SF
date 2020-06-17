@@ -1,0 +1,23 @@
+@startuml SRP_V01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+Panier --> "*" Article
+
+class Article {
+    + Imprimer()
+}
+
+class Panier {
+    '+ Articles : List<Article> <<get>> <<private set>>
+    + Ajouter(article : Article)
+    + Annuler(article : Article)
+    + Sauvegarder()
+    + Imprimer()
+}
+
+@enduml

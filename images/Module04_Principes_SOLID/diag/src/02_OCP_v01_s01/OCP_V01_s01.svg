@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="200px" preserveAspectRatio="none" style="width:560px;height:200px;" version="1.1" viewBox="0 0 560 200" width="560px" zoomAndPan="magnify"><defs><filter height="300%" id="f17fau6l0nftgr" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[67d066aed5a9cc81c1776291781c31e5]
+class ICalculInteret--><rect fill="#FFFFFF" filter="url(#f17fau6l0nftgr)" height="60.9551" id="ICalculInteret" style="stroke: #000000; stroke-width: 1.5;" width="254" x="150" y="8"/><ellipse cx="235.75" cy="24" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M232.1777,20.2651 L232.1777,18.1069 L239.5571,18.1069 L239.5571,20.2651 L237.0918,20.2651 L237.0918,28.3418 L239.5571,28.3418 L239.5571,30.5 L232.1777,30.5 L232.1777,28.3418 L234.6431,28.3418 L234.6431,20.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="74" x="256.25" y="28.5352">ICalculInteret</text><line style="stroke: #000000; stroke-width: 1.5;" x1="151" x2="403" y1="40" y2="40"/><line style="stroke: #000000; stroke-width: 1.5;" x1="151" x2="403" y1="48" y2="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242" x="156" y="62.6348">+CalculerMontantInteretJournalier() : decimal</text><!--MD5=[5fb9dfebcffd045efba9854ea9ae9cab]
+class CalculInteretFixe--><rect fill="#FFFFFF" filter="url(#f17fau6l0nftgr)" height="60.9551" id="CalculInteretFixe" style="stroke: #000000; stroke-width: 1.5;" width="254" x="6" y="129"/><ellipse cx="81.75" cy="145" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M84.2231,151.1431 Q83.6421,151.4419 83.0029,151.5913 Q82.3638,151.7407 81.6582,151.7407 Q79.1514,151.7407 77.8315,150.0889 Q76.5117,148.437 76.5117,145.3159 Q76.5117,142.1865 77.8315,140.5347 Q79.1514,138.8828 81.6582,138.8828 Q82.3638,138.8828 83.0112,139.0322 Q83.6587,139.1816 84.2231,139.4805 L84.2231,142.2031 Q83.5923,141.6221 82.9988,141.3523 Q82.4053,141.0825 81.7744,141.0825 Q80.4297,141.0825 79.7449,142.1492 Q79.0601,143.2158 79.0601,145.3159 Q79.0601,147.4077 79.7449,148.4744 Q80.4297,149.541 81.7744,149.541 Q82.4053,149.541 82.9988,149.2712 Q83.5923,149.0015 84.2231,148.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="94" x="102.25" y="149.5352">CalculInteretFixe</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="259" y1="161" y2="161"/><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="259" y1="169" y2="169"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242" x="12" y="183.6348">+CalculerMontantInteretJournalier() : decimal</text><!--MD5=[ba797b6de342353fc38abb57dd56b81d]
+class CalculInteretVariable--><rect fill="#FFFFFF" filter="url(#f17fau6l0nftgr)" height="60.9551" id="CalculInteretVariable" style="stroke: #000000; stroke-width: 1.5;" width="254" x="295" y="129"/><ellipse cx="358.25" cy="145" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M360.7231,151.1431 Q360.1421,151.4419 359.5029,151.5913 Q358.8638,151.7407 358.1582,151.7407 Q355.6514,151.7407 354.3315,150.0889 Q353.0117,148.437 353.0117,145.3159 Q353.0117,142.1865 354.3315,140.5347 Q355.6514,138.8828 358.1582,138.8828 Q358.8638,138.8828 359.5112,139.0322 Q360.1587,139.1816 360.7231,139.4805 L360.7231,142.2031 Q360.0923,141.6221 359.4988,141.3523 Q358.9053,141.0825 358.2744,141.0825 Q356.9297,141.0825 356.2449,142.1492 Q355.5601,143.2158 355.5601,145.3159 Q355.5601,147.4077 356.2449,148.4744 Q356.9297,149.541 358.2744,149.541 Q358.9053,149.541 359.4988,149.2712 Q360.0923,149.0015 360.7231,148.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="119" x="378.75" y="149.5352">CalculInteretVariable</text><line style="stroke: #000000; stroke-width: 1.5;" x1="296" x2="548" y1="161" y2="161"/><line style="stroke: #000000; stroke-width: 1.5;" x1="296" x2="548" y1="169" y2="169"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242" x="301" y="183.6348">+CalculerMontantInteretJournalier() : decimal</text><!--MD5=[08f422abea4a7b4dbd57062eb0af15b9]
+reverse link ICalculInteret to CalculInteretFixe--><path d="M225.58,81.99 C206.86,97.47 186.11,114.61 169.01,128.74 " fill="none" id="ICalculInteret&lt;-CalculInteretFixe" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="221.16,76.57,241.03,69.22,230.08,87.36,221.16,76.57" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6d6e8501127204b25f59584e0ecee884]
+reverse link ICalculInteret to CalculInteretVariable--><path d="M328.84,82.04 C347.77,97.58 368.75,114.79 386,128.95 " fill="none" id="ICalculInteret&lt;-CalculInteretVariable" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="324.23,87.32,313.22,69.22,333.12,76.5,324.23,87.32" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[808810dc7ed6dc4bcd1601b1ba5ba6bd]
+@startuml OCP_V01_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+interface ICalculInteret {
+    + CalculerMontantInteretJournalier() : decimal
+}
+
+class CalculInteretFixe {
+    + CalculerMontantInteretJournalier() : decimal
+}
+
+class CalculInteretVariable {
+    + CalculerMontantInteretJournalier() : decimal
+}
+
+ICalculInteret <|.. CalculInteretFixe
+ICalculInteret <|.. CalculInteretVariable
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

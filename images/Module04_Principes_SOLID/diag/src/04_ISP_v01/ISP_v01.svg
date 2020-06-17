@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="143px" preserveAspectRatio="none" style="width:290px;height:143px;" version="1.1" viewBox="0 0 290 143" width="290px" zoomAndPan="magnify"><defs><filter height="300%" id="fvxljt1d0i7kf" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[24163954d6ca8fa96ce31bb55311a1c4]
+class GestionFacture--><rect fill="#FFFFFF" filter="url(#fvxljt1d0i7kf)" height="125.7305" id="GestionFacture" style="stroke: #000000; stroke-width: 1.5;" width="272" x="7" y="7"/><ellipse cx="96.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M98.7231,29.1431 Q98.1421,29.4419 97.5029,29.5913 Q96.8638,29.7407 96.1582,29.7407 Q93.6514,29.7407 92.3315,28.0889 Q91.0117,26.437 91.0117,23.3159 Q91.0117,20.1865 92.3315,18.5347 Q93.6514,16.8828 96.1582,16.8828 Q96.8638,16.8828 97.5112,17.0322 Q98.1587,17.1816 98.7231,17.4805 L98.7231,20.2031 Q98.0923,19.6221 97.4988,19.3523 Q96.9053,19.0825 96.2744,19.0825 Q94.9297,19.0825 94.2449,20.1492 Q93.5601,21.2158 93.5601,23.3159 Q93.5601,25.4077 94.2449,26.4744 Q94.9297,27.541 96.2744,27.541 Q96.9053,27.541 97.4988,27.2712 Q98.0923,27.0015 98.7231,26.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="85" x="116.75" y="27.5352">GestionFacture</text><line style="stroke: #000000; stroke-width: 1.5;" x1="8" x2="278" y1="39" y2="39"/><line style="stroke: #000000; stroke-width: 1.5;" x1="8" x2="278" y1="47" y2="47"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="13" y="61.6348">+Imprimer()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84" x="13" y="74.5898">+AfficherText()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116" x="13" y="87.5449">+AfficherGraphique()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="248" x="13" y="100.5">+Obtenir(p_identifiantFacture : Guid) : Facture</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="177" x="13" y="113.4551">+Enregistrer(p_facture : Facture)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="260" x="13" y="126.4102">+Rechercher(p_motClef : string) : List&lt;Facture&gt;</text><!--MD5=[1aa8ea6e324249b195a7bd009b4f6f1b]
+@startuml ISP_v01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+'skinparam linetype ortho
+
+class GestionFacture {
+    + Imprimer()
+    + AfficherText()
+    + AfficherGraphique()
+    + Obtenir(p_identifiantFacture : Guid) : Facture
+    + Enregistrer(p_facture : Facture)
+    + Rechercher(p_motClef : string) : List<Facture>
+}
+
+@enduml
+
+@startuml ISP_v01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+class GestionFacture {
+    + Imprimer()
+    + AfficherText()
+    + AfficherGraphique()
+    + Obtenir(p_identifiantFacture : Guid) : Facture
+    + Enregistrer(p_facture : Facture)
+    + Rechercher(p_motClef : string) : List<Facture>
+}
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

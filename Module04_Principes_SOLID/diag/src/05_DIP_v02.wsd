@@ -1,0 +1,22 @@
+@startuml DIP_v02
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+' skinparam linetype ortho
+
+Bouton --> Lampe
+
+class Bouton {
+    + ChangerEtat()
+}
+
+class Lampe {
+    + Allumer()
+    + Eteindre()
+}
+
+@enduml

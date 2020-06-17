@@ -1,0 +1,32 @@
+@startuml SRP_V01_S01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+Panier --> "*" Article
+Facture --> "1" Panier
+DAOPanier ..> Panier
+
+class Article {
+    + Imprimer()
+}
+
+class Panier {
+    + Ajouter(article : Article)
+    + Annuler(article : Article)
+}
+
+class Facture {
+    + Imprimer()
+}
+
+class DAOPanier {
+    + Sauvegarder()
+    + Charger(numeroReference : string) : Panier
+    + ...()
+}
+
+@enduml

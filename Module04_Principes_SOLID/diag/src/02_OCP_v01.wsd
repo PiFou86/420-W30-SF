@@ -1,0 +1,25 @@
+@startuml OCP_V01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+interface ICalculInteret {
+
+}
+
+class CalculInteretFixe {
+    + CalculerMontantInteretFixeJournalier() : decimal
+}
+
+class CalculInteretVariable {
+    + CalculerMontantInteretVariableJournalier() : decimal
+}
+
+ICalculInteret <|.. CalculInteretFixe
+ICalculInteret <|.. CalculInteretVariable
+
+@enduml

@@ -1,0 +1,30 @@
+@startuml SRP_V02_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+class RectangleGeometrique {
+    + Surface() : decimal
+}
+
+class RectangleGraphique {
+    + Dessiner()
+}
+
+component [Application de calculs géométriques] as AppCalcGeo
+component [Application géométrique de dessin] as AppDessinGeo
+component [Cadriciel avec surface dessinable] as SurfaceDessinable
+
+AppCalcGeo --> RectangleGeometrique
+AppDessinGeo --> RectangleGraphique
+RectangleGraphique --> RectangleGeometrique
+
+AppDessinGeo ..> SurfaceDessinable
+RectangleGraphique ..> SurfaceDessinable
+
+
+@enduml

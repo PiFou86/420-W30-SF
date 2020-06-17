@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="360px" preserveAspectRatio="none" style="width:381px;height:360px;" version="1.1" viewBox="0 0 381 360" width="381px" zoomAndPan="magnify"><defs><filter height="300%" id="f1puor7rvot1oq" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[0dd3361ca4b0da0e3a3d975f587489e4]
+class Panier--><rect fill="#FFFFFF" filter="url(#f1puor7rvot1oq)" height="73.9102" id="Panier" style="stroke: #000000; stroke-width: 1.5;" width="149" x="70.5" y="155"/><ellipse cx="122.75" cy="171" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M125.2231,177.1431 Q124.6421,177.4419 124.0029,177.5913 Q123.3638,177.7407 122.6582,177.7407 Q120.1514,177.7407 118.8315,176.0889 Q117.5117,174.437 117.5117,171.3159 Q117.5117,168.1865 118.8315,166.5347 Q120.1514,164.8828 122.6582,164.8828 Q123.3638,164.8828 124.0112,165.0322 Q124.6587,165.1816 125.2231,165.4805 L125.2231,168.2031 Q124.5923,167.6221 123.9988,167.3523 Q123.4053,167.0825 122.7744,167.0825 Q121.4297,167.0825 120.7449,168.1492 Q120.0601,169.2158 120.0601,171.3159 Q120.0601,173.4077 120.7449,174.4744 Q121.4297,175.541 122.7744,175.541 Q123.4053,175.541 123.9988,175.2712 Q124.5923,175.0015 125.2231,174.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="143.25" y="175.5352">Panier</text><line style="stroke: #000000; stroke-width: 1.5;" x1="71.5" x2="218.5" y1="187" y2="187"/><line style="stroke: #000000; stroke-width: 1.5;" x1="71.5" x2="218.5" y1="195" y2="195"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="134" x="76.5" y="209.6348">+Ajouter(article : Article)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="137" x="76.5" y="222.5898">+Annuler(article : Article)</text><!--MD5=[d22815ff63be9cac9a63f8d1ea27d033]
+class Article--><rect fill="#FFFFFF" filter="url(#f1puor7rvot1oq)" height="60.9551" id="Article" style="stroke: #000000; stroke-width: 1.5;" width="78" x="106" y="289"/><ellipse cx="125.5" cy="305" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M127.9731,311.1431 Q127.3921,311.4419 126.7529,311.5913 Q126.1138,311.7407 125.4082,311.7407 Q122.9014,311.7407 121.5815,310.0889 Q120.2617,308.437 120.2617,305.3159 Q120.2617,302.1865 121.5815,300.5347 Q122.9014,298.8828 125.4082,298.8828 Q126.1138,298.8828 126.7612,299.0322 Q127.4087,299.1816 127.9731,299.4805 L127.9731,302.2031 Q127.3423,301.6221 126.7488,301.3523 Q126.1553,301.0825 125.5244,301.0825 Q124.1797,301.0825 123.4949,302.1492 Q122.8101,303.2158 122.8101,305.3159 Q122.8101,307.4077 123.4949,308.4744 Q124.1797,309.541 125.5244,309.541 Q126.1553,309.541 126.7488,309.2712 Q127.3423,309.0015 127.9731,308.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="140.5" y="309.5352">Article</text><line style="stroke: #000000; stroke-width: 1.5;" x1="107" x2="183" y1="321" y2="321"/><line style="stroke: #000000; stroke-width: 1.5;" x1="107" x2="183" y1="329" y2="329"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="112" y="343.6348">+Imprimer()</text><!--MD5=[35685f3a7cfa9b8c7e0d937a7282288f]
+class Facture--><rect fill="#FFFFFF" filter="url(#f1puor7rvot1oq)" height="60.9551" id="Facture" style="stroke: #000000; stroke-width: 1.5;" width="78" x="6" y="21"/><ellipse cx="22.8" cy="37" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M25.2731,43.1431 Q24.6921,43.4419 24.0529,43.5913 Q23.4138,43.7407 22.7082,43.7407 Q20.2014,43.7407 18.8815,42.0889 Q17.5617,40.437 17.5617,37.3159 Q17.5617,34.1865 18.8815,32.5347 Q20.2014,30.8828 22.7082,30.8828 Q23.4138,30.8828 24.0612,31.0322 Q24.7087,31.1816 25.2731,31.4805 L25.2731,34.2031 Q24.6423,33.6221 24.0488,33.3523 Q23.4553,33.0825 22.8244,33.0825 Q21.4797,33.0825 20.7949,34.1492 Q20.1101,35.2158 20.1101,37.3159 Q20.1101,39.4077 20.7949,40.4744 Q21.4797,41.541 22.8244,41.541 Q23.4553,41.541 24.0488,41.2712 Q24.6423,41.0015 25.2731,40.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="37.2" y="41.5352">Facture</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="83" y1="53" y2="53"/><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="83" y1="61" y2="61"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="12" y="75.6348">+Imprimer()</text><!--MD5=[718aeb526e2bc1793e7bd06ed5f26521]
+class DAOPanier--><rect fill="#FFFFFF" filter="url(#f1puor7rvot1oq)" height="86.8652" id="DAOPanier" style="stroke: #000000; stroke-width: 1.5;" width="251" x="119.5" y="8"/><ellipse cx="209.75" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M212.2231,30.1431 Q211.6421,30.4419 211.0029,30.5913 Q210.3638,30.7407 209.6582,30.7407 Q207.1514,30.7407 205.8315,29.0889 Q204.5117,27.437 204.5117,24.3159 Q204.5117,21.1865 205.8315,19.5347 Q207.1514,17.8828 209.6582,17.8828 Q210.3638,17.8828 211.0112,18.0322 Q211.6587,18.1816 212.2231,18.4805 L212.2231,21.2031 Q211.5923,20.6221 210.9988,20.3523 Q210.4053,20.0825 209.7744,20.0825 Q208.4297,20.0825 207.7449,21.1492 Q207.0601,22.2158 207.0601,24.3159 Q207.0601,26.4077 207.7449,27.4744 Q208.4297,28.541 209.7744,28.541 Q210.4053,28.541 210.9988,28.2712 Q211.5923,28.0015 212.2231,27.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62" x="230.25" y="28.5352">DAOPanier</text><line style="stroke: #000000; stroke-width: 1.5;" x1="120.5" x2="369.5" y1="40" y2="40"/><line style="stroke: #000000; stroke-width: 1.5;" x1="120.5" x2="369.5" y1="48" y2="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84" x="125.5" y="62.6348">+Sauvegarder()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="239" x="125.5" y="75.5898">+Charger(numeroReference : string) : Panier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="125.5" y="88.5449">+...()</text><!--MD5=[9d5f6204742c54563cf45f023d6b0978]
+link Panier to Article--><path d="M145,229.3 C145,246.36 145,266.61 145,283.5 " fill="none" id="Panier-&gt;Article" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="145,288.62,149,279.62,145,283.62,141,279.62,145,288.62" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="6" x="138.3813" y="278.3091">*</text><!--MD5=[dc675c54d46ba632e93c1a3d37eb71cc]
+link Facture to Panier--><path d="M66.45,82.21 C80.87,102.18 100.05,128.75 115.85,150.63 " fill="none" id="Facture-&gt;Panier" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="118.96,154.94,116.9358,145.3014,116.0336,150.8859,110.4491,149.9837,118.96,154.94" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="105.4214" y="144.3295">1</text><!--MD5=[89996a2d120c17245009bd8039c039fb]
+link DAOPanier to Panier--><path d="M214.18,95.18 C201.48,112.77 186.84,133.05 174.31,150.41 " fill="none" id="DAOPanier-&gt;Panier" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="171.17,154.76,179.6891,149.8179,174.1032,150.7108,173.2104,145.1248,171.17,154.76" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9db083d8f497e53c6aff999425948633]
+@startuml SRP_V01_S01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+Panier - -> "*" Article
+Facture - -> "1" Panier
+DAOPanier ..> Panier
+
+class Article {
+    + Imprimer()
+}
+
+class Panier {
+    + Ajouter(article : Article)
+    + Annuler(article : Article)
+}
+
+class Facture {
+    + Imprimer()
+}
+
+class DAOPanier {
+    + Sauvegarder()
+    + Charger(numeroReference : string) : Panier
+    + ...()
+}
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

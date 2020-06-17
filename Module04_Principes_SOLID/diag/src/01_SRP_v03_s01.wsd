@@ -1,0 +1,30 @@
+@startuml SRP_V03
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+interface ICommunication {
+    + EnvoyerDonnees(p_donnees : byte[])
+    + RecevoirDonnees() : byte[]
+}
+
+interface IConnexion {
+    + EtablirConnexion()
+    + FermerConnexion()
+}
+
+class ModemRTC {
+    + EtablirConnexion()
+    + FermerConnexion()
+    + EnvoyerDonnees(p_donnees : byte[])
+    + RecevoirDonnees() : byte[]
+}
+
+IConnexion <|.. ModemRTC
+ICommunication <|.. ModemRTC
+
+@enduml

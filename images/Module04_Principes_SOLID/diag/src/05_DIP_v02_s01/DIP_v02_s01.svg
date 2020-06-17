@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="347px" preserveAspectRatio="none" style="width:198px;height:347px;" version="1.1" viewBox="0 0 198 347" width="198px" zoomAndPan="magnify"><defs><filter height="300%" id="fdekyeamrgizj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[b45e2b44bcaac741a5cd2486a65a0a85]
+class Bouton--><rect fill="#FFFFFF" filter="url(#fdekyeamrgizj)" height="60.9551" id="Bouton" style="stroke: #000000; stroke-width: 1.5;" width="95" x="49" y="8"/><ellipse cx="74.8" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M77.2731,30.1431 Q76.6921,30.4419 76.0529,30.5913 Q75.4138,30.7407 74.7082,30.7407 Q72.2014,30.7407 70.8815,29.0889 Q69.5617,27.437 69.5617,24.3159 Q69.5617,21.1865 70.8815,19.5347 Q72.2014,17.8828 74.7082,17.8828 Q75.4138,17.8828 76.0612,18.0322 Q76.7087,18.1816 77.2731,18.4805 L77.2731,21.2031 Q76.6423,20.6221 76.0488,20.3523 Q75.4553,20.0825 74.8244,20.0825 Q73.4797,20.0825 72.7949,21.1492 Q72.1101,22.2158 72.1101,24.3159 Q72.1101,26.4077 72.7949,27.4744 Q73.4797,28.541 74.8244,28.541 Q75.4553,28.541 76.0488,28.2712 Q76.6423,28.0015 77.2731,27.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="91.2" y="28.5352">Bouton</text><line style="stroke: #000000; stroke-width: 1.5;" x1="50" x2="143" y1="40" y2="40"/><line style="stroke: #000000; stroke-width: 1.5;" x1="50" x2="143" y1="48" y2="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83" x="55" y="62.6348">+ChangerEtat()</text><!--MD5=[7bcc4f4c3ab99c0474c940c25597ed06]
+class Commutable--><rect fill="#FFFFFF" filter="url(#fdekyeamrgizj)" height="73.9102" id="Commutable" style="stroke: #000000; stroke-width: 1.5;" width="105" x="44" y="129"/><ellipse cx="59" cy="145" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M55.4277,141.2651 L55.4277,139.1069 L62.8071,139.1069 L62.8071,141.2651 L60.3418,141.2651 L60.3418,149.3418 L62.8071,149.3418 L62.8071,151.5 L55.4277,151.5 L55.4277,149.3418 L57.8931,149.3418 L57.8931,141.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="73" x="73" y="149.5352">Commutable</text><line style="stroke: #000000; stroke-width: 1.5;" x1="45" x2="148" y1="161" y2="161"/><line style="stroke: #000000; stroke-width: 1.5;" x1="45" x2="148" y1="169" y2="169"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="50" y="183.6348">+Allumer()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="50" y="196.5898">+Eteindre()</text><!--MD5=[26c21ef246a5aba7ae3bdc5d6b394b6a]
+class Lampe--><rect fill="#FFFFFF" filter="url(#fdekyeamrgizj)" height="73.9102" id="Lampe" style="stroke: #000000; stroke-width: 1.5;" width="73" x="6" y="263"/><ellipse cx="21.9" cy="279" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M24.3731,285.1431 Q23.7921,285.4419 23.1529,285.5913 Q22.5138,285.7407 21.8082,285.7407 Q19.3014,285.7407 17.9815,284.0889 Q16.6617,282.437 16.6617,279.3159 Q16.6617,276.1865 17.9815,274.5347 Q19.3014,272.8828 21.8082,272.8828 Q22.5138,272.8828 23.1612,273.0322 Q23.8087,273.1816 24.3731,273.4805 L24.3731,276.2031 Q23.7423,275.6221 23.1488,275.3523 Q22.5553,275.0825 21.9244,275.0825 Q20.5797,275.0825 19.8949,276.1492 Q19.2101,277.2158 19.2101,279.3159 Q19.2101,281.4077 19.8949,282.4744 Q20.5797,283.541 21.9244,283.541 Q22.5553,283.541 23.1488,283.2712 Q23.7423,283.0015 24.3731,282.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="36.1" y="283.5352">Lampe</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="78" y1="295" y2="295"/><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="78" y1="303" y2="303"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="12" y="317.6348">+Allumer()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="12" y="330.5898">+Eteindre()</text><!--MD5=[9022e2192881f166c529fc3ae75dec7b]
+class TV--><rect fill="#FFFFFF" filter="url(#fdekyeamrgizj)" height="73.9102" id="TV" style="stroke: #000000; stroke-width: 1.5;" width="73" x="114" y="263"/><ellipse cx="140.25" cy="279" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M142.7231,285.1431 Q142.1421,285.4419 141.5029,285.5913 Q140.8638,285.7407 140.1582,285.7407 Q137.6514,285.7407 136.3315,284.0889 Q135.0117,282.437 135.0117,279.3159 Q135.0117,276.1865 136.3315,274.5347 Q137.6514,272.8828 140.1582,272.8828 Q140.8638,272.8828 141.5112,273.0322 Q142.1587,273.1816 142.7231,273.4805 L142.7231,276.2031 Q142.0923,275.6221 141.4988,275.3523 Q140.9053,275.0825 140.2744,275.0825 Q138.9297,275.0825 138.2449,276.1492 Q137.5601,277.2158 137.5601,279.3159 Q137.5601,281.4077 138.2449,282.4744 Q138.9297,283.541 140.2744,283.541 Q140.9053,283.541 141.4988,283.2712 Q142.0923,283.0015 142.7231,282.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="16" x="156.75" y="283.5352">TV</text><line style="stroke: #000000; stroke-width: 1.5;" x1="115" x2="186" y1="295" y2="295"/><line style="stroke: #000000; stroke-width: 1.5;" x1="115" x2="186" y1="303" y2="303"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="120" y="317.6348">+Allumer()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61" x="120" y="330.5898">+Eteindre()</text><!--MD5=[6fab4e4063bc82c1ebac1e5d35aaa714]
+link Bouton to Commutable--><path d="M96.5,69.24 C96.5,85.4 96.5,105.64 96.5,123.35 " fill="none" id="Bouton-&gt;Commutable" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="96.5,128.76,100.5,119.76,96.5,123.76,92.5,119.76,96.5,128.76" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[aff59417de5ab4cd58dcfe87de6b0902]
+reverse link Commutable to Lampe--><path d="M74.02,221.94 C68.36,235.8 62.42,250.32 57.24,262.97 " fill="none" id="Commutable&lt;-Lampe" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="67.69,218.93,81.74,203.07,80.65,224.23,67.69,218.93" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[946e897b7990d240d52525f470814aee]
+reverse link Commutable to TV--><path d="M118.98,221.94 C124.64,235.8 130.58,250.32 135.76,262.97 " fill="none" id="Commutable&lt;-TV" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="112.35,224.23,111.26,203.07,125.31,218.93,112.35,224.23" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[51c9c8709f03a533fa78411c392310ef]
+@startuml DIP_v02_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+' skinparam linetype ortho
+
+Bouton - -> Commutable
+Commutable <|- - Lampe
+Commutable <|- - TV
+
+class Bouton {
+    + ChangerEtat()
+}
+
+interface Commutable {
+    + Allumer()
+    + Eteindre()
+}
+
+class Lampe {
+    + Allumer()
+    + Eteindre()
+}
+
+class TV {
+    + Allumer()
+    + Eteindre()
+}
+
+
+@enduml
+
+@startuml DIP_v02_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+Bouton - -> Commutable
+Commutable <|- - Lampe
+Commutable <|- - TV
+
+class Bouton {
+    + ChangerEtat()
+}
+
+interface Commutable {
+    + Allumer()
+    + Eteindre()
+}
+
+class Lampe {
+    + Allumer()
+    + Eteindre()
+}
+
+class TV {
+    + Allumer()
+    + Eteindre()
+}
+
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

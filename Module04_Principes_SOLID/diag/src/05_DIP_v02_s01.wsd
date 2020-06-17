@@ -1,0 +1,35 @@
+@startuml DIP_v02_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+' skinparam linetype ortho
+
+Bouton --> Commutable
+Commutable <|-- Lampe
+Commutable <|-- TV
+
+class Bouton {
+    + ChangerEtat()
+}
+
+interface Commutable {
+    + Allumer()
+    + Eteindre()
+}
+
+class Lampe {
+    + Allumer()
+    + Eteindre()
+}
+
+class TV {
+    + Allumer()
+    + Eteindre()
+}
+
+
+@enduml

@@ -1,0 +1,43 @@
+@startuml ISP_v01_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+'skinparam linetype ortho
+
+interface DepotFacture {
+    + Obtenir(p_identifiantFacture : Guid) : Facture
+    + Enregistrer(p_facture : Facture)
+    + Rechercher(p_motClef : string) : List<Facture>
+}
+
+class Facture {
+
+}
+
+interface Imprimable {
+    + Imprimer()
+}
+
+interface Affichable {
+    + Afficher()
+}
+
+
+
+class FactureMagasinXYZ {
+    + Imprimer()
+    + Afficher()
+
+}
+
+
+
+Imprimable <|.. FactureMagasinXYZ
+Affichable <|.. FactureMagasinXYZ
+Facture  <-- FactureMagasinXYZ
+
+@enduml

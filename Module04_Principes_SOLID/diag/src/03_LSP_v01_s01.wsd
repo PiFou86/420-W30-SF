@@ -1,0 +1,27 @@
+@startuml LSP_v01_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+'skinparam linetype ortho
+
+IFormeGeometriqueDessinable <|.. Rectangle
+IFormeGeometriqueDessinable <|.. Carre
+
+interface IFormeGeometriqueDessinable {
+
+}
+
+class Rectangle {
+    + Hauteur : float <<get>> <<set>>
+    + Largeur : float <<get>> <<set>>
+}
+
+class Carre {
+    + Cote : float <<get>> <<set>>
+}
+
+@enduml

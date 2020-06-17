@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="117px" preserveAspectRatio="none" style="width:236px;height:117px;" version="1.1" viewBox="0 0 236 117" width="236px" zoomAndPan="magnify"><defs><filter height="300%" id="fuudos6atlopo" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[0e88ca80c12dbbde5898ded23c0a300d]
+class Modem--><rect fill="#FFFFFF" filter="url(#fuudos6atlopo)" height="99.8203" id="Modem" style="stroke: #000000; stroke-width: 1.5;" width="218" x="7" y="7"/><ellipse cx="90.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M92.7231,29.1431 Q92.1421,29.4419 91.5029,29.5913 Q90.8638,29.7407 90.1582,29.7407 Q87.6514,29.7407 86.3315,28.0889 Q85.0117,26.437 85.0117,23.3159 Q85.0117,20.1865 86.3315,18.5347 Q87.6514,16.8828 90.1582,16.8828 Q90.8638,16.8828 91.5112,17.0322 Q92.1587,17.1816 92.7231,17.4805 L92.7231,20.2031 Q92.0923,19.6221 91.4988,19.3523 Q90.9053,19.0825 90.2744,19.0825 Q88.9297,19.0825 88.2449,20.1492 Q87.5601,21.2158 87.5601,23.3159 Q87.5601,25.4077 88.2449,26.4744 Q88.9297,27.541 90.2744,27.541 Q90.9053,27.541 91.4988,27.2712 Q92.0923,27.0015 92.7231,26.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="43" x="110.75" y="27.5352">Modem</text><line style="stroke: #000000; stroke-width: 1.5;" x1="8" x2="224" y1="39" y2="39"/><line style="stroke: #000000; stroke-width: 1.5;" x1="8" x2="224" y1="47" y2="47"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="166" x="13" y="61.6348">+Composer(p_numero: string)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="13" y="74.5898">+Raccrocher()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="206" x="13" y="87.5449">+EnvoyerDonnees(p_donnees : byte[])</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="150" x="13" y="100.5">+RecevoirDonnees() : byte[]</text><!--MD5=[1fdfbc657852cf139085a04135acc663]
+@startuml SRP_V03
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+class Modem {
+    + Composer(p_numero: string)
+    + Raccrocher()
+    + EnvoyerDonnees(p_donnees : byte[])
+    + RecevoirDonnees() : byte[]
+}
+
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

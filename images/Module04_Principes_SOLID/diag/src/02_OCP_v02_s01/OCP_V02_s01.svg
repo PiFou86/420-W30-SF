@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="213px" preserveAspectRatio="none" style="width:533px;height:213px;" version="1.1" viewBox="0 0 533 213" width="533px" zoomAndPan="magnify"><defs><filter height="300%" id="fciixq26r9ksm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[bca097896a4a28c51096bc5860f847f2]
+class ApplicationGraphique--><rect fill="#FFFFFF" filter="url(#fciixq26r9ksm)" height="73.9102" id="ApplicationGraphique" style="stroke: #000000; stroke-width: 1.5;" width="282" x="6" y="129"/><ellipse cx="80.25" cy="145" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M82.7231,151.1431 Q82.1421,151.4419 81.5029,151.5913 Q80.8638,151.7407 80.1582,151.7407 Q77.6514,151.7407 76.3315,150.0889 Q75.0117,148.437 75.0117,145.3159 Q75.0117,142.1865 76.3315,140.5347 Q77.6514,138.8828 80.1582,138.8828 Q80.8638,138.8828 81.5112,139.0322 Q82.1587,139.1816 82.7231,139.4805 L82.7231,142.2031 Q82.0923,141.6221 81.4988,141.3523 Q80.9053,141.0825 80.2744,141.0825 Q78.9297,141.0825 78.2449,142.1492 Q77.5601,143.2158 77.5601,145.3159 Q77.5601,147.4077 78.2449,148.4744 Q78.9297,149.541 80.2744,149.541 Q80.9053,149.541 81.4988,149.2712 Q82.0923,149.0015 82.7231,148.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="125" x="100.75" y="149.5352">ApplicationGraphique</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="287" y1="161" y2="161"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="270" x="12" y="175.6348">-FormesGeometriques : List&lt;FormeGeometrique&gt;</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="287" y1="181.9551" y2="181.9551"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="122" x="12" y="196.5898">+DessinerLesFormes()</text><!--MD5=[3abfc055aa2c519ebcfd2acfe702d4d6]
+class IFormeGeometriqueDessinable--><rect fill="#FFFFFF" filter="url(#fciixq26r9ksm)" height="60.9551" id="IFormeGeometriqueDessinable" style="stroke: #000000; stroke-width: 1.5;" width="209" x="262.5" y="8"/><ellipse cx="277.5" cy="24" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M273.9277,20.2651 L273.9277,18.1069 L281.3071,18.1069 L281.3071,20.2651 L278.8418,20.2651 L278.8418,28.3418 L281.3071,28.3418 L281.3071,30.5 L273.9277,30.5 L273.9277,28.3418 L276.3931,28.3418 L276.3931,20.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="177" x="291.5" y="28.5352">IFormeGeometriqueDessinable</text><line style="stroke: #000000; stroke-width: 1.5;" x1="263.5" x2="470.5" y1="40" y2="40"/><line style="stroke: #000000; stroke-width: 1.5;" x1="263.5" x2="470.5" y1="48" y2="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="268.5" y="62.6348">+Dessiner()</text><!--MD5=[b5313cd49da22b0744b541f414f8445e]
+class Rectangle--><rect fill="#FFFFFF" filter="url(#fciixq26r9ksm)" height="60.9551" id="Rectangle" style="stroke: #000000; stroke-width: 1.5;" width="88" x="323" y="135.5"/><ellipse cx="338" cy="151.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M340.4731,157.6431 Q339.8921,157.9419 339.2529,158.0913 Q338.6138,158.2407 337.9082,158.2407 Q335.4014,158.2407 334.0815,156.5889 Q332.7617,154.937 332.7617,151.8159 Q332.7617,148.6865 334.0815,147.0347 Q335.4014,145.3828 337.9082,145.3828 Q338.6138,145.3828 339.2612,145.5322 Q339.9087,145.6816 340.4731,145.9805 L340.4731,148.7031 Q339.8423,148.1221 339.2488,147.8523 Q338.6553,147.5825 338.0244,147.5825 Q336.6797,147.5825 335.9949,148.6492 Q335.3101,149.7158 335.3101,151.8159 Q335.3101,153.9077 335.9949,154.9744 Q336.6797,156.041 338.0244,156.041 Q338.6553,156.041 339.2488,155.7712 Q339.8423,155.5015 340.4731,154.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="352" y="156.0352">Rectangle</text><line style="stroke: #000000; stroke-width: 1.5;" x1="324" x2="410" y1="167.5" y2="167.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="324" x2="410" y1="175.5" y2="175.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="329" y="190.1348">+Dessiner()</text><!--MD5=[36301a564b4c56d542208ba8d5f25649]
+class Cercle--><rect fill="#FFFFFF" filter="url(#fciixq26r9ksm)" height="60.9551" id="Cercle" style="stroke: #000000; stroke-width: 1.5;" width="76" x="446" y="135.5"/><ellipse cx="464.6" cy="151.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M467.0731,157.6431 Q466.4921,157.9419 465.8529,158.0913 Q465.2138,158.2407 464.5082,158.2407 Q462.0014,158.2407 460.6815,156.5889 Q459.3617,154.937 459.3617,151.8159 Q459.3617,148.6865 460.6815,147.0347 Q462.0014,145.3828 464.5082,145.3828 Q465.2138,145.3828 465.8612,145.5322 Q466.5087,145.6816 467.0731,145.9805 L467.0731,148.7031 Q466.4423,148.1221 465.8488,147.8523 Q465.2553,147.5825 464.6244,147.5825 Q463.2797,147.5825 462.5949,148.6492 Q461.9101,149.7158 461.9101,151.8159 Q461.9101,153.9077 462.5949,154.9744 Q463.2797,156.041 464.6244,156.041 Q465.2553,156.041 465.8488,155.7712 Q466.4423,155.5015 467.0731,154.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="479.4" y="156.0352">Cercle</text><line style="stroke: #000000; stroke-width: 1.5;" x1="447" x2="521" y1="167.5" y2="167.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="447" x2="521" y1="175.5" y2="175.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="452" y="190.1348">+Dessiner()</text><!--MD5=[58126bcd1f7dd5d082ee420a4eb5a1be]
+reverse link IFormeGeometriqueDessinable to ApplicationGraphique--><path d="M310.67,71.63 C280.01,89.13 241.97,110.82 210.29,128.9 " fill="none" id="IFormeGeometriqueDessinable&lt;-ApplicationGraphique" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="315.14,69.08,305.342,70.0792,310.8005,71.5638,309.316,77.0223,315.14,69.08" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="6" x="297.8251" y="89.539">*</text><!--MD5=[fd22bedc954505ab2a9cf8e8144d5878]
+reverse link IFormeGeometriqueDessinable to Rectangle--><path d="M367,89.45 C367,105.05 367,121.75 367,135.47 " fill="none" id="IFormeGeometriqueDessinable&lt;-Rectangle" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="360,89.24,367,69.24,374,89.24,360,89.24" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a908d335985180b5729d178f36d8c326]
+reverse link IFormeGeometriqueDessinable to Cercle--><path d="M408.41,83.92 C424.35,101.02 442.15,120.11 456.47,135.47 " fill="none" id="IFormeGeometriqueDessinable&lt;-Cercle" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="403.25,88.64,394.73,69.24,413.49,79.1,403.25,88.64" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a2023452ab1955f78cf6ba69ca64c231]
+@startuml OCP_V02_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+'skinparam linetype ortho
+
+class ApplicationGraphique {
+    - FormesGeometriques : List<FormeGeometrique>
+    + DessinerLesFormes()
+}
+
+'ApplicationGraphique - -> "*" FormeGeometrique
+
+IFormeGeometriqueDessinable "*" <- -  ApplicationGraphique
+
+interface IFormeGeometriqueDessinable {
+    + Dessiner()
+}
+
+class Rectangle {
+    + Dessiner()
+}
+
+class Cercle {
+    + Dessiner()    
+}
+
+IFormeGeometriqueDessinable <|.. Rectangle
+IFormeGeometriqueDessinable <|.. Cercle
+
+@enduml
+
+@startuml OCP_V02_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+class ApplicationGraphique {
+    - FormesGeometriques : List<FormeGeometrique>
+    + DessinerLesFormes()
+}
+
+
+IFormeGeometriqueDessinable "*" <- -  ApplicationGraphique
+
+interface IFormeGeometriqueDessinable {
+    + Dessiner()
+}
+
+class Rectangle {
+    + Dessiner()
+}
+
+class Cercle {
+    + Dessiner()    
+}
+
+IFormeGeometriqueDessinable <|.. Rectangle
+IFormeGeometriqueDessinable <|.. Cercle
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

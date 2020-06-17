@@ -1,0 +1,18 @@
+@startuml SRP_V03
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+class Modem {
+    + Composer(p_numero: string)
+    + Raccrocher()
+    + EnvoyerDonnees(p_donnees : byte[])
+    + RecevoirDonnees() : byte[]
+}
+
+
+@enduml

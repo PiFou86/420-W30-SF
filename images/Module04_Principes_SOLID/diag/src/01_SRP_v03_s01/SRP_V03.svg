@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="252px" preserveAspectRatio="none" style="width:396px;height:252px;" version="1.1" viewBox="0 0 396 252" width="396px" zoomAndPan="magnify"><defs><filter height="300%" id="f11dx7lqiqd693" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8f8e1eb9801a28141a3cc530d1238cb9]
+class ICommunication--><rect fill="#FFFFFF" filter="url(#f11dx7lqiqd693)" height="73.9102" id="ICommunication" style="stroke: #000000; stroke-width: 1.5;" width="218" x="6" y="8"/><ellipse cx="65.25" cy="24" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M61.6777,20.2651 L61.6777,18.1069 L69.0571,18.1069 L69.0571,20.2651 L66.5918,20.2651 L66.5918,28.3418 L69.0571,28.3418 L69.0571,30.5 L61.6777,30.5 L61.6777,28.3418 L64.1431,28.3418 L64.1431,20.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="91" x="85.75" y="28.5352">ICommunication</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="223" y1="40" y2="40"/><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="223" y1="48" y2="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="206" x="12" y="62.6348">+EnvoyerDonnees(p_donnees : byte[])</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="150" x="12" y="75.5898">+RecevoirDonnees() : byte[]</text><!--MD5=[c2e610ab18b4f4a976816ef2ee193441]
+class IConnexion--><rect fill="#FFFFFF" filter="url(#f11dx7lqiqd693)" height="73.9102" id="IConnexion" style="stroke: #000000; stroke-width: 1.5;" width="126" x="259" y="8"/><ellipse cx="287.95" cy="24" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M284.3777,20.2651 L284.3777,18.1069 L291.7571,18.1069 L291.7571,20.2651 L289.2918,20.2651 L289.2918,28.3418 L291.7571,28.3418 L291.7571,30.5 L284.3777,30.5 L284.3777,28.3418 L286.8431,28.3418 L286.8431,20.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="63" x="305.05" y="28.5352">IConnexion</text><line style="stroke: #000000; stroke-width: 1.5;" x1="260" x2="384" y1="40" y2="40"/><line style="stroke: #000000; stroke-width: 1.5;" x1="260" x2="384" y1="48" y2="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="265" y="62.6348">+EtablirConnexion()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="265" y="75.5898">+FermerConnexion()</text><!--MD5=[5c984fed5e1f3277f82ebc63031aa4b1]
+class ModemRTC--><rect fill="#FFFFFF" filter="url(#f11dx7lqiqd693)" height="99.8203" id="ModemRTC" style="stroke: #000000; stroke-width: 1.5;" width="218" x="109" y="142"/><ellipse cx="180.25" cy="158" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M182.7231,164.1431 Q182.1421,164.4419 181.5029,164.5913 Q180.8638,164.7407 180.1582,164.7407 Q177.6514,164.7407 176.3315,163.0889 Q175.0117,161.437 175.0117,158.3159 Q175.0117,155.1865 176.3315,153.5347 Q177.6514,151.8828 180.1582,151.8828 Q180.8638,151.8828 181.5112,152.0322 Q182.1587,152.1816 182.7231,152.4805 L182.7231,155.2031 Q182.0923,154.6221 181.4988,154.3523 Q180.9053,154.0825 180.2744,154.0825 Q178.9297,154.0825 178.2449,155.1492 Q177.5601,156.2158 177.5601,158.3159 Q177.5601,160.4077 178.2449,161.4744 Q178.9297,162.541 180.2744,162.541 Q180.9053,162.541 181.4988,162.2712 Q182.0923,162.0015 182.7231,161.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="67" x="200.75" y="162.5352">ModemRTC</text><line style="stroke: #000000; stroke-width: 1.5;" x1="110" x2="326" y1="174" y2="174"/><line style="stroke: #000000; stroke-width: 1.5;" x1="110" x2="326" y1="182" y2="182"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="115" y="196.6348">+EtablirConnexion()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="115" y="209.5898">+FermerConnexion()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="206" x="115" y="222.5449">+EnvoyerDonnees(p_donnees : byte[])</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="150" x="115" y="235.5">+RecevoirDonnees() : byte[]</text><!--MD5=[cfa5a1847787640779e79d2b08d2d4fb]
+reverse link IConnexion to ModemRTC--><path d="M284.2,98.71 C274.09,112.8 263.21,127.97 253.25,141.86 " fill="none" id="IConnexion&lt;-ModemRTC" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="278.68,94.39,296.02,82.22,290.06,102.55,278.68,94.39" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4443eedfed41c92adcf37a2e48baeb61]
+reverse link ICommunication to ModemRTC--><path d="M152.44,98.71 C162.45,112.8 173.23,127.97 183.09,141.86 " fill="none" id="ICommunication&lt;-ModemRTC" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="146.6,102.57,140.73,82.22,158.01,94.47,146.6,102.57" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c63275235b696f27017559e5f6d7e7bc]
+@startuml SRP_V03
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+interface ICommunication {
+    + EnvoyerDonnees(p_donnees : byte[])
+    + RecevoirDonnees() : byte[]
+}
+
+interface IConnexion {
+    + EtablirConnexion()
+    + FermerConnexion()
+}
+
+class ModemRTC {
+    + EtablirConnexion()
+    + FermerConnexion()
+    + EnvoyerDonnees(p_donnees : byte[])
+    + RecevoirDonnees() : byte[]
+}
+
+IConnexion <|.. ModemRTC
+ICommunication <|.. ModemRTC
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

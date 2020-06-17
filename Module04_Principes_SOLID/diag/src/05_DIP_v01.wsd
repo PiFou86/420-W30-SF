@@ -1,0 +1,24 @@
+@startuml DIP_v01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+' skinparam linetype ortho
+
+Inventaire --> DepotArticleSQL
+
+class Inventaire {
+
+}
+
+class DepotArticleSQL {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+@enduml

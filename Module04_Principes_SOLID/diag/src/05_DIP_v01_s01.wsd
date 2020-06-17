@@ -1,0 +1,42 @@
+@startuml DIP_v01_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+' skinparam linetype ortho
+
+DepotArticle <-- Inventaire
+DepotArticle <|.. DepotArticleCSV
+DepotArticle <|.. DepotArticleSQL
+
+class Inventaire {
+    + ctor(p_depotArticle : DepotArticle)
+}
+
+interface DepotArticle {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleCSV {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleSQL {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+
+
+@enduml

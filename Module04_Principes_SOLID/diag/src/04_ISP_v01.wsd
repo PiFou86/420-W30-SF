@@ -1,0 +1,20 @@
+@startuml ISP_v01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+'skinparam linetype ortho
+
+class GestionFacture {
+    + Imprimer()
+    + AfficherText()
+    + AfficherGraphique()
+    + Obtenir(p_identifiantFacture : Guid) : Facture
+    + Enregistrer(p_facture : Facture)
+    + Rechercher(p_motClef : string) : List<Facture>
+}
+
+@enduml

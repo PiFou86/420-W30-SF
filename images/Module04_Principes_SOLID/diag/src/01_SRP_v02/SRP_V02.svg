@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="285px" preserveAspectRatio="none" style="width:579px;height:285px;" version="1.1" viewBox="0 0 579 285" width="579px" zoomAndPan="magnify"><defs><filter height="300%" id="ferjuo79bxr3x" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[b5313cd49da22b0744b541f414f8445e]
+class Rectangle--><rect fill="#FFFFFF" filter="url(#ferjuo79bxr3x)" height="73.9102" id="Rectangle" style="stroke: #000000; stroke-width: 1.5;" width="119" x="266.5" y="104"/><ellipse cx="295.45" cy="120" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M297.9231,126.1431 Q297.3421,126.4419 296.7029,126.5913 Q296.0638,126.7407 295.3582,126.7407 Q292.8514,126.7407 291.5315,125.0889 Q290.2117,123.437 290.2117,120.3159 Q290.2117,117.1865 291.5315,115.5347 Q292.8514,113.8828 295.3582,113.8828 Q296.0638,113.8828 296.7112,114.0322 Q297.3587,114.1816 297.9231,114.4805 L297.9231,117.2031 Q297.2923,116.6221 296.6988,116.3523 Q296.1053,116.0825 295.4744,116.0825 Q294.1297,116.0825 293.4449,117.1492 Q292.7601,118.2158 292.7601,120.3159 Q292.7601,122.4077 293.4449,123.4744 Q294.1297,124.541 295.4744,124.541 Q296.1053,124.541 296.6988,124.2712 Q297.2923,124.0015 297.9231,123.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="312.55" y="124.5352">Rectangle</text><line style="stroke: #000000; stroke-width: 1.5;" x1="267.5" x2="384.5" y1="136" y2="136"/><line style="stroke: #000000; stroke-width: 1.5;" x1="267.5" x2="384.5" y1="144" y2="144"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="272.5" y="158.6348">+Dessiner()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107" x="272.5" y="171.5898">+Surface() : decimal</text><!--MD5=[35f27b24f95f2f3f0e707924c30f2c00]
+entity AppCalcGeo--><rect fill="#FEFECE" filter="url(#ferjuo79bxr3x)" height="36.4883" style="stroke: #A80036; stroke-width: 1.5;" width="268" x="6" y="8"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="1" y="13"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="1" y="34.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="248" x="16" y="31.5352">Application de calculs géométriques</text><!--MD5=[f8dd69391f5d6300bd6b7e752bc5d148]
+entity AppDessinGeo--><rect fill="#FEFECE" filter="url(#ferjuo79bxr3x)" height="36.4883" style="stroke: #A80036; stroke-width: 1.5;" width="259" x="309.5" y="8"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="304.5" y="13"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="304.5" y="34.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="239" x="319.5" y="31.5352">Application géométrique de dessin</text><!--MD5=[e9babc78f0ac9f52cdccb69c5dc7d3ca]
+entity SurfaceDessinable--><rect fill="#FEFECE" filter="url(#ferjuo79bxr3x)" height="36.4883" style="stroke: #A80036; stroke-width: 1.5;" width="245" x="259.5" y="238"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="254.5" y="243"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="254.5" y="264.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="225" x="269.5" y="261.5352">Cadriciel avec surface dessinable</text><!--MD5=[8e3584b87c21f0238f643eb6b3d30356]
+link AppCalcGeo to Rectangle--><path d="M168.25,44.16 C193.15,59.29 230.34,81.88 262.36,101.34 " fill="none" id="AppCalcGeo-&gt;Rectangle" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="266.64,103.94,261.0122,95.8574,262.3627,101.3507,256.8694,102.7011,266.64,103.94" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[bb3fb6b542488b2701d05b4f7fe8af4a]
+link AppDessinGeo to Rectangle--><path d="M421.84,44.16 C407.02,58.98 385.04,80.96 365.86,100.14 " fill="none" id="AppDessinGeo-&gt;Rectangle" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="362.06,103.94,371.2524,100.4045,365.5955,100.4045,365.5955,94.7476,362.06,103.94" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b6f36152c77b168a76abd71473698c0b]
+link Rectangle to SurfaceDessinable--><path d="M343.87,178.06 C352.87,196.21 363.47,217.61 371.21,233.22 " fill="none" id="Rectangle-&gt;SurfaceDessinable" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="373.51,237.87,373.1131,228.0291,371.2968,233.3865,365.9395,231.5703,373.51,237.87" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[fd6d6eea6ca47b8a7e1aa238d118c48d]
+link AppDessinGeo to SurfaceDessinable--><path d="M435.08,44.25 C428.65,72.35 415.34,129.69 403,178 C398.25,196.57 392.5,217.56 388.22,232.93 " fill="none" id="AppDessinGeo-&gt;SurfaceDessinable" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="386.83,237.92,393.101,230.3256,388.1734,233.1038,385.3952,228.1762,386.83,237.92" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b39128b73d6c2141bbad1a96b171d210]
+@startuml SRP_V02
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+
+class Rectangle {
+    + Dessiner()
+    + Surface() : decimal
+}
+
+component [Application de calculs géométriques] as AppCalcGeo
+component [Application géométrique de dessin] as AppDessinGeo
+component [Cadriciel avec surface dessinable] as SurfaceDessinable
+
+AppCalcGeo - -> Rectangle
+AppDessinGeo - -> Rectangle
+Rectangle ..> SurfaceDessinable
+AppDessinGeo ..> SurfaceDessinable
+
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

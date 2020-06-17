@@ -1,0 +1,51 @@
+@startuml LSP_v01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+'skinparam linetype ortho
+
+interface DepotArticle {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleCSV {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleXML {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleJSON {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+class DepotArticleSQL {
+    + Rechercher(p_motCles : string[]) : List<Article>
+    + Enregistrer(p_article : Article)
+    + Obtenir(p_identifiantArticle: Guid) : Article
+    + Supprimer(p_identifiantArticle: Guid) : Article
+}
+
+DepotArticle <|.. DepotArticleCSV
+DepotArticle <|.. DepotArticleXML
+DepotArticle <|.. DepotArticleJSON
+DepotArticle <|.. DepotArticleSQL
+
+@enduml

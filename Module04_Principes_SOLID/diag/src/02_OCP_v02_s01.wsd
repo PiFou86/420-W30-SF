@@ -1,0 +1,35 @@
+@startuml OCP_V02_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+allowmixing
+'skinparam linetype ortho
+
+class ApplicationGraphique {
+    - FormesGeometriques : List<FormeGeometrique>
+    + DessinerLesFormes()
+}
+
+'ApplicationGraphique --> "*" FormeGeometrique
+
+IFormeGeometriqueDessinable "*" <--  ApplicationGraphique
+
+interface IFormeGeometriqueDessinable {
+    + Dessiner()
+}
+
+class Rectangle {
+    + Dessiner()
+}
+
+class Cercle {
+    + Dessiner()    
+}
+
+IFormeGeometriqueDessinable <|.. Rectangle
+IFormeGeometriqueDessinable <|.. Cercle
+
+@enduml
