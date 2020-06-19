@@ -9,7 +9,7 @@ allowmixing
 'skinparam linetype ortho
 
 class ApplicationGraphique {
-    - FormesGeometriques : List<FormeGeometrique>
+    - FormesGeometriques : List<IFormeGeometriqueDessinable>
     + DessinerLesFormes()
 }
 
