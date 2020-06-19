@@ -203,7 +203,7 @@ public class ATM
             try
             {
                 transaction.ValiderTransaction();
-                m_tiroirArgent.DistribuerArgent();
+                m_tiroirArgent.DistribuerArgent(p_montant);
             }
             catch (Exception ex)
             {
