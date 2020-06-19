@@ -217,3 +217,23 @@ public class ATM
 ```
 
 </details>
+
+## Exercice 4 – Conception - Imaginez votre ATM (Optionnel)
+
+Vous devez effectuer la conception d'un guichet automatique.
+
+Ce guichet permet de :
+
+- Retirer de l'argent
+- Déposer de l'argent
+- Faire un transfert d'un compte vers un autre compte
+
+Il y a trois types d'interface utilisateur :
+
+- Graphique
+- Braille
+- Vocale
+
+Effectuez le diagramme de classe d'un tel guichet en débutant par les opérations à réaliser et les interfaces.
+
+Essayez de rajouter le concept de banques et de succursales. Faites des diagrammes dynamiques afin de vous aider à valider votre conception (ex. : diagrammes de séquence ou diagrammes d'objets)
