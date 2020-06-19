@@ -153,7 +153,7 @@ public class ATM {
 
     public void Retirer(Compte p_compte, decimal p_montant)
     {
-        Transaction transaction = new Transaction(p_compte, p_montant);
+        TransactionRetrait transaction = new TransactionRetrait(p_compte, p_montant);
         if (transaction.EstValide()) {
             try
             {
@@ -197,7 +197,7 @@ public class ATM
 
     public void Retirer(Compte p_compte, decimal p_montant)
     {
-        Transaction transaction = m_createurTransaction.CreerTransaction(p_compte, p_montant);
+        Transaction transaction = m_createurTransaction.CreerTransactionRetrait(p_compte, p_montant);
         if (transaction.EstValide())
         {
             try
