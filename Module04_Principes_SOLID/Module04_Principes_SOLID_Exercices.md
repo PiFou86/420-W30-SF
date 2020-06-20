@@ -75,16 +75,16 @@ public class Automobiliste {
         switch (m_voiture.GetTypeVoiture())
         {
             case TypeVoiture.ESSENCE:
-                m_voiture.RemplirReservoir();
+                this.m_voiture.RemplirReservoir();
                 break;
             case TypeVoiture.ELECTRIQUE:
-                m_voiture.Brancher();
+                this.m_voiture.Brancher();
                 break;
             case TypeVoiture.SOLAIRE:
                 break;
             case TypeVoiture.VAPEUR:
-                m_voiture.AjouterEau();
-                m_voiture.AjouterCharbon();
+                this.m_voiture.AjouterEau();
+                this.m_voiture.AjouterCharbon();
                 break;
             default:
                 break;
