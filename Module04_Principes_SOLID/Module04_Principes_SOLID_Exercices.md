@@ -69,26 +69,29 @@ public interface Voiture
 
 public class Automobiliste {
     private Voiture m_voiture;
+    
     public void Remplir()
     {
         switch (m_voiture.GetTypeVoiture())
         {
             case TypeVoiture.ESSENCE:
-                m_voiture.RemplirReservoir();
+                this.m_voiture.RemplirReservoir();
                 break;
             case TypeVoiture.ELECTRIQUE:
-                m_voiture.Brancher();
+                this.m_voiture.Brancher();
                 break;
             case TypeVoiture.SOLAIRE:
                 break;
             case TypeVoiture.VAPEUR:
-                m_voiture.AjouterEau();
-                m_voiture.AjouterCharbon();
+                this.m_voiture.AjouterEau();
+                this.m_voiture.AjouterCharbon();
                 break;
             default:
                 break;
         }
     }
+    
+    // ...
 }
 ```
 
@@ -114,10 +117,12 @@ public interface Voiture
 public class Automobiliste
 {
     private Voiture m_voiture;
+    
     public void AjouterEnergie()
     {
-        m_voiture.AjouterEnergie();
+        this.m_voiture.AjouterEnergie();
     }
+    // ...
 }
 
 ```
@@ -134,17 +139,18 @@ public class ATM {
     private TypeTirroir m_typeTiroir;
     private TiroirArgent m_tiroirArgent;
 
-    public ATM() {
-        switch (m_typeTiroir)
+    public ATM(TypeTirroir p_typeTiroir) {
+        this.m_typeTiroir = p_typeTiroir;
+        switch (this.m_typeTiroir)
         {
-            case TypeTirroir.COM:
-                m_tiroirArgent = new TiroirArgentCOM();
+            case TypeTiroir.COM:
+                this.m_tiroirArgent = new TiroirArgentCOM();
                 break;
             case TypeTirroir.LPT:
-                m_tiroirArgent = new TiroirArgentLPT();
+                this.m_tiroirArgent = new TiroirArgentLPT();
                 break;
             case TypeTirroir.USB:
-                m_tiroirArgent = new TiroirArgentUSB();
+                this.m_tiroirArgent = new TiroirArgentUSB();
                 break;
             default:
                 break;
@@ -153,12 +159,12 @@ public class ATM {
 
     public void Retirer(Compte p_compte, decimal p_montant)
     {
-        Transaction transaction = new Transaction(p_compte, p_montant);
+        TransactionRetrait transaction = new TransactionRetrait(p_compte, p_montant);
         if (transaction.EstValide()) {
             try
             {
                 transaction.ValiderTransaction();
-                m_tiroirArgent.DistribuerArgent();
+                this.m_tiroirArgent.DistribuerArgent();
             }
             catch (Exception ex)
             {
@@ -167,6 +173,8 @@ public class ATM {
 
         }
     }
+    
+    // ...
 }
 ```
 
@@ -191,19 +199,19 @@ public class ATM
 
     public ATM(TiroirArgent p_tiroirArgent, CreateurTransaction p_createurTransaction)
     {
-        m_createurTransaction = p_createurTransaction;
-        m_tiroirArgent = p_tiroirArgent;
+        this.m_createurTransaction = p_createurTransaction;
+        this.m_tiroirArgent = p_tiroirArgent;
     }
 
     public void Retirer(Compte p_compte, decimal p_montant)
     {
-        Transaction transaction = m_createurTransaction.CreerTransaction(p_compte, p_montant);
+        Transaction transaction = this.m_createurTransaction.CreerTransactionRetrait(p_compte, p_montant);
         if (transaction.EstValide())
         {
             try
             {
                 transaction.ValiderTransaction();
-                m_tiroirArgent.DistribuerArgent(p_montant);
+                this.m_tiroirArgent.DistribuerArgent(p_montant);
             }
             catch (Exception ex)
             {
@@ -212,6 +220,8 @@ public class ATM
 
         }
     }
+    
+    // ...
 }
 
 ```
