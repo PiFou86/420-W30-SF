@@ -59,7 +59,7 @@ for (int indiceLigne = 0; indiceLigne < tableau2D.GetLength(0); indiceLigne++)
 Écrivez les constructeurs d'initialisations suivants :
 
 - Deux paramètres : prend en paramètres le nombre de lignes et de colonnes et construit une matrice avec ces dimensions données
-- Un paramètre : prend en paramètres un tableau deux dimensions de float : construit une matrice avec les mêmes dimensions que le tableau passé en paramètres et avec les mêmes données
+- Un paramètre : prend en paramètres un tableau deux dimensions de float et construit une matrice avec les mêmes dimensions que le tableau passé en paramètres et avec les mêmes données
 
 Écrivez les méthodes suivantes :
 
