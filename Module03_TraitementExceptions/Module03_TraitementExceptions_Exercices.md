@@ -1,5 +1,9 @@
 # Module 03 - Traitement des exceptions et exceptions utilisateur
 
+N'oubliez pas de faire vos tests unitaires excepté pour l'exercice 1.
+
+
+
 ## Exercice 1 - Lecture dans un fichier
 
 Faîtes un programme C# qui demande à l'utilisateur le chemin absolu d'un fichier texte et qui l'affiche à l'écran.
@@ -52,8 +56,14 @@ for (int indiceLigne = 0; indiceLigne < tableau2D.GetLength(0); indiceLigne++)
 - NombreDeLignes (get seulement) : permet de connaitre le nombre de lignes de la matrice
 - NombreDeColonnes (get seulement) : permet de connaitre le nombre de colonnes de la matrice
 
+Écrivez les constructeurs d'initialisations suivants :
+
+- Deux paramètres : prend en paramètres le nombre de lignes et de colonnes et construit une matrice avec ces dimensions données
+- Un paramètre : prend en paramètres un tableau deux dimensions de float : construit une matrice avec les mêmes dimensions que le tableau passé en paramètres et avec les mêmes données
+
 Écrivez les méthodes suivantes :
 
+- "Equals" : prend en paramètres une autre matrice et renvoie vrai si elle est égale à votre objet courant, faux sinon.
 - "Identite" : prend en paramètres une dimension de matrice et renvoie la matrice carré identité correspondante à la dimension.
 - "Transpose" : prend une matrice en paramètre et renvoie sa transposée.
 
