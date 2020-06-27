@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POOII_Module03_TraitementExceptions", "POOII_Module03_TraitementExceptions\POOII_Module03_TraitementExceptions.csproj", "{355296E2-D171-40B7-9912-60784B2F914E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsPOOII_Module03_TraitementExceptions", "TestsPOOII_Module03_TraitementExceptions\TestsPOOII_Module03_TraitementExceptions.csproj", "{97729BFF-0E63-458C-8A5E-F431C2D1F769}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{355296E2-D171-40B7-9912-60784B2F914E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355296E2-D171-40B7-9912-60784B2F914E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355296E2-D171-40B7-9912-60784B2F914E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355296E2-D171-40B7-9912-60784B2F914E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97729BFF-0E63-458C-8A5E-F431C2D1F769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97729BFF-0E63-458C-8A5E-F431C2D1F769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97729BFF-0E63-458C-8A5E-F431C2D1F769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97729BFF-0E63-458C-8A5E-F431C2D1F769}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE98A690-1EE7-451D-8DD8-58F576A6C38E}
+	EndGlobalSection
+EndGlobal
