@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module06_Formats_Echanges_PreparationCours", "Module06_Formats_Echanges_PreparationCours\Module06_Formats_Echanges_PreparationCours.csproj", "{08E9C923-0B27-46A6-A3E9-D8823BD9E8E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08E9C923-0B27-46A6-A3E9-D8823BD9E8E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E9C923-0B27-46A6-A3E9-D8823BD9E8E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E9C923-0B27-46A6-A3E9-D8823BD9E8E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E9C923-0B27-46A6-A3E9-D8823BD9E8E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A3C3660-C6E5-42F7-B762-E681A122477D}
+	EndGlobalSection
+EndGlobal
