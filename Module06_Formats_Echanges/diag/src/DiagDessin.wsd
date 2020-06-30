@@ -1,0 +1,33 @@
+@startuml DiagDessin
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+Dessin --> "*" Forme
+Forme <|-- Cercle
+Forme <|-- Polygone
+Cercle --> "1" Point2D
+Polygone --> "3..n" Point2D
+
+class Point2D {
+    + int X <<get>> <<set>>
+    + int Y <<get>> <<set>>
+}
+
+abstract Forme {
+    
+}
+
+class Cercle {
+    + int Rayon <<get>> <<set>>
+    + Point2D Centre <<get>> <<set>>
+}
+
+class Polygone {
+    + List<Point2D> Sommets <<get>> <<set>>    
+}
+
+@enduml

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="226px" preserveAspectRatio="none" style="width:810px;height:226px;" version="1.1" viewBox="0 0 810 226" width="810px" zoomAndPan="magnify"><defs><filter height="300%" id="f11mwjxxwp2hlp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[d21ab400bb9ad9ab95c11d4cb25ec20e]
+class DepotDessin--><rect fill="#FFFFFF" filter="url(#f11mwjxxwp2hlp)" height="73.9102" id="DepotDessin" style="stroke: #000000; stroke-width: 1.5;" width="241" x="282" y="8"/><ellipse cx="361.75" cy="24" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M358.1777,20.2651 L358.1777,18.1069 L365.5571,18.1069 L365.5571,20.2651 L363.0918,20.2651 L363.0918,28.3418 L365.5571,28.3418 L365.5571,30.5 L358.1777,30.5 L358.1777,28.3418 L360.6431,28.3418 L360.6431,20.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="73" x="382.25" y="28.5352">DepotDessin</text><line style="stroke: #000000; stroke-width: 1.5;" x1="283" x2="522" y1="40" y2="40"/><line style="stroke: #000000; stroke-width: 1.5;" x1="283" x2="522" y1="48" y2="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111" x="288" y="62.6348">+Dessin LireDepot();</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="229" x="288" y="75.5898">+void EnregistrerDessin(Dessin p_dessin);</text><!--MD5=[37c1a01d398de30e2628902d713f22b7]
+class DepotDessinJSON--><rect fill="#FFFFFF" filter="url(#f11mwjxxwp2hlp)" height="73.9102" id="DepotDessinJSON" style="stroke: #000000; stroke-width: 1.5;" width="241" x="6" y="142"/><ellipse cx="71.75" cy="158" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M74.2231,164.1431 Q73.6421,164.4419 73.0029,164.5913 Q72.3638,164.7407 71.6582,164.7407 Q69.1514,164.7407 67.8315,163.0889 Q66.5117,161.437 66.5117,158.3159 Q66.5117,155.1865 67.8315,153.5347 Q69.1514,151.8828 71.6582,151.8828 Q72.3638,151.8828 73.0112,152.0322 Q73.6587,152.1816 74.2231,152.4805 L74.2231,155.2031 Q73.5923,154.6221 72.9988,154.3523 Q72.4053,154.0825 71.7744,154.0825 Q70.4297,154.0825 69.7449,155.1492 Q69.0601,156.2158 69.0601,158.3159 Q69.0601,160.4077 69.7449,161.4744 Q70.4297,162.541 71.7744,162.541 Q72.4053,162.541 72.9988,162.2712 Q73.5923,162.0015 74.2231,161.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="92.25" y="162.5352">DepotDessinJSON</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="246" y1="174" y2="174"/><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="246" y1="182" y2="182"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111" x="12" y="196.6348">+Dessin LireDepot();</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="229" x="12" y="209.5898">+void EnregistrerDessin(Dessin p_dessin);</text><!--MD5=[b17b1c8f2ff414de444b665f5b1c4a55]
+class DepotDessinXMLFormatAttributs--><rect fill="#FFFFFF" filter="url(#f11mwjxxwp2hlp)" height="73.9102" id="DepotDessinXMLFormatAttributs" style="stroke: #000000; stroke-width: 1.5;" width="241" x="282" y="142"/><ellipse cx="307.35" cy="158" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M309.8231,164.1431 Q309.2421,164.4419 308.6029,164.5913 Q307.9638,164.7407 307.2582,164.7407 Q304.7514,164.7407 303.4315,163.0889 Q302.1117,161.437 302.1117,158.3159 Q302.1117,155.1865 303.4315,153.5347 Q304.7514,151.8828 307.2582,151.8828 Q307.9638,151.8828 308.6112,152.0322 Q309.2587,152.1816 309.8231,152.4805 L309.8231,155.2031 Q309.1923,154.6221 308.5988,154.3523 Q308.0053,154.0825 307.3744,154.0825 Q306.0297,154.0825 305.3449,155.1492 Q304.6601,156.2158 304.6601,158.3159 Q304.6601,160.4077 305.3449,161.4744 Q306.0297,162.541 307.3744,162.541 Q308.0053,162.541 308.5988,162.2712 Q309.1923,162.0015 309.8231,161.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="186" x="323.65" y="162.5352">DepotDessinXMLFormatAttributs</text><line style="stroke: #000000; stroke-width: 1.5;" x1="283" x2="522" y1="174" y2="174"/><line style="stroke: #000000; stroke-width: 1.5;" x1="283" x2="522" y1="182" y2="182"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111" x="288" y="196.6348">+Dessin LireDepot();</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="229" x="288" y="209.5898">+void EnregistrerDessin(Dessin p_dessin);</text><!--MD5=[0b01499a529cbf5068a299181ce0a731]
+class DepotDessinXMLFormatElements--><rect fill="#FFFFFF" filter="url(#f11mwjxxwp2hlp)" height="73.9102" id="DepotDessinXMLFormatElements" style="stroke: #000000; stroke-width: 1.5;" width="241" x="558" y="142"/><ellipse cx="582" cy="158" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M584.4731,164.1431 Q583.8921,164.4419 583.2529,164.5913 Q582.6138,164.7407 581.9082,164.7407 Q579.4014,164.7407 578.0815,163.0889 Q576.7617,161.437 576.7617,158.3159 Q576.7617,155.1865 578.0815,153.5347 Q579.4014,151.8828 581.9082,151.8828 Q582.6138,151.8828 583.2612,152.0322 Q583.9087,152.1816 584.4731,152.4805 L584.4731,155.2031 Q583.8423,154.6221 583.2488,154.3523 Q582.6553,154.0825 582.0244,154.0825 Q580.6797,154.0825 579.9949,155.1492 Q579.3101,156.2158 579.3101,158.3159 Q579.3101,160.4077 579.9949,161.4744 Q580.6797,162.541 582.0244,162.541 Q582.6553,162.541 583.2488,162.2712 Q583.8423,162.0015 584.4731,161.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="189" x="598" y="162.5352">DepotDessinXMLFormatElements</text><line style="stroke: #000000; stroke-width: 1.5;" x1="559" x2="798" y1="174" y2="174"/><line style="stroke: #000000; stroke-width: 1.5;" x1="559" x2="798" y1="182" y2="182"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111" x="564" y="196.6348">+Dessin LireDepot();</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="229" x="564" y="209.5898">+void EnregistrerDessin(Dessin p_dessin);</text><!--MD5=[ca58c10debc0d3313476f6f32477b612]
+reverse link DepotDessin to DepotDessinJSON--><path d="M308.76,90.83 C273.9,107.51 234.83,126.19 201.83,141.97 " fill="none" id="DepotDessin&lt;-DepotDessinJSON" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="306.02,84.38,327.08,82.07,312.06,97.01,306.02,84.38" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2c0af33bdc48867371a020feab0316b5]
+reverse link DepotDessin to DepotDessinXMLFormatAttributs--><path d="M402.5,102.38 C402.5,115.8 402.5,129.76 402.5,141.97 " fill="none" id="DepotDessin&lt;-DepotDessinXMLFormatAttributs" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="395.5,102.07,402.5,82.07,409.5,102.07,395.5,102.07" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[75d7ffd71345d89edb8049a7d49f602e]
+reverse link DepotDessin to DepotDessinXMLFormatElements--><path d="M496.24,90.83 C531.1,107.51 570.17,126.19 603.17,141.97 " fill="none" id="DepotDessin&lt;-DepotDessinXMLFormatElements" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="492.94,97.01,477.92,82.07,498.98,84.38,492.94,97.01" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7a87c8548d5ca201a292396f2bb3f762]
+@startuml DiagDepot
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+DepotDessin <|- - DepotDessinJSON
+DepotDessin <|- - DepotDessinXMLFormatAttributs
+DepotDessin <|- - DepotDessinXMLFormatElements
+
+interface DepotDessin {
+    + Dessin LireDepot();
+    + void EnregistrerDessin(Dessin p_dessin);
+}
+
+class DepotDessinXMLFormatAttributs {
+    + Dessin LireDepot();
+    + void EnregistrerDessin(Dessin p_dessin);
+}
+
+class DepotDessinJSON {
+    + Dessin LireDepot();
+    + void EnregistrerDessin(Dessin p_dessin);
+}
+
+class DepotDessinXMLFormatElements {
+    + Dessin LireDepot();
+    + void EnregistrerDessin(Dessin p_dessin);
+}
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

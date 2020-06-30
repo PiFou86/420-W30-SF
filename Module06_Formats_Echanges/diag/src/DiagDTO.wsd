@@ -1,0 +1,33 @@
+@startuml DiagDTO
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+DessinXYZDTO --> "*" FormeXYZDTO
+FormeXYZDTO <|-- CercleXYZDTO
+FormeXYZDTO <|-- PolygoneXYZDTO
+CercleXYZDTO --> "1" Point2DXYZDTO
+PolygoneXYZDTO --> "3..n" Point2DXYZDTO
+
+class Point2DXYZDTO {
+    + int X <<get>> <<set>>
+    + int Y <<get>> <<set>>
+}
+
+abstract FormeXYZDTO {
+    
+}
+
+class CercleXYZDTO {
+    + int Rayon <<get>> <<set>>
+    + Point2DXYZDTO Centre <<get>> <<set>>
+}
+
+class PolygoneXYZDTO {
+    + List<Point2DXYZDTO> Sommets <<get>> <<set>>    
+}
+
+@enduml

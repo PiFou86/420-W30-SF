@@ -1,0 +1,33 @@
+@startuml DiagDepot
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+DepotDessin <|-- DepotDessinJSON
+DepotDessin <|-- DepotDessinXMLFormatAttributs
+DepotDessin <|-- DepotDessinXMLFormatElements
+
+interface DepotDessin {
+    + Dessin LireDepot();
+    + void EnregistrerDessin(Dessin p_dessin);
+}
+
+class DepotDessinXMLFormatAttributs {
+    + Dessin LireDepot();
+    + void EnregistrerDessin(Dessin p_dessin);
+}
+
+class DepotDessinJSON {
+    + Dessin LireDepot();
+    + void EnregistrerDessin(Dessin p_dessin);
+}
+
+class DepotDessinXMLFormatElements {
+    + Dessin LireDepot();
+    + void EnregistrerDessin(Dessin p_dessin);
+}
+
+@enduml

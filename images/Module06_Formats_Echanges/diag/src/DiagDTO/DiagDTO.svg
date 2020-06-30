@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="442px" preserveAspectRatio="none" style="width:522px;height:442px;" version="1.1" viewBox="0 0 522 442" width="522px" zoomAndPan="magnify"><defs><filter height="300%" id="fgr7rj7opowq9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[0c085b1c2e6a3527b9be48e8aab19aa2]
+class DessinXYZDTO--><rect fill="#FFFFFF" filter="url(#fgr7rj7opowq9)" height="48" id="DessinXYZDTO" style="stroke: #000000; stroke-width: 1.5;" width="118" x="187" y="8"/><ellipse cx="202" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M204.4731,30.1431 Q203.8921,30.4419 203.2529,30.5913 Q202.6138,30.7407 201.9082,30.7407 Q199.4014,30.7407 198.0815,29.0889 Q196.7617,27.437 196.7617,24.3159 Q196.7617,21.1865 198.0815,19.5347 Q199.4014,17.8828 201.9082,17.8828 Q202.6138,17.8828 203.2612,18.0322 Q203.9087,18.1816 204.4731,18.4805 L204.4731,21.2031 Q203.8423,20.6221 203.2488,20.3523 Q202.6553,20.0825 202.0244,20.0825 Q200.6797,20.0825 199.9949,21.1492 Q199.3101,22.2158 199.3101,24.3159 Q199.3101,26.4077 199.9949,27.4744 Q200.6797,28.541 202.0244,28.541 Q202.6553,28.541 203.2488,28.2712 Q203.8423,28.0015 204.4731,27.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="86" x="216" y="28.5352">DessinXYZDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="188" x2="304" y1="40" y2="40"/><line style="stroke: #000000; stroke-width: 1.5;" x1="188" x2="304" y1="48" y2="48"/><!--MD5=[4630f1d41fb107044fc5f39059dbb319]
+class FormeXYZDTO--><rect fill="#FFFFFF" filter="url(#fgr7rj7opowq9)" height="48" id="FormeXYZDTO" style="stroke: #000000; stroke-width: 1.5;" width="116" x="188" y="116"/><ellipse cx="203" cy="132" fill="#A9DCDF" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M203.1133,127.5981 L201.9595,132.6699 L204.2754,132.6699 Z M201.6191,125.3569 L204.6157,125.3569 L207.9609,137.75 L205.5122,137.75 L204.7485,134.687 L201.4697,134.687 L200.7227,137.75 L198.2739,137.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="84" x="217" y="136.5352">FormeXYZDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="189" x2="303" y1="148" y2="148"/><line style="stroke: #000000; stroke-width: 1.5;" x1="189" x2="303" y1="156" y2="156"/><!--MD5=[145f08dbbca0a5b3c83ce802b1575148]
+class CercleXYZDTO--><rect fill="#FFFFFF" filter="url(#fgr7rj7opowq9)" height="73.9102" id="CercleXYZDTO" style="stroke: #000000; stroke-width: 1.5;" width="210" x="6" y="224"/><ellipse cx="64.75" cy="240" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M67.2231,246.1431 Q66.6421,246.4419 66.0029,246.5913 Q65.3638,246.7407 64.6582,246.7407 Q62.1514,246.7407 60.8315,245.0889 Q59.5117,243.437 59.5117,240.3159 Q59.5117,237.1865 60.8315,235.5347 Q62.1514,233.8828 64.6582,233.8828 Q65.3638,233.8828 66.0112,234.0322 Q66.6587,234.1816 67.2231,234.4805 L67.2231,237.2031 Q66.5923,236.6221 65.9988,236.3523 Q65.4053,236.0825 64.7744,236.0825 Q63.4297,236.0825 62.7449,237.1492 Q62.0601,238.2158 62.0601,240.3159 Q62.0601,242.4077 62.7449,243.4744 Q63.4297,244.541 64.7744,244.541 Q65.4053,244.541 65.9988,244.2712 Q66.5923,244.0015 67.2231,243.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="84" x="85.25" y="244.5352">CercleXYZDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="215" y1="256" y2="256"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="122" x="12" y="270.6348">+int Rayon «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="198" x="12" y="283.5898">+Point2DXYZDTO Centre «get» «set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="215" y1="289.9102" y2="289.9102"/><!--MD5=[8fdd7ff8bc336c63a43ebe4284ebc48b]
+class PolygoneXYZDTO--><rect fill="#FFFFFF" filter="url(#fgr7rj7opowq9)" height="60.9551" id="PolygoneXYZDTO" style="stroke: #000000; stroke-width: 1.5;" width="260" x="251" y="230.5"/><ellipse cx="327.25" cy="246.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M329.7231,252.6431 Q329.1421,252.9419 328.5029,253.0913 Q327.8638,253.2407 327.1582,253.2407 Q324.6514,253.2407 323.3315,251.5889 Q322.0117,249.937 322.0117,246.8159 Q322.0117,243.6865 323.3315,242.0347 Q324.6514,240.3828 327.1582,240.3828 Q327.8638,240.3828 328.5112,240.5322 Q329.1587,240.6816 329.7231,240.9805 L329.7231,243.7031 Q329.0923,243.1221 328.4988,242.8523 Q327.9053,242.5825 327.2744,242.5825 Q325.9297,242.5825 325.2449,243.6492 Q324.5601,244.7158 324.5601,246.8159 Q324.5601,248.9077 325.2449,249.9744 Q325.9297,251.041 327.2744,251.041 Q327.9053,251.041 328.4988,250.7712 Q329.0923,250.5015 329.7231,249.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="99" x="347.75" y="251.0352">PolygoneXYZDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="252" x2="510" y1="262.5" y2="262.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="248" x="257" y="277.1348">+List&lt;Point2DXYZDTO&gt; Sommets «get» «set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="252" x2="510" y1="283.4551" y2="283.4551"/><!--MD5=[32c3389552683d56db8f55526c5c8351]
+class Point2DXYZDTO--><rect fill="#FFFFFF" filter="url(#fgr7rj7opowq9)" height="73.9102" id="Point2DXYZDTO" style="stroke: #000000; stroke-width: 1.5;" width="125" x="183.5" y="358"/><ellipse cx="198.5" cy="374" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M200.9731,380.1431 Q200.3921,380.4419 199.7529,380.5913 Q199.1138,380.7407 198.4082,380.7407 Q195.9014,380.7407 194.5815,379.0889 Q193.2617,377.437 193.2617,374.3159 Q193.2617,371.1865 194.5815,369.5347 Q195.9014,367.8828 198.4082,367.8828 Q199.1138,367.8828 199.7612,368.0322 Q200.4087,368.1816 200.9731,368.4805 L200.9731,371.2031 Q200.3423,370.6221 199.7488,370.3523 Q199.1553,370.0825 198.5244,370.0825 Q197.1797,370.0825 196.4949,371.1492 Q195.8101,372.2158 195.8101,374.3159 Q195.8101,376.4077 196.4949,377.4744 Q197.1797,378.541 198.5244,378.541 Q199.1553,378.541 199.7488,378.2712 Q200.3423,378.0015 200.9731,377.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="93" x="212.5" y="378.5352">Point2DXYZDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="184.5" x2="307.5" y1="390" y2="390"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="96" x="189.5" y="404.6348">+int X «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="96" x="189.5" y="417.5898">+int Y «get» «set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="184.5" x2="307.5" y1="423.9102" y2="423.9102"/><!--MD5=[73c6735552dbbb84552ad8693f2c0d13]
+link DessinXYZDTO to FormeXYZDTO--><path d="M246,56 C246,72 246,93.45 246,110.53 " fill="none" id="DessinXYZDTO-&gt;FormeXYZDTO" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="246,115.68,250,106.68,246,110.68,242,106.68,246,115.68" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="6" x="239.2313" y="105.1343">*</text><!--MD5=[1b7abf40017aaa5b0715baff87b0f18c]
+reverse link FormeXYZDTO to CercleXYZDTO--><path d="M204.55,177.54 C187.82,192.28 168.57,209.25 151.9,223.95 " fill="none" id="FormeXYZDTO&lt;-CercleXYZDTO" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="200.02,172.2,219.65,164.23,209.28,182.7,200.02,172.2" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6960883d0f1489a0f70a20ebaf0d69e3]
+reverse link FormeXYZDTO to PolygoneXYZDTO--><path d="M287.57,177.64 C306.82,194.61 329.39,214.51 347.53,230.49 " fill="none" id="FormeXYZDTO&lt;-PolygoneXYZDTO" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="282.72,182.7,272.35,164.23,291.98,172.2,282.72,182.7" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[8dc94d1481232885575f05656b80c464]
+link CercleXYZDTO to Point2DXYZDTO--><path d="M147.89,298.07 C165.75,315.53 187.23,336.54 205.54,354.44 " fill="none" id="CercleXYZDTO-&gt;Point2DXYZDTO" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="209.16,357.97,205.5131,348.8212,205.5818,354.4777,199.9254,354.5464,209.16,357.97" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="193.6301" y="347.3651">1</text><!--MD5=[e80655cb212efaea7d8d0b7380d4d64f]
+link PolygoneXYZDTO to Point2DXYZDTO--><path d="M350.7,291.62 C331.82,310.09 307.29,334.07 286.72,354.18 " fill="none" id="PolygoneXYZDTO-&gt;Point2DXYZDTO" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="282.93,357.89,292.1645,354.4659,286.508,354.3975,286.5765,348.741,282.93,357.89" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24" x="263.5265" y="347.2703">3..n</text><!--MD5=[0069adba4e5ca9c0d30a77540142ed5e]
+@startuml DiagDTO
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+DessinXYZDTO - -> "*" FormeXYZDTO
+FormeXYZDTO <|- - CercleXYZDTO
+FormeXYZDTO <|- - PolygoneXYZDTO
+CercleXYZDTO - -> "1" Point2DXYZDTO
+PolygoneXYZDTO - -> "3..n" Point2DXYZDTO
+
+class Point2DXYZDTO {
+    + int X <<get>> <<set>>
+    + int Y <<get>> <<set>>
+}
+
+abstract FormeXYZDTO {
+    
+}
+
+class CercleXYZDTO {
+    + int Rayon <<get>> <<set>>
+    + Point2DXYZDTO Centre <<get>> <<set>>
+}
+
+class PolygoneXYZDTO {
+    + List<Point2DXYZDTO> Sommets <<get>> <<set>>    
+}
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>
