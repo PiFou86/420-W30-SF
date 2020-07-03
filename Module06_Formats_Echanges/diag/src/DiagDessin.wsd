@@ -13,8 +13,8 @@ Cercle --> "1" Point2D
 Polygone --> "3..n" Point2D
 
 class Point2D {
-    + int X <<get>> <<set>>
-    + int Y <<get>> <<set>>
+    + X : int <<get>> <<set>>
+    + Y : int <<get>> <<set>>
 }
 
 abstract Forme {
@@ -22,12 +22,12 @@ abstract Forme {
 }
 
 class Cercle {
-    + int Rayon <<get>> <<set>>
-    + Point2D Centre <<get>> <<set>>
+    + Rayon : int <<get>> <<set>>
+    + Centre : Point2D<<get>> <<set>>
 }
 
 class Polygone {
-    + List<Point2D> Sommets <<get>> <<set>>    
+    + Sommets : List<Point2D> <<get>> <<set>>    
 }
 
 @enduml
