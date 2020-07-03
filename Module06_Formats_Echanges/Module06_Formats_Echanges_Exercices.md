@@ -34,5 +34,5 @@ Afin de simplifier l'écriture du code, la saisie de l'adresse peut-être simul�
 <details>
     <summary>Proposition de diagramme de classes</summary>
 
-[Diagramme de classes](../images/Module06_Formats_Echanges/diag/src/DiagExerciceClients/DiagClassesClients.svg)
+[Diagramme de classes](../images/Module06_Formats_Echanges/diag/src/DiagExerciceClients/DiagClassesClients.png)
 </details>
