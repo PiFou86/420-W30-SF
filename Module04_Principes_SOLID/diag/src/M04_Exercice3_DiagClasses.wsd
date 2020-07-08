@@ -1,0 +1,51 @@
+@startuml DIP_v02_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+
+ATM "1" --> "1" TypeTirroir
+ATM "1" --> "1" ITiroirArgent
+
+ATM ..> TiroirArgentCOM
+ATM ..> TiroirArgentLPT
+ATM ..> TiroirArgentUSB
+ATM ..> Compte
+ATM ..> TransactionRetrait
+
+ITiroirArgent <|-- TiroirArgentCOM
+ITiroirArgent <|-- TiroirArgentLPT
+ITiroirArgent <|-- TiroirArgentUSB
+
+enum TypeTirroir {
+    COM
+    LPT
+    USB
+}
+
+class ATM {
+    - m_typeTiroir : TypeTirroir
+    - m_tiroirArgent : ITiroirArgent
+
+    + ATM(p_typeTiroir : TypeTirroir)
+    + Retirer(p_compte : Compte, p_montant : decimal)
+}
+
+class Compte {
+
+}
+
+interface ITiroirArgent {
+    + DistribuerArgent(p_montant : decimal)
+}
+
+class TransactionRetrait {
+   + EstValide() : bool
+   + ConfirmerTransaction()
+   + Annuler()
+}
+
+@enduml

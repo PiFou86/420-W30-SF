@@ -137,7 +137,7 @@ Comment pourriez-vous améliorer le code ?
 ```csharp
 public class ATM {
     private TypeTirroir m_typeTiroir;
-    private TiroirArgent m_tiroirArgent;
+    private ITiroirArgent m_tiroirArgent;
 
     public ATM(TypeTirroir p_typeTiroir) {
         this.m_typeTiroir = p_typeTiroir;
@@ -163,8 +163,8 @@ public class ATM {
         if (transaction.EstValide()) {
             try
             {
-                transaction.ValiderTransaction();
-                this.m_tiroirArgent.DistribuerArgent();
+                transaction.ConfirmerTransaction();
+                this.m_tiroirArgent.DistribuerArgent(p_montant);
             }
             catch (Exception ex)
             {
@@ -189,15 +189,23 @@ Quel(s) principe(s) sont violés ici ? Validez les dépendances.
 </details>
 
 <details>
+    <summary>Indice #3</summary>
+
+![Diagramme avant modifications](../images/Module04_Principes_SOLID/diag/src/M04_Exercice3_DiagClasses/DIP_v02_s01.svg)
+
+</details>
+
+
+<details>
     <summary>Proposition de solution #1</summary>
 
 ``` csharp
 public class ATM
 {
-    private CreateurTransaction m_createurTransaction;
-    private TiroirArgent m_tiroirArgent;
+    private ICreateurTransaction m_createurTransaction;
+    private ITiroirArgent m_tiroirArgent;
 
-    public ATM(TiroirArgent p_tiroirArgent, CreateurTransaction p_createurTransaction)
+    public ATM(ITiroirArgent p_tiroirArgent, ICreateurTransaction p_createurTransaction)
     {
         this.m_createurTransaction = p_createurTransaction;
         this.m_tiroirArgent = p_tiroirArgent;
@@ -205,12 +213,12 @@ public class ATM
 
     public void Retirer(Compte p_compte, decimal p_montant)
     {
-        Transaction transaction = this.m_createurTransaction.CreerTransactionRetrait(p_compte, p_montant);
+        ITransaction transaction = this.m_createurTransaction.CreerTransactionRetrait(p_compte, p_montant);
         if (transaction.EstValide())
         {
             try
             {
-                transaction.ValiderTransaction();
+                transaction.ConfirmerTransaction();
                 this.m_tiroirArgent.DistribuerArgent(p_montant);
             }
             catch (Exception ex)
@@ -225,6 +233,8 @@ public class ATM
 }
 
 ```
+
+![Diagramme avant modifications](../images/Module04_Principes_SOLID/diag/src/M04_Exercice3_DiagClasses_PropositionCorrection/DIP_v02_s01.svg)
 
 </details>
 

@@ -1,0 +1,57 @@
+@startuml DIP_v02_s01
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+
+ATM "1" --> "1" ICreateurTransaction
+ATM "1" --> "1" ITiroirArgent
+
+ATM ..> Compte
+ATM ..> Transaction
+
+Transaction <|.. TransactionRetrait
+
+ITiroirArgent <|-- TiroirArgentCOM
+ITiroirArgent <|-- TiroirArgentLPT
+ITiroirArgent <|-- TiroirArgentUSB
+
+class ATM {
+
+    - m_createurTransaction : ICreateurTransaction
+    - m_tiroirArgent : ITiroirArgent
+
+    + ATM(p_tiroirArgent : ITiroirArgent, p_createurTransaction : ICreateurTransaction)
+    + Retirer(p_compte : Compte, p_montant : decimal)
+}
+
+class Compte {
+
+}
+
+interface ITiroirArgent {
+    + DistribuerArgent(p_montant : decimal)
+}
+
+interface Transaction {
+   + EstValide() : bool
+   + ConfirmerTransaction()
+   + Annuler()
+}
+
+interface ICreateurTransaction {
+    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal)
+}
+
+
+class TransactionRetrait {
+   + EstValide() : bool
+   + ConfirmerTransaction()
+   + Annuler()
+}
+
+
+@enduml
