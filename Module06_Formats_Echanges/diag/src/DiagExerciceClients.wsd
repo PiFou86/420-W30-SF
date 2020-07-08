@@ -51,6 +51,7 @@ package CoucheAccesDonnees.JSON {
     }
 
     class AdresseJSONDTO {
+        + Guid AdresseId <<get>> <<private set>>
         + NumeroCivique : string <<get>> <<set>>
         + InformationComplementaire : string <<get>> <<set>>
         + Odonyme : string <<get>> <<set>>
@@ -88,6 +89,7 @@ package CoucheAccesDonnees.XML {
     }
 
     class AdresseXMLDTO {
+        + Guid AdresseId <<get>> <<private set>>
         + NumeroCivique : string <<get>> <<set>>
         + InformationComplementaire : string <<get>> <<set>>
         + Odonyme : string <<get>> <<set>>
