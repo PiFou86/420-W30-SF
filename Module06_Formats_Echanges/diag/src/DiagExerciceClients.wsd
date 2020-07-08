@@ -21,21 +21,21 @@ interface IDepotClients {
     + AjouterClient(p_client : Client)
     + ListerClients() : List<Client>
     + RechercherClient(p_clientId : Guid)
-    + SauvegarderClien(p_client : Client)
+    + ModifierClient(p_client : Client)
 }
 
 class DepotClientsXML {
     + AjouterClient(p_client : Client)
     + ListerClients() : List<Client>
     + RechercherClient(p_clientId : Guid)
-    + SauvegarderClien(p_client : Client)
+    + ModifierClient(p_client : Client)
 }
 
 class DepotClientsJSON {
     + AjouterClient(p_client : Client)
     + ListerClients() : List<Client>
     + RechercherClient(p_clientId : Guid)
-    + SauvegarderClien(p_client : Client)
+    + ModifierClient(p_client : Client)
 }
 
 class Client {
