@@ -39,7 +39,7 @@ Afin de simplifier l'écriture du code, la saisie de l'adresse peut-être simul�
 </details>
 
 <details>
-    <summary>Proposition de diagramme de classes</summary>
+    <summary>Proposition de diagramme de package</summary>
 
 ![Dépendances entre packages](../images/Module06_Formats_Echanges/diag/src/DiagExerciceClientsPkg/DiagClassesClientsPkg.svg)
 </details>
