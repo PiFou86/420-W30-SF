@@ -41,6 +41,7 @@ TraitementsLots <.. TraitementsLots.ModifierPaysMajusculesClients
 Entites <.. CoucheAccesDonnees.JSON
 Entites <.. CoucheAccesDonnees.XML
 Entites <.. Application
-Entites <.. TraitementsLots
+Entites <.. TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules
+Entites <.. TraitementsLots.ModifierPaysMajusculesClients
 
 @enduml
