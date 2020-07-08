@@ -20,6 +20,7 @@ package Entites {
     }
 
     class Adresse {
+        + Guid AdresseId <<get>> <<private set>>
         + NumeroCivique : string <<get>> <<set>>
         + InformationComplementaire : string <<get>> <<set>>
         + Odonyme : string <<get>> <<set>>

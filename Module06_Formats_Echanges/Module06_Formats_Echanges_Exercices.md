@@ -10,6 +10,7 @@ Un client est défini par :
 
 Une adresse est définie par :
 
+- Un identifiant de type Guid
 - Un numéro civique
 - Une information complémentaire (app, etc.) de type chaîne
 - Un odonyme
