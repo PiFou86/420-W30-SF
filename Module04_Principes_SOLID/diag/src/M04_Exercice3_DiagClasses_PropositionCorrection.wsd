@@ -14,6 +14,7 @@ ATM ..> Compte
 ATM ..> ITransaction
 
 ITransaction <|.. TransactionRetrait
+ITransaction <.. ICreateurTransaction
 
 ITiroirArgent <|.. TiroirArgentCOM
 ITiroirArgent <|.. TiroirArgentLPT
@@ -47,19 +48,19 @@ interface ITransaction {
 }
 
 interface ICreateurTransaction {
-    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal)
+    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal) : ITransaction
 }
 
 class CreateurTransactionDesjardins {
-    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal)
+    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal) : ITransaction
 }
 
 class CreateurTransactionScotia {
-    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal)
+    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal) : ITransaction
 }
 
 class CreateurTransactionCIBC {
-    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal)
+    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal) : ITransaction
 }
 
 class TiroirArgentCOM {
