@@ -5,12 +5,12 @@ using System.Text;
 
 namespace POOII_Module04_SOLID_PreparationCours.ATM.Transactions.BanqueXYZ
 {
-    public class TransactionRetirerBanqueXYZ : Transaction
+    public class TransactionRetirerBanqueXYZ : ITransaction
     {
-        private readonly Compte m_compte;
+        private readonly ICompte m_compte;
         private decimal m_montant;
 
-        public TransactionRetirerBanqueXYZ(Compte p_compte, decimal p_montant)
+        public TransactionRetirerBanqueXYZ(ICompte p_compte, decimal p_montant)
         {
             this.m_compte = p_compte;
             this.m_montant = p_montant;

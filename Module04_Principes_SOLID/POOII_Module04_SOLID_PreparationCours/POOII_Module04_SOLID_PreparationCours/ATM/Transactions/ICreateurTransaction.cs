@@ -3,8 +3,8 @@ using System;
 
 namespace POOII_Module04_SOLID_PreparationCours.ATM.Transactions
 {
-    public interface CreateurTransaction
+    public interface ICreateurTransaction
     {
-        Transaction CreerTransactionRetirer(Compte p_compte, decimal p_montant);
+        ITransaction CreerTransactionRetirer(ICompte p_compte, decimal p_montant);
     }
 }

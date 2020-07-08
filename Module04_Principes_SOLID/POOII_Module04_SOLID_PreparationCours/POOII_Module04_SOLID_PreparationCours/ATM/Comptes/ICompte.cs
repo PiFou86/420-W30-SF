@@ -2,8 +2,8 @@
 
 namespace POOII_Module04_SOLID_PreparationCours.ATM.Comptes
 {
-    public interface Compte
+    public interface ICompte
     {
-        void ExecuterTransaction(Transaction p_transaction);
+        void ExecuterTransaction(ITransaction p_transaction);
     }
 }

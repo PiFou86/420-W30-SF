@@ -4,7 +4,7 @@ using System.Text;
 
 namespace POOII_Module04_SOLID_PreparationCours.ATM.Tiroir
 {
-    class TiroirArgentCOM : TiroirArgent
+    class TiroirArgentCOM : ITiroirArgent
     {
         public void DistribuerArgent(decimal p_montant)
         {

@@ -5,9 +5,9 @@ using System.Text;
 
 namespace POOII_Module04_SOLID_PreparationCours.ATM.Comptes
 {
-    class CompteCourant : Compte
+    class CompteCourant : ICompte
     {
-        public void ExecuterTransaction(Transaction p_transaction)
+        public void ExecuterTransaction(ITransaction p_transaction)
         {
             throw new NotImplementedException();
         }
