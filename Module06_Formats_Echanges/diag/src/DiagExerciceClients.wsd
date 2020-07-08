@@ -6,116 +6,143 @@ skinparam class {
     BorderColor #000
 }
 
-IDepotClients <|.. DepotClientsJSON
-IDepotClients <|.. DepotClientsXML
-Client "1" --> "*" Adresse
-ClientXMLDTO "1" --> "*" AdresseXMLDTO
-ClientJSONDTO "1" --> "*" AdresseJSONDTO
-ClientUIConsole "1" --> "1" IDepotClients
 
-TraitementLot <|.. ModifierNomPrenomPremiereLettreMajusculesTraitementLot
-TraitementLot <|.. ModifierPaysMajusculesClientsTraitementLot
+package Entites {
+    Client "1" --> "*" Adresse
 
+    class Client {
+        + ctor(p_clientId : Guid, p_nom : string, p_prenom : string, p_adresses : IEnumerable<Adresse>)
+        + Guid ClientId <<get>> <<private set>>
+        + string Nom <<get>> <<private set>>
+        + string Prenom <<get>> <<private set>>
+        + List<Adresse> Adresses <<get>> <<private set>>
+        + AjouterModifierAdresse(p_adresse : Adresse)
+    }
 
-interface IDepotClients {
-    + AjouterClient(p_client : Client)
-    + ListerClients() : List<Client>
-    + RechercherClient(p_clientId : Guid)
-    + ModifierClient(p_client : Client)
+    class Adresse {
+        + NumeroCivique : string <<get>> <<set>>
+        + InformationComplementaire : string <<get>> <<set>>
+        + Odonyme : string <<get>> <<set>>
+        + TypeVoie : string <<get>> <<set>>
+        + CodePostal : string <<get>> <<set>>
+        + NomMunicipalite : string <<get>> <<set>>
+        + Etat : string <<get>> <<set>>
+        + Pays : string  <<get>> <<set>>
+    }
+
+    interface IDepotClients {
+        + AjouterClient(p_client : Client)
+        + ListerClients() : List<Client>
+        + RechercherClient(p_clientId : Guid)
+        + ModifierClient(p_client : Client)
+    }
 }
 
-class DepotClientsXML {
-    + AjouterClient(p_client : Client)
-    + ListerClients() : List<Client>
-    + RechercherClient(p_clientId : Guid)
-    + ModifierClient(p_client : Client)
+package CoucheAccesDonnees.JSON {
+    IDepotClients <|.. DepotClientsJSON
+    ClientJSONDTO "1" --> "*" AdresseJSONDTO
+
+    class ClientJSONDTO {
+        + Guid ClientId <<get>> <<private set>>
+        + string Nom <<get>> <<private set>>
+        + string Prenom <<get>> <<private set>>
+        + List<Adresse> Adresses <<get>> <<private set>>
+    }
+
+    class AdresseJSONDTO {
+        + NumeroCivique : string <<get>> <<set>>
+        + InformationComplementaire : string <<get>> <<set>>
+        + Odonyme : string <<get>> <<set>>
+        + TypeVoie : string <<get>> <<set>>
+        + CodePostal : string <<get>> <<set>>
+        + NomMunicipalite : string <<get>> <<set>>
+        + Etat : string <<get>> <<set>>
+        + Pays : string  <<get>> <<set>>
+    }
+
+    class DepotClientsJSON {
+        + AjouterClient(p_client : Client)
+        + ListerClients() : List<Client>
+        + RechercherClient(p_clientId : Guid)
+        + ModifierClient(p_client : Client)
+    }
 }
 
-class DepotClientsJSON {
-    + AjouterClient(p_client : Client)
-    + ListerClients() : List<Client>
-    + RechercherClient(p_clientId : Guid)
-    + ModifierClient(p_client : Client)
+package CoucheAccesDonnees.XML {
+    IDepotClients <|.. DepotClientsXML
+    ClientXMLDTO "1" --> "*" AdresseXMLDTO
+
+    class ClientXMLDTO {
+        + Guid ClientId <<get>> <<private set>>
+        + string Nom <<get>> <<private set>>
+        + string Prenom <<get>> <<private set>>
+        + List<Adresse> Adresses <<get>> <<private set>>
+    }
+
+    class DepotClientsXML {
+        + AjouterClient(p_client : Client)
+        + ListerClients() : List<Client>
+        + RechercherClient(p_clientId : Guid)
+        + ModifierClient(p_client : Client)
+    }
+
+    class AdresseXMLDTO {
+        + NumeroCivique : string <<get>> <<set>>
+        + InformationComplementaire : string <<get>> <<set>>
+        + Odonyme : string <<get>> <<set>>
+        + TypeVoie : string <<get>> <<set>>
+        + CodePostal : string <<get>> <<set>>
+        + NomMunicipalite : string <<get>> <<set>>
+        + Etat : string <<get>> <<set>>
+        + Pays : string  <<get>> <<set>>
+    }
 }
 
-class Client {
-    + ctor(p_clientId : Guid, p_nom : string, p_prenom : string, p_adresses : IEnumerable<Adresse>)
-    + Guid ClientId <<get>> <<private set>>
-    + string Nom <<get>> <<private set>>
-    + string Prenom <<get>> <<private set>>
-    + List<Adresse> Adresses <<get>> <<private set>>
-    + AjouterModifierAdresse(p_adresse : Adresse)
+package Application {
+    ClientUIConsole "1" --> "1" IDepotClients
+
+    class ClientUIConsole {
+        - m_depotClient : IDepotClient
+        + ctor(p_depotClient : IDepotClient)
+        + AfficherMenu()
+        + SaisirChoixMenu() : int
+        + ExecuterUI()
+        + SaisirClientAvecAdresse() : Client
+        + AfficherClient(p_client: Client)
+        + RechercherEtAfficherClientParId()
+        + ListerEtAfficherClients()
+        - GenererAdresseAleatoire() : Adresse
+    }
 }
 
-class ClientJSONDTO {
-    + Guid ClientId <<get>> <<private set>>
-    + string Nom <<get>> <<private set>>
-    + string Prenom <<get>> <<private set>>
-    + List<Adresse> Adresses <<get>> <<private set>>
+package TraitementsLots {
+    interface TraitementLot {
+        + Executer()
+    }
 }
 
-class ClientXMLDTO {
-    + Guid ClientId <<get>> <<private set>>
-    + string Nom <<get>> <<private set>>
-    + string Prenom <<get>> <<private set>>
-    + List<Adresse> Adresses <<get>> <<private set>>
+package TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules {
+    TraitementLot <|.. ModifierNomPrenomPremiereLettreMajusculesTraitementLot
+
+    class ModifierNomPrenomPremiereLettreMajusculesTraitementLot {
+        + Executer()
+    }
 }
 
-class Adresse {
-    + NumeroCivique : string <<get>> <<set>>
-    + InformationComplementaire : string <<get>> <<set>>
-    + Odonyme : string <<get>> <<set>>
-    + TypeVoie : string <<get>> <<set>>
-    + CodePostal : string <<get>> <<set>>
-    + NomMunicipalite : string <<get>> <<set>>
-    + Etat : string <<get>> <<set>>
-    + Pays : string  <<get>> <<set>>
+package TraitementsLots.ModifierPaysMajusculesClients {
+    TraitementLot <|.. ModifierPaysMajusculesClientsTraitementLot
+
+    class ModifierPaysMajusculesClientsTraitementLot {
+        + Executer()
+    }
 }
 
-class AdresseXMLDTO {
-    + NumeroCivique : string <<get>> <<set>>
-    + InformationComplementaire : string <<get>> <<set>>
-    + Odonyme : string <<get>> <<set>>
-    + TypeVoie : string <<get>> <<set>>
-    + CodePostal : string <<get>> <<set>>
-    + NomMunicipalite : string <<get>> <<set>>
-    + Etat : string <<get>> <<set>>
-    + Pays : string  <<get>> <<set>>
-}
+' TraitementsLots <.. TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules
+' TraitementsLots <.. TraitementsLots.ModifierPaysMajusculesClients
 
-class AdresseJSONDTO {
-    + NumeroCivique : string <<get>> <<set>>
-    + InformationComplementaire : string <<get>> <<set>>
-    + Odonyme : string <<get>> <<set>>
-    + TypeVoie : string <<get>> <<set>>
-    + CodePostal : string <<get>> <<set>>
-    + NomMunicipalite : string <<get>> <<set>>
-    + Etat : string <<get>> <<set>>
-    + Pays : string  <<get>> <<set>>
-}
+' Entites <.. CoucheAccesDonnees.JSON
+' Entites <.. CoucheAccesDonnees.XML
+' Entites <.. Application
+' Entites <.. TraitementsLots
 
-class ClientUIConsole {
-    - m_depotClient : IDepotClient
-    + ctor(p_depotClient : IDepotClient)
-    + AfficherMenu()
-    + SaisirChoixMenu() : int
-    + ExecuterUI()
-    + SaisirClientAvecAdresse() : Client
-    + AfficherClient(p_client: Client)
-    + RechercherEtAfficherClientParId()
-    + ListerEtAfficherClients()
-    - GenererAdresseAleatoire() : Adresse
-}
-
-interface TraitementLot {
-    + Executer()
-}
-
-class ModifierNomPrenomPremiereLettreMajusculesTraitementLot {
-       + Executer()
-}
-
-class ModifierPaysMajusculesClientsTraitementLot {
-    + Executer()
-}
 @enduml

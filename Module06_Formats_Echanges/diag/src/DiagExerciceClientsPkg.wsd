@@ -1,0 +1,46 @@
+@startuml DiagClassesClientsPkg
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+
+package Entites {
+
+}
+
+package CoucheAccesDonnees.JSON {
+
+}
+
+package CoucheAccesDonnees.XML {
+
+}
+
+package Application {
+
+}
+
+package TraitementsLots {
+
+}
+
+package TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules {
+
+}
+
+package TraitementsLots.ModifierPaysMajusculesClients {
+
+}
+
+TraitementsLots <.. TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules
+TraitementsLots <.. TraitementsLots.ModifierPaysMajusculesClients
+
+Entites <.. CoucheAccesDonnees.JSON
+Entites <.. CoucheAccesDonnees.XML
+Entites <.. Application
+Entites <.. TraitementsLots
+
+@enduml

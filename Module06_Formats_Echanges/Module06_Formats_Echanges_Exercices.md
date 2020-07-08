@@ -36,3 +36,9 @@ Afin de simplifier l'écriture du code, la saisie de l'adresse peut-être simul�
 
 ![Diagramme de classes](../images/Module06_Formats_Echanges/diag/src/DiagExerciceClients/DiagClassesClients.svg)
 </details>
+
+<details>
+    <summary>Proposition de diagramme de classes</summary>
+
+![Dépendances entre packages](../images/Module06_Formats_Echanges/diag/src/DiagExerciceClientsPkg/DiagClassesClientsPkg.svg)
+</details>

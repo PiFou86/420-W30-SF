@@ -1,25 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="568px" preserveAspectRatio="none" style="width:2258px;height:568px;" version="1.1" viewBox="0 0 2258 568" width="2258px" zoomAndPan="magnify"><defs><filter height="300%" id="f14srs8jux7xjr" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ab2a9c778be45ce09f2dd240b46c09a9]
-class IDepotClients--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="99.8203" id="IDepotClients" style="stroke: #000000; stroke-width: 1.5;" width="207" x="127" y="272"/><ellipse cx="188.25" cy="288" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M184.6777,284.2651 L184.6777,282.1069 L192.0571,282.1069 L192.0571,284.2651 L189.5918,284.2651 L189.5918,292.3418 L192.0571,292.3418 L192.0571,294.5 L184.6777,294.5 L184.6777,292.3418 L187.1431,292.3418 L187.1431,284.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="76" x="208.75" y="292.5352">IDepotClients</text><line style="stroke: #000000; stroke-width: 1.5;" x1="128" x2="333" y1="304" y2="304"/><line style="stroke: #000000; stroke-width: 1.5;" x1="128" x2="333" y1="312" y2="312"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170" x="133" y="326.6348">+AjouterClient(p_client : Client)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161" x="133" y="339.5898">+ListerClients() : List&lt;Client&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="195" x="133" y="352.5449">+RechercherClient(p_clientId : Guid)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174" x="133" y="365.5">+ModifierClient(p_client : Client)</text><!--MD5=[381a50664acc2610a3131cd21e751d0c]
-class DepotClientsJSON--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="99.8203" id="DepotClientsJSON" style="stroke: #000000; stroke-width: 1.5;" width="207" x="6" y="458"/><ellipse cx="54.75" cy="474" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M57.2231,480.1431 Q56.6421,480.4419 56.0029,480.5913 Q55.3638,480.7407 54.6582,480.7407 Q52.1514,480.7407 50.8315,479.0889 Q49.5117,477.437 49.5117,474.3159 Q49.5117,471.1865 50.8315,469.5347 Q52.1514,467.8828 54.6582,467.8828 Q55.3638,467.8828 56.0112,468.0322 Q56.6587,468.1816 57.2231,468.4805 L57.2231,471.2031 Q56.5923,470.6221 55.9988,470.3523 Q55.4053,470.0825 54.7744,470.0825 Q53.4297,470.0825 52.7449,471.1492 Q52.0601,472.2158 52.0601,474.3159 Q52.0601,476.4077 52.7449,477.4744 Q53.4297,478.541 54.7744,478.541 Q55.4053,478.541 55.9988,478.2712 Q56.5923,478.0015 57.2231,477.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="75.25" y="478.5352">DepotClientsJSON</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="212" y1="490" y2="490"/><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="212" y1="498" y2="498"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170" x="12" y="512.6348">+AjouterClient(p_client : Client)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161" x="12" y="525.5898">+ListerClients() : List&lt;Client&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="195" x="12" y="538.5449">+RechercherClient(p_clientId : Guid)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174" x="12" y="551.5">+ModifierClient(p_client : Client)</text><!--MD5=[f8511494ff06e83f9c1b15495446ebaa]
-class DepotClientsXML--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="99.8203" id="DepotClientsXML" style="stroke: #000000; stroke-width: 1.5;" width="207" x="248" y="458"/><ellipse cx="298.75" cy="474" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M301.2231,480.1431 Q300.6421,480.4419 300.0029,480.5913 Q299.3638,480.7407 298.6582,480.7407 Q296.1514,480.7407 294.8315,479.0889 Q293.5117,477.437 293.5117,474.3159 Q293.5117,471.1865 294.8315,469.5347 Q296.1514,467.8828 298.6582,467.8828 Q299.3638,467.8828 300.0112,468.0322 Q300.6587,468.1816 301.2231,468.4805 L301.2231,471.2031 Q300.5923,470.6221 299.9988,470.3523 Q299.4053,470.0825 298.7744,470.0825 Q297.4297,470.0825 296.7449,471.1492 Q296.0601,472.2158 296.0601,474.3159 Q296.0601,476.4077 296.7449,477.4744 Q297.4297,478.541 298.7744,478.541 Q299.4053,478.541 299.9988,478.2712 Q300.5923,478.0015 301.2231,477.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="97" x="319.25" y="478.5352">DepotClientsXML</text><line style="stroke: #000000; stroke-width: 1.5;" x1="249" x2="454" y1="490" y2="490"/><line style="stroke: #000000; stroke-width: 1.5;" x1="249" x2="454" y1="498" y2="498"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170" x="254" y="512.6348">+AjouterClient(p_client : Client)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161" x="254" y="525.5898">+ListerClients() : List&lt;Client&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="195" x="254" y="538.5449">+RechercherClient(p_clientId : Guid)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174" x="254" y="551.5">+ModifierClient(p_client : Client)</text><!--MD5=[ed6624c6556d5e7b1bd23032162d20b7]
-class Client--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="125.7305" id="Client" style="stroke: #000000; stroke-width: 1.5;" width="527" x="373" y="34"/><ellipse cx="616.25" cy="50" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M618.7231,56.1431 Q618.1421,56.4419 617.5029,56.5913 Q616.8638,56.7407 616.1582,56.7407 Q613.6514,56.7407 612.3315,55.0889 Q611.0117,53.437 611.0117,50.3159 Q611.0117,47.1865 612.3315,45.5347 Q613.6514,43.8828 616.1582,43.8828 Q616.8638,43.8828 617.5112,44.0322 Q618.1587,44.1816 618.7231,44.4805 L618.7231,47.2031 Q618.0923,46.6221 617.4988,46.3523 Q616.9053,46.0825 616.2744,46.0825 Q614.9297,46.0825 614.2449,47.1492 Q613.5601,48.2158 613.5601,50.3159 Q613.5601,52.4077 614.2449,53.4744 Q614.9297,54.541 616.2744,54.541 Q616.9053,54.541 617.4988,54.2712 Q618.0923,54.0015 618.7231,53.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="636.75" y="54.5352">Client</text><line style="stroke: #000000; stroke-width: 1.5;" x1="374" x2="899" y1="66" y2="66"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="181" x="379" y="80.6348">+Guid ClientId «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="172" x="379" y="93.5898">+string Nom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="188" x="379" y="106.5449">+string Prenom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="379" y="119.5">+List&lt;Adresse&gt; Adresses «get» «private set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="374" x2="899" y1="125.8203" y2="125.8203"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="515" x="379" y="140.4551">+ctor(p_clientId : Guid, p_nom : string, p_prenom : string, p_adresses : IEnumerable&lt;Adresse&gt;)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="253" x="379" y="153.4102">+AjouterModifierAdresse(p_adresse : Adresse)</text><!--MD5=[70c811998a0d7544d2536fae1accd5d3]
-class Adresse--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="151.6406" id="Adresse" style="stroke: #000000; stroke-width: 1.5;" width="276" x="498.5" y="246"/><ellipse cx="608.75" cy="262" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M611.2231,268.1431 Q610.6421,268.4419 610.0029,268.5913 Q609.3638,268.7407 608.6582,268.7407 Q606.1514,268.7407 604.8315,267.0889 Q603.5117,265.437 603.5117,262.3159 Q603.5117,259.1865 604.8315,257.5347 Q606.1514,255.8828 608.6582,255.8828 Q609.3638,255.8828 610.0112,256.0322 Q610.6587,256.1816 611.2231,256.4805 L611.2231,259.2031 Q610.5923,258.6221 609.9988,258.3523 Q609.4053,258.0825 608.7744,258.0825 Q607.4297,258.0825 606.7449,259.1492 Q606.0601,260.2158 606.0601,262.3159 Q606.0601,264.4077 606.7449,265.4744 Q607.4297,266.541 608.7744,266.541 Q609.4053,266.541 609.9988,266.2712 Q610.5923,266.0015 611.2231,265.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="47" x="629.25" y="266.5352">Adresse</text><line style="stroke: #000000; stroke-width: 1.5;" x1="499.5" x2="773.5" y1="278" y2="278"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="504.5" y="292.6348">+NumeroCivique : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="504.5" y="305.5898">+InformationComplementaire : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="504.5" y="318.5449">+Odonyme : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="162" x="504.5" y="331.5">+TypeVoie : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="504.5" y="344.4551">+CodePostal : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="202" x="504.5" y="357.4102">+NomMunicipalite : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="504.5" y="370.3652">+Etat : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="504.5" y="383.3203">+Pays : string  «get» «set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="499.5" x2="773.5" y1="389.6406" y2="389.6406"/><!--MD5=[c6a3e9841f0c57e28fdf2284cd93a375]
-class ClientXMLDTO--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="99.8203" id="ClientXMLDTO" style="stroke: #000000; stroke-width: 1.5;" width="258" x="935.5" y="47"/><ellipse cx="1019.25" cy="63" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1021.7231,69.1431 Q1021.1421,69.4419 1020.5029,69.5913 Q1019.8638,69.7407 1019.1582,69.7407 Q1016.6514,69.7407 1015.3315,68.0889 Q1014.0117,66.437 1014.0117,63.3159 Q1014.0117,60.1865 1015.3315,58.5347 Q1016.6514,56.8828 1019.1582,56.8828 Q1019.8638,56.8828 1020.5112,57.0322 Q1021.1587,57.1816 1021.7231,57.4805 L1021.7231,60.2031 Q1021.0923,59.6221 1020.4988,59.3523 Q1019.9053,59.0825 1019.2744,59.0825 Q1017.9297,59.0825 1017.2449,60.1492 Q1016.5601,61.2158 1016.5601,63.3159 Q1016.5601,65.4077 1017.2449,66.4744 Q1017.9297,67.541 1019.2744,67.541 Q1019.9053,67.541 1020.4988,67.2712 Q1021.0923,67.0015 1021.7231,66.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="1039.75" y="67.5352">ClientXMLDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="936.5" x2="1192.5" y1="79" y2="79"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="181" x="941.5" y="93.6348">+Guid ClientId «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="172" x="941.5" y="106.5898">+string Nom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="188" x="941.5" y="119.5449">+string Prenom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="941.5" y="132.5">+List&lt;Adresse&gt; Adresses «get» «private set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="936.5" x2="1192.5" y1="138.8203" y2="138.8203"/><!--MD5=[2fc1a03e0ea9dd947f639b73d6756cfa]
-class AdresseXMLDTO--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="151.6406" id="AdresseXMLDTO" style="stroke: #000000; stroke-width: 1.5;" width="276" x="926.5" y="246"/><ellipse cx="1011.75" cy="262" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1014.2231,268.1431 Q1013.6421,268.4419 1013.0029,268.5913 Q1012.3638,268.7407 1011.6582,268.7407 Q1009.1514,268.7407 1007.8315,267.0889 Q1006.5117,265.437 1006.5117,262.3159 Q1006.5117,259.1865 1007.8315,257.5347 Q1009.1514,255.8828 1011.6582,255.8828 Q1012.3638,255.8828 1013.0112,256.0322 Q1013.6587,256.1816 1014.2231,256.4805 L1014.2231,259.2031 Q1013.5923,258.6221 1012.9988,258.3523 Q1012.4053,258.0825 1011.7744,258.0825 Q1010.4297,258.0825 1009.7449,259.1492 Q1009.0601,260.2158 1009.0601,262.3159 Q1009.0601,264.4077 1009.7449,265.4744 Q1010.4297,266.541 1011.7744,266.541 Q1012.4053,266.541 1012.9988,266.2712 Q1013.5923,266.0015 1014.2231,265.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="97" x="1032.25" y="266.5352">AdresseXMLDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="927.5" x2="1201.5" y1="278" y2="278"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="932.5" y="292.6348">+NumeroCivique : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="932.5" y="305.5898">+InformationComplementaire : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="932.5" y="318.5449">+Odonyme : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="162" x="932.5" y="331.5">+TypeVoie : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="932.5" y="344.4551">+CodePostal : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="202" x="932.5" y="357.4102">+NomMunicipalite : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="932.5" y="370.3652">+Etat : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="932.5" y="383.3203">+Pays : string  «get» «set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="927.5" x2="1201.5" y1="389.6406" y2="389.6406"/><!--MD5=[da31f5de147c5371561ac61575262c16]
-class ClientJSONDTO--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="99.8203" id="ClientJSONDTO" style="stroke: #000000; stroke-width: 1.5;" width="258" x="1246.5" y="47"/><ellipse cx="1328.25" cy="63" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1330.7231,69.1431 Q1330.1421,69.4419 1329.5029,69.5913 Q1328.8638,69.7407 1328.1582,69.7407 Q1325.6514,69.7407 1324.3315,68.0889 Q1323.0117,66.437 1323.0117,63.3159 Q1323.0117,60.1865 1324.3315,58.5347 Q1325.6514,56.8828 1328.1582,56.8828 Q1328.8638,56.8828 1329.5112,57.0322 Q1330.1587,57.1816 1330.7231,57.4805 L1330.7231,60.2031 Q1330.0923,59.6221 1329.4988,59.3523 Q1328.9053,59.0825 1328.2744,59.0825 Q1326.9297,59.0825 1326.2449,60.1492 Q1325.5601,61.2158 1325.5601,63.3159 Q1325.5601,65.4077 1326.2449,66.4744 Q1326.9297,67.541 1328.2744,67.541 Q1328.9053,67.541 1329.4988,67.2712 Q1330.0923,67.0015 1330.7231,66.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="86" x="1348.75" y="67.5352">ClientJSONDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1247.5" x2="1503.5" y1="79" y2="79"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="181" x="1252.5" y="93.6348">+Guid ClientId «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="172" x="1252.5" y="106.5898">+string Nom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="188" x="1252.5" y="119.5449">+string Prenom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="1252.5" y="132.5">+List&lt;Adresse&gt; Adresses «get» «private set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1247.5" x2="1503.5" y1="138.8203" y2="138.8203"/><!--MD5=[e5d36b82b5a16e7f890ccd92894a10d8]
-class AdresseJSONDTO--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="151.6406" id="AdresseJSONDTO" style="stroke: #000000; stroke-width: 1.5;" width="276" x="1237.5" y="246"/><ellipse cx="1320.75" cy="262" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1323.2231,268.1431 Q1322.6421,268.4419 1322.0029,268.5913 Q1321.3638,268.7407 1320.6582,268.7407 Q1318.1514,268.7407 1316.8315,267.0889 Q1315.5117,265.437 1315.5117,262.3159 Q1315.5117,259.1865 1316.8315,257.5347 Q1318.1514,255.8828 1320.6582,255.8828 Q1321.3638,255.8828 1322.0112,256.0322 Q1322.6587,256.1816 1323.2231,256.4805 L1323.2231,259.2031 Q1322.5923,258.6221 1321.9988,258.3523 Q1321.4053,258.0825 1320.7744,258.0825 Q1319.4297,258.0825 1318.7449,259.1492 Q1318.0601,260.2158 1318.0601,262.3159 Q1318.0601,264.4077 1318.7449,265.4744 Q1319.4297,266.541 1320.7744,266.541 Q1321.4053,266.541 1321.9988,266.2712 Q1322.5923,266.0015 1323.2231,265.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="1341.25" y="266.5352">AdresseJSONDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1238.5" x2="1512.5" y1="278" y2="278"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="1243.5" y="292.6348">+NumeroCivique : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="1243.5" y="305.5898">+InformationComplementaire : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="1243.5" y="318.5449">+Odonyme : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="162" x="1243.5" y="331.5">+TypeVoie : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="1243.5" y="344.4551">+CodePostal : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="202" x="1243.5" y="357.4102">+NomMunicipalite : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="1243.5" y="370.3652">+Etat : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="1243.5" y="383.3203">+Pays : string  «get» «set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1238.5" x2="1512.5" y1="389.6406" y2="389.6406"/><!--MD5=[c7b422ec34d12d84443b82362095488f]
-class ClientUIConsole--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="177.5508" id="ClientUIConsole" style="stroke: #000000; stroke-width: 1.5;" width="214" x="123.5" y="8"/><ellipse cx="182.25" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M184.7231,30.1431 Q184.1421,30.4419 183.5029,30.5913 Q182.8638,30.7407 182.1582,30.7407 Q179.6514,30.7407 178.3315,29.0889 Q177.0117,27.437 177.0117,24.3159 Q177.0117,21.1865 178.3315,19.5347 Q179.6514,17.8828 182.1582,17.8828 Q182.8638,17.8828 183.5112,18.0322 Q184.1587,18.1816 184.7231,18.4805 L184.7231,21.2031 Q184.0923,20.6221 183.4988,20.3523 Q182.9053,20.0825 182.2744,20.0825 Q180.9297,20.0825 180.2449,21.1492 Q179.5601,22.2158 179.5601,24.3159 Q179.5601,26.4077 180.2449,27.4744 Q180.9297,28.541 182.2744,28.541 Q182.9053,28.541 183.4988,28.2712 Q184.0923,28.0015 184.7231,27.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="88" x="202.75" y="28.5352">ClientUIConsole</text><line style="stroke: #000000; stroke-width: 1.5;" x1="124.5" x2="336.5" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="159" x="129.5" y="54.6348">-m_depotClient : IDepotClient</text><line style="stroke: #000000; stroke-width: 1.5;" x1="124.5" x2="336.5" y1="60.9551" y2="60.9551"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="189" x="129.5" y="75.5898">+ctor(p_depotClient : IDepotClient)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="129.5" y="88.5449">+AfficherMenu()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="130" x="129.5" y="101.5">+SaisirChoixMenu() : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="129.5" y="114.4551">+ExecuterUI()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="187" x="129.5" y="127.4102">+SaisirClientAvecAdresse() : Client</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170" x="129.5" y="140.3652">+AfficherClient(p_client: Client)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="189" x="129.5" y="153.3203">+RechercherEtAfficherClientParId()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="137" x="129.5" y="166.2754">+ListerEtAfficherClients()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="202" x="129.5" y="179.2305">-GenererAdresseAleatoire() : Adresse</text><!--MD5=[1b0c2915387634bf4e789c113c92d827]
-class TraitementLot--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="60.9551" id="TraitementLot" style="stroke: #000000; stroke-width: 1.5;" width="112" x="1864.5" y="66.5"/><ellipse cx="1879.5" cy="82.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1875.9277,78.7651 L1875.9277,76.6069 L1883.3071,76.6069 L1883.3071,78.7651 L1880.8418,78.7651 L1880.8418,86.8418 L1883.3071,86.8418 L1883.3071,89 L1875.9277,89 L1875.9277,86.8418 L1878.3931,86.8418 L1878.3931,78.7651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="80" x="1893.5" y="87.0352">TraitementLot</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1865.5" x2="1975.5" y1="98.5" y2="98.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1865.5" x2="1975.5" y1="106.5" y2="106.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="1870.5" y="121.1348">+Executer()</text><!--MD5=[c5358331cf8ae063edd27af746f4a17e]
-class ModifierNomPrenomPremiereLettreMajusculesTraitementLot--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="60.9551" id="ModifierNomPrenomPremiereLettreMajusculesTraitementLot" style="stroke: #000000; stroke-width: 1.5;" width="378" x="1548.5" y="291.5"/><ellipse cx="1563.5" cy="307.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1565.9731,313.6431 Q1565.3921,313.9419 1564.7529,314.0913 Q1564.1138,314.2407 1563.4082,314.2407 Q1560.9014,314.2407 1559.5815,312.5889 Q1558.2617,310.937 1558.2617,307.8159 Q1558.2617,304.6865 1559.5815,303.0347 Q1560.9014,301.3828 1563.4082,301.3828 Q1564.1138,301.3828 1564.7612,301.5322 Q1565.4087,301.6816 1565.9731,301.9805 L1565.9731,304.7031 Q1565.3423,304.1221 1564.7488,303.8523 Q1564.1553,303.5825 1563.5244,303.5825 Q1562.1797,303.5825 1561.4949,304.6492 Q1560.8101,305.7158 1560.8101,307.8159 Q1560.8101,309.9077 1561.4949,310.9744 Q1562.1797,312.041 1563.5244,312.041 Q1564.1553,312.041 1564.7488,311.7712 Q1565.3423,311.5015 1565.9731,310.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="346" x="1577.5" y="312.0352">ModifierNomPrenomPremiereLettreMajusculesTraitementLot</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1549.5" x2="1925.5" y1="323.5" y2="323.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1549.5" x2="1925.5" y1="331.5" y2="331.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="1554.5" y="346.1348">+Executer()</text><!--MD5=[2557689795cb60e02edc0ab7a85cd841]
-class ModifierPaysMajusculesClientsTraitementLot--><rect fill="#FFFFFF" filter="url(#f14srs8jux7xjr)" height="60.9551" id="ModifierPaysMajusculesClientsTraitementLot" style="stroke: #000000; stroke-width: 1.5;" width="286" x="1961.5" y="291.5"/><ellipse cx="1976.5" cy="307.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1978.9731,313.6431 Q1978.3921,313.9419 1977.7529,314.0913 Q1977.1138,314.2407 1976.4082,314.2407 Q1973.9014,314.2407 1972.5815,312.5889 Q1971.2617,310.937 1971.2617,307.8159 Q1971.2617,304.6865 1972.5815,303.0347 Q1973.9014,301.3828 1976.4082,301.3828 Q1977.1138,301.3828 1977.7612,301.5322 Q1978.4087,301.6816 1978.9731,301.9805 L1978.9731,304.7031 Q1978.3423,304.1221 1977.7488,303.8523 Q1977.1553,303.5825 1976.5244,303.5825 Q1975.1797,303.5825 1974.4949,304.6492 Q1973.8101,305.7158 1973.8101,307.8159 Q1973.8101,309.9077 1974.4949,310.9744 Q1975.1797,312.041 1976.5244,312.041 Q1977.1553,312.041 1977.7488,311.7712 Q1978.3423,311.5015 1978.9731,310.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="254" x="1990.5" y="312.0352">ModifierPaysMajusculesClientsTraitementLot</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1962.5" x2="2246.5" y1="323.5" y2="323.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1962.5" x2="2246.5" y1="331.5" y2="331.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="1967.5" y="346.1348">+Executer()</text><!--MD5=[19adfe3b24a6c19873fa55b195191611]
-reverse link IDepotClients to DepotClientsJSON--><path d="M187.02,389.11 C172.1,411.8 155.68,436.77 141.81,457.87 " fill="none" id="IDepotClients&lt;-DepotClientsJSON" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="181.24,385.17,198.07,372.31,192.93,392.87,181.24,385.17" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d761bc3755c2fedbb7239219a6f31ce4]
-reverse link IDepotClients to DepotClientsXML--><path d="M273.98,389.11 C288.9,411.8 305.32,436.77 319.19,457.87 " fill="none" id="IDepotClients&lt;-DepotClientsXML" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="268.07,392.87,262.93,372.31,279.76,385.17,268.07,392.87" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[73af334925bb211206659973f4e1ab45]
-link Client to Adresse--><path d="M636.5,160.12 C636.5,185.01 636.5,214.01 636.5,240.48 " fill="none" id="Client-&gt;Adresse" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="636.5,245.74,640.5,236.74,636.5,240.74,632.5,236.74,636.5,245.74" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="628.0625" y="180.4441">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="6" x="630.2141" y="235.3569">*</text><!--MD5=[2f7f2991185c7259beaf81b9c8660cfb]
-link ClientXMLDTO to AdresseXMLDTO--><path d="M1064.5,147.21 C1064.5,174.5 1064.5,209.1 1064.5,240.24 " fill="none" id="ClientXMLDTO-&gt;AdresseXMLDTO" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1064.5,245.61,1068.5257,236.6215,1064.5143,240.61,1060.5257,236.5986,1064.5,245.61" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1055.9625" y="167.5661">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="6" x="1058.2141" y="235.2145">*</text><!--MD5=[4b0760f767d69bab286038c1723b5b54]
-link ClientJSONDTO to AdresseJSONDTO--><path d="M1375.5,147.21 C1375.5,174.5 1375.5,209.1 1375.5,240.24 " fill="none" id="ClientJSONDTO-&gt;AdresseJSONDTO" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1375.5,245.61,1379.5257,236.6215,1375.5143,240.61,1371.5257,236.5986,1375.5,245.61" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1366.9625" y="167.5661">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="6" x="1369.2141" y="235.2145">*</text><!--MD5=[bccde14c5578bf5b5ec93606ed33c2c0]
-link ClientUIConsole to IDepotClients--><path d="M230.5,186.14 C230.5,213.41 230.5,242.64 230.5,266.9 " fill="none" id="ClientUIConsole-&gt;IDepotClients" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="230.5,271.99,234.5,262.99,230.5,266.99,226.5,262.99,230.5,271.99" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="222.1938" y="206.1364">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="221.9125" y="261.1476">1</text><!--MD5=[28ed4f9fcff8ce5627929d7049e40cdf]
-reverse link TraitementLot to ModifierNomPrenomPremiereLettreMajusculesTraitementLot--><path d="M1883.5,143.08 C1847.26,187.25 1793.06,253.3 1761.9,291.26 " fill="none" id="TraitementLot&lt;-ModifierNomPrenomPremiereLettreMajusculesTraitementLot" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1878.1,138.63,1896.2,127.61,1888.92,147.51,1878.1,138.63" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0841bdc90cc678eaa03027aa0fbba90a]
-reverse link TraitementLot to ModifierPaysMajusculesClientsTraitementLot--><path d="M1957.7,143.08 C1994.14,187.25 2048.64,253.3 2079.97,291.26 " fill="none" id="TraitementLot&lt;-ModifierPaysMajusculesClientsTraitementLot" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1952.26,147.49,1944.93,127.61,1963.06,138.58,1952.26,147.49" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[eaa35bacc05e1d0b731519bc183679fb]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="890px" preserveAspectRatio="none" style="width:1960px;height:890px;" version="1.1" viewBox="0 0 1960 890" width="1960px" zoomAndPan="magnify"><defs><filter height="300%" id="f16hhyvxhcjxhy" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[5874d566586a6ddbc1a6cc88fa7772b4]
+cluster Entites--><polygon fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" points="22,277,78,277,85,299.4883,824,299.4883,824,666,22,666,22,277" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="85" y1="299.4883" y2="299.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="50" x="26" y="292.5352">Entites</text><!--MD5=[58411e8cd7c7842c91d66565eae2e7e4]
+cluster CoucheAccesDonnees.JSON--><polygon fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" points="848,489,1048,489,1055,511.4883,1381,511.4883,1381,878,848,878,848,489" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="848" x2="1055" y1="511.4883" y2="511.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="194" x="852" y="504.5352">CoucheAccesDonnees.JSON</text><!--MD5=[1cee548357feb363aeb26581c5830677]
+cluster CoucheAccesDonnees.XML--><polygon fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" points="1405,489,1598,489,1605,511.4883,1938,511.4883,1938,878,1405,878,1405,489" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1405" x2="1605" y1="511.4883" y2="511.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="187" x="1409" y="504.5352">CoucheAccesDonnees.XML</text><!--MD5=[d64883541e3d62e3241c4d12decf100d]
+cluster Application--><polygon fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" points="581,24,669,24,676,46.4883,827,46.4883,827,253,581,253,581,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="581" x2="676" y1="46.4883" y2="46.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="82" x="585" y="39.5352">Application</text><!--MD5=[cc516cdafd18f5166a12d2815e229259]
+cluster TraitementsLots--><polygon fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" points="1353,82.5,1478,82.5,1485,104.9883,1497,104.9883,1497,194.5,1353,194.5,1353,82.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1353" x2="1485" y1="104.9883" y2="104.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="119" x="1357" y="98.0352">TraitementsLots</text><!--MD5=[7f08c26b5c13ad971a2d66368e006df8]
+cluster TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules--><polygon fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" points="962,309.5,1426,309.5,1433,331.9883,1436,331.9883,1436,421.5,962,421.5,962,309.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="962" x2="1433" y1="331.9883" y2="331.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="458" x="966" y="325.0352">TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules</text><!--MD5=[b67bd2e63e36cb1685839f263e4a745c]
+cluster TraitementsLots.ModifierPaysMajusculesClients--><polygon fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" points="1460,309.5,1813,309.5,1820,331.9883,1823,331.9883,1823,421.5,1460,421.5,1460,309.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1460" x2="1820" y1="331.9883" y2="331.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="347" x="1464" y="325.0352">TraitementsLots.ModifierPaysMajusculesClients</text><!--MD5=[ed6624c6556d5e7b1bd23032162d20b7]
+class Client--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="125.7305" id="Client" style="stroke: #000000; stroke-width: 1.5;" width="527" x="38.5" y="312"/><ellipse cx="281.75" cy="328" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M284.2231,334.1431 Q283.6421,334.4419 283.0029,334.5913 Q282.3638,334.7407 281.6582,334.7407 Q279.1514,334.7407 277.8315,333.0889 Q276.5117,331.437 276.5117,328.3159 Q276.5117,325.1865 277.8315,323.5347 Q279.1514,321.8828 281.6582,321.8828 Q282.3638,321.8828 283.0112,322.0322 Q283.6587,322.1816 284.2231,322.4805 L284.2231,325.2031 Q283.5923,324.6221 282.9988,324.3523 Q282.4053,324.0825 281.7744,324.0825 Q280.4297,324.0825 279.7449,325.1492 Q279.0601,326.2158 279.0601,328.3159 Q279.0601,330.4077 279.7449,331.4744 Q280.4297,332.541 281.7744,332.541 Q282.4053,332.541 282.9988,332.2712 Q283.5923,332.0015 284.2231,331.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="302.25" y="332.5352">Client</text><line style="stroke: #000000; stroke-width: 1.5;" x1="39.5" x2="564.5" y1="344" y2="344"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="181" x="44.5" y="358.6348">+Guid ClientId «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="172" x="44.5" y="371.5898">+string Nom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="188" x="44.5" y="384.5449">+string Prenom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="44.5" y="397.5">+List&lt;Adresse&gt; Adresses «get» «private set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="39.5" x2="564.5" y1="403.8203" y2="403.8203"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="515" x="44.5" y="418.4551">+ctor(p_clientId : Guid, p_nom : string, p_prenom : string, p_adresses : IEnumerable&lt;Adresse&gt;)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="253" x="44.5" y="431.4102">+AjouterModifierAdresse(p_adresse : Adresse)</text><!--MD5=[70c811998a0d7544d2536fae1accd5d3]
+class Adresse--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="151.6406" id="Adresse" style="stroke: #000000; stroke-width: 1.5;" width="276" x="164" y="498"/><ellipse cx="274.25" cy="514" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M276.7231,520.1431 Q276.1421,520.4419 275.5029,520.5913 Q274.8638,520.7407 274.1582,520.7407 Q271.6514,520.7407 270.3315,519.0889 Q269.0117,517.437 269.0117,514.3159 Q269.0117,511.1865 270.3315,509.5347 Q271.6514,507.8828 274.1582,507.8828 Q274.8638,507.8828 275.5112,508.0322 Q276.1587,508.1816 276.7231,508.4805 L276.7231,511.2031 Q276.0923,510.6221 275.4988,510.3523 Q274.9053,510.0825 274.2744,510.0825 Q272.9297,510.0825 272.2449,511.1492 Q271.5601,512.2158 271.5601,514.3159 Q271.5601,516.4077 272.2449,517.4744 Q272.9297,518.541 274.2744,518.541 Q274.9053,518.541 275.4988,518.2712 Q276.0923,518.0015 276.7231,517.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="47" x="294.75" y="518.5352">Adresse</text><line style="stroke: #000000; stroke-width: 1.5;" x1="165" x2="439" y1="530" y2="530"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="170" y="544.6348">+NumeroCivique : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="170" y="557.5898">+InformationComplementaire : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="170" y="570.5449">+Odonyme : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="162" x="170" y="583.5">+TypeVoie : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="170" y="596.4551">+CodePostal : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="202" x="170" y="609.4102">+NomMunicipalite : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="170" y="622.3652">+Etat : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="170" y="635.3203">+Pays : string  «get» «set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="165" x2="439" y1="641.6406" y2="641.6406"/><!--MD5=[ab2a9c778be45ce09f2dd240b46c09a9]
+class IDepotClients--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="99.8203" id="IDepotClients" style="stroke: #000000; stroke-width: 1.5;" width="207" x="600.5" y="325"/><ellipse cx="661.75" cy="341" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M658.1777,337.2651 L658.1777,335.1069 L665.5571,335.1069 L665.5571,337.2651 L663.0918,337.2651 L663.0918,345.3418 L665.5571,345.3418 L665.5571,347.5 L658.1777,347.5 L658.1777,345.3418 L660.6431,345.3418 L660.6431,337.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="76" x="682.25" y="345.5352">IDepotClients</text><line style="stroke: #000000; stroke-width: 1.5;" x1="601.5" x2="806.5" y1="357" y2="357"/><line style="stroke: #000000; stroke-width: 1.5;" x1="601.5" x2="806.5" y1="365" y2="365"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170" x="606.5" y="379.6348">+AjouterClient(p_client : Client)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161" x="606.5" y="392.5898">+ListerClients() : List&lt;Client&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="195" x="606.5" y="405.5449">+RechercherClient(p_clientId : Guid)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174" x="606.5" y="418.5">+ModifierClient(p_client : Client)</text><!--MD5=[381a50664acc2610a3131cd21e751d0c]
+class DepotClientsJSON--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="99.8203" id="DepotClientsJSON" style="stroke: #000000; stroke-width: 1.5;" width="207" x="1157.5" y="524"/><ellipse cx="1206.25" cy="540" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1208.7231,546.1431 Q1208.1421,546.4419 1207.5029,546.5913 Q1206.8638,546.7407 1206.1582,546.7407 Q1203.6514,546.7407 1202.3315,545.0889 Q1201.0117,543.437 1201.0117,540.3159 Q1201.0117,537.1865 1202.3315,535.5347 Q1203.6514,533.8828 1206.1582,533.8828 Q1206.8638,533.8828 1207.5112,534.0322 Q1208.1587,534.1816 1208.7231,534.4805 L1208.7231,537.2031 Q1208.0923,536.6221 1207.4988,536.3523 Q1206.9053,536.0825 1206.2744,536.0825 Q1204.9297,536.0825 1204.2449,537.1492 Q1203.5601,538.2158 1203.5601,540.3159 Q1203.5601,542.4077 1204.2449,543.4744 Q1204.9297,544.541 1206.2744,544.541 Q1206.9053,544.541 1207.4988,544.2712 Q1208.0923,544.0015 1208.7231,543.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="1226.75" y="544.5352">DepotClientsJSON</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1158.5" x2="1363.5" y1="556" y2="556"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1158.5" x2="1363.5" y1="564" y2="564"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170" x="1163.5" y="578.6348">+AjouterClient(p_client : Client)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161" x="1163.5" y="591.5898">+ListerClients() : List&lt;Client&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="195" x="1163.5" y="604.5449">+RechercherClient(p_clientId : Guid)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174" x="1163.5" y="617.5">+ModifierClient(p_client : Client)</text><!--MD5=[da31f5de147c5371561ac61575262c16]
+class ClientJSONDTO--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="99.8203" id="ClientJSONDTO" style="stroke: #000000; stroke-width: 1.5;" width="258" x="864" y="524"/><ellipse cx="945.75" cy="540" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M948.2231,546.1431 Q947.6421,546.4419 947.0029,546.5913 Q946.3638,546.7407 945.6582,546.7407 Q943.1514,546.7407 941.8315,545.0889 Q940.5117,543.437 940.5117,540.3159 Q940.5117,537.1865 941.8315,535.5347 Q943.1514,533.8828 945.6582,533.8828 Q946.3638,533.8828 947.0112,534.0322 Q947.6587,534.1816 948.2231,534.4805 L948.2231,537.2031 Q947.5923,536.6221 946.9988,536.3523 Q946.4053,536.0825 945.7744,536.0825 Q944.4297,536.0825 943.7449,537.1492 Q943.0601,538.2158 943.0601,540.3159 Q943.0601,542.4077 943.7449,543.4744 Q944.4297,544.541 945.7744,544.541 Q946.4053,544.541 946.9988,544.2712 Q947.5923,544.0015 948.2231,543.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="86" x="966.25" y="544.5352">ClientJSONDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="865" x2="1121" y1="556" y2="556"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="181" x="870" y="570.6348">+Guid ClientId «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="172" x="870" y="583.5898">+string Nom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="188" x="870" y="596.5449">+string Prenom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="870" y="609.5">+List&lt;Adresse&gt; Adresses «get» «private set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="865" x2="1121" y1="615.8203" y2="615.8203"/><!--MD5=[e5d36b82b5a16e7f890ccd92894a10d8]
+class AdresseJSONDTO--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="151.6406" id="AdresseJSONDTO" style="stroke: #000000; stroke-width: 1.5;" width="276" x="864" y="710"/><ellipse cx="947.25" cy="726" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M949.7231,732.1431 Q949.1421,732.4419 948.5029,732.5913 Q947.8638,732.7407 947.1582,732.7407 Q944.6514,732.7407 943.3315,731.0889 Q942.0117,729.437 942.0117,726.3159 Q942.0117,723.1865 943.3315,721.5347 Q944.6514,719.8828 947.1582,719.8828 Q947.8638,719.8828 948.5112,720.0322 Q949.1587,720.1816 949.7231,720.4805 L949.7231,723.2031 Q949.0923,722.6221 948.4988,722.3523 Q947.9053,722.0825 947.2744,722.0825 Q945.9297,722.0825 945.2449,723.1492 Q944.5601,724.2158 944.5601,726.3159 Q944.5601,728.4077 945.2449,729.4744 Q945.9297,730.541 947.2744,730.541 Q947.9053,730.541 948.4988,730.2712 Q949.0923,730.0015 949.7231,729.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="967.75" y="730.5352">AdresseJSONDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="865" x2="1139" y1="742" y2="742"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="870" y="756.6348">+NumeroCivique : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="870" y="769.5898">+InformationComplementaire : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="870" y="782.5449">+Odonyme : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="162" x="870" y="795.5">+TypeVoie : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="870" y="808.4551">+CodePostal : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="202" x="870" y="821.4102">+NomMunicipalite : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="870" y="834.3652">+Etat : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="870" y="847.3203">+Pays : string  «get» «set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="865" x2="1139" y1="853.6406" y2="853.6406"/><!--MD5=[f8511494ff06e83f9c1b15495446ebaa]
+class DepotClientsXML--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="99.8203" id="DepotClientsXML" style="stroke: #000000; stroke-width: 1.5;" width="207" x="1714.5" y="524"/><ellipse cx="1765.25" cy="540" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1767.7231,546.1431 Q1767.1421,546.4419 1766.5029,546.5913 Q1765.8638,546.7407 1765.1582,546.7407 Q1762.6514,546.7407 1761.3315,545.0889 Q1760.0117,543.437 1760.0117,540.3159 Q1760.0117,537.1865 1761.3315,535.5347 Q1762.6514,533.8828 1765.1582,533.8828 Q1765.8638,533.8828 1766.5112,534.0322 Q1767.1587,534.1816 1767.7231,534.4805 L1767.7231,537.2031 Q1767.0923,536.6221 1766.4988,536.3523 Q1765.9053,536.0825 1765.2744,536.0825 Q1763.9297,536.0825 1763.2449,537.1492 Q1762.5601,538.2158 1762.5601,540.3159 Q1762.5601,542.4077 1763.2449,543.4744 Q1763.9297,544.541 1765.2744,544.541 Q1765.9053,544.541 1766.4988,544.2712 Q1767.0923,544.0015 1767.7231,543.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="97" x="1785.75" y="544.5352">DepotClientsXML</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1715.5" x2="1920.5" y1="556" y2="556"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1715.5" x2="1920.5" y1="564" y2="564"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170" x="1720.5" y="578.6348">+AjouterClient(p_client : Client)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161" x="1720.5" y="591.5898">+ListerClients() : List&lt;Client&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="195" x="1720.5" y="604.5449">+RechercherClient(p_clientId : Guid)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174" x="1720.5" y="617.5">+ModifierClient(p_client : Client)</text><!--MD5=[c6a3e9841f0c57e28fdf2284cd93a375]
+class ClientXMLDTO--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="99.8203" id="ClientXMLDTO" style="stroke: #000000; stroke-width: 1.5;" width="258" x="1421" y="524"/><ellipse cx="1504.75" cy="540" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1507.2231,546.1431 Q1506.6421,546.4419 1506.0029,546.5913 Q1505.3638,546.7407 1504.6582,546.7407 Q1502.1514,546.7407 1500.8315,545.0889 Q1499.5117,543.437 1499.5117,540.3159 Q1499.5117,537.1865 1500.8315,535.5347 Q1502.1514,533.8828 1504.6582,533.8828 Q1505.3638,533.8828 1506.0112,534.0322 Q1506.6587,534.1816 1507.2231,534.4805 L1507.2231,537.2031 Q1506.5923,536.6221 1505.9988,536.3523 Q1505.4053,536.0825 1504.7744,536.0825 Q1503.4297,536.0825 1502.7449,537.1492 Q1502.0601,538.2158 1502.0601,540.3159 Q1502.0601,542.4077 1502.7449,543.4744 Q1503.4297,544.541 1504.7744,544.541 Q1505.4053,544.541 1505.9988,544.2712 Q1506.5923,544.0015 1507.2231,543.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="1525.25" y="544.5352">ClientXMLDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1422" x2="1678" y1="556" y2="556"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="181" x="1427" y="570.6348">+Guid ClientId «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="172" x="1427" y="583.5898">+string Nom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="188" x="1427" y="596.5449">+string Prenom «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="1427" y="609.5">+List&lt;Adresse&gt; Adresses «get» «private set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1422" x2="1678" y1="615.8203" y2="615.8203"/><!--MD5=[2fc1a03e0ea9dd947f639b73d6756cfa]
+class AdresseXMLDTO--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="151.6406" id="AdresseXMLDTO" style="stroke: #000000; stroke-width: 1.5;" width="276" x="1421" y="710"/><ellipse cx="1506.25" cy="726" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1508.7231,732.1431 Q1508.1421,732.4419 1507.5029,732.5913 Q1506.8638,732.7407 1506.1582,732.7407 Q1503.6514,732.7407 1502.3315,731.0889 Q1501.0117,729.437 1501.0117,726.3159 Q1501.0117,723.1865 1502.3315,721.5347 Q1503.6514,719.8828 1506.1582,719.8828 Q1506.8638,719.8828 1507.5112,720.0322 Q1508.1587,720.1816 1508.7231,720.4805 L1508.7231,723.2031 Q1508.0923,722.6221 1507.4988,722.3523 Q1506.9053,722.0825 1506.2744,722.0825 Q1504.9297,722.0825 1504.2449,723.1492 Q1503.5601,724.2158 1503.5601,726.3159 Q1503.5601,728.4077 1504.2449,729.4744 Q1504.9297,730.541 1506.2744,730.541 Q1506.9053,730.541 1507.4988,730.2712 Q1508.0923,730.0015 1508.7231,729.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="97" x="1526.75" y="730.5352">AdresseXMLDTO</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1422" x2="1696" y1="742" y2="742"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="1427" y="756.6348">+NumeroCivique : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="1427" y="769.5898">+InformationComplementaire : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="1427" y="782.5449">+Odonyme : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="162" x="1427" y="795.5">+TypeVoie : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="1427" y="808.4551">+CodePostal : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="202" x="1427" y="821.4102">+NomMunicipalite : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="1427" y="834.3652">+Etat : string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="1427" y="847.3203">+Pays : string  «get» «set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1422" x2="1696" y1="853.6406" y2="853.6406"/><!--MD5=[c7b422ec34d12d84443b82362095488f]
+class ClientUIConsole--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="177.5508" id="ClientUIConsole" style="stroke: #000000; stroke-width: 1.5;" width="214" x="597" y="59"/><ellipse cx="655.75" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M658.2231,81.1431 Q657.6421,81.4419 657.0029,81.5913 Q656.3638,81.7407 655.6582,81.7407 Q653.1514,81.7407 651.8315,80.0889 Q650.5117,78.437 650.5117,75.3159 Q650.5117,72.1865 651.8315,70.5347 Q653.1514,68.8828 655.6582,68.8828 Q656.3638,68.8828 657.0112,69.0322 Q657.6587,69.1816 658.2231,69.4805 L658.2231,72.2031 Q657.5923,71.6221 656.9988,71.3523 Q656.4053,71.0825 655.7744,71.0825 Q654.4297,71.0825 653.7449,72.1492 Q653.0601,73.2158 653.0601,75.3159 Q653.0601,77.4077 653.7449,78.4744 Q654.4297,79.541 655.7744,79.541 Q656.4053,79.541 656.9988,79.2712 Q657.5923,79.0015 658.2231,78.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="88" x="676.25" y="79.5352">ClientUIConsole</text><line style="stroke: #000000; stroke-width: 1.5;" x1="598" x2="810" y1="91" y2="91"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="159" x="603" y="105.6348">-m_depotClient : IDepotClient</text><line style="stroke: #000000; stroke-width: 1.5;" x1="598" x2="810" y1="111.9551" y2="111.9551"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="189" x="603" y="126.5898">+ctor(p_depotClient : IDepotClient)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="603" y="139.5449">+AfficherMenu()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="130" x="603" y="152.5">+SaisirChoixMenu() : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="603" y="165.4551">+ExecuterUI()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="187" x="603" y="178.4102">+SaisirClientAvecAdresse() : Client</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170" x="603" y="191.3652">+AfficherClient(p_client: Client)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="189" x="603" y="204.3203">+RechercherEtAfficherClientParId()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="137" x="603" y="217.2754">+ListerEtAfficherClients()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="202" x="603" y="230.2305">-GenererAdresseAleatoire() : Adresse</text><!--MD5=[1b0c2915387634bf4e789c113c92d827]
+class TraitementLot--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="60.9551" id="TraitementLot" style="stroke: #000000; stroke-width: 1.5;" width="112" x="1369" y="117.5"/><ellipse cx="1384" cy="133.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1380.4277,129.7651 L1380.4277,127.6069 L1387.8071,127.6069 L1387.8071,129.7651 L1385.3418,129.7651 L1385.3418,137.8418 L1387.8071,137.8418 L1387.8071,140 L1380.4277,140 L1380.4277,137.8418 L1382.8931,137.8418 L1382.8931,129.7651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="80" x="1398" y="138.0352">TraitementLot</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1370" x2="1480" y1="149.5" y2="149.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1370" x2="1480" y1="157.5" y2="157.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="1375" y="172.1348">+Executer()</text><!--MD5=[c5358331cf8ae063edd27af746f4a17e]
+class ModifierNomPrenomPremiereLettreMajusculesTraitementLot--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="60.9551" id="ModifierNomPrenomPremiereLettreMajusculesTraitementLot" style="stroke: #000000; stroke-width: 1.5;" width="378" x="1042" y="344.5"/><ellipse cx="1057" cy="360.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1059.4731,366.6431 Q1058.8921,366.9419 1058.2529,367.0913 Q1057.6138,367.2407 1056.9082,367.2407 Q1054.4014,367.2407 1053.0815,365.5889 Q1051.7617,363.937 1051.7617,360.8159 Q1051.7617,357.6865 1053.0815,356.0347 Q1054.4014,354.3828 1056.9082,354.3828 Q1057.6138,354.3828 1058.2612,354.5322 Q1058.9087,354.6816 1059.4731,354.9805 L1059.4731,357.7031 Q1058.8423,357.1221 1058.2488,356.8523 Q1057.6553,356.5825 1057.0244,356.5825 Q1055.6797,356.5825 1054.9949,357.6492 Q1054.3101,358.7158 1054.3101,360.8159 Q1054.3101,362.9077 1054.9949,363.9744 Q1055.6797,365.041 1057.0244,365.041 Q1057.6553,365.041 1058.2488,364.7712 Q1058.8423,364.5015 1059.4731,363.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="346" x="1071" y="365.0352">ModifierNomPrenomPremiereLettreMajusculesTraitementLot</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1043" x2="1419" y1="376.5" y2="376.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1043" x2="1419" y1="384.5" y2="384.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="1048" y="399.1348">+Executer()</text><!--MD5=[2557689795cb60e02edc0ab7a85cd841]
+class ModifierPaysMajusculesClientsTraitementLot--><rect fill="#FFFFFF" filter="url(#f16hhyvxhcjxhy)" height="60.9551" id="ModifierPaysMajusculesClientsTraitementLot" style="stroke: #000000; stroke-width: 1.5;" width="286" x="1476" y="344.5"/><ellipse cx="1491" cy="360.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M1493.4731,366.6431 Q1492.8921,366.9419 1492.2529,367.0913 Q1491.6138,367.2407 1490.9082,367.2407 Q1488.4014,367.2407 1487.0815,365.5889 Q1485.7617,363.937 1485.7617,360.8159 Q1485.7617,357.6865 1487.0815,356.0347 Q1488.4014,354.3828 1490.9082,354.3828 Q1491.6138,354.3828 1492.2612,354.5322 Q1492.9087,354.6816 1493.4731,354.9805 L1493.4731,357.7031 Q1492.8423,357.1221 1492.2488,356.8523 Q1491.6553,356.5825 1491.0244,356.5825 Q1489.6797,356.5825 1488.9949,357.6492 Q1488.3101,358.7158 1488.3101,360.8159 Q1488.3101,362.9077 1488.9949,363.9744 Q1489.6797,365.041 1491.0244,365.041 Q1491.6553,365.041 1492.2488,364.7712 Q1492.8423,364.5015 1493.4731,363.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="254" x="1505" y="365.0352">ModifierPaysMajusculesClientsTraitementLot</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1477" x2="1761" y1="376.5" y2="376.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1477" x2="1761" y1="384.5" y2="384.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="1482" y="399.1348">+Executer()</text><!--MD5=[73af334925bb211206659973f4e1ab45]
+link Client to Adresse--><path d="M302,438.06 C302,455.38 302,474.45 302,492.66 " fill="none" id="Client-&gt;Adresse" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="302,497.77,306,488.77,302,492.77,298,488.77,302,497.77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="293.5625" y="458.3776">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="6" x="295.7047" y="487.1292">*</text><!--MD5=[19adfe3b24a6c19873fa55b195191611]
+reverse link IDepotClients to DepotClientsJSON--><path d="M827.4,399.81 C936.07,421.85 1085.29,455.03 1140,481 C1163.36,492.09 1186.57,508.17 1206.32,523.8 " fill="none" id="IDepotClients&lt;-DepotClientsJSON" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="825.84,406.64,807.62,395.83,828.6,392.91,825.84,406.64" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4b0760f767d69bab286038c1723b5b54]
+link ClientJSONDTO to AdresseJSONDTO--><path d="M995.11,624.24 C996.14,648.2 997.4,677.63 998.56,704.73 " fill="none" id="ClientJSONDTO-&gt;AdresseJSONDTO" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="998.78,709.76,1002.391,700.597,998.5659,704.7646,994.3983,700.9395,998.78,709.76" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="986.8678" y="644.2377">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="6" x="992.1872" y="699.3788">*</text><!--MD5=[d761bc3755c2fedbb7239219a6f31ce4]
+reverse link IDepotClients to DepotClientsXML--><path d="M827.23,403.51 C886.97,415.88 959.92,429.55 1026,438 C1174.21,456.94 1557.01,428.78 1697,481 C1722.47,490.5 1747.03,507.25 1767.29,523.87 " fill="none" id="IDepotClients&lt;-DepotClientsXML" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="825.65,410.33,807.51,399.38,828.52,396.63,825.65,410.33" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2f7f2991185c7259beaf81b9c8660cfb]
+link ClientXMLDTO to AdresseXMLDTO--><path d="M1552.11,624.24 C1553.14,648.2 1554.4,677.63 1555.56,704.73 " fill="none" id="ClientXMLDTO-&gt;AdresseXMLDTO" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1555.78,709.76,1559.391,700.597,1555.5659,704.7646,1551.3983,700.9395,1555.78,709.76" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="1543.8678" y="644.2377">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="6" x="1549.1872" y="699.3788">*</text><!--MD5=[bccde14c5578bf5b5ec93606ed33c2c0]
+link ClientUIConsole to IDepotClients--><path d="M704,237.28 C704,265.1 704,294.98 704,319.7 " fill="none" id="ClientUIConsole-&gt;IDepotClients" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="704,324.89,708,315.89,704,319.89,700,315.89,704,324.89" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="695.7063" y="256.9835">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="695.4375" y="314.3914">1</text><!--MD5=[28ed4f9fcff8ce5627929d7049e40cdf]
+reverse link TraitementLot to ModifierNomPrenomPremiereLettreMajusculesTraitementLot--><path d="M1385.99,194.24 C1347.45,238.95 1289.6,306.04 1256.56,344.36 " fill="none" id="TraitementLot&lt;-ModifierNomPrenomPremiereLettreMajusculesTraitementLot" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1380.88,189.45,1399.24,178.88,1391.48,198.6,1380.88,189.45" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0841bdc90cc678eaa03027aa0fbba90a]
+reverse link TraitementLot to ModifierPaysMajusculesClientsTraitementLot--><path d="M1464.01,194.24 C1502.55,238.95 1560.4,306.04 1593.44,344.36 " fill="none" id="TraitementLot&lt;-ModifierPaysMajusculesClientsTraitementLot" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1458.52,198.6,1450.76,178.88,1469.12,189.45,1458.52,198.6" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c01f3b4a51f25281f593c5631a69406a]
 @startuml DiagClassesClients
 
 skinparam classAttributeIconSize 0
@@ -28,118 +35,288 @@ skinparam class {
     BorderColor #000
 }
 
-IDepotClients <|.. DepotClientsJSON
-IDepotClients <|.. DepotClientsXML
-Client "1" - -> "*" Adresse
-ClientXMLDTO "1" - -> "*" AdresseXMLDTO
-ClientJSONDTO "1" - -> "*" AdresseJSONDTO
-ClientUIConsole "1" - -> "1" IDepotClients
 
-TraitementLot <|.. ModifierNomPrenomPremiereLettreMajusculesTraitementLot
-TraitementLot <|.. ModifierPaysMajusculesClientsTraitementLot
+package Entites {
+    Client "1" - -> "*" Adresse
 
+    class Client {
+        + ctor(p_clientId : Guid, p_nom : string, p_prenom : string, p_adresses : IEnumerable<Adresse>)
+        + Guid ClientId <<get>> <<private set>>
+        + string Nom <<get>> <<private set>>
+        + string Prenom <<get>> <<private set>>
+        + List<Adresse> Adresses <<get>> <<private set>>
+        + AjouterModifierAdresse(p_adresse : Adresse)
+    }
 
-interface IDepotClients {
-    + AjouterClient(p_client : Client)
-    + ListerClients() : List<Client>
-    + RechercherClient(p_clientId : Guid)
-    + ModifierClient(p_client : Client)
+    class Adresse {
+        + NumeroCivique : string <<get>> <<set>>
+        + InformationComplementaire : string <<get>> <<set>>
+        + Odonyme : string <<get>> <<set>>
+        + TypeVoie : string <<get>> <<set>>
+        + CodePostal : string <<get>> <<set>>
+        + NomMunicipalite : string <<get>> <<set>>
+        + Etat : string <<get>> <<set>>
+        + Pays : string  <<get>> <<set>>
+    }
+
+    interface IDepotClients {
+        + AjouterClient(p_client : Client)
+        + ListerClients() : List<Client>
+        + RechercherClient(p_clientId : Guid)
+        + ModifierClient(p_client : Client)
+    }
 }
 
-class DepotClientsXML {
-    + AjouterClient(p_client : Client)
-    + ListerClients() : List<Client>
-    + RechercherClient(p_clientId : Guid)
-    + ModifierClient(p_client : Client)
+package CoucheAccesDonnees.JSON {
+    IDepotClients <|.. DepotClientsJSON
+    ClientJSONDTO "1" - -> "*" AdresseJSONDTO
+
+    class ClientJSONDTO {
+        + Guid ClientId <<get>> <<private set>>
+        + string Nom <<get>> <<private set>>
+        + string Prenom <<get>> <<private set>>
+        + List<Adresse> Adresses <<get>> <<private set>>
+    }
+
+    class AdresseJSONDTO {
+        + NumeroCivique : string <<get>> <<set>>
+        + InformationComplementaire : string <<get>> <<set>>
+        + Odonyme : string <<get>> <<set>>
+        + TypeVoie : string <<get>> <<set>>
+        + CodePostal : string <<get>> <<set>>
+        + NomMunicipalite : string <<get>> <<set>>
+        + Etat : string <<get>> <<set>>
+        + Pays : string  <<get>> <<set>>
+    }
+
+    class DepotClientsJSON {
+        + AjouterClient(p_client : Client)
+        + ListerClients() : List<Client>
+        + RechercherClient(p_clientId : Guid)
+        + ModifierClient(p_client : Client)
+    }
 }
 
-class DepotClientsJSON {
-    + AjouterClient(p_client : Client)
-    + ListerClients() : List<Client>
-    + RechercherClient(p_clientId : Guid)
-    + ModifierClient(p_client : Client)
+package CoucheAccesDonnees.XML {
+    IDepotClients <|.. DepotClientsXML
+    ClientXMLDTO "1" - -> "*" AdresseXMLDTO
+
+    class ClientXMLDTO {
+        + Guid ClientId <<get>> <<private set>>
+        + string Nom <<get>> <<private set>>
+        + string Prenom <<get>> <<private set>>
+        + List<Adresse> Adresses <<get>> <<private set>>
+    }
+
+    class DepotClientsXML {
+        + AjouterClient(p_client : Client)
+        + ListerClients() : List<Client>
+        + RechercherClient(p_clientId : Guid)
+        + ModifierClient(p_client : Client)
+    }
+
+    class AdresseXMLDTO {
+        + NumeroCivique : string <<get>> <<set>>
+        + InformationComplementaire : string <<get>> <<set>>
+        + Odonyme : string <<get>> <<set>>
+        + TypeVoie : string <<get>> <<set>>
+        + CodePostal : string <<get>> <<set>>
+        + NomMunicipalite : string <<get>> <<set>>
+        + Etat : string <<get>> <<set>>
+        + Pays : string  <<get>> <<set>>
+    }
 }
 
-class Client {
-    + ctor(p_clientId : Guid, p_nom : string, p_prenom : string, p_adresses : IEnumerable<Adresse>)
-    + Guid ClientId <<get>> <<private set>>
-    + string Nom <<get>> <<private set>>
-    + string Prenom <<get>> <<private set>>
-    + List<Adresse> Adresses <<get>> <<private set>>
-    + AjouterModifierAdresse(p_adresse : Adresse)
+package Application {
+    ClientUIConsole "1" - -> "1" IDepotClients
+
+    class ClientUIConsole {
+        - m_depotClient : IDepotClient
+        + ctor(p_depotClient : IDepotClient)
+        + AfficherMenu()
+        + SaisirChoixMenu() : int
+        + ExecuterUI()
+        + SaisirClientAvecAdresse() : Client
+        + AfficherClient(p_client: Client)
+        + RechercherEtAfficherClientParId()
+        + ListerEtAfficherClients()
+        - GenererAdresseAleatoire() : Adresse
+    }
 }
 
-class ClientJSONDTO {
-    + Guid ClientId <<get>> <<private set>>
-    + string Nom <<get>> <<private set>>
-    + string Prenom <<get>> <<private set>>
-    + List<Adresse> Adresses <<get>> <<private set>>
+package TraitementsLots {
+    interface TraitementLot {
+        + Executer()
+    }
 }
 
-class ClientXMLDTO {
-    + Guid ClientId <<get>> <<private set>>
-    + string Nom <<get>> <<private set>>
-    + string Prenom <<get>> <<private set>>
-    + List<Adresse> Adresses <<get>> <<private set>>
+package TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules {
+    TraitementLot <|.. ModifierNomPrenomPremiereLettreMajusculesTraitementLot
+
+    class ModifierNomPrenomPremiereLettreMajusculesTraitementLot {
+        + Executer()
+    }
 }
 
-class Adresse {
-    + NumeroCivique : string <<get>> <<set>>
-    + InformationComplementaire : string <<get>> <<set>>
-    + Odonyme : string <<get>> <<set>>
-    + TypeVoie : string <<get>> <<set>>
-    + CodePostal : string <<get>> <<set>>
-    + NomMunicipalite : string <<get>> <<set>>
-    + Etat : string <<get>> <<set>>
-    + Pays : string  <<get>> <<set>>
+package TraitementsLots.ModifierPaysMajusculesClients {
+    TraitementLot <|.. ModifierPaysMajusculesClientsTraitementLot
+
+    class ModifierPaysMajusculesClientsTraitementLot {
+        + Executer()
+    }
 }
 
-class AdresseXMLDTO {
-    + NumeroCivique : string <<get>> <<set>>
-    + InformationComplementaire : string <<get>> <<set>>
-    + Odonyme : string <<get>> <<set>>
-    + TypeVoie : string <<get>> <<set>>
-    + CodePostal : string <<get>> <<set>>
-    + NomMunicipalite : string <<get>> <<set>>
-    + Etat : string <<get>> <<set>>
-    + Pays : string  <<get>> <<set>>
+' TraitementsLots <.. TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules
+' TraitementsLots <.. TraitementsLots.ModifierPaysMajusculesClients
+
+' Entites <.. CoucheAccesDonnees.JSON
+' Entites <.. CoucheAccesDonnees.XML
+' Entites <.. Application
+' Entites <.. TraitementsLots
+
+@enduml
+
+@startuml DiagClassesClients
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
 }
 
-class AdresseJSONDTO {
-    + NumeroCivique : string <<get>> <<set>>
-    + InformationComplementaire : string <<get>> <<set>>
-    + Odonyme : string <<get>> <<set>>
-    + TypeVoie : string <<get>> <<set>>
-    + CodePostal : string <<get>> <<set>>
-    + NomMunicipalite : string <<get>> <<set>>
-    + Etat : string <<get>> <<set>>
-    + Pays : string  <<get>> <<set>>
+
+package Entites {
+    Client "1" - -> "*" Adresse
+
+    class Client {
+        + ctor(p_clientId : Guid, p_nom : string, p_prenom : string, p_adresses : IEnumerable<Adresse>)
+        + Guid ClientId <<get>> <<private set>>
+        + string Nom <<get>> <<private set>>
+        + string Prenom <<get>> <<private set>>
+        + List<Adresse> Adresses <<get>> <<private set>>
+        + AjouterModifierAdresse(p_adresse : Adresse)
+    }
+
+    class Adresse {
+        + NumeroCivique : string <<get>> <<set>>
+        + InformationComplementaire : string <<get>> <<set>>
+        + Odonyme : string <<get>> <<set>>
+        + TypeVoie : string <<get>> <<set>>
+        + CodePostal : string <<get>> <<set>>
+        + NomMunicipalite : string <<get>> <<set>>
+        + Etat : string <<get>> <<set>>
+        + Pays : string  <<get>> <<set>>
+    }
+
+    interface IDepotClients {
+        + AjouterClient(p_client : Client)
+        + ListerClients() : List<Client>
+        + RechercherClient(p_clientId : Guid)
+        + ModifierClient(p_client : Client)
+    }
 }
 
-class ClientUIConsole {
-    - m_depotClient : IDepotClient
-    + ctor(p_depotClient : IDepotClient)
-    + AfficherMenu()
-    + SaisirChoixMenu() : int
-    + ExecuterUI()
-    + SaisirClientAvecAdresse() : Client
-    + AfficherClient(p_client: Client)
-    + RechercherEtAfficherClientParId()
-    + ListerEtAfficherClients()
-    - GenererAdresseAleatoire() : Adresse
+package CoucheAccesDonnees.JSON {
+    IDepotClients <|.. DepotClientsJSON
+    ClientJSONDTO "1" - -> "*" AdresseJSONDTO
+
+    class ClientJSONDTO {
+        + Guid ClientId <<get>> <<private set>>
+        + string Nom <<get>> <<private set>>
+        + string Prenom <<get>> <<private set>>
+        + List<Adresse> Adresses <<get>> <<private set>>
+    }
+
+    class AdresseJSONDTO {
+        + NumeroCivique : string <<get>> <<set>>
+        + InformationComplementaire : string <<get>> <<set>>
+        + Odonyme : string <<get>> <<set>>
+        + TypeVoie : string <<get>> <<set>>
+        + CodePostal : string <<get>> <<set>>
+        + NomMunicipalite : string <<get>> <<set>>
+        + Etat : string <<get>> <<set>>
+        + Pays : string  <<get>> <<set>>
+    }
+
+    class DepotClientsJSON {
+        + AjouterClient(p_client : Client)
+        + ListerClients() : List<Client>
+        + RechercherClient(p_clientId : Guid)
+        + ModifierClient(p_client : Client)
+    }
 }
 
-interface TraitementLot {
-    + Executer()
+package CoucheAccesDonnees.XML {
+    IDepotClients <|.. DepotClientsXML
+    ClientXMLDTO "1" - -> "*" AdresseXMLDTO
+
+    class ClientXMLDTO {
+        + Guid ClientId <<get>> <<private set>>
+        + string Nom <<get>> <<private set>>
+        + string Prenom <<get>> <<private set>>
+        + List<Adresse> Adresses <<get>> <<private set>>
+    }
+
+    class DepotClientsXML {
+        + AjouterClient(p_client : Client)
+        + ListerClients() : List<Client>
+        + RechercherClient(p_clientId : Guid)
+        + ModifierClient(p_client : Client)
+    }
+
+    class AdresseXMLDTO {
+        + NumeroCivique : string <<get>> <<set>>
+        + InformationComplementaire : string <<get>> <<set>>
+        + Odonyme : string <<get>> <<set>>
+        + TypeVoie : string <<get>> <<set>>
+        + CodePostal : string <<get>> <<set>>
+        + NomMunicipalite : string <<get>> <<set>>
+        + Etat : string <<get>> <<set>>
+        + Pays : string  <<get>> <<set>>
+    }
 }
 
-class ModifierNomPrenomPremiereLettreMajusculesTraitementLot {
-       + Executer()
+package Application {
+    ClientUIConsole "1" - -> "1" IDepotClients
+
+    class ClientUIConsole {
+        - m_depotClient : IDepotClient
+        + ctor(p_depotClient : IDepotClient)
+        + AfficherMenu()
+        + SaisirChoixMenu() : int
+        + ExecuterUI()
+        + SaisirClientAvecAdresse() : Client
+        + AfficherClient(p_client: Client)
+        + RechercherEtAfficherClientParId()
+        + ListerEtAfficherClients()
+        - GenererAdresseAleatoire() : Adresse
+    }
 }
 
-class ModifierPaysMajusculesClientsTraitementLot {
-    + Executer()
+package TraitementsLots {
+    interface TraitementLot {
+        + Executer()
+    }
 }
+
+package TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules {
+    TraitementLot <|.. ModifierNomPrenomPremiereLettreMajusculesTraitementLot
+
+    class ModifierNomPrenomPremiereLettreMajusculesTraitementLot {
+        + Executer()
+    }
+}
+
+package TraitementsLots.ModifierPaysMajusculesClients {
+    TraitementLot <|.. ModifierPaysMajusculesClientsTraitementLot
+
+    class ModifierPaysMajusculesClientsTraitementLot {
+        + Executer()
+    }
+}
+
+
+
 @enduml
 
 PlantUML version 1.2020.10(Sun May 17 05:35:57 EDT 2020)
