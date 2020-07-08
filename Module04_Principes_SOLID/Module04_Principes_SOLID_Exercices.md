@@ -191,7 +191,7 @@ Quel(s) principe(s) sont violés ici ? Validez les dépendances.
 <details>
     <summary>Indice #3</summary>
 
-![Diagramme avant modifications](../images/Module04_Principes_SOLID/diag/src/M04_Exercice3_DiagClasses/DIP_v02_s01.svg)
+![Diagramme avant modifications](../images/Module04_Principes_SOLID/diag/src/M04_Exercice3_DiagClasses//Exercice03_Prob.svg)
 
 </details>
 
@@ -234,7 +234,7 @@ public class ATM
 
 ```
 
-![Diagramme avant modifications](../images/Module04_Principes_SOLID/diag/src/M04_Exercice3_DiagClasses_PropositionCorrection/DIP_v02_s01.svg)
+![Diagramme avant modifications](../images/Module04_Principes_SOLID/diag/src/M04_Exercice3_DiagClasses_PropositionCorrection/Exercice03_PropSol.svg)
 
 </details>
 

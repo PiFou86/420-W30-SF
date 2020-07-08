@@ -1,4 +1,4 @@
-@startuml DIP_v02_s01
+@startuml Exercice03_PropSol
 
 skinparam classAttributeIconSize 0
 skinparam class {
@@ -11,13 +11,17 @@ ATM "1" --> "1" ICreateurTransaction
 ATM "1" --> "1" ITiroirArgent
 
 ATM ..> Compte
-ATM ..> Transaction
+ATM ..> ITransaction
 
-Transaction <|.. TransactionRetrait
+ITransaction <|.. TransactionRetrait
 
-ITiroirArgent <|-- TiroirArgentCOM
-ITiroirArgent <|-- TiroirArgentLPT
-ITiroirArgent <|-- TiroirArgentUSB
+ITiroirArgent <|.. TiroirArgentCOM
+ITiroirArgent <|.. TiroirArgentLPT
+ITiroirArgent <|.. TiroirArgentUSB
+
+ICreateurTransaction <|.. CreateurTransactionDesjardins
+ICreateurTransaction <|.. CreateurTransactionScotia
+ICreateurTransaction <|.. CreateurTransactionCIBC
 
 class ATM {
 
@@ -36,7 +40,7 @@ interface ITiroirArgent {
     + DistribuerArgent(p_montant : decimal)
 }
 
-interface Transaction {
+interface ITransaction {
    + EstValide() : bool
    + ConfirmerTransaction()
    + Annuler()
@@ -46,6 +50,29 @@ interface ICreateurTransaction {
     + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal)
 }
 
+class CreateurTransactionDesjardins {
+    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal)
+}
+
+class CreateurTransactionScotia {
+    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal)
+}
+
+class CreateurTransactionCIBC {
+    + CreerTransactionRetrait(p_compte : Compte, p_montant : decimal)
+}
+
+class TiroirArgentCOM {
+    + DistribuerArgent(p_montant : decimal)
+}
+
+class TiroirArgentLPT {
+    + DistribuerArgent(p_montant : decimal)
+}
+
+class TiroirArgentUSB {
+    + DistribuerArgent(p_montant : decimal)
+}
 
 class TransactionRetrait {
    + EstValide() : bool

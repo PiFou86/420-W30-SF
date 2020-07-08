@@ -1,4 +1,4 @@
-@startuml DIP_v02_s01
+@startuml Exercice03_Prob
 
 skinparam classAttributeIconSize 0
 skinparam class {
