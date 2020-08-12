@@ -2,8 +2,8 @@
 
 ## Exercice 1 - Reprise de l'exercice du module 06
 
-- Créez une solution nommée "Module08_ArchitectureDesApplications_Decoupee"
-- Supprimez le projet "Module08_ArchitectureDesApplications_Decoupee"
+- Créez une solution nommée "Module08_ArchitectureDesApplication"
+- Supprimez le projet "Module08_ArchitectureDesApplications"
 - Dans cette solution, créez les projets suivants :
   - Module08_ArchitectureDesApplications.Entites :
     - Type : Bibliothèque de classes
@@ -44,6 +44,6 @@
       - Module08_ArchitectureDesApplications.Entites
       - Module08_ArchitectureDesApplications.CoucheAccesDonnees.JSON
       - Module08_ArchitectureDesApplications.CoucheAccesDonnees.XML
-- Dans une autre instance de Visual Studio ouvrez la solution "Module08_ArchitectureDesApplications"
+- Dans une autre instance de Visual Studio ouvrez la solution "Module08_Exercice01_Base"
 - En adaptant leurs espaces de nommage, copiez les classes de la solution fournie dans les projets adéquat de votre nouvelle solution "Module08_ArchitectureDesApplications"
 - Testez chacun de vos trois exécutables, c'est à dire, le projet d'interface et les deux traitements batch.
