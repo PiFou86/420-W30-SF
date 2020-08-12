@@ -19,12 +19,12 @@ Démarche :
     - Dépendances : aucune
   - GC.DAL.JSON :
     - Type : Bibliothèque de classes (**.Net core**)
-    - Contiendra : Le code du dépot JSON et la version du dépot JSON
+    - Contiendra : Le code du dépot et des DTOs de la version JSON
     - Dépendances :
       - GC.Entites
   - GC.DAL.XML :
     - Type : Bibliothèque de classes (**.Net core**)
-    - Contiendra : Le code du dépot JSON et la version du dépot XML
+    - Contiendra : Le code du dépot et des DTOs de la version XML
     - Dépendances :
       - GC.Entites
   - GC.Batch :
