@@ -2,55 +2,56 @@
 
 ## Exercice 1 - Reprise de l'exercice du module 06
 
-Notes :
+Notes : pour des problèmes de longueur de noms de projets et de fichiers, ils ont été raccourcis comme suit :
 
-- Le terme DAL (Data access Layer) remplace le sens francais DAL
-- Le terme Batch remplace le sens francais Batch
+- DAL : Data access Layer (CoucheAccesDonnees)
+- Batch : TraitementLot
+- GC : GestionClient
 
 Démarche :
 
-- Créez une solution nommée "Module08_ArchitectureDesApplication". Le projet doit se situer à votre racine
-- Supprimez le projet "GestionClients"
+- Créez une solution nommée "GestionClients". Le projet doit se situer à votre racine
+- Supprimez le projet "GC"
 - Dans cette solution, créez les projets suivants :
-  - GestionClients.Entites :
+  - GC.Entites :
     - Type : Bibliothèque de classes
     - Contiendra : les entités (Client, Adresse) et l'interface de dépot
     - Dépendances : aucune
-  - GestionClients.DAL.JSON :
+  - GC.DAL.JSON :
     - Type : Bibliothèque de classes
     - Contiendra : Le code du dépot JSON et la version du dépot JSON
     - Dépendances :
-      - GestionClients.Entites
-  - GestionClients.DAL.XML :
+      - GC.Entites
+  - GC.DAL.XML :
     - Type : Bibliothèque de classes
     - Contiendra : Le code du dépot JSON et la version du dépot XML
     - Dépendances :
-      - GestionClients.Entites
-  - GestionClients.Batch :
+      - GC.Entites
+  - GC.Batch :
     - Type : Bibliothèque de classes
     - Contiendra : L'interface des traitements lots
     - Dépendances : aucune
-  - GestionClients.Batch.ModifierNomPrenomPremiereLettreMajuscules :
+  - GC.Batch.ModifierNomPrenomPremiereLettreMajuscules :
     - Type : Application console
     - Contiendra : La classe du traitement et un nouveau programme principale qui l'instancie
     - Dépendances :
-      - GestionClients.Entites
-      - GestionClients.DAL.JSON
-      - GestionClients.DAL.XML
-  - GestionClients.Batch.ModifierPaysMajusculesClients :
+      - GC.Entites
+      - GC.DAL.JSON
+      - GC.DAL.XML
+  - GC.Batch.ModifierPaysMajusculesClients :
     - Type : Application console
     - Contiendra : La classe du traitement et un nouveau programme principale qui l'instancie
     - Dépendances :
-      - GestionClients.Entites
-      - GestionClients.DAL.JSON
-      - GestionClients.DAL.XML
-  - GestionClients.UI.Console :
+      - GC.Entites
+      - GC.DAL.JSON
+      - GC.DAL.XML
+  - GC.UI.Console :
     - Type : Application console
     - Contiendra : votre interface console avec le menu et les appels au dépot
     - Dépendances :
-      - GestionClients.Entites
-      - GestionClients.DAL.JSON
-      - GestionClients.DAL.XML
+      - GC.Entites
+      - GC.DAL.JSON
+      - GC.DAL.XML
 - Dans une autre instance de Visual Studio ouvrez la solution "Module08_Exercice01_Base"
 - En adaptant leurs espaces de nommage, copiez les classes de la solution fournie dans les projets adéquat de votre nouvelle solution "GestionClients"
 - Testez chacun de vos trois exécutables, c'est à dire, le projet d'interface et les deux traitements batch.
