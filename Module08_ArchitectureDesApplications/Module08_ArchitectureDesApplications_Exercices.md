@@ -38,6 +38,7 @@ Démarche :
       - GC.Entites
       - GC.DAL.JSON
       - GC.DAL.XML
+      - GC.Batch
   - GC.Batch.ModifierPaysMajusculesClients :
     - Type : Application console
     - Contiendra : La classe du traitement et un nouveau programme principale qui l'instancie
@@ -45,7 +46,8 @@ Démarche :
       - GC.Entites
       - GC.DAL.JSON
       - GC.DAL.XML
-  - GC.UI.Console :
+      - GC.Batch
+  - GC.ConsoleUI :
     - Type : Application console
     - Contiendra : votre interface console avec le menu et les appels au dépot
     - Dépendances :
