@@ -41,16 +41,16 @@ namespace Module08_Exercice01_Base_Console
             };
             // https://www.retraitequebec.gouv.qc.ca/fr/services-en-ligne-outils/banque-de-prenoms/Pages/recherche_par_popularite.aspx?AnRefBp=2019&NbPre=10
             string[] prenoms = {
-                "Olivia",
-                "Emma",
-                "Alice",
-                "Charlie",
-                "Charlotte",
-                "Liam",
-                "William",
-                "Thomas",
-                "Léo",
-                "Noah",
+                "olivia",
+                "emma",
+                "alice",
+                "charlie",
+                "charlotte",
+                "liam",
+                "william",
+                "thomas",
+                "léo",
+                "noah",
                 };
 
             return new Client(

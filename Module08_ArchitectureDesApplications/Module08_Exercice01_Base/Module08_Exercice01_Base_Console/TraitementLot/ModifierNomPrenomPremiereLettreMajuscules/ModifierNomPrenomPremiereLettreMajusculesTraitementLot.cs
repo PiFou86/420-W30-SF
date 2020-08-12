@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Globalization;
+
 
 namespace Module08_Exercice01_Base_Console.TraitementLot.ModifierNomPrenomPremiereLettreMajuscules
 {
@@ -20,12 +22,14 @@ namespace Module08_Exercice01_Base_Console.TraitementLot.ModifierNomPrenomPremie
 
             foreach (Client client in clients)
             {
-                if (client.Nom != client.Nom.ToUpper() || client.Prenom != client.Prenom.ToUpper())
+                string nomCorrect = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(client.Nom);
+                string prenomCorrect = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(client.Prenom);
+                if (client.Nom != nomCorrect || client.Prenom != prenomCorrect)
                 {
                     Client clientModifie = new Client(
-                        client.ClientId, 
-                        client.Nom.ToUpper(), 
-                        client.Prenom.ToUpper(), 
+                        client.ClientId,
+                        nomCorrect,
+                        prenomCorrect, 
                         client.Adresses
                         );
                     this.m_depotClients.ModifierClient(clientModifie);
