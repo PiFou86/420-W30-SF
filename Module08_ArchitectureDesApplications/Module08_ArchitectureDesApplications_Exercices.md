@@ -14,21 +14,21 @@ Démarche :
 - Supprimez le projet "GC"
 - Dans cette solution, créez les projets suivants :
   - GC.Entites :
-    - Type : Bibliothèque de classes
+    - Type : Bibliothèque de classes (**.Net core**)
     - Contiendra : les entités (Client, Adresse) et l'interface de dépot
     - Dépendances : aucune
   - GC.DAL.JSON :
-    - Type : Bibliothèque de classes
+    - Type : Bibliothèque de classes (**.Net core**)
     - Contiendra : Le code du dépot JSON et la version du dépot JSON
     - Dépendances :
       - GC.Entites
   - GC.DAL.XML :
-    - Type : Bibliothèque de classes
+    - Type : Bibliothèque de classes (**.Net core**)
     - Contiendra : Le code du dépot JSON et la version du dépot XML
     - Dépendances :
       - GC.Entites
   - GC.Batch :
-    - Type : Bibliothèque de classes
+    - Type : Bibliothèque de classes (**.Net core**)
     - Contiendra : L'interface des traitements lots
     - Dépendances : aucune
   - GC.Batch.ModifierNomPrenomPremiereLettreMajuscules :
