@@ -2,48 +2,55 @@
 
 ## Exercice 1 - Reprise de l'exercice du module 06
 
-- Créez une solution nommée "Module08_ArchitectureDesApplication"
-- Supprimez le projet "Module08_ArchitectureDesApplications"
+Notes :
+
+- Le terme DAL (Data access Layer) remplace le sens francais DAL
+- Le terme Batch remplace le sens francais Batch
+
+Démarche :
+
+- Créez une solution nommée "Module08_ArchitectureDesApplication". Le projet doit se situer à votre racine
+- Supprimez le projet "GestionClients"
 - Dans cette solution, créez les projets suivants :
-  - Module08_ArchitectureDesApplications.Entites :
+  - GestionClients.Entites :
     - Type : Bibliothèque de classes
     - Contiendra : les entités (Client, Adresse) et l'interface de dépot
     - Dépendances : aucune
-  - Module08_ArchitectureDesApplications.CoucheAccesDonnees.JSON :
+  - GestionClients.DAL.JSON :
     - Type : Bibliothèque de classes
     - Contiendra : Le code du dépot JSON et la version du dépot JSON
     - Dépendances :
-      - Module08_ArchitectureDesApplications.Entites
-  - Module08_ArchitectureDesApplications.CoucheAccesDonnees.XML :
+      - GestionClients.Entites
+  - GestionClients.DAL.XML :
     - Type : Bibliothèque de classes
     - Contiendra : Le code du dépot JSON et la version du dépot XML
     - Dépendances :
-      - Module08_ArchitectureDesApplications.Entites
-  - Module08_ArchitectureDesApplications.TraitementsLots :
+      - GestionClients.Entites
+  - GestionClients.Batch :
     - Type : Bibliothèque de classes
     - Contiendra : L'interface des traitements lots
     - Dépendances : aucune
-  - Module08_ArchitectureDesApplications.TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules :
+  - GestionClients.Batch.ModifierNomPrenomPremiereLettreMajuscules :
     - Type : Application console
     - Contiendra : La classe du traitement et un nouveau programme principale qui l'instancie
     - Dépendances :
-      - Module08_ArchitectureDesApplications.Entites
-      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.JSON
-      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.XML
-  - Module08_ArchitectureDesApplications.TraitementsLots.ModifierPaysMajusculesClients :
+      - GestionClients.Entites
+      - GestionClients.DAL.JSON
+      - GestionClients.DAL.XML
+  - GestionClients.Batch.ModifierPaysMajusculesClients :
     - Type : Application console
     - Contiendra : La classe du traitement et un nouveau programme principale qui l'instancie
     - Dépendances :
-      - Module08_ArchitectureDesApplications.Entites
-      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.JSON
-      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.XML
-  - Module08_ArchitectureDesApplications.UI.Console :
+      - GestionClients.Entites
+      - GestionClients.DAL.JSON
+      - GestionClients.DAL.XML
+  - GestionClients.UI.Console :
     - Type : Application console
     - Contiendra : votre interface console avec le menu et les appels au dépot
     - Dépendances :
-      - Module08_ArchitectureDesApplications.Entites
-      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.JSON
-      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.XML
+      - GestionClients.Entites
+      - GestionClients.DAL.JSON
+      - GestionClients.DAL.XML
 - Dans une autre instance de Visual Studio ouvrez la solution "Module08_Exercice01_Base"
-- En adaptant leurs espaces de nommage, copiez les classes de la solution fournie dans les projets adéquat de votre nouvelle solution "Module08_ArchitectureDesApplications"
+- En adaptant leurs espaces de nommage, copiez les classes de la solution fournie dans les projets adéquat de votre nouvelle solution "GestionClients"
 - Testez chacun de vos trois exécutables, c'est à dire, le projet d'interface et les deux traitements batch.
