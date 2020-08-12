@@ -11,7 +11,7 @@ Notes : pour des problèmes de longueur de noms de projets et de fichiers, ils o
 Démarche :
 
 - Créez une solution nommée "GestionClients". Le projet doit se situer à votre racine
-- Supprimez le projet "GC"
+- Supprimez le projet "GestionClients"
 - Dans cette solution, créez les projets suivants :
   - GC.Entites :
     - Type : Bibliothèque de classes (**.Net core**)
