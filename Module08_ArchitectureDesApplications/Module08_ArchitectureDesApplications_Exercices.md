@@ -1,0 +1,49 @@
+# Module 08 - Architecture des applications
+
+## Exercice 1 - Reprise de l'exercice du module 06
+
+- Créez une solution nommée "Module08_ArchitectureDesApplications_Decoupee"
+- Supprimez le projet "Module08_ArchitectureDesApplications_Decoupee"
+- Dans cette solution, créez les projets suivants :
+  - Module08_ArchitectureDesApplications.Entites :
+    - Type : Bibliothèque de classes
+    - Contiendra : les entités (Client, Adresse) et l'interface de dépot
+    - Dépendances : aucune
+  - Module08_ArchitectureDesApplications.CoucheAccesDonnees.JSON :
+    - Type : Bibliothèque de classes
+    - Contiendra : Le code du dépot JSON et la version du dépot JSON
+    - Dépendances :
+      - Module08_ArchitectureDesApplications.Entites
+  - Module08_ArchitectureDesApplications.CoucheAccesDonnees.XML :
+    - Type : Bibliothèque de classes
+    - Contiendra : Le code du dépot JSON et la version du dépot XML
+    - Dépendances :
+      - Module08_ArchitectureDesApplications.Entites
+  - Module08_ArchitectureDesApplications.TraitementsLots :
+    - Type : Bibliothèque de classes
+    - Contiendra : L'interface des traitements lots
+    - Dépendances : aucune
+  - Module08_ArchitectureDesApplications.TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules :
+    - Type : Application console
+    - Contiendra : La classe du traitement et un nouveau programme principale qui l'instancie
+    - Dépendances :
+      - Module08_ArchitectureDesApplications.Entites
+      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.JSON
+      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.XML
+  - Module08_ArchitectureDesApplications.TraitementsLots.ModifierPaysMajusculesClients :
+    - Type : Application console
+    - Contiendra : La classe du traitement et un nouveau programme principale qui l'instancie
+    - Dépendances :
+      - Module08_ArchitectureDesApplications.Entites
+      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.JSON
+      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.XML
+  - Module08_ArchitectureDesApplications.UI.Console :
+    - Type : Application console
+    - Contiendra : votre interface console avec le menu et les appels au dépot
+    - Dépendances :
+      - Module08_ArchitectureDesApplications.Entites
+      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.JSON
+      - Module08_ArchitectureDesApplications.CoucheAccesDonnees.XML
+- Dans une autre instance de Visual Studio ouvrez la solution "Module08_ArchitectureDesApplications"
+- En adaptant leurs espaces de nommage, copiez les classes de la solution fournie dans les projets adéquat de votre nouvelle solution "Module08_ArchitectureDesApplications"
+- Testez chacun de vos trois exécutables, c'est à dire, le projet d'interface et les deux traitements batch.
