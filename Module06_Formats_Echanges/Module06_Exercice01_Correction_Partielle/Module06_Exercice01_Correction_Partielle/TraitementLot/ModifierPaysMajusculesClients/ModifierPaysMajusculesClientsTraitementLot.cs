@@ -1,11 +1,11 @@
-﻿using Module08_Exercice01_Base_Console.Entites;
+﻿using Module06_Exercice01_Correction_Partielle.Entites;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Module08_Exercice01_Base_Console.TraitementLot.ModifierPaysMajusculesClients
+namespace Module06_Exercice01_Correction_Partielle.TraitementLot.ModifierPaysMajusculesClients
 {
-    class ModifierPaysMajusculesClientsTraitementLot : ITraitementLot
+    public class ModifierPaysMajusculesClientsTraitementLot : ITraitementLot
     {
         private readonly IDepotClients m_depotClients;
 
@@ -45,9 +45,9 @@ namespace Module08_Exercice01_Base_Console.TraitementLot.ModifierPaysMajusculesC
 
                 if (aAuMoinsUneAdresseModifiee)
                 {
-                    foreach (Adresse adresse in adresses)
+                    foreach (Adresse adresseModifiee in adresses)
                     {
-                        client.AjouterModifierAdresse(adresse);
+                        client.AjouterModifierAdresse(adresseModifiee);
                     }
                     this.m_depotClients.ModifierClient(client);
                 }
