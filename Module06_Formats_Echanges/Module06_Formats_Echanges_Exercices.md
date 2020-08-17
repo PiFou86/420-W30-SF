@@ -2,6 +2,24 @@
 
 ## Exercice 1 - Clients
 
+---
+**NOTE**
+
+Pour cet exercice, suivez le modèle donné en cours. La compréhension du modèle proposé sera plus grande après le Module 08.
+
+Les principaux buts sont :
+
+- Manipuler des fichiers
+- Manipuler un format XML
+- Manipuler un format JSON
+- Suivre un design d'application
+- Renforcer la notion d'interface
+- Renforcer la notion de polymorphisme
+- Appliquer l'injection de dépendances
+- Commencer à comprendre un design d'application plus complexe
+
+---
+
 Un client est défini par :
 
 - Un identifiant de type Guid
@@ -42,4 +60,63 @@ Afin de simplifier l'écriture du code, la saisie de l'adresse peut-être simul�
     <summary>Proposition de diagramme de packages</summary>
 
 ![Dépendances entre packages](../images/Module06_Formats_Echanges/diag/src/DiagExerciceClientsPkg/DiagClassesClientsPkg.svg)
+</details>
+
+<details>
+    <summary>Injection de dépendances, solution partielle</summary>
+
+Inspirez-vous du code suivant :
+
+```csharp
+IUnityContainer conteneur = new UnityContainer();
+
+conteneur.RegisterType<IDepotClients, DepotClientsJSON>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { cheminComplet }));
+
+ClientUIConsole clientUIConsole = conteneur.Resolve<ClientUIConsole>();
+clientUIConsole.ExecuterUI();
+```
+
+</details>
+
+<details>
+    <summary>Tests unitaires avec Moq, solution partielle</summary>
+
+Inspirez-vous du code suivant :
+
+```csharp
+[Fact]
+public void Executer_2Clients3Adresses2AModifier_TousEnMaj()
+{
+    Mock<IDepotClients> mockDepot = new Mock<IDepotClients>();
+    mockDepot.Setup(m => m.ListerClients()).Returns(new List<Client>()
+    {
+        new Client(Guid.NewGuid(), "Nom1", "Prenom1", new List<Adresse>()
+        {
+            new Adresse(Guid.NewGuid(), 100, "", "ODO", "Voie", "CP", "Muni", "Etat", "Pays1"),
+            new Adresse(Guid.NewGuid(), 100, "", "ODO", "Voie", "CP", "Muni", "Etat", "PAYS2"),
+        }),
+        new Client(Guid.NewGuid(), "Nom2", "Prenom2", new List<Adresse>()
+        {
+            new Adresse(Guid.NewGuid(), 100, "", "ODO", "Voie", "CP", "Muni", "Etat", "Pays3"),
+        })
+    });
+    List<Client> clientsModifies = new List<Client>();
+    mockDepot.Setup(m => m.ModifierClient(It.IsAny<Client>())).Callback<Client>(c => clientsModifies.Add(c));
+
+    ModifierPaysMajusculesClientsTraitementLot mpmct = new ModifierPaysMajusculesClientsTraitementLot(mockDepot.Object);
+
+    mpmct.Executer();
+
+    mockDepot.Verify(m => m.ListerClients(), Times.Once);
+    mockDepot.Verify(m => m.ModifierClient(It.IsAny<Client>()), Times.Exactly(2));
+    mockDepot.VerifyNoOtherCalls();
+
+    Assert.Equal(2, clientsModifies.Count);
+    Assert.Equal(2, clientsModifies[0].Adresses.Count);
+    Assert.Equal("PAYS1", clientsModifies[0].Adresses[0].Pays);
+    Assert.Single(clientsModifies[1].Adresses);
+    Assert.Equal("PAYS3", clientsModifies[1].Adresses[0].Pays);
+}
+```
+
 </details>
