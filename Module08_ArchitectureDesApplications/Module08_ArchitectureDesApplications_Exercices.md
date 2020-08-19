@@ -1,8 +1,25 @@
 # Module 08 - Architecture des applications
 
+---
+**NOTE**
+
+Pour cet exercice, vous devez vous baser sur les fragments de code fournis. L'objectif n'est pas que vous reteniez par coeur chaque ligne de code, mais que **vous compreniez ce qu'elles font** et que vous soyez capable d'aller les trouver, c'est à dire vous souvenir que cela existe.
+
+Les principaux buts sont :
+
+- Renforcer la compréhension d'un design d'application complexe
+- Découper une application en couches
+- Organiser ces couches dans des projets Visual Studio
+- Créer plusieurs applications exécutable
+- Rendre vos applications configurable
+- Préparer vos applications pour un déploiement
+- Simuler le déploiement d'applications en les déployant sur votre station de développement
+
+---
+
 ## Exercice 1 - Reprise de l'exercice du module 06
 
-Notes : pour des problèmes de longueur de noms de projets et de fichiers, ils ont été raccourcis comme suit :
+Notes : pour des problèmes de longueur de noms de projets et de chemins de fichiers, les abréviations suivantes sont utilisées :
 
 - DAL : Data access Layer (CoucheAccesDonnees)
 - Batch : TraitementLot
@@ -59,9 +76,9 @@ Démarche :
 - Testez chacun de vos trois exécutables, c'est à dire, le projet d'interface et les deux traitements batch.
 - Faites un diagramme qui explicite les liens entre les projets de la solution : un rectangle par projet et un lien qui part du projet vers un autre s'il y a une dépendance.
 
-## Rendons la solution configurable... (Optionnel mais fortement conseillé de le faire)
+## Exercice 2 - Rendons la solution configurable...
 
-Le but de cette section est de pouvoir lancer les trois applications consoles sur le même dépot de clients. Pour cela, vous allez devoir positionner les fichiers de données dans un emplacement accessible par vos applications consoles et leurs indiquer le chemin. Dans cette partie, on se propose d'utiliser les classes du cadriciel .Net afin de lire la configuration dans un fichier JSON.
+Le but de cette section est de pouvoir lancer les trois applications consoles sur **le même dépot de clients**. Pour cela, vous allez devoir positionner les fichiers de données dans un emplacement accessible par vos applications consoles et leurs indiquer le chemin. Dans cette partie, on se propose d'utiliser les classes du cadriciel .Net afin de lire la configuration dans un fichier JSON.
 
 - Dans vos projets de type console, installez les packages Nuget suivants :  
   - Microsoft.Extensions.Configuration
@@ -78,8 +95,9 @@ Le but de cette section est de pouvoir lancer les trois applications consoles su
 }
 ```
 
-- Modifiez les valeurs pour qu'elles correspondent à votre configuration
+- Modifiez les valeurs pour qu'elles correspondent à votre configuration : répertoire contenant votre dépôt de client, nom du fichier (dépendant du format choisi) et type de dépot (soit json, soit xml)
 - Modifiez les propriétés du fichier pour que la propriété "Copier dans le répertoire de sortie" soit configurée sur "Copier si plus récent". Le fichier sera alors copié au moment de la compilation s'il est plus récent.
+- Copiez les fichiers présents dans le répertoire "Donnees" de la solution de base dans le répertoire que vous avez configuré dans les fichiers "appsettings.json" de vos applications console. Dans le cas de l'exemple donné, les fichiers seraient copiés dans le répertoire "tmp" de votre lecteur "C".
 - Pour lire la configuration, basez-vous sur le fragment de code suivant qui ajoute le fichier JSON comme source de configuration et va chercher les valeurs :
 
 ```csharp
@@ -112,11 +130,34 @@ switch (typeDepot.ToLower())
 }
 ```
 
-## Début de déploiement (Optionnel mais fortement conseillé de le faire)
+## Exercice 3 - Début de déploiement
 
 Votre solution permet de créer 3 applications consoles : deux traitements et une application qui intéragit avec l'utilisateur.
 
+L'application "GC.ConsoleUI" est destinée à des utilisateurs. Elle est lancée manuellement au besoin.
+
+Les applications de traitements seraient normalement installées sur d'autres ressources de calculs et seraient lancées régulièrement par un planificateur de tâches.
+
 - Utilisez le gestionnaire de configuration pour que la configuration de la cible soit "Release" à la place de "Debug"
 - Allez dans "Générer" > "Générer la solution"
-- Naviguez les répertoires "Bin\Release\[plateforme]". Copiez chaque contenu dans un répertoire indépendant qui a comme répertoire parent "C:\POOII\GestionClients\".
-- À partir d'une ligne de commande Windows ou PowerShell, essayez d'exécuter ces applications. Déboguez le cas échéant.
+- Naviguez les répertoires "Bin\Release\[plateforme]". Copiez chaque contenu dans un répertoire indépendant qui a comme répertoire parent "C:\POOII\GestionClients\" :
+
+```console
+POOII
+|--GestionClients
+|  |--GC.Batch.ModifierNomPrenomPremiereLettreMajuscules
+|  |--GC.Batch.ModifierPaysMajusculesClients
+|  |--GC.ConsoleUI
+```
+
+- À partir d'une ligne de commande Windows ou PowerShell, essayez d'exécuter ces applications. Déboguez le cas échéant :
+
+```powershell
+# Si vous n'avez pas de fichier exécutable utilisez la commande suivante :
+dotnet [NomProjet].dll
+
+# Si vous avez un fichier exécutable :
+./[NomProjet].exe
+```
+
+## 
