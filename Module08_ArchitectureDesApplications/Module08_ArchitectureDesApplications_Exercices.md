@@ -144,10 +144,10 @@ Les applications de traitements seraient normalement installées sur d'autres re
 
 ```console
 POOII
-|--GestionClients
-|  |--GC.Batch.ModifierNomPrenomPremiereLettreMajuscules
-|  |--GC.Batch.ModifierPaysMajusculesClients
-|  |--GC.ConsoleUI
+└── GestionClients
+   ├── GC.Batch.ModifierNomPrenomPremiereLettreMajuscules
+   ├── GC.Batch.ModifierPaysMajusculesClients
+   └── GC.ConsoleUI
 ```
 
 - À partir d'une ligne de commande Windows ou PowerShell, essayez d'exécuter ces applications. Déboguez le cas échéant :
