@@ -10,12 +10,12 @@ Dans ce module, nous allons utiliser créer une première application graphique 
   - Titre : "Super Bloc-notes"
   - Icône : Cherchez un icône de bloc-notes sur Google image ("ICO")
 - Dans la fenêtre principale, ajoutez le menu fichier avec les options suivantes :
-  - "Nouveau" : raccourci "Ctrl-N"
-  - "Ouvrir" : raccourci "Ctrl-O"
-  - "Enregistrer" : raccourci "Ctrl-S"
-  - "Enregistrer sous..." : raccourci "Shift-Ctrl-S"
+  - "Nouveau" : raccourci "Ctrl+N"
+  - "Ouvrir" : raccourci "Ctrl+O"
+  - "Enregistrer" : raccourci "Ctrl+S"
+  - "Enregistrer sous..." : raccourci "Ctrl+Maj+S"
   - Un séparateur de menu
-  - "Quitter" : raccourci "Ctrl-Q"
+  - "Quitter" : raccourci "Alt+F4"
 - Toujours dans la fenêtre principale, ajoutez une zone de texte multi-lignes qui prend tout le reste de l'espace et adaptez les propriétés de ce control pour que l'apparence reste la même en cas de redimensionnement. La zone multi-lignes doit avoir le nom "tbTexte"
 - Lancez l'application et valider que tout fonctionnne
 
@@ -37,8 +37,8 @@ Dans ce module, nous allons utiliser créer une première application graphique 
 ## Exercice 4 - Un menu édition ? (Optionnel)
 
 - Ajoutez un menu "Édition" avec les options :
-  - Copier : raccourci "Ctrl-C"
-  - Couper : raccourci "Ctrl-X"
-  - Coller : raccourci "Ctrl-V"
+  - Copier : raccourci "Ctrl+C"
+  - Couper : raccourci "Ctrl+X"
+  - Coller : raccourci "Ctrl+V"
 - Programmez les événements en vous aidant de la [classe "ClipBoard"](https://docs.microsoft.com/en-us/dotnet/api/system.windows.clipboard.gettext?view=netcore-3.1) (Voir méthodes statiques GetText et SetText) et des propriétés "Selected*" et "Selection*" du control "tbTexte"
 - Validez que tout fonctionne
