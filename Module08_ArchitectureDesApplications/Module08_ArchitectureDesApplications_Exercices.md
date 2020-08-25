@@ -159,5 +159,3 @@ dotnet [NomProjet].dll
 # Si vous avez un fichier exécutable :
 ./[NomProjet].exe
 ```
-
-## 
