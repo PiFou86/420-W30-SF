@@ -40,5 +40,7 @@ Dans ce module, nous allons utiliser créer une première application graphique 
   - Copier : raccourci "Ctrl+C"
   - Couper : raccourci "Ctrl+X"
   - Coller : raccourci "Ctrl+V"
-- Programmez les événements en vous aidant de la [classe "ClipBoard"](https://docs.microsoft.com/en-us/dotnet/api/system.windows.clipboard.gettext?view=netcore-3.1) (Voir méthodes statiques GetText et SetText) et des propriétés "Selected*" et "Selection*" du contrôle "tbTexte"
+- Programmez les événements en vous aidant des méthodes "Cut/Copy/Paste" et "Selection*" du contrôle "tbTexte"
+- Validez que tout fonctionne
+- **Pour les intrépides** Reprogrammez ces événements en vous aidant de la [classe "ClipBoard"](https://docs.microsoft.com/en-us/dotnet/api/system.windows.clipboard.gettext?view=netcore-3.1) (Voir méthodes statiques GetText et SetText) et des propriétés "Selected*" et "Selection*" du contrôle "tbTexte"
 - Validez que tout fonctionne
