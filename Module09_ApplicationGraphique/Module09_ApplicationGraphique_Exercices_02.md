@@ -1,6 +1,6 @@
 # Module 09 - Application graphique 2 / 2
 
-Dans cette deuxième partie de module, nous allons reprendre le code de la correction partielle du module 07.
+Dans cette deuxième partie de module, nous allons reprendre le code de la correction partielle du module 08.
 
 ## Exercice 1 - Création du projet et des formulaires
 
