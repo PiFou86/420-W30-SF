@@ -10,8 +10,8 @@ Dans cette deuxième partie de module, nous allons reprendre le code de la corre
   - Microsoft.Extensions.Configuration
   - Microsoft.Extensions.Configuration.FileExtensions
   - Microsoft.Extensions.Configuration.Json
+- Ouvrez le répertoire de la solution et copiez tous les projets de la correction partielle du module 08
 - Ajoutez les dépendances de projets nécessaires à l'exploitation du dépot de clients
-- Ouvrez le répertoire de la solution et copiez les projets "GC.*" de la correction partielle
 - Placez-vous dans la classe "fPrincipale" du projet "POOII_Module10_GestionClients". Modifiez le constructeur afin qu'il prenne un dépot de client en paramètres. Copiez sa référence dans une donnée membre
 - Placez-vous dans la classe "Program" du même projet. Modifiez la méthode main en vous inspirant d'une des applications console de la correction partielle.
 - Créée le fichier "appsettings.json" et placez le à la racine du projet. Indiquez au compilateur de le copier dans le répertoire de sortie.
