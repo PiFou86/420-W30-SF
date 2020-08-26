@@ -51,3 +51,9 @@ Dans cette deuxième partie de module, nous allons reprendre le code de la corre
 - Ajoutez une méthode sur l'événement "TextChanged" du "Textbox" et modifiez son code afin qu'elle ajoute les clients contenants le texte du contrôle dans leurs noms et prénoms dans le contrôle "ListBox". Utilisez les méthodes "Clear" et "AddRange(object[])" du "ListBox"
 - Ajoutez une méthode sur l'événement "Click" du bouton "Nouveau" et modifiez son code afin qu'elle ouvre une fenêtre de type "fSaisieClient". Pour cela, vous allez utiliser la méthode "ShowDialog" de la fenêtre en lui passant la référence de la fenêtre principale en paramètres. Si le résultat de l'appel est "OK", ajoutez le client au dépot
 - Ajoutez une méthode sur l'événement "DoubleClick" du contrôle "ListBox" et modifiez son code afin qu'elle ouvre une fenêtre de type "fSaisieClient" avec, en contexte, le client sélectionné. Pour cela, vous allez affecter la propriété "Client" de la fenêtre et vous allez utiliser la méthode "ShowDialog" de la fenêtre en lui passant la référence de la fenêtre principale en paramètres. Pour récupérer l'objet sélectionné, vous pouvez utiliser la propriété "SelectedItem" du contrôle. Si le résultat de l'appel est "OK", modifiez le client
+
+## Exercice 5 - Un peu de POO
+
+- Dessinez un diagramme de dépendances des projets (vous pouvez utiliser un diagramme de packages)
+- Qu'est-ce qui vous parait être la source du fouilli de dépendances que vous voyez ?
+- Comment pourriez-vous le résoudre ? Si vous ne voyez pas, essayez d'abstraire et d'appliquer le principe d'inversion de dépendances en ajoutant un nouveau projet qui lui connait les différents types de dépôts.
