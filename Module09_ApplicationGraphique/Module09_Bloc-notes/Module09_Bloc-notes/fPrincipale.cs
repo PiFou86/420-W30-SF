@@ -23,10 +23,10 @@ namespace TestWinform
             this.InitializeComponent();
             this.m_titreParDefaut = this.Text;
             this.m_texteModifie = false;
-            this.mettreAJourApparence();
+            this.MettreAJourApparence();
         }
 
-        private void mettreAJourApparence()
+        private void MettreAJourApparence()
         {
             this.tsmiEnregistrer.Enabled = !string.IsNullOrWhiteSpace(this.m_fichierCourant);
             this.Text = $"{this.m_fichierCourant} - {this.m_titreParDefaut}";
@@ -34,18 +34,21 @@ namespace TestWinform
 
         private void tsmiOuvrir_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.AddExtension = true;
-            ofd.Filter = filtresFichiers;
-
-            if (ofd.ShowDialog() == DialogResult.OK)
+            if (ConfirmerEnregistrerModificationsSiNessaire("Ouvrir"))
             {
-                this.m_fichierCourant = ofd.FileName;
-                this.tbTexte.Text = File.ReadAllText(this.m_fichierCourant);
-                this.m_texteModifie = false;
-            }
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.AddExtension = true;
+                ofd.Filter = filtresFichiers;
 
-            this.mettreAJourApparence();
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    this.m_fichierCourant = ofd.FileName;
+                    this.tbTexte.Text = File.ReadAllText(this.m_fichierCourant);
+                    this.m_texteModifie = false;
+                }
+
+                this.MettreAJourApparence();
+            }
         }
 
         private void tsmiEnregistrer_Click(object sender, EventArgs e)
@@ -81,11 +84,14 @@ namespace TestWinform
 
         private void tsmiNouveau_Click(object sender, EventArgs e)
         {
-            this.m_fichierCourant = null;
-            this.tbTexte.Text = "";
-            this.m_texteModifie = false;
+            if (ConfirmerEnregistrerModificationsSiNessaire("Nouveau"))
+            {
+                this.m_fichierCourant = null;
+                this.tbTexte.Text = "";
+                this.m_texteModifie = false;
 
-            mettreAJourApparence();
+                MettreAJourApparence();
+            }
         }
 
         private void tsmiQuitter_Click(object sender, EventArgs e)
@@ -98,17 +104,19 @@ namespace TestWinform
             this.m_texteModifie = true;
         }
 
-        private void fPrincipale_FormClosing(object sender, FormClosingEventArgs e)
+        private bool ConfirmerEnregistrerModificationsSiNessaire(string p_contexte, FormClosingEventArgs p_e = null)
         {
+            bool abandonnerModification = false;
             if (this.m_texteModifie)
             {
                 DialogResult dr = MessageBox.Show("Voulez-vous enregistrer les modifications apportées ?",
-                    "Quitter",
-                    MessageBoxButtons.YesNoCancel);
+                                    p_contexte,
+                                    MessageBoxButtons.YesNoCancel);
                 switch (dr)
                 {
                     case DialogResult.Cancel:
-                        e.Cancel = true;
+                        if (p_e != null) { p_e.Cancel = true; }
+                        abandonnerModification = false;
                         break;
                     case DialogResult.Yes:
                         if (!string.IsNullOrEmpty(this.m_fichierCourant))
@@ -119,8 +127,11 @@ namespace TestWinform
                         {
                             this.EnregistrerSous();
                         }
+                        abandonnerModification = true;
                         break;
                     case DialogResult.No:
+                        abandonnerModification = true;
+
                         break;
                     case DialogResult.None:
                     case DialogResult.OK:
@@ -131,6 +142,17 @@ namespace TestWinform
                         break;
                 }
             }
+            else
+            {
+                abandonnerModification = true;
+            }
+
+            return abandonnerModification;
+        }
+
+        private void fPrincipale_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            ConfirmerEnregistrerModificationsSiNessaire("Quitter", e);
         }
 
         private void tsmiCopier_Click(object sender, EventArgs e)

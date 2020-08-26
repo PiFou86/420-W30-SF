@@ -37,11 +37,11 @@
             this.tsmiEnregistrer = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiQuitter = new System.Windows.Forms.ToolStripMenuItem();
-            this.tbTexte = new System.Windows.Forms.TextBox();
             this.tsmiEdition = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiCopier = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiCouper = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiColler = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbTexte = new System.Windows.Forms.TextBox();
             this.msMenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,19 +120,6 @@
             this.tsmiQuitter.Text = "&Quitter";
             this.tsmiQuitter.Click += new System.EventHandler(this.tsmiQuitter_Click);
             // 
-            // tbTexte
-            // 
-            this.tbTexte.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbTexte.Location = new System.Drawing.Point(0, 27);
-            this.tbTexte.Multiline = true;
-            this.tbTexte.Name = "tbTexte";
-            this.tbTexte.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbTexte.Size = new System.Drawing.Size(519, 252);
-            this.tbTexte.TabIndex = 4;
-            this.tbTexte.TextChanged += new System.EventHandler(this.tbTexte_TextChanged);
-            // 
             // tsmiEdition
             // 
             this.tsmiEdition.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -169,6 +156,19 @@
             this.tsmiColler.Size = new System.Drawing.Size(151, 22);
             this.tsmiColler.Text = "Coller";
             this.tsmiColler.Click += new System.EventHandler(this.tsmiColler_Click);
+            // 
+            // tbTexte
+            // 
+            this.tbTexte.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbTexte.Location = new System.Drawing.Point(0, 27);
+            this.tbTexte.Multiline = true;
+            this.tbTexte.Name = "tbTexte";
+            this.tbTexte.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.tbTexte.Size = new System.Drawing.Size(519, 252);
+            this.tbTexte.TabIndex = 4;
+            this.tbTexte.TextChanged += new System.EventHandler(this.tbTexte_TextChanged);
             // 
             // fPrincipale
             // 
