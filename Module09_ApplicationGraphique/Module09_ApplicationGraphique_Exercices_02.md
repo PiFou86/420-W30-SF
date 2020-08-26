@@ -39,13 +39,13 @@ Dans cette deuxième partie de module, nous allons reprendre le code de la corre
 - Toujours dans cette classe, enregistrez une fonction sur l'événement "Load" de la fenêtre. Ajoutez un fragment de code afin de modifier les valeurs des "Textbox" représentant les informations du client passé dans la propriété "Client" si la propriété "Nouveau" est à faux.
 - Toujours dans cette classe, enregistrez une fonction sur l'événement "Click" du bouton "Enregistrer". Ajoutez un fragment de code afin de créer un nouvel objet "Client" qui contient soit le nouveau client ou le client modifié. Affectez la propriété "Result" avec l'objet créé.
 
-## Exercice 4 - Dépot de clients
+## Exercice 3 - Dépot de clients
 
 - Modifiez l'interface de dépot de clients pour y ajouter la méthode "List<Client> RechercherClients(string p_informationPartielle);" : elle permet de chercher un client qui a un nom ou un prénom qui contient le texte contenu dans le paramètre "p_informationPartielle"
 - Modifiez les dépots afin d'ajouter la nouvelle méthode. Afin de facilité la lecture de votre code, vous devez utiliser des requêtes Linq
 - Implantez la méthode "ToString" de l'entité "Client" afin qu'elle renvoie une chaine composée du prénom et du nom du client
 
-## Exercice 3 - Fenêtre "fPrincipale"
+## Exercice 4 - Fenêtre "fPrincipale"
 
 - Ouvrez le designer de formulaires sur le formulaire principal
 - Ajoutez une méthode sur l'événement "TextChanged" du "Textbox" et modifiez son code afin qu'elle ajoute les clients contenants le texte du contrôle dans leurs noms et prénoms dans le contrôle "ListBox". Utilisez les méthodes "Clear" et "AddRange(object[])" du "ListBox"
