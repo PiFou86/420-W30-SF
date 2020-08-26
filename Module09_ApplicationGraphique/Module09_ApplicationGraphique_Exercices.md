@@ -23,7 +23,7 @@ Dans ce module, nous allons utiliser créer une première application graphique 
 
 - Programmez les comportements suivants :
   - Quand l'utilisateur clique sur "Nouveau", le programme doit vider le contenu du contrôle "tbTexte"
-  - Quand l'utilisateur clique sur "Ouvrir", utilisez la classe "OpenFileDialog" pour faire apparaitre une fenêtre de choix de fichiers. Par défaut, seuls les fichiers texte sont affichés. Si l'utilisateur clique sur "Ouvrir", le contrôle "tbTexte" doit faire apparaitre le texte
+  - Quand l'utilisateur clique sur "Ouvrir", utilisez la classe "OpenFileDialog" pour faire apparaitre une fenêtre de choix de fichiers. Par défaut, seuls les fichiers texte sont affichés. Si l'utilisateur clique sur "Ouvrir", le contrôle "tbTexte" contenir le texte du fichier
   - Quand l'utilisateur clique sur "Enregistrer", si un fichier a été précédemment ouvert, vous devez prendre le contenu de "tbTexte" et l'enregistrer dans ce dernier
   - Quand l'utilisateur clique sur "Enregistrer sous...", vous devez proposer à l'utilisateur de choisir un nom de fichier en vous aidant de la classe "SaveFileDialog" avec un filtre de type fichiers texte ("*.txt")
   - Quand l'utilisateur clique sur "Quitter", vous devez quitter l'application en fermant la fenêtre principale
