@@ -16,7 +16,7 @@ namespace GC.ConsoleUI
         {
             // PFL : copiez ces fichiers dans votre répertoire de données si nécessaire
             // Les fichiers générés se crées dans le répertoire de l'exécutable de l'application
-            GenererFichiersDepotSiNonExistant(false);
+            GenererFichiersDepotSiNonExistant(true);
 
             IConfigurationRoot configuration = new ConfigurationBuilder()
             .SetBasePath(Directory.GetParent(AppContext.BaseDirectory).FullName)

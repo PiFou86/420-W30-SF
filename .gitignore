@@ -4,3 +4,4 @@ obj
 **/.vscode
 **/*.zip
 **/.vs
+**/*.user

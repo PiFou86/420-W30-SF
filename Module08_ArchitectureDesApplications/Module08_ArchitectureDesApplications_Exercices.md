@@ -97,7 +97,7 @@ Le but de cette section est de pouvoir lancer les trois applications consoles su
 
 - Modifiez les valeurs pour qu'elles correspondent à votre configuration : répertoire contenant votre dépôt de client, nom du fichier (dépendant du format choisi) et type de dépot (soit json, soit xml)
 - Modifiez les propriétés du fichier pour que la propriété "Copier dans le répertoire de sortie" soit configurée sur "Copier si plus récent". Le fichier sera alors copié au moment de la compilation s'il est plus récent.
-- Copiez les fichiers présents dans le répertoire "Donnees" de la solution de base dans le répertoire que vous avez configuré dans les fichiers "appsettings.json" de vos applications console. Dans le cas de l'exemple donné, les fichiers seraient copiés dans le répertoire "tmp" de votre lecteur "C".
+- Copiez les fichiers présents dans le répertoire "Donnees" du présent dossier dans le répertoire que vous avez configuré dans les fichiers "appsettings.json" de vos applications console. Dans le cas de l'exemple donné, les fichiers seraient copiés dans le répertoire "tmp" de votre lecteur "C".
 - Pour lire la configuration, basez-vous sur le fragment de code suivant qui ajoute le fichier JSON comme source de configuration et va chercher les valeurs :
 
 ```csharp
