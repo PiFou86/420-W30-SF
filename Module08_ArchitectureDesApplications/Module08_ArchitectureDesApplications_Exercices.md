@@ -73,7 +73,7 @@ Démarche :
       - GC.DAL.XML
 - Dans une autre instance de Visual Studio ouvrez la solution "Module08_Exercice01_Base"
 - En adaptant leurs espaces de nommage, copiez les classes de la solution fournie dans les projets adéquat de votre nouvelle solution "GestionClients"
-- Testez chacun de vos trois exécutables, c'est à dire, le projet d'interface et les deux traitements batch.
+- Lancez (exécutez) chacun de vos trois exécutables, c'est à dire, le projet d'interface utilisateur et les deux traitements batch.
 - Faites un diagramme (vous pouvez utiliser un diagramme de packages) qui explicite les liens entre les projets de la solution : un rectangle par projet et un lien qui part du projet vers un autre s'il y a une dépendance.
 
 ## Exercice 2 - Rendons la solution configurable...
