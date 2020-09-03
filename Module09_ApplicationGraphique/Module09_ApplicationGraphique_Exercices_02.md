@@ -35,8 +35,8 @@ Dans cette deuxième partie de module, nous allons reprendre le code de la corre
   - "Client" de type "Client" : la valeur est nulle si la fenêtre va servir pour saisir un nouveau client, non nulle si c'est pour modifier un client existant
   - "Nouveau" de type "bool" : propriété sans set qui renvoie vrai si la fenêtre est utilisée pour créer un nouveau client, faux sinon (Indice : dépend de la valeur de la propriété "Client")
   - "Result" de type "Client" : servira à contenir la nouvelle valeur d'un client si l'utilisateur clique sur "Enregistrer"
-- Toujours dans cette classe, modifiez le contructeur par défaut pour modifier le titre de la fenêtre pour "Saisie d'un nouveau client" quand la propriété "Nouveau" est à vrai, "Modification d'un client" sinon.
 - Toujours dans cette classe, enregistrez une fonction sur l'événement "Load" de la fenêtre. Ajoutez un fragment de code afin de modifier les valeurs des "Textbox" représentant les informations du client passé dans la propriété "Client" si la propriété "Nouveau" est à faux.
+- Toujours dans cette classe, enregistrez une fonction sur l'événement "Load" de la fenêtre. Ajoutez un fragment de code afin de modifier le titre de la fenêtre pour "Saisie d'un nouveau client" quand la propriété "Nouveau" est à vrai, "Modification d'un client" sinon.
 - Toujours dans cette classe, enregistrez une fonction sur l'événement "Click" du bouton "Enregistrer". Ajoutez un fragment de code afin de créer un nouvel objet "Client" qui contient soit le nouveau client ou le client modifié. Affectez la propriété "Result" avec l'objet créé.
 
 ## Exercice 3 - Dépot de clients
