@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POOII_Module10_Observeur_Demo", "POOII_Module10_Observeur_Demo\POOII_Module10_Observeur_Demo.csproj", "{C01A77A4-73E8-4B9F-B1AE-E453F94106FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C01A77A4-73E8-4B9F-B1AE-E453F94106FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01A77A4-73E8-4B9F-B1AE-E453F94106FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01A77A4-73E8-4B9F-B1AE-E453F94106FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01A77A4-73E8-4B9F-B1AE-E453F94106FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA3ECA49-D176-4130-9219-822E62E378FA}
+	EndGlobalSection
+EndGlobal
