@@ -8,7 +8,7 @@ L'application simule deux périphériques de sortie : l'écran principal et l'é
 
 ## Écran principal
 
-- Reproduisez l'écran principal. 
+- Reproduisez l'écran principal
   - Pour l'affichage de la facture, utilisez un "DataGridView". Empêchez l'édition dans ce contrôle.
   - Pour la simulation, mettez tous les contrôles dans un "GroupBox".
   - Les saisies d'entiers ou de décimaux doivent être effectuées avec des contrôles de type "NumericUpDown
@@ -27,7 +27,8 @@ Reproduisez l'écran client :
 
 ## Facture
 
-- Créez une classe facture qui permet de stocker des lignes de facture
+- Créez la classe "Facture" qui permet de stocker des lignes de facture
+- Une ligne de facture à une description, une quantité, un prix unitaire et une total
 - La facture doit être implanter l'interface "IObservable". Le type d'éléments envoyé pour les notifications est "FactureEvent".
 - "FactureEvent" contient trois propriétés :
   - Type : type de l'événement, soit "AJOUT_LIGNE" envoyé pour l'ajout d'une ligne dans la facture, soit "NOUVELLE" pour la création d'une nouvelle facture.
@@ -51,4 +52,4 @@ Reproduisez l'écran client :
     - Affichez "Bienvenue" sur l'écran client
 ![Écrans au démarrage](img/Ecran_demarrage.png)
 
-  - Vérifiez que tout fonctionne
+  - Vérifiez manuellement que tout fonctionne
