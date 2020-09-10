@@ -20,14 +20,7 @@ namespace POOII_Module10_GestionClients
         public fSaisieClient()
         {
             InitializeComponent();
-            if (this.Nouveau)
-            {
-                this.Text = "Saisie d'un nouveau client";
-            }
-            else
-            {
-                this.Text = "Modification d'un client";
-            }
+
         }
 
         private void bEnregistrer_Click(object sender, EventArgs e)
@@ -44,8 +37,11 @@ namespace POOII_Module10_GestionClients
 
         private void fSaisieClient_Load(object sender, EventArgs e)
         {
+            this.Text = "Saisie d'un nouveau client";
+
             if (!this.Nouveau)
             {
+                this.Text = "Modification d'un client";
                 this.tbNom.Text = this.Client.Nom;
                 this.tbPrenom.Text = this.Client.Prenom;
             }
