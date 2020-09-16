@@ -2,6 +2,16 @@
 
 ## Exercice 1 - Traitement d'images
 
+Votre application va permettre d'enchainer une suite de traitement graphique sur une image.
+
+Par exemple, à partir de la première image et après application des traitements, vous pourrez obtenir les images qui suivent (l'image originale est disponible dans le dépôt) :
+
+![Avant l'application de filtre](avant_filtres.png)
+
+![Traitement N&B](filtre_n&b.png)
+
+![Traitement N&B et médiane](filtres_n&b_bruit.png)
+
 ### Exercice 1.1 - Création de l'interface
 
 - Créez la solution et le projet "POOII_Module12_TraitementImages"
