@@ -4,7 +4,7 @@ Dans cette deuxième partie de module, nous allons reprendre le code de la corre
 
 ## Exercice 1 - Création du projet et des formulaires
 
-- Créez la solution "POOII_Module10_GestionClients" avec un projet de type "Windows Forms App (.Net Core)" (il faut minimalement avoir .Net Core 3.1)
+- Créez la solution "POOII_Module09_GestionClients" avec un projet de type "Windows Forms App (.Net Core)" (il faut minimalement avoir .Net Core 3.1)
 - Renommer le nom de la fenêtre principale et de ses classes pour "fPrincipale"
 - Dans le nouveau projet créé, installez les packages Nuget suivants :
   - Microsoft.Extensions.Configuration
