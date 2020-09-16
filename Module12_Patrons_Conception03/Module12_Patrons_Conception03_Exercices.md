@@ -343,4 +343,18 @@ public void TraiterImage(ImageManipulable p_image)
 - Qu'observez-vous ?
 - Sur chaque propriété qui ne devrait pas se retrouver dans le contrôle "pgProprieteTraitementSelectionne", ajoutez l'attribut "Browsable" avec la valeur false passée en paramètres
 - Ajoutez une méthode pour l'événement "click" du bouton "Appliquer". Cette méthode doit créer la chaîne de traitements à partir du contrôle "lbSuiteTraitementsAAppliquer" et lancez le traitement sur l'image courante.
-- 
+
+### Exercice 1.4 - Ajouter des traitements (Optionnel - amusement)
+
+Les traitements se basent sur un tableau de byte. Chaque pixel prend ici 3 bytes : la valeur rouge, la valeur verte, la valeur bleue. Chaque composante de couleur a donc un intervalle de valeur compris entre 0 et 255. La dimension du tableau est donc de 3 * largeur * hauteur de l'image.
+
+- À partir de cette information, relisez le traitement qui transforme l'image en noir et blanc afin de valider que vous comprenez bien la structure.
+- Écrivez de nouveaux traitements :
+  - TraitementImageRouge : ne garde que la composante rouge
+  - TraitementImageVert : ne garde que la composante verte
+  - TraitementImageBleu : ne garde que la composante bleu
+- Rajoutez une méthode dans le menu qui permet de sauvegarder du "PictureBox" dans un fichier "JPEG" choisi par l'utilisateur
+
+### Exercice 1.5 - Sauvegarde de la suite des traitements (Optionnel - révision JSON / XML)
+
+- Proposez une façon de sauvegarder et de charger la configuration de la suite de traitements. Vous devez utiliser soit un format XML ou un format JSON.
