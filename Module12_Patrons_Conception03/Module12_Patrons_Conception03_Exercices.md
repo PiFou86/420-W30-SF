@@ -40,6 +40,7 @@ Par exemple, à partir de la première image et après application des traitemen
   - bAppliquerSuiteTraitements : Button
   - bSuiteTraitementsDeplacerBas : Button
   - bSuiteTraitementsDeplacerHaut : Button
+  - lbSuiteTraitementsAAppliquer : ListBox 
 - Ajoutez le menu "Fichier" ainsi que le sous-menu "Ouvrir"
 - Mise à part les contrôles du panel "pControlSuiteTraitements", tous les contrôles utilisent un positionnement de type "Dock" soit avec l'option Bottom, Top ou Fill. Attention, le contrôle qui utilise le type Fill doit être placé en dernier dans le conteneur qui le contient.
 
