@@ -67,7 +67,7 @@ public class ImageManipulable
     public int Width => this.m_bitmap.Width;
     public int Height => this.m_bitmap.Height;
 
-    public ManipulationImage(string p_filename)
+    public ImageManipulable(string p_filename)
     {
         // Create a new bitmap.
         this.m_bitmap = new Bitmap(p_filename);
