@@ -39,6 +39,7 @@ Par exemple, à partir de la première image et après application des traitemen
   - bAjouterTraitement : Button
   - bSupprimerTraitement : Button
   - cbTraitementAAjouter : ComboBox
+    - DropDownStyle : DropDownList
   - bAppliquerSuiteTraitements : Button
   - bSuiteTraitementsDeplacerBas : Button
   - bSuiteTraitementsDeplacerHaut : Button
