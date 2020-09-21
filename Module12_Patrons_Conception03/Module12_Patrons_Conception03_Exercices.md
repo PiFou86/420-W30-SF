@@ -312,7 +312,7 @@ private static byte TraiterDonnees(byte[] p_donnees)
 }
 ```
 
-- Créez la classe "TraitementImageSeuilLuminance" qui effectue un seuil par rapport à la valeur de la luminance du pixel traité. Cette classe hérite de "TraitementImageMasque". Copiez-y la méthode suivante :
+- Créez la classe "TraitementImageSeuilLuminance" qui effectue un seuil par rapport à la valeur de la luminance du pixel traité. Cette classe hérite de "TraitementImageMasque". Cette classe doit avoir une propriété Seuil de type entier. Pour le reste, copiez-y la méthode suivante :
 
 ```csharp
 public void TraiterImage(ImageManipulable p_image)
