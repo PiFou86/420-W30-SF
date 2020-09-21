@@ -22,10 +22,13 @@ Par exemple, à partir de la première image et après application des traitemen
   - sslPositionSouris : ToolStripStatusLabel (Optionnel)
   - pCanvas : Panel
     - BackColor : White
+    - AutoScroll : true
+    - Dock : Fill
   - msPrincipal : MenuStrip
   - tsmiFichier : ToolStripMenuItem
   - tsmiOuvrir : ToolStripMenuItem
   - pbImage : PictureBox
+    - SizeMode : AutoSize
   - scPrincipal : SplitContainer
     - BorderStyle : Fixed3D
   - scSuiteTraitements : SplitContainer
