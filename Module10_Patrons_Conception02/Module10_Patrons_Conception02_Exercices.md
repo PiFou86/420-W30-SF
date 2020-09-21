@@ -8,7 +8,7 @@ L'application simule deux périphériques de sortie : l'écran principal et l'é
 
 ![Écrans au démarrage](img/Ecran_demarrage.png)
 
-### Écran principal
+### Exercice 1.1 - Écran principal
 
 - Reproduisez l'écran principal
   - Pour l'affichage de la facture, utilisez un "DataGridView". Empêchez l'édition dans ce contrôle.
@@ -21,13 +21,13 @@ L'application simule deux périphériques de sortie : l'écran principal et l'é
 
 ![fPrincipal redimensionnement](img/fPrincipale_redim.png)
 
-### Écran client
+### Exercice 1.2 - Écran client
 
 Reproduisez l'écran client :
 
 ![Écran client](img/fClient.png)
 
-### Facture
+### Exercice 1.3 - Facture
 
 - Créez la classe "Facture" qui permet de stocker des lignes de facture
 - Une ligne de facture à une description, une quantité, un prix unitaire et une total
@@ -39,7 +39,7 @@ Reproduisez l'écran client :
 - La facture doit implanter une méthode pour l'ajout d'une ligne de facture. Cet ajout doit aussi s'occuper de notifier les observateurs de l'événement.
 - La facture doit implanter une méthode pour la suppression de toutes les lignes de la facture. Cet ajout doit aussi s'occuper de notifier les observateurs de l'événement.
 
-### Observateurs
+### Exercice 1.4 - Observateurs
 
 - Créez la classe "ObservateurFacture" qui implante l'interface "IObserver<FactureEvent>"
 - Cette classe doit avoir un constructeur par initialisation qui prend une lambda en paramètres et qui réagit au "FactureEvent" passé en paramètres
@@ -55,6 +55,10 @@ Reproduisez l'écran client :
 ![Écrans au démarrage](img/Ecran_demarrage.png)
 
   - Vérifiez manuellement que tout fonctionne
+  
+## Exercice 1.5 - Ajout d'une simulation d'imprimante (Optionnel)
+
+Ajoutez une autre fenêtre qui va simuler une imprimant de tickets de caisse. À l'ajout du premier article, l'imprimante inscrit les informations de l'entreprise. À l'événement d'une nouvelle facture, l'imprimante inscrit le total et remercie le client de sa visite.
 
 ## Exercice 2 - Copie de fichiers (Optionnel)
 
