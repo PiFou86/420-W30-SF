@@ -2,7 +2,7 @@
 
 ## Exercice 1 - La révolution des lignes
 
-Le but de cet exercice est de créer une application qui, à partir d'une configuration de départ, efface la surface de dessin et trace un ensemble de lignes contiguës. Le premier point est le centre. Les autres points sont calculés à partir de la configuration de départ : angle et longueur à ajouter à chaque nouvelle ligne.
+Le but de cet exercice est de créer une application qui, à partir d'une configuration de départ, efface la surface de dessin et trace un ensemble de lignes contiguës. Le premier point est le centre. Les autres points sont calculés à partir de la configuration de départ : angle et longueur à ajouter à chaque nouveau point.
 
 Voici quelques exemples de dessins que vous serez capable de faire à la fin avec votre application :
 
