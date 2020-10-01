@@ -41,7 +41,10 @@ Voici la fenêtre à créer dans cette partie de l'exercice :
     - nouveauY = ancienY + sin(angle) * longueur
   - Pour chaque nouvelle ligne, le dernier point calculé devient le nouveau, l'angle et la longueur sont respectivement incrémenté de l'angle demandé, et du pas
 
-Pour votre information, l'axe y est ici inversé par rapport aux coordonnées cartésiennes.
+Pour votre information :
+
+- l'axe y est ici inversé par rapport aux coordonnées cartésiennes
+- les fonctions Math.Sin et Math.Cos prennent des valeurs d'angle en radian : 360 degrés <=> 2 * Math.PI
 
 ### Exercice 1.3 - Maintenant on dessine !
 
