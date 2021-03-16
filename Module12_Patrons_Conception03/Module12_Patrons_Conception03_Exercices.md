@@ -233,7 +233,7 @@ for (int longueur = 0; longueur < raw.Length / 3; longueur++)
 - Créez la classe abstraite "TraitementImageMasque" qui implante l'interface "ITraitementImage". Cette classe permet d'appliquer un masque sur une image.
 - Ajoutez-y les propriétés suivantes :
   - Largeur : la largeur doit-être pair et ne doit pas être inférieure à 1
-  - Transformation : fonction qui prend un tableau de "byte" et renvoie un "byte". Le tableau correspond à l'ensemble des pixels voisins du pixel qui est traité. La valeur renvoyée est la nouvelle valeur du pixel traité.
+  - Transformation : fonction qui prend un tableau de "byte" et renvoie un "byte" (Voir classe Func). Le tableau correspond à l'ensemble des pixels voisins du pixel qui est traité. La valeur renvoyée est la nouvelle valeur du pixel traité.
 - Ajoutez le code suivant dans la méthode de traitement ainsi que le code nécessaire à l'appel de la suite de la chaîne :
 
 ```csharp
@@ -352,7 +352,7 @@ public void TraiterImage(ImageManipulable p_image)
 - Les boutons "^" et "v" permettent de déplacer le traitement de la suite de traitements vers le haut ou le bas.
 - Le bouton "-" permet de supprimer le traitement sélectionné de la suite de traitements.
 - Le bouton "+" permet d'ajouter le traitement sélectionné dans le combobox et de l'ajout à fin de la suite de traitements.
-- Ajoutez une méthode sur l'événement "SelectedIndexChanged" du contrôle "lbSuiteTraitementsAAppliquer" et mettez à jour la propriété "SelectedObject" avec l'objet sélectionné.
+- Ajoutez une méthode sur l'événement "SelectedIndexChanged" du contrôle "lbSuiteTraitementsAAppliquer" et mettez à jour la propriété "SelectedObject" du PropertyGrid avec l'objet sélectionné.
 - Testez que vous pouvez bien ajouter des traitements, les déplacer et afficher les propriétés des traitements.
 - Qu'observez-vous ?
 - Sur chaque propriété qui ne devrait pas se retrouver dans le contrôle "pgProprieteTraitementSelectionne", ajoutez l'attribut "Browsable" avec la valeur false passée en paramètres
