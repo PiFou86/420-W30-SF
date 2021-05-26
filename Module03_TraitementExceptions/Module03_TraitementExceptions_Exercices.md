@@ -73,6 +73,8 @@ for (int indiceLigne = 0; indiceLigne < tableau2D.GetLength(0); indiceLigne++)
 - \* : prend une matrice et une valeur v en paramètres et renvoie le résultat de la multiplication de chaque valeur de la matrice par la valeur v
 - +/-: prend deux matrices en paramètres et renvoie une nouvelle matrice dont chaque case correspond à la somme des cases aux mêmes coordonnées prisent dans les deux opérandes
 
+Écrivez les tests unitaires pour la classe "Matrice2D".
+
 ## Exercice 3 - Voiture (Optionnel)
 
 ![Digramme de classes de Voiture](../images/Module03_TraitementExceptions/diag/src/Voiture_exercice01/Voiture.png)
