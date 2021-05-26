@@ -52,7 +52,7 @@ for (int indiceLigne = 0; indiceLigne < tableau2D.GetLength(0); indiceLigne++)
 
 Écrivez les propriétés suivantes :
 
-- [int p_ligne, int p_colonne] : permet d'accèder à une valeur par sa ligne et sa colonne
+- [ [int p_ligne, int p_colonne] ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/using-indexers) : permet d'accèder à une valeur par sa ligne et sa colonne
 - NombreDeLignes (get seulement) : permet de connaitre le nombre de lignes de la matrice
 - NombreDeColonnes (get seulement) : permet de connaitre le nombre de colonnes de la matrice
 
