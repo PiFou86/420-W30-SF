@@ -232,7 +232,7 @@ for (int longueur = 0; longueur < raw.Length / 3; longueur++)
 
 - Créez la classe abstraite "TraitementImageMasque" qui implante l'interface "ITraitementImage". Cette classe permet d'appliquer un masque sur une image.
 - Ajoutez-y les propriétés suivantes :
-  - Largeur : la largeur doit-être pair et ne doit pas être inférieure à 1
+  - Largeur : la largeur doit-être impaire et ne doit pas être inférieure à 1
   - Transformation : fonction qui prend un tableau de "byte" et renvoie un "byte" (Voir classe Func). Le tableau correspond à l'ensemble des pixels voisins du pixel qui est traité. La valeur renvoyée est la nouvelle valeur du pixel traité.
 - Ajoutez le code suivant dans la méthode de traitement ainsi que le code nécessaire à l'appel de la suite de la chaîne :
 
