@@ -242,7 +242,7 @@ byte[] raw = p_image.Raw;
 byte[] res = new byte[raw.Length];
 int width = p_image.Width;
 int height = p_image.Height;
-
+int stride = p_image.Stride;
 byte[] donneesCourantes = new byte[this.Largeur * this.Largeur];
 for (int colonne = 0; colonne < width; colonne++)
 {
@@ -257,12 +257,11 @@ for (int colonne = 0; colonne < width; colonne++)
                 for (int masqueY = -this.Largeur / 2; masqueY <= this.Largeur / 2; masqueY++)
                 {
                     int posY = Math.Min(Math.Max(0, ligne + masqueY), height - 1);
-                    donneesCourantes[posDonneesCourantes] = raw[(posY * width + posX) * 3 + composante];
-
+                    donneesCourantes[posDonneesCourantes] = raw[posY * stride + posX * 3 + composante];
                     ++posDonneesCourantes;
                 }
             }
-            res[(ligne * width + colonne) * 3 + composante] = this.Transformation(donneesCourantes);
+            res[ligne * stride + colonne * 3 + composante] = this.Transformation(donneesCourantes);
         }
     }
 }
