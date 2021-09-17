@@ -32,7 +32,7 @@ Voici la fenêtre à créer dans cette partie de l'exercice :
 ### Exercice 1.2 - Récupération des valeurs
 
 - Écrivez la classe "ConfigurationRevolution" qui contient les propriétés suivantes : angle, longueur de départ, nombre de lignes, pas, position de départ (valeurs x et y)
-- Dans de la classe "fRevolutionLignes", écrivez la méthode "EtablirConfiguration" qui, à partir des données des contrôles, génère un objet de type "ConfigurationRevolution". Le point de départ est au centre du contrôle "pCanvas"
+- Dans la classe "fRevolutionLignes", écrivez la méthode "EtablirConfiguration" qui, à partir des données des contrôles, génère un objet de type "ConfigurationRevolution". Le point de départ est au centre du contrôle "pCanvas"
 - Créez la classe "DessinRevolution" et écrivez la méthode statique "GenererPoints" qui, à partir de la configuration de la révolution renvoie la liste de la succession des points des lignes (n+1 points, n étant le nombre de lignes) en respectant les contraintes suivantes :
   - Le premier point est le point de départ
   - L'angle de départ est de 0 degré
