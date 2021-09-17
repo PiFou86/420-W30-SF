@@ -69,6 +69,7 @@ public class ImageManipulable
     }
 
     public int Width => this.m_bitmap.Width;
+    public int Stride => this.m_bmpData.Stride; // ! les lignes sont alignées sur 4 octets
     public int Height => this.m_bitmap.Height;
 
     public ImageManipulable(string p_filename)
@@ -220,19 +221,32 @@ public static class UtilitaireTraitements
 
 ```csharp
 byte[] raw = p_image.Raw;
-for (int longueur = 0; longueur < raw.Length / 3; longueur++)
+int height = p_image.Height;
+int width = p_image.Width;
+int stride = p_image.Stride;
+for (int ligne = 0; ligne < height; ligne++)
 {
-    int l3 = longueur * 3;
-    byte luminance = (byte)((raw[l3] + raw[l3 + 1] + raw[l3 + 2]) / 3);
-    raw[l3] = luminance;
-    raw[l3 + 1] = luminance;
-    raw[l3 + 2] = luminance;
+    for (int colonne = 0; colonne < width; colonne++)
+    {
+        int debut = ligne * stride + colonne * 3;
+        byte luminance = (byte)((  raw[debut]
+                                 + raw[debut + 1] 
+                                 + raw[debut + 2]) / 3);
+        byte valeur = 0;
+        if (luminance > this.Seuil)
+        {
+            valeur = 255;
+        }
+        raw[debut] = valeur;
+        raw[debut + 1] = valeur;
+        raw[debut + 2] = valeur;
+    }  
 }
 ```
 
 - Créez la classe abstraite "TraitementImageMasque" qui implante l'interface "ITraitementImage". Cette classe permet d'appliquer un masque sur une image.
 - Ajoutez-y les propriétés suivantes :
-  - Largeur : la largeur doit-être pair et ne doit pas être inférieure à 1
+  - Largeur : la largeur doit-être impaire et ne doit pas être inférieure à 1
   - Transformation : fonction qui prend un tableau de "byte" et renvoie un "byte" (Voir classe Func). Le tableau correspond à l'ensemble des pixels voisins du pixel qui est traité. La valeur renvoyée est la nouvelle valeur du pixel traité.
 - Ajoutez le code suivant dans la méthode de traitement ainsi que le code nécessaire à l'appel de la suite de la chaîne :
 
@@ -241,7 +255,7 @@ byte[] raw = p_image.Raw;
 byte[] res = new byte[raw.Length];
 int width = p_image.Width;
 int height = p_image.Height;
-
+int stride = p_image.Stride;
 byte[] donneesCourantes = new byte[this.Largeur * this.Largeur];
 for (int colonne = 0; colonne < width; colonne++)
 {
@@ -256,12 +270,11 @@ for (int colonne = 0; colonne < width; colonne++)
                 for (int masqueY = -this.Largeur / 2; masqueY <= this.Largeur / 2; masqueY++)
                 {
                     int posY = Math.Min(Math.Max(0, ligne + masqueY), height - 1);
-                    donneesCourantes[posDonneesCourantes] = raw[(posY * width + posX) * 3 + composante];
-
+                    donneesCourantes[posDonneesCourantes] = raw[posY * stride + posX * 3 + composante];
                     ++posDonneesCourantes;
                 }
             }
-            res[(ligne * width + colonne) * 3 + composante] = this.Transformation(donneesCourantes);
+            res[ligne * stride + colonne * 3 + composante] = this.Transformation(donneesCourantes);
         }
     }
 }
