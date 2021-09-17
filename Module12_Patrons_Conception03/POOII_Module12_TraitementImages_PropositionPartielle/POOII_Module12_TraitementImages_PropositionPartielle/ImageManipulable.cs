@@ -24,6 +24,7 @@ namespace POOII_Module11_Paint
         }
 
         public int Width => this.m_bitmap.Width;
+        public int Stride => this.m_bmpData.Stride; // ! les lignes sont alignées sur 4 octets
         public int Height => this.m_bitmap.Height;
 
         public ImageManipulable(string p_filename)

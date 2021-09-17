@@ -44,6 +44,7 @@ namespace POOII_Module11_Paint
         {
             byte[] raw = p_image.Raw;
             byte[] res = new byte[raw.Length];
+            int stride = p_image.Stride;
             int width = p_image.Width;
             int height = p_image.Height;
 
@@ -61,12 +62,12 @@ namespace POOII_Module11_Paint
                             for (int masqueY = -this.Largeur / 2; masqueY <= this.Largeur / 2; masqueY++)
                             {
                                 int posY = Math.Min(Math.Max(0, ligne + masqueY), height - 1);
-                                donneesCourantes[posDonneesCourantes] = raw[(posY * width + posX) * 3 + composante];
+                                donneesCourantes[posDonneesCourantes] = raw[posY * stride + posX * 3 + composante];
 
                                 ++posDonneesCourantes;
                             }
                         }
-                        res[(ligne * width + colonne) * 3 + composante] = this.Transformation(donneesCourantes);
+                        res[ligne * stride + colonne * 3 + composante] = this.Transformation(donneesCourantes);
                     }
                 }
             }

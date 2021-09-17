@@ -16,18 +16,26 @@ namespace POOII_Module11_Paint
         public void TraiterImage(ImageManipulable p_image)
         {
             byte[] raw = p_image.Raw;
-            for (int longueur = 0; longueur < raw.Length / 3; longueur++)
+            int height = p_image.Height;
+            int width = p_image.Width;
+            int stride = p_image.Stride;
+            for (int ligne = 0; ligne < height; ligne++)
             {
-                int l3 = longueur * 3;
-                byte luminance = (byte)((raw[l3] + raw[l3 + 1] + raw[l3 + 2]) / 3);
-                byte valeur = 0;
-                if (luminance > this.Seuil)
+                for (int colonne = 0; colonne < width; colonne++)
                 {
-                    valeur = 255;
-                }
-                raw[l3] = valeur;
-                raw[l3 + 1] = valeur;
-                raw[l3 + 2] = valeur;
+                    int debut = ligne * stride + colonne * 3;
+                    byte luminance = (byte)((  raw[debut]
+                                             + raw[debut + 1] 
+                                             + raw[debut + 2]) / 3);
+                    byte valeur = 0;
+                    if (luminance > this.Seuil)
+                    {
+                        valeur = 255;
+                    }
+                    raw[debut] = valeur;
+                    raw[debut + 1] = valeur;
+                    raw[debut + 2] = valeur;
+                }  
             }
 
             this.Suivant?.TraiterImage(p_image);
