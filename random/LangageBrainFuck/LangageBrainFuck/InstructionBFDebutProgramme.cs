@@ -1,7 +1,7 @@
-﻿namespace LangageBrainFuck
+﻿namespace LangageBrainFuck
 {
-    public class InstructionBFDebutProgramme : InstructionBF
-    {
-        // rien
-    }
+    public class InstructionBFDebutProgramme : InstructionBF
+    {
+        // rien
+    }
 }

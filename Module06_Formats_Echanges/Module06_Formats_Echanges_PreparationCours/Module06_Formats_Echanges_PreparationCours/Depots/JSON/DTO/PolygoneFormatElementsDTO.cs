@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO
+namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO
 {
-    public class PolygoneJSONDTO : FormeJSONDTO
-    {
-        public List<Point2DJSONDTO> Sommets { get; set; }
-    }
+    public class PolygoneJSONDTO : FormeJSONDTO
+    {
+        public List<Point2DJSONDTO> Sommets { get; set; }
+    }
 }

@@ -1,7 +1,7 @@
-﻿namespace LangageBrainFuck
+﻿namespace LangageBrainFuck
 {
-    public abstract class InstructionBFIO : InstructionBF
-    {
-        // rien
-    }
+    public abstract class InstructionBFIO : InstructionBF
+    {
+        // rien
+    }
 }

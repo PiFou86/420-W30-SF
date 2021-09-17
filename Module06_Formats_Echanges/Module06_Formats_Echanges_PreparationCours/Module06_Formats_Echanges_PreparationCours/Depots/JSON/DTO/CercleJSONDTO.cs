@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO
+namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO
 {
-    public class CercleJSONDTO : FormeJSONDTO
-    {
-        public Point2DJSONDTO Centre { get; set; }
-        public int Rayon { get; set; }
-    }
+    public class CercleJSONDTO : FormeJSONDTO
+    {
+        public Point2DJSONDTO Centre { get; set; }
+        public int Rayon { get; set; }
+    }
 }

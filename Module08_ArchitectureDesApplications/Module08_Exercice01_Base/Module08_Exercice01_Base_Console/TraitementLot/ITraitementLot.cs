@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Module08_Exercice01_Base_Console.TraitementLot
+namespace Module08_Exercice01_Base_Console.TraitementLot
 {
-    public interface ITraitementLot
-    {
-        void Executer();
-    }
+    public interface ITraitementLot
+    {
+        void Executer();
+    }
 }

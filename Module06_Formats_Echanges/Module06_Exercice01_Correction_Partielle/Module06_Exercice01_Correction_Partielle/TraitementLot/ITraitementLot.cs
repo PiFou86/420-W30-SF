@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Module06_Exercice01_Correction_Partielle.TraitementLot
+namespace Module06_Exercice01_Correction_Partielle.TraitementLot
 {
-    public interface ITraitementLot
-    {
-        void Executer();
-    }
+    public interface ITraitementLot
+    {
+        void Executer();
+    }
 }

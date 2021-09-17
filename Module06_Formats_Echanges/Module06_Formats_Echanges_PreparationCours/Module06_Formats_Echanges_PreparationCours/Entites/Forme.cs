@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Module06_Formats_Echanges_PreparationCours.Entites
+namespace Module06_Formats_Echanges_PreparationCours.Entites
 {
-    public interface Forme
-    {
-    }
+    public interface Forme
+    {
+    }
 }

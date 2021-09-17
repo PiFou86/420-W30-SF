@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace POOII_Module12_PreparationCours.Exemple2
+namespace POOII_Module12_PreparationCours.Exemple2
 {
-    public class Ellipse : IFormeGeometrique
-    {
-    }
+    public class Ellipse : IFormeGeometrique
+    {
+    }
 }

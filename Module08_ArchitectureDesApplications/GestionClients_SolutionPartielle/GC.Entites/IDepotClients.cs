@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
-namespace GC.Entites
+namespace GC.Entites
 {
-    public interface IDepotClients
-    {
-        void AjouterClient(Client p_client);
-        List<Client> ListerClients();
-        Client RechercherClient(Guid p_guid);
-        void ModifierClient(Client p_client);
-    }
+    public interface IDepotClients
+    {
+        void AjouterClient(Client p_client);
+        List<Client> ListerClients();
+        Client RechercherClient(Guid p_guid);
+        void ModifierClient(Client p_client);
+    }
 }

@@ -1,28 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace POOII_Module12_PreparationCours.Exemple1
+namespace POOII_Module12_PreparationCours.Exemple1
 {
-    public class TraitementChaineCaracteresMettreEnMajuscules : ITraitementChaineCaracteres
-    {
-        public ITraitementChaineCaracteres Suivant { get; set; }
+    public class TraitementChaineCaracteresMettreEnMajuscules : ITraitementChaineCaracteres
+    {
+        public ITraitementChaineCaracteres Suivant { get; set; }
 
-        public string TraiterChaineCaracteres(string p_chaine)
-        {
-            if (p_chaine is null)
-            {
-                throw new ArgumentNullException(nameof(p_chaine));
-            }
+        public string TraiterChaineCaracteres(string p_chaine)
+        {
+            if (p_chaine is null)
+            {
+                throw new ArgumentNullException(nameof(p_chaine));
+            }
 
-            string res = p_chaine.ToUpper();
+            string res = p_chaine.ToUpper();
 
-            if (Suivant != null)
-            {
-                res = this.Suivant.TraiterChaineCaracteres(res);
-            }
+            if (Suivant != null)
+            {
+                res = this.Suivant.TraiterChaineCaracteres(res);
+            }
 
-            return res;
-        }
-    }
+            return res;
+        }
+    }
 }

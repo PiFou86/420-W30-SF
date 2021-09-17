@@ -1,7 +1,7 @@
-﻿namespace GC.Batch
+﻿namespace GC.Batch
 {
-    public interface ITraitementLot
-    {
-        void Executer();
-    }
+    public interface ITraitementLot
+    {
+        void Executer();
+    }
 }
