@@ -102,7 +102,8 @@
             this.Controls.Add(this.tbNom);
             this.Controls.Add(this.lPrenom);
             this.Controls.Add(this.lNom);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "fSaisieClient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fSaisieClient";

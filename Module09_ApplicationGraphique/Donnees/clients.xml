@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Client>
+    <ClientId>13906be0-52ed-47e3-9b76-96af9b0a9c7d</ClientId>
+    <Nom>Fortin</Nom>
+    <Prenom>Olivia</Prenom>
+    <Adresses>
+      <Adresse>
+        <AdresseId>f412e61a-337d-4446-8b47-9ab2c8b7b02d</AdresseId>
+        <NumeroCivique>7968</NumeroCivique>
+        <InformationComplementaire>rang de terre</InformationComplementaire>
+        <Odonyme>du pommier</Odonyme>
+        <TypeVoie>Rang</TypeVoie>
+        <CodePostal>GX8 2P2</CodePostal>
+        <NomMunicipalite>Quebec</NomMunicipalite>
+        <Etat>Alberta</Etat>
+        <Pays>USA</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>04419a5f-9551-44b0-ace5-c026d3940675</AdresseId>
+        <NumeroCivique>7082</NumeroCivique>
+        <InformationComplementaire>belle route asphaltée</InformationComplementaire>
+        <Odonyme>de la grande route</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>G3D G6X</CodePostal>
+        <NomMunicipalite>Ste-Foy</NomMunicipalite>
+        <Etat>Ontario</Etat>
+        <Pays>France</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>df84bc34-dcc5-40c7-a250-8e7e1c37b9a5</AdresseId>
+        <NumeroCivique>8238</NumeroCivique>
+        <InformationComplementaire>route dangereuse</InformationComplementaire>
+        <Odonyme>des roses</Odonyme>
+        <TypeVoie>Rang</TypeVoie>
+        <CodePostal>GX8 2P2</CodePostal>
+        <NomMunicipalite>Ste-Foy</NomMunicipalite>
+        <Etat>Alberta</Etat>
+        <Pays>Canada</Pays>
+      </Adresse>
+    </Adresses>
+  </Client>
+  <Client>
+    <ClientId>7f19a6db-12b5-463a-8e1e-9e329215d879</ClientId>
+    <Nom>Pelletier</Nom>
+    <Prenom>Alice</Prenom>
+    <Adresses>
+      <Adresse>
+        <AdresseId>1d1b0952-b293-4f51-9b9d-28a0c857dc3d</AdresseId>
+        <NumeroCivique>685</NumeroCivique>
+        <InformationComplementaire>route dangereuse</InformationComplementaire>
+        <Odonyme>de la grande route</Odonyme>
+        <TypeVoie>Boulevard</TypeVoie>
+        <CodePostal>GX8 2P2</CodePostal>
+        <NomMunicipalite>Beauceville</NomMunicipalite>
+        <Etat>Alberta</Etat>
+        <Pays>France</Pays>
+      </Adresse>
+    </Adresses>
+  </Client>
+  <Client>
+    <ClientId>8d66dc15-6333-4c85-88f1-e7e68d41c6ab</ClientId>
+    <Nom>Bouchard</Nom>
+    <Prenom>Emma</Prenom>
+    <Adresses>
+      <Adresse>
+        <AdresseId>90e03934-939a-4bc0-afd0-5c8153c3600c</AdresseId>
+        <NumeroCivique>4152</NumeroCivique>
+        <InformationComplementaire>route dangereuse</InformationComplementaire>
+        <Odonyme>de la grande route</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>G3D G6X</CodePostal>
+        <NomMunicipalite>Beauceville</NomMunicipalite>
+        <Etat>Ontario</Etat>
+        <Pays>USA</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>d43b3134-42f4-4247-9063-8b837bbb8193</AdresseId>
+        <NumeroCivique>1508</NumeroCivique>
+        <InformationComplementaire>rang de terre</InformationComplementaire>
+        <Odonyme>du pommier</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>G3D G6X</CodePostal>
+        <NomMunicipalite>Beauceville</NomMunicipalite>
+        <Etat>Alberta</Etat>
+        <Pays>USA</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>17bdc44f-44b3-4fae-a1db-c786930e9e9a</AdresseId>
+        <NumeroCivique>519</NumeroCivique>
+        <InformationComplementaire>rang de terre</InformationComplementaire>
+        <Odonyme>du pommier</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>G3D G6X</CodePostal>
+        <NomMunicipalite>St-Georges</NomMunicipalite>
+        <Etat>Ontario</Etat>
+        <Pays>Russie</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>35330068-c3cc-41f7-9eec-f0883c33a233</AdresseId>
+        <NumeroCivique>2448</NumeroCivique>
+        <InformationComplementaire>belle route asphaltée</InformationComplementaire>
+        <Odonyme>des perchaudes</Odonyme>
+        <TypeVoie>Boulevard</TypeVoie>
+        <CodePostal>GX8 2P2</CodePostal>
+        <NomMunicipalite>Ste-Foy</NomMunicipalite>
+        <Etat>Ontario</Etat>
+        <Pays>Russie</Pays>
+      </Adresse>
+    </Adresses>
+  </Client>
+  <Client>
+    <ClientId>4f68ef9c-74ab-4d1d-aaf6-eb36291ede60</ClientId>
+    <Nom>Lavoie</Nom>
+    <Prenom>Noah</Prenom>
+    <Adresses>
+      <Adresse>
+        <AdresseId>f18df992-4c67-4c41-b37c-bfeccdf05863</AdresseId>
+        <NumeroCivique>6032</NumeroCivique>
+        <InformationComplementaire>route dangereuse</InformationComplementaire>
+        <Odonyme>des roses</Odonyme>
+        <TypeVoie>Boulevard</TypeVoie>
+        <CodePostal>GX8 2P2</CodePostal>
+        <NomMunicipalite>Ste-Foy</NomMunicipalite>
+        <Etat>Alberta</Etat>
+        <Pays>USA</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>d3a3b5c9-a1be-44ba-808c-1d78db929fd6</AdresseId>
+        <NumeroCivique>8539</NumeroCivique>
+        <InformationComplementaire>route dangereuse</InformationComplementaire>
+        <Odonyme>du pommier</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>GX8 2P2</CodePostal>
+        <NomMunicipalite>Quebec</NomMunicipalite>
+        <Etat>Quebec</Etat>
+        <Pays>Canada</Pays>
+      </Adresse>
+    </Adresses>
+  </Client>
+  <Client>
+    <ClientId>412db414-fb23-4595-b3c9-f09f7077aedf</ClientId>
+    <Nom>Bergeron</Nom>
+    <Prenom>Olivia</Prenom>
+    <Adresses>
+      <Adresse>
+        <AdresseId>e1342792-b0a1-4786-8d7f-62b04233c1f0</AdresseId>
+        <NumeroCivique>3794</NumeroCivique>
+        <InformationComplementaire>belle route asphaltée</InformationComplementaire>
+        <Odonyme>de la grande route</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>G5X 1X5</CodePostal>
+        <NomMunicipalite>St-Georges</NomMunicipalite>
+        <Etat>Saskatchewan</Etat>
+        <Pays>USA</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>ab1728ae-5292-4d61-a1dd-6b0b7ee8315e</AdresseId>
+        <NumeroCivique>3969</NumeroCivique>
+        <InformationComplementaire>route dangereuse</InformationComplementaire>
+        <Odonyme>de la grande route</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>GX8 2P2</CodePostal>
+        <NomMunicipalite>Beauceville</NomMunicipalite>
+        <Etat>Ontario</Etat>
+        <Pays>Russie</Pays>
+      </Adresse>
+    </Adresses>
+  </Client>
+  <Client>
+    <ClientId>0a509ab4-8985-41b6-bffe-b9a22ac149ef</ClientId>
+    <Nom>Gagnon</Nom>
+    <Prenom>Charlotte</Prenom>
+    <Adresses>
+      <Adresse>
+        <AdresseId>b257c1da-7339-44f6-9910-d13517e885ef</AdresseId>
+        <NumeroCivique>1299</NumeroCivique>
+        <InformationComplementaire>belle route asphaltée</InformationComplementaire>
+        <Odonyme>du pommier</Odonyme>
+        <TypeVoie>Rang</TypeVoie>
+        <CodePostal>G6X 2X4</CodePostal>
+        <NomMunicipalite>St-Georges</NomMunicipalite>
+        <Etat>Alberta</Etat>
+        <Pays>Russie</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>44262a23-40c9-488d-be3a-460f73a4175c</AdresseId>
+        <NumeroCivique>6047</NumeroCivique>
+        <InformationComplementaire>rang de gravelle</InformationComplementaire>
+        <Odonyme>des roses</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>G6X 2X4</CodePostal>
+        <NomMunicipalite>Ste-Foy</NomMunicipalite>
+        <Etat>Quebec</Etat>
+        <Pays>USA</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>e725b851-4967-499a-bc9f-c8556fe7cd51</AdresseId>
+        <NumeroCivique>4126</NumeroCivique>
+        <InformationComplementaire>rang de terre</InformationComplementaire>
+        <Odonyme>de la grande route</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>G6X 2X4</CodePostal>
+        <NomMunicipalite>Quebec</NomMunicipalite>
+        <Etat>Alberta</Etat>
+        <Pays>Canada</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>5f69ec9b-2150-4527-b1f1-d567a4988b74</AdresseId>
+        <NumeroCivique>7390</NumeroCivique>
+        <InformationComplementaire>rang de gravelle</InformationComplementaire>
+        <Odonyme>des roses</Odonyme>
+        <TypeVoie>Boulevard</TypeVoie>
+        <CodePostal>GX8 2P2</CodePostal>
+        <NomMunicipalite>Beauceville</NomMunicipalite>
+        <Etat>Quebec</Etat>
+        <Pays>USA</Pays>
+      </Adresse>
+    </Adresses>
+  </Client>
+  <Client>
+    <ClientId>67b89f34-0b5d-4c12-81e0-85bf9d7f159b</ClientId>
+    <Nom>Pelletier</Nom>
+    <Prenom>Alice</Prenom>
+    <Adresses>
+      <Adresse>
+        <AdresseId>098fddc0-0855-44b1-886b-b76feec1fcd0</AdresseId>
+        <NumeroCivique>5416</NumeroCivique>
+        <InformationComplementaire>route dangereuse</InformationComplementaire>
+        <Odonyme>des roses</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>G6X 2X4</CodePostal>
+        <NomMunicipalite>Quebec</NomMunicipalite>
+        <Etat>Quebec</Etat>
+        <Pays>Canada</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>78e16fbd-b002-459b-a3ae-61098dac3776</AdresseId>
+        <NumeroCivique>756</NumeroCivique>
+        <InformationComplementaire>belle route asphaltée</InformationComplementaire>
+        <Odonyme>de la grande route</Odonyme>
+        <TypeVoie>Boulevard</TypeVoie>
+        <CodePostal>G5X 1X5</CodePostal>
+        <NomMunicipalite>Quebec</NomMunicipalite>
+        <Etat>Alberta</Etat>
+        <Pays>Canada</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>f8c29372-53f0-4a7c-bec0-bed06bb1e668</AdresseId>
+        <NumeroCivique>9935</NumeroCivique>
+        <InformationComplementaire>belle route asphaltée</InformationComplementaire>
+        <Odonyme>des roses</Odonyme>
+        <TypeVoie>Rue</TypeVoie>
+        <CodePostal>G5X 1X5</CodePostal>
+        <NomMunicipalite>Quebec</NomMunicipalite>
+        <Etat>Alberta</Etat>
+        <Pays>USA</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>f37604cd-c1b9-4d57-8163-27f161ba540e</AdresseId>
+        <NumeroCivique>5251</NumeroCivique>
+        <InformationComplementaire>rang de terre</InformationComplementaire>
+        <Odonyme>des roses</Odonyme>
+        <TypeVoie>Rang</TypeVoie>
+        <CodePostal>G3D G6X</CodePostal>
+        <NomMunicipalite>Ste-Foy</NomMunicipalite>
+        <Etat>Alberta</Etat>
+        <Pays>USA</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>e198da99-c861-46b9-a04f-2d6b6eb0febd</AdresseId>
+        <NumeroCivique>2289</NumeroCivique>
+        <InformationComplementaire>rang de gravelle</InformationComplementaire>
+        <Odonyme>des perchaudes</Odonyme>
+        <TypeVoie>Rang</TypeVoie>
+        <CodePostal>G5X 1X5</CodePostal>
+        <NomMunicipalite>Beauceville</NomMunicipalite>
+        <Etat>Quebec</Etat>
+        <Pays>France</Pays>
+      </Adresse>
+    </Adresses>
+  </Client>
+</ArrayOfClient>

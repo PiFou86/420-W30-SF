@@ -71,9 +71,9 @@
             this.gbSimulateurScanner.Controls.Add(this.tbSimulationScanDescription);
             this.gbSimulateurScanner.Controls.Add(this.lSimulationScanDescription);
             this.gbSimulateurScanner.Controls.Add(this.bSimulerScan);
-            this.gbSimulateurScanner.Location = new System.Drawing.Point(15, 340);
+            this.gbSimulateurScanner.Location = new System.Drawing.Point(15, 191);
             this.gbSimulateurScanner.Name = "gbSimulateurScanner";
-            this.gbSimulateurScanner.Size = new System.Drawing.Size(773, 75);
+            this.gbSimulateurScanner.Size = new System.Drawing.Size(469, 75);
             this.gbSimulateurScanner.TabIndex = 2;
             this.gbSimulateurScanner.TabStop = false;
             this.gbSimulateurScanner.Text = "Simulateur scanner";
@@ -82,7 +82,7 @@
             // 
             this.nudSimulateurScanPrix.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nudSimulateurScanPrix.DecimalPlaces = 2;
-            this.nudSimulateurScanPrix.Location = new System.Drawing.Point(692, 17);
+            this.nudSimulateurScanPrix.Location = new System.Drawing.Point(388, 17);
             this.nudSimulateurScanPrix.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -96,7 +96,7 @@
             // nudSimulateurScanQuantite
             // 
             this.nudSimulateurScanQuantite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudSimulateurScanQuantite.Location = new System.Drawing.Point(578, 16);
+            this.nudSimulateurScanQuantite.Location = new System.Drawing.Point(274, 16);
             this.nudSimulateurScanQuantite.Minimum = new decimal(new int[] {
             1,
             0,
@@ -115,7 +115,7 @@
             // 
             this.lSimulateurScanPrix.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lSimulateurScanPrix.AutoSize = true;
-            this.lSimulateurScanPrix.Location = new System.Drawing.Point(659, 19);
+            this.lSimulateurScanPrix.Location = new System.Drawing.Point(355, 19);
             this.lSimulateurScanPrix.Name = "lSimulateurScanPrix";
             this.lSimulateurScanPrix.Size = new System.Drawing.Size(27, 15);
             this.lSimulateurScanPrix.TabIndex = 1;
@@ -125,7 +125,7 @@
             // 
             this.lSimulateurScanQuantite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lSimulateurScanQuantite.AutoSize = true;
-            this.lSimulateurScanQuantite.Location = new System.Drawing.Point(519, 19);
+            this.lSimulateurScanQuantite.Location = new System.Drawing.Point(215, 19);
             this.lSimulateurScanQuantite.Name = "lSimulateurScanQuantite";
             this.lSimulateurScanQuantite.Size = new System.Drawing.Size(53, 15);
             this.lSimulateurScanQuantite.TabIndex = 1;
@@ -137,7 +137,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbSimulationScanDescription.Location = new System.Drawing.Point(79, 16);
             this.tbSimulationScanDescription.Name = "tbSimulationScanDescription";
-            this.tbSimulationScanDescription.Size = new System.Drawing.Size(420, 23);
+            this.tbSimulationScanDescription.Size = new System.Drawing.Size(116, 23);
             this.tbSimulationScanDescription.TabIndex = 1;
             // 
             // lSimulationScanDescription
@@ -152,7 +152,7 @@
             // bSimulerScan
             // 
             this.bSimulerScan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bSimulerScan.Location = new System.Drawing.Point(692, 45);
+            this.bSimulerScan.Location = new System.Drawing.Point(388, 45);
             this.bSimulerScan.Name = "bSimulerScan";
             this.bSimulerScan.Size = new System.Drawing.Size(75, 23);
             this.bSimulerScan.TabIndex = 4;
@@ -164,7 +164,7 @@
             // 
             this.lTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lTotal.AutoSize = true;
-            this.lTotal.Location = new System.Drawing.Point(623, 288);
+            this.lTotal.Location = new System.Drawing.Point(319, 139);
             this.lTotal.Name = "lTotal";
             this.lTotal.Size = new System.Drawing.Size(32, 15);
             this.lTotal.TabIndex = 3;
@@ -174,7 +174,7 @@
             // 
             this.tbTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.tbTotal.Enabled = false;
-            this.tbTotal.Location = new System.Drawing.Point(661, 285);
+            this.tbTotal.Location = new System.Drawing.Point(357, 136);
             this.tbTotal.Name = "tbTotal";
             this.tbTotal.Size = new System.Drawing.Size(127, 23);
             this.tbTotal.TabIndex = 4;
@@ -182,7 +182,7 @@
             // bPayer
             // 
             this.bPayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bPayer.Location = new System.Drawing.Point(713, 314);
+            this.bPayer.Location = new System.Drawing.Point(409, 165);
             this.bPayer.Name = "bPayer";
             this.bPayer.Size = new System.Drawing.Size(75, 23);
             this.bPayer.TabIndex = 5;
@@ -231,7 +231,7 @@
             this.dgvFacture.Location = new System.Drawing.Point(12, 20);
             this.dgvFacture.Name = "dgvFacture";
             this.dgvFacture.ReadOnly = true;
-            this.dgvFacture.Size = new System.Drawing.Size(776, 259);
+            this.dgvFacture.Size = new System.Drawing.Size(472, 110);
             this.dgvFacture.TabIndex = 0;
             this.dgvFacture.Text = "dataGridView1";
             // 
@@ -239,13 +239,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 430);
+            this.ClientSize = new System.Drawing.Size(496, 281);
             this.Controls.Add(this.dgvFacture);
             this.Controls.Add(this.bPayer);
             this.Controls.Add(this.tbTotal);
             this.Controls.Add(this.lTotal);
             this.Controls.Add(this.gbSimulateurScanner);
             this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(512, 320);
             this.Name = "fEcranPrincipal";
             this.Text = "Écran principal";
             this.Load += new System.EventHandler(this.fEcranPrincipal_Load);

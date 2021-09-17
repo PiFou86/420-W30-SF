@@ -49,7 +49,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbRecherche.Location = new System.Drawing.Point(123, 6);
             this.tbRecherche.Name = "tbRecherche";
-            this.tbRecherche.Size = new System.Drawing.Size(584, 23);
+            this.tbRecherche.Size = new System.Drawing.Size(128, 23);
             this.tbRecherche.TabIndex = 1;
             this.tbRecherche.TextChanged += new System.EventHandler(this.tbRecherche_TextChanged);
             // 
@@ -62,13 +62,14 @@
             this.lbClient.ItemHeight = 15;
             this.lbClient.Location = new System.Drawing.Point(12, 35);
             this.lbClient.Name = "lbClient";
-            this.lbClient.Size = new System.Drawing.Size(776, 409);
+            this.lbClient.Size = new System.Drawing.Size(320, 34);
             this.lbClient.TabIndex = 2;
             this.lbClient.DoubleClick += new System.EventHandler(this.lbClient_DoubleClick);
             // 
             // bNouveau
             // 
-            this.bNouveau.Location = new System.Drawing.Point(713, 6);
+            this.bNouveau.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bNouveau.Location = new System.Drawing.Point(257, 6);
             this.bNouveau.Name = "bNouveau";
             this.bNouveau.Size = new System.Drawing.Size(75, 23);
             this.bNouveau.TabIndex = 3;
@@ -80,11 +81,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(344, 89);
             this.Controls.Add(this.bNouveau);
             this.Controls.Add(this.lbClient);
             this.Controls.Add(this.tbRecherche);
             this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(360, 128);
             this.Name = "fPrincipale";
             this.Text = "Gestion de clients";
             this.ResumeLayout(false);

@@ -23,19 +23,20 @@ namespace POOII_Module10_Caisse_Enregistreuse
                 this.Facture,
                 (fe) =>
                 {
-                    switch (fe.Type)
-                    {
-                        case FactureEventType.AJOUT_LIGNE:
+                    if (fe.Type == FactureEventType.AJOUT_LIGNE) {
                             tbAffichage.Text = $"{fe.LigneFacture.Description.Substring(0, Math.Min(10, fe.LigneFacture.Description.Length)).PadRight(10)}{fe.LigneFacture.Quantite.ToString().PadLeft(5)} @ {fe.LigneFacture.PrixUnitaire.ToString("c")}";
-                            break;
-                        case FactureEventType.NOUVELLE:
-                            tbAffichage.Text = "Bienvenue";
-                            break;
-                        default:
-                            break;
                     }
                 }
             );
+            new ObservateurFacture(
+                this.Facture,
+                (fe) =>
+                {
+                    if (fe.Type == FactureEventType.NOUVELLE) { 
+                            tbAffichage.Text = "Bienvenue";
+                    }
+                }
+           );
         }
     }
 }

@@ -36,33 +36,29 @@ namespace POOII_Module10_Caisse_Enregistreuse
 
         private void fEcranPrincipal_Load(object sender, EventArgs e)
         {
-            new ObservateurFacture(
-                this.Facture, 
-                (fe) =>
-                {
-                    switch (fe.Type)
-                    {
-                        case FactureEventType.AJOUT_LIGNE:
-                            dgvFacture.Rows.Add(
-                                new object[] { 
-                                    fe.LigneFacture.Description,
-                                    fe.LigneFacture.Quantite,
-                                    fe.LigneFacture.PrixUnitaire.ToString("c"),
-                                    fe.LigneFacture.Total.ToString("c")
-                                }
-                            );
-                            tbTotal.Text = fe.Facture.Total.ToString("c");
+            new ObservateurFacture( this.Facture,
+                                    (fe) => {
+                                        if (fe.Type == FactureEventType.AJOUT_LIGNE)
+                                        {
+                                            dgvFacture.Rows.Add(new object[] {
+                                                                                fe.LigneFacture.Description,
+                                                                                fe.LigneFacture.Quantite,
+                                                                                fe.LigneFacture.PrixUnitaire.ToString("c"),
+                                                                                fe.LigneFacture.Total.ToString("c")
+                                                                             });
+                                            tbTotal.Text = fe.Facture.Total.ToString("c");
+                                        }
+                                    }
+            );
 
-                            break;
-                        case FactureEventType.NOUVELLE:
-                            dgvFacture.Rows.Clear();
-                            tbTotal.Text = fe.Facture.Total.ToString("c");
-
-                            break;
-                        default:
-                            break;
-                    }
-                }
+            new ObservateurFacture( this.Facture,
+                                    (fe) => {
+                                        if (fe.Type == FactureEventType.NOUVELLE)
+                                        {
+                                            dgvFacture.Rows.Clear();
+                                            tbTotal.Text = fe.Facture.Total.ToString("c");
+                                        }
+                                    }
             );
 
             this.EcranClient.Show();
