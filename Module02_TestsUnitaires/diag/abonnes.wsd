@@ -1,0 +1,35 @@
+@startuml Abonnes
+
+Program ..> TraitementLotsConsolidationAbonnes : create
+
+class TraitementLotsConsolidationAbonnes {
+    - m_depotSource : IDepotImportationAbonnes
+    - m_depotDestination : IDepotAbonnes
+    + TraitementLotsConsolidationAbonnes(p_depotSource : IDepotImportationAbonnes, p_depotDestination : IDepotAbonnes)
+    + ConsoliderDonneesDestination()
+}
+
+interface IDepotImportationAbonnes {
+    + ObtenirAbonnes() : IEnumerable<Abonne>
+}
+
+interface IDepotAbonnes {
+    + AjouterAbonne(p_abonne : Abonne)
+    + ObtenirAbonnes() : IEnumerable<Abonne>
+    + ObtenirAbonne(p_abonneId : int) : Abonne
+    + MettreAJourAbonne(p_abonne : Abonne)
+    + DesactiverAbonne(p_abonneId : int)
+}
+
+class Abonne {
+    + AbonneId : int <<get>> <<set>>
+    + Nom : string <<get>> <<set>>
+    + Prenom : string <<get>> <<set>>
+    + Actif : boolean <<get>> <<set>>
+    + Equals(p_obj : object) : bool <<override>>
+}
+
+TraitementLotsConsolidationAbonnes "*" --> "1" IDepotImportationAbonnes
+TraitementLotsConsolidationAbonnes "*" --> "1" IDepotAbonnes
+
+@enduml
