@@ -1,6 +1,6 @@
 @startuml Abonnes
 
-Program ..> TraitementLotsConsolidationAbonnes : create
+Program ..> TraitementLotsConsolidationAbonnes
 
 class TraitementLotsConsolidationAbonnes {
     - m_depotSource : IDepotImportationAbonnes
