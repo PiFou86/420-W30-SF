@@ -105,8 +105,8 @@ package Application {
     ClientUIConsole "1" --> "1" IDepotClients
 
     class ClientUIConsole {
-        - m_depotClient : IDepotClient
-        + ctor(p_depotClient : IDepotClient)
+        - m_depotClient : IDepotClients
+        + ctor(p_depotClient : IDepotClients)
         + AfficherMenu()
         + SaisirChoixMenu() : int
         + ExecuterUI()
