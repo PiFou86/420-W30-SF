@@ -21,14 +21,14 @@ package Entites {
 
     class Adresse {
         + Guid AdresseId <<get>> <<private set>>
-        + NumeroCivique : string <<get>> <<set>>
-        + InformationComplementaire : string <<get>> <<set>>
-        + Odonyme : string <<get>> <<set>>
-        + TypeVoie : string <<get>> <<set>>
-        + CodePostal : string <<get>> <<set>>
-        + NomMunicipalite : string <<get>> <<set>>
-        + Etat : string <<get>> <<set>>
-        + Pays : string  <<get>> <<set>>
+        + NumeroCivique : string <<get>> <<private set>>
+        + InformationComplementaire : string <<get>> <<private set>>
+        + Odonyme : string <<get>> <<private set>>
+        + TypeVoie : string <<get>> <<private set>>
+        + CodePostal : string <<get>> <<private set>>
+        + NomMunicipalite : string <<get>> <<private set>>
+        + Etat : string <<get>> <<private set>>
+        + Pays : string  <<get>> <<private set>>
     }
 
     interface IDepotClients {
@@ -44,14 +44,16 @@ package CoucheAccesDonnees.JSON {
     ClientJSONDTO "1" --> "*" AdresseJSONDTO
 
     class ClientJSONDTO {
-        + Guid ClientId <<get>> <<private set>>
-        + string Nom <<get>> <<private set>>
-        + string Prenom <<get>> <<private set>>
-        + List<Adresse> Adresses <<get>> <<private set>>
+        + Guid ClientId <<get>> <<set>>
+        + string Nom <<get>> <<set>>
+        + string Prenom <<get>> <<set>>
+        + List<Adresse> Adresses <<get>> <<set>>
+        + ctor(p_client : Client)
+        + VersEntite() : Client
     }
 
     class AdresseJSONDTO {
-        + Guid AdresseId <<get>> <<private set>>
+        + Guid AdresseId <<get>> <<set>>
         + NumeroCivique : string <<get>> <<set>>
         + InformationComplementaire : string <<get>> <<set>>
         + Odonyme : string <<get>> <<set>>
@@ -60,6 +62,8 @@ package CoucheAccesDonnees.JSON {
         + NomMunicipalite : string <<get>> <<set>>
         + Etat : string <<get>> <<set>>
         + Pays : string  <<get>> <<set>>
+        + ctor(p_client : Adresse)
+        + VersEntite() : Adresse
     }
 
     class DepotClientsJSON {
@@ -75,10 +79,14 @@ package CoucheAccesDonnees.XML {
     ClientXMLDTO "1" --> "*" AdresseXMLDTO
 
     class ClientXMLDTO {
-        + Guid ClientId <<get>> <<private set>>
-        + string Nom <<get>> <<private set>>
-        + string Prenom <<get>> <<private set>>
-        + List<Adresse> Adresses <<get>> <<private set>>
+        + Guid ClientId <<get>> <<set>>
+        + string Nom <<get>> <<set>>
+        + string Prenom <<get>> <<set>>
+        + List<Adresse> Adresses <<get>> <<set>>
+        + ctor(p_client : Client)
+        + VersEntite() : Client
+        + ctor(p_client : Client)
+        + VersEntite() : Client
     }
 
     class DepotClientsXML {
@@ -89,7 +97,7 @@ package CoucheAccesDonnees.XML {
     }
 
     class AdresseXMLDTO {
-        + Guid AdresseId <<get>> <<private set>>
+        + Guid AdresseId <<get>> <<set>>
         + NumeroCivique : string <<get>> <<set>>
         + InformationComplementaire : string <<get>> <<set>>
         + Odonyme : string <<get>> <<set>>
@@ -98,6 +106,8 @@ package CoucheAccesDonnees.XML {
         + NomMunicipalite : string <<get>> <<set>>
         + Etat : string <<get>> <<set>>
         + Pays : string  <<get>> <<set>>
+        + ctor(p_client : Adresse)
+        + VersEntite() : Adresse
     }
 }
 
