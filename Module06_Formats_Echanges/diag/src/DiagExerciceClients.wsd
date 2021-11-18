@@ -47,7 +47,7 @@ package CoucheAccesDonnees.JSON {
         + Guid ClientId <<get>> <<set>>
         + string Nom <<get>> <<set>>
         + string Prenom <<get>> <<set>>
-        + List<Adresse> Adresses <<get>> <<set>>
+        + List<AdresseJSONDTO> Adresses <<get>> <<set>>
         + ctor()
         + ctor(p_client : Client)
         + VersEntite() : Client
@@ -84,7 +84,7 @@ package CoucheAccesDonnees.XML {
         + Guid ClientId <<get>> <<set>>
         + string Nom <<get>> <<set>>
         + string Prenom <<get>> <<set>>
-        + List<Adresse> Adresses <<get>> <<set>>
+        + List<AdresseXMLDTO> Adresses <<get>> <<set>>
         + ctor()
         + ctor(p_client : Client)
         + VersEntite() : Client
