@@ -48,6 +48,7 @@ package CoucheAccesDonnees.JSON {
         + string Nom <<get>> <<set>>
         + string Prenom <<get>> <<set>>
         + List<Adresse> Adresses <<get>> <<set>>
+        + ctor()
         + ctor(p_client : Client)
         + VersEntite() : Client
     }
@@ -62,6 +63,7 @@ package CoucheAccesDonnees.JSON {
         + NomMunicipalite : string <<get>> <<set>>
         + Etat : string <<get>> <<set>>
         + Pays : string  <<get>> <<set>>
+        + ctor()
         + ctor(p_client : Adresse)
         + VersEntite() : Adresse
     }
@@ -85,6 +87,7 @@ package CoucheAccesDonnees.XML {
         + List<Adresse> Adresses <<get>> <<set>>
         + ctor(p_client : Client)
         + VersEntite() : Client
+        + ctor()
         + ctor(p_client : Client)
         + VersEntite() : Client
     }
@@ -106,6 +109,7 @@ package CoucheAccesDonnees.XML {
         + NomMunicipalite : string <<get>> <<set>>
         + Etat : string <<get>> <<set>>
         + Pays : string  <<get>> <<set>>
+        + ctor()
         + ctor(p_client : Adresse)
         + VersEntite() : Adresse
     }
