@@ -85,8 +85,6 @@ package CoucheAccesDonnees.XML {
         + string Nom <<get>> <<set>>
         + string Prenom <<get>> <<set>>
         + List<Adresse> Adresses <<get>> <<set>>
-        + ctor(p_client : Client)
-        + VersEntite() : Client
         + ctor()
         + ctor(p_client : Client)
         + VersEntite() : Client
