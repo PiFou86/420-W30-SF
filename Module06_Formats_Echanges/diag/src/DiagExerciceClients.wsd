@@ -34,7 +34,7 @@ package Entites {
     interface IDepotClients {
         + AjouterClient(p_client : Client)
         + ListerClients() : List<Client>
-        + RechercherClient(p_clientId : Guid)
+        + RechercherClient(p_clientId : Guid) : Client
         + ModifierClient(p_client : Client)
     }
 }
@@ -71,7 +71,7 @@ package CoucheAccesDonnees.JSON {
     class DepotClientsJSON {
         + AjouterClient(p_client : Client)
         + ListerClients() : List<Client>
-        + RechercherClient(p_clientId : Guid)
+        + RechercherClient(p_clientId : Guid) : Client
         + ModifierClient(p_client : Client)
     }
 }
@@ -93,7 +93,7 @@ package CoucheAccesDonnees.XML {
     class DepotClientsXML {
         + AjouterClient(p_client : Client)
         + ListerClients() : List<Client>
-        + RechercherClient(p_clientId : Guid)
+        + RechercherClient(p_clientId : Guid) : Client
         + ModifierClient(p_client : Client)
     }
 
