@@ -69,6 +69,8 @@ package CoucheAccesDonnees.JSON {
     }
 
     class DepotClientsJSON {
+        - m_nomFichier : string
+        + ctor(p_nomFichier : string)
         + AjouterClient(p_client : Client)
         + ListerClients() : List<Client>
         + RechercherClient(p_clientId : Guid) : Client
@@ -91,6 +93,8 @@ package CoucheAccesDonnees.XML {
     }
 
     class DepotClientsXML {
+        - m_nomFichier : string
+        + ctor(p_nomFichier : string)
         + AjouterClient(p_client : Client)
         + ListerClients() : List<Client>
         + RechercherClient(p_clientId : Guid) : Client
@@ -138,16 +142,22 @@ package TraitementsLots {
 
 package TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules {
     TraitementLot <|.. ModifierNomPrenomPremiereLettreMajusculesTraitementLot
+    IDepotClients <-- ModifierNomPrenomPremiereLettreMajusculesTraitementLot
 
     class ModifierNomPrenomPremiereLettreMajusculesTraitementLot {
+        - m_depotClient : IDepotClients
+        + ctor(p_depotClient : IDepotClients)
         + Executer()
     }
 }
 
 package TraitementsLots.ModifierPaysMajusculesClients {
     TraitementLot <|.. ModifierPaysMajusculesClientsTraitementLot
+    IDepotClients <-- ModifierPaysMajusculesClients
 
     class ModifierPaysMajusculesClientsTraitementLot {
+        - m_depotClient : IDepotClients
+        + ctor(p_depotClient : IDepotClients)
         + Executer()
     }
 }
