@@ -153,7 +153,7 @@ package TraitementsLots.ModifierNomPrenomPremiereLettreMajuscules {
 
 package TraitementsLots.ModifierPaysMajusculesClients {
     TraitementLot <|.. ModifierPaysMajusculesClientsTraitementLot
-    IDepotClients <-- ModifierPaysMajusculesClients
+    IDepotClients <-- ModifierPaysMajusculesClientsTraitementLot
 
     class ModifierPaysMajusculesClientsTraitementLot {
         - m_depotClient : IDepotClients
