@@ -159,3 +159,20 @@ dotnet [NomProjet].dll
 # Si vous avez un fichier exécutable :
 ./[NomProjet].exe
 ```
+
+- Effectuez des copies d'écran de votre dossier
+
+## Exercice 4 - Automatisation
+
+- Écrivez un script PowerShell qui :
+  - Permet de compiler les applications de traitement et d'exécuter les applications de l'interface utilisateur en mode "Release"
+  - Archive les fichiers compilés et leurs dépendances dans un fichier Zip avec la structure suivante :
+
+```console
+GestionClients
+├── GC.Batch.ModifierNomPrenomPremiereLettreMajuscules
+├── GC.Batch.ModifierPaysMajusculesClients
+├── GC.ConsoleUI
+```
+
+- Testez votre script et validez que votre archive contient tout ce qui est nécessaire en supprimant votre répertoire "C:\POOII\GestionClients\" et en copiant le contenu de votre archive dans votre répertoire "C:\POOII" et en exécutant chaque application.
