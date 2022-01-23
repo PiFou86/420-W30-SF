@@ -165,7 +165,7 @@ dotnet [NomProjet].dll
 ## Exercice 4 - Automatisation
 
 - Écrivez un script PowerShell qui :
-  - Permet de compiler les applications de traitement et d'exécuter les applications de l'interface utilisateur en mode "Release"
+  - Permet de compiler les applications de traitement et d'exécuter les applications de l'interface utilisateur en mode "Release" (Voir [dotnet publish](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish))
   - Archive les fichiers compilés et leurs dépendances dans un fichier Zip avec la structure suivante :
 
 ```console
