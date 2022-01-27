@@ -34,20 +34,20 @@ class ObservateurXYZ {
     + ctor(p_sujet : IObservable<string>)
     + OnCompleted()
     + OnError(p_exception : Exception)
-    + OnNext(p_valeur : string
+    + OnNext(p_valeur : string)
     + SeDesabonner()
 }
 
-class UnsubscribeSujetObservable {
+class UnsubscriberSujetObservable {
     - m_observer : IObserver<TypeAObserver>
     - m_observers : List<IObserver<TypeAObserver>>
-    + UnsubscribeSujetObservable(p_observers : List<IObserver<TypeAObserver>>, p_observer : IObserver<TypeAObserver>)
+    + UnsubscriberSujetObservable(p_observers : List<IObserver<TypeAObserver>>, p_observer : IObserver<TypeAObserver>)
     + Dispose()
 }
 
-SujetObservable "1" -right-> "n" ObservateurXYZ
+SujetObservable "1" -right-> "n" IObserver
 IObserver <|.. ObservateurXYZ
-IDisposable <|.. UnsubscribeSujetObservable
+IDisposable <|.. UnsubscriberSujetObservable
 IObservable <|.. SujetObservable
 
 

@@ -1,0 +1,93 @@
+@startuml DiagAppFactureGen
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+interface IDisposable {
+    + Dispose()
+}
+
+interface IObservable<TypeAObserver> {
+    + Subscribe(p_observateur : IObserver<TypeAObserver>) : IDisposable
+}
+
+interface IObserver<TypeAObserver> {
+    + OnCompleted()
+    + OnError(p_exception : Exception)
+    + OnNext(p_valeur : TypeAObserver)
+}
+
+class Facture {
+    - m_lignesFacture : List<LigneFacture>
+    - m_observateurs : List<IObserver<FactureEvent>>
+    + Total : decimal <<get>>
+    + ctor()
+    + Subscribe(p_observateur : IObserver<FactureEvent>) : IDisposable
+    + AjouterLigneFacture(p_ligneFacture : LigneFacture)
+    + Nouvelle()
+}
+
+class fEcranPrincipal {
+    - m_facture : Facture
+    - m_ecranClient : fEcranClient
+    + ctor()
+    ...()
+}
+
+class fEcranClient {
+    - m_facture : Facture
+    + ctor(p_facture : Facture)
+    ...()
+}
+
+class ObservateurFacture {
+    - m_seDesabonner : IDisposable
+    - m_action : Action<FactureEvent>
+    + ctor(p_sujet : IObservable<FactureEvent>, p_action : Action<FactureEvent>)
+    + OnCompleted()
+    + OnError(p_exception : Exception)
+    + OnNext(p_valeur : FactureEvent)
+    + SeDesabonner()
+}
+
+class UnsubscriberFacture {
+    - m_observer : IObserver<FactureEvent>
+    - m_observers : List<IObserver<FactureEvent>>
+    + UnsubscribeSujetObservable(p_observers : List<IObserver<FactureEvent>>, p_observer : IObserver<TypeAObserver>)
+    + Dispose()
+}
+
+class FactureEvent {
+    + Type : FactureEventType <<get>> <<set>>
+    + LigneFacture : LigneFacture <<get>> <<set>>
+    + Facture : Facture <<get>> <<set>>
+}
+
+enum FactureEventType {
+    AJOUT_LIGNE,
+    NOUVELLE
+}
+
+FactureEvent "n" --> "1" Facture
+FactureEvent "n" --> "1" LigneFacture
+FactureEvent "n" --> "1" FactureEventType
+
+fEcranPrincipal "1" -right-> "1" Facture : <<create>>
+fEcranPrincipal "1" -left-> "1" fEcranClient
+'fEcranPrincipal "1" ..> "1" ObservateurFacture : <<create>>
+
+Facture "1" -left-> "n" IObserver
+Facture "1" -right-> "n" LigneFacture
+
+fEcranClient "1" --> "1" Facture
+'fEcranClient "1" ..> "1" ObservateurFacture : <<create>>
+
+IObserver <|.. ObservateurFacture
+IDisposable <|.. UnsubscriberFacture
+IObservable <|.. Facture
+
+
+@enduml

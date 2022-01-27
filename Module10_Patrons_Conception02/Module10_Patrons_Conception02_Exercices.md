@@ -8,6 +8,19 @@ L'application simule deux périphériques de sortie : l'écran principal et l'é
 
 ![Écrans au démarrage](img/Ecran_demarrage.png)
 
+<details>
+    <summary>Proposition de diagramme de classes (Voir après réflexion personnelle !)</summary>
+
+Le schéma suivant représente une vue globale de l'application avec des observateurs non génériques (version temporaire) :
+
+![Diagramme de classes](../images/Module10_Patrons_Conception02/diag/DiagFacture/DiagAppFactureNonGen.png)
+
+Le schéma suivant représente une vue globale de l'application avec des observateurs génériques (version de l'exercice suivant) :
+
+![Diagramme de classes](../images/Module10_Patrons_Conception02/diag/DiagFactureGen/DiagAppFactureGen.png)
+</details>
+
+
 ### Exercice 1.1 - Écran principal
 
 - Reproduisez l'écran principal
@@ -28,6 +41,10 @@ Reproduisez l'écran client :
 ![Écran client](img/fClient.png)
 
 ### Exercice 1.3 - Facture
+
+Pour simplifier le codage, il y aura une seule instance de "Facture". Cette instance sera créée par "fPrincipal". La facture est le sujet et les deux fenêtres vont créer des observateurs sur elle. Seul le simulateur de scanner ("Simuler") et le paiement ("Payer") pourront agir directement la facture.
+
+Étapes à suivre pour cette partie de l'exercice:
 
 - Créez la classe "Facture" qui permet de stocker des lignes de facture
 - Une ligne de facture à une description, une quantité, un prix unitaire et une total
