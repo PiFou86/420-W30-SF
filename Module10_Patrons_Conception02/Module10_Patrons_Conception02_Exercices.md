@@ -47,8 +47,8 @@ Pour simplifier le codage, il y aura une seule instance de "Facture". Cette inst
 Étapes à suivre pour cette partie de l'exercice:
 
 - Créez la classe "Facture" qui permet de stocker des lignes de facture
-- Une ligne de facture à une description, une quantité, un prix unitaire et une total
-- La facture doit être implanter l'interface "IObservable". Le type d'éléments envoyé pour les notifications est "FactureEvent".
+- Une ligne de facture à une description, une quantité, un prix unitaire et un total
+- La facture doit implanter l'interface "IObservable". Le type d'éléments envoyé pour les notifications est "FactureEvent".
 - "FactureEvent" contient trois propriétés :
   - Type : type de l'événement, soit "AJOUT_LIGNE" envoyé pour l'ajout d'une ligne dans la facture, soit "NOUVELLE" pour la création d'une nouvelle facture.
   - LigneFacture : référence de la ligne de facture quand le type d'événement est "AJOUT_LIGNE", null sinon
