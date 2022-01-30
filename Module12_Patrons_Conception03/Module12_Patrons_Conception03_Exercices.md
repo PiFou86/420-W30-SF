@@ -23,7 +23,7 @@ Par exemple, à partir de la première image et après application des traitemen
 
 - Créez la solution et le projet "POOII_Module12_TraitementImages"
 - Reproduisez l'interface suivante en lisant ce qui suit avant de débuter :
-![Contrôles de l'interface](controles_interface.png)
+![Contrôles de l'interface](controles_interfacev2.png)
 - Liste des contrôles :
   - ssStatut : StatusStrip (Optionnel)
   - sslPositionSouris : ToolStripStatusLabel (Optionnel)
