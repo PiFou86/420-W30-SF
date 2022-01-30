@@ -1,0 +1,30 @@
+@startuml diagDessin
+
+namespace System.Drawing {
+    class Point {}
+}
+
+class ConfigurationRevolution {
+    + Angle : int <<get>> <<set>>
+    + LongueurDepart : int <<get>> <<set>>
+    + NombreLignes : int <<get>> <<set>>
+    + Pas : int <<get>> <<set>>
+    + PositionDepart : Point <<get>> <<set>>
+}
+class DessinRevolution <<static>> {
+    + {static} GenererPoints(p_configurationRevolution:ConfigurationRevolution) : List<Point>
+}
+class fDessinLignes <<partial>> {
+    + fDessinLignes()
+    + EtablirConfiguration() : ConfigurationRevolution
+    + Dessiner(p_configurationRevolution:ConfigurationRevolution, p_graphics:Graphics, p_pen:Pen) : void
+}
+Form <|-- fDessinLignes
+
+class Program <<static>> {
+    {static} Main() : void
+}
+
+Program .right.> fDessinLignes : <<create>>
+
+@enduml

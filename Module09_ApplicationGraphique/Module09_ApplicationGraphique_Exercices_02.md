@@ -2,6 +2,15 @@
 
 Dans cette deuxième partie de module, nous allons reprendre le code de la correction partielle du module 08.
 
+<details>
+    <summary>Proposition de diagramme de classes (Voir après réflexion personnelle !)</summary>
+
+![Diagramme de classes de l'application Clients](../images/Module09_ApplicationGraphique/diag/diagWFClients/DiagAppClients.png)
+
+Pour rendre l'application plus propre, on devrait ajouter une couche de services afin de manipuler le dépot de données.
+
+</details>
+
 ## Exercice 1 - Création du projet et des formulaires
 
 - Créez la solution "POOII_Module09_GestionClients" avec un projet de type "Windows Forms App (.Net Core)" (il faut minimalement avoir .Net Core 3.1)

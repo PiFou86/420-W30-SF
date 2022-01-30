@@ -1,0 +1,100 @@
+@startuml DiagTraitements
+
+class fPrincipale <<partial>> {
+    - m_imageManipulable : ImageManipulable
+    + fPrincipale()
+}
+Form <|-- fPrincipale
+
+Program .left.> fPrincipale : <<create>>
+
+class Program <<static>> {
+    {static} Main() : void
+}
+class TraitementImageContours {
+    + TraitementImageContours()
+    - {static} TraiterDonnees(p_donnees:byte[]) : byte
+    + <<override>> ToString() : string
+}
+TraitementImageMasque <|-- TraitementImageContours
+class TraitementImageConvertirNoirEtBlanc {
+    + Suivant : ITraitementImage <<get>> <<set>>
+    + TraiterImage(p_image:ImageManipulable) : void
+    + <<override>> ToString() : string
+    + Clone() : object
+}
+ITraitementImage <|-- TraitementImageConvertirNoirEtBlanc
+class TraitementImageDiminuerBruit {
+    + TraitementImageDiminuerBruit()
+    - {static} TraiterDonnees(p_donnees:byte[]) : byte
+}
+TraitementImageMasque <|-- TraitementImageDiminuerBruit
+class TraitementImageFiltreRouge {
+    + TraitementImageFiltreRouge()
+    + Suivant : ITraitementImage <<get>> <<set>>
+    + <<override>> ToString() : string
+    + Clone() : object
+    + TraiterImage(p_image:ImageManipulable) : void
+}
+ITraitementImage <|-- TraitementImageFiltreRouge
+class TraitementImageFlou {
+    + TraitementImageFlou()
+    - {static} TraiterDonnees(p_donnees:byte[]) : byte
+}
+TraitementImageMasque <|-- TraitementImageFlou
+abstract class TraitementImageMasque {
+    + Suivant : ITraitementImage <<get>> <<set>>
+    - m_largeur : int = 3
+    + Largeur : int <<get>> <<set>>
+    + Transformation : Func<byte[], byte> <<get>> <<set>>
+    + TraitementImageMasque(p_transformation:Func<byte[], byte>)
+    + TraiterImage(p_image:ImageManipulable) : void
+    + <<override>> ToString() : string
+    + Clone() : object
+}
+ITraitementImage <|-- TraitementImageMasque
+class TraitementImageSeuilLuminance {
+    + Suivant : ITraitementImage <<get>> <<set>>
+    + Seuil : byte <<get>> <<set>>
+    + TraiterImage(p_image:ImageManipulable) : void
+    + <<override>> ToString() : string
+    + Clone() : object
+}
+ITraitementImage <|-- TraitementImageSeuilLuminance
+class UtilitaireTraitements <<static>> {
+    + {static} RechercherTraitementsImage() : IEnumerable<CreateurTraitement>
+    + {static} DescriptionTraitement(p_traitementImage:ITraitementImage) : string
+}
+
+class CreateurTraitement {
+    + Type : Type <<get>> <<set>>
+    + Creer() : ITraitementImage
+    + <<override>> ToString() : string
+}
+
+CreateurTraitement .left.> ITraitementImage : <<clone / assemble>>
+Program .right.> ITraitementImage : <<create>>
+
+class ImageManipulable {
+    - m_bitmap : Bitmap
+    - m_valeurRVB : byte[]
+    - m_bmpData : BitmapData
+    + Raw : byte[] <<get>>
+    + Width : int <<get>>
+    + Stride : int <<get>>
+    + Height : int <<get>>
+    + ImageManipulable(p_filename:string)
+    - Lock() : void
+    + Locked : bool <<get>>
+    - Unlock() : void
+    + Image : Bitmap <<get>>
+}
+
+interface ITraitementImage {
+    + TraiterImage(p_image:ImageManipulable) : void
+    + Suivant : ITraitementImage <<get>> <<set>>
+}
+
+ICloneable <|-- ITraitementImage
+
+@enduml

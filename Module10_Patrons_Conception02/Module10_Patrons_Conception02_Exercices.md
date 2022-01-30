@@ -20,7 +20,6 @@ Le schéma suivant représente une vue globale de l'application avec des observa
 ![Diagramme de classes](../images/Module10_Patrons_Conception02/diag/DiagFactureGen/DiagAppFactureGen.png)
 </details>
 
-
 ### Exercice 1.1 - Écran principal
 
 - Reproduisez l'écran principal

@@ -10,6 +10,13 @@ Voici quelques exemples de dessins que vous serez capable de faire à la fin ave
 ![Dessin 1](img/revolution_lignes05.png)
 ![Dessin 1](img/revolution_lignes02.png)
 
+<details>
+    <summary>Proposition de diagramme de classes (Voir après réflexion personnelle !)</summary>
+
+![Diagramme de classes](../images/Module11_Dessin/diag/diagDessin/diagDessin.png)
+
+</details>
+
 ### Exercice 1.1 - Mise en place de l'interface
 
 Voici la fenêtre à créer dans cette partie de l'exercice :

@@ -12,6 +12,13 @@ Par exemple, à partir de la première image et après application des traitemen
 
 ![Traitement N&B et médiane](filtres_n&b_bruit.png)
 
+<details>
+    <summary>Proposition de diagramme de classes (Voir après réflexion personnelle !)</summary>
+
+![Diagramme de classes](../images/Module12_Patrons_Conception03/diag/diagTraitements/DiagTraitements.png)
+
+</details>
+
 ### Exercice 1.1 - Création de l'interface
 
 - Créez la solution et le projet "POOII_Module12_TraitementImages"

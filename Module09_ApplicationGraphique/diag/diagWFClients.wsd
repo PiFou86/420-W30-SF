@@ -1,0 +1,59 @@
+@startuml DiagAppClients
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+class Program {
+    {static} Main(args:string[]) : void
+}
+
+Program ..> fPrincipale : <<create>>
+Program ..> IDepotClients : <<create>>
+
+
+fPrincipale "1" -left-> "1" IDepotClients
+
+interface IDepotClients {
+    AjouterClient(p_client:Client) : void
+    ListerClients() : List<Client>
+    RechercherClient(p_guid:Guid) : Client
+    ModifierClient(p_client:Client) : void
+    RechercherClients(p_informationPartielle:string) : List<Client>
+}
+
+Form <|-- fPrincipale
+class fPrincipale {
+    - m_depotClients : IDepotClients
+    [...]
+    + fPrincipale(p_depotClients:IDepotClients)
+    - tbRecherche_TextChanged(sender:object, e:EventArgs) : void
+    - RechercherClients() : void
+    - bNouveau_Click(sender:object, e:EventArgs) : void
+    - lbClient_DoubleClick(sender:object, e:EventArgs) : void
+    [...]()
+}
+
+class fSaisieClient {
+    + Client : Client <<get>> <<set>>
+    + Nouveau : bool <<get>>
+    + Result : Client <<get>>
+    [...]
+    + fSaisieClient()
+    [...]()
+}
+Form <|-- fSaisieClient
+
+fPrincipale .right.> fSaisieClient : <<create>>
+
+class DepotClientsJSON {
+
+}
+IDepotClients <|-- DepotClientsJSON
+class DepotClientsXML {
+}
+IDepotClients <|-- DepotClientsXML
+
+@enduml
