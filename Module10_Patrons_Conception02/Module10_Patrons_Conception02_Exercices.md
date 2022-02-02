@@ -49,7 +49,7 @@ Pour simplifier le codage, il y aura une seule instance de "Facture". Cette inst
 - Une ligne de facture à une description, une quantité, un prix unitaire et un total
 - La facture doit implanter l'interface "IObservable". Le type d'éléments envoyé pour les notifications est "FactureEvent".
 - "FactureEvent" contient trois propriétés :
-  - Type : type de l'événement, soit "AJOUT_LIGNE" envoyé pour l'ajout d'une ligne dans la facture, soit "NOUVELLE" pour la création d'une nouvelle facture.
+  - Type : type de l'événement, soit "AJOUT_LIGNE" envoyé pour l'ajout d'une ligne dans la facture, soit "NOUVELLE" pour la création d'une nouvelle facture. Pour cette propriété, créez le type TypeEvenementFacture comment [étant un "enum"](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum)
   - LigneFacture : référence de la ligne de facture quand le type d'événement est "AJOUT_LIGNE", null sinon
   - Facture : référence de la facture qui a déclenchée l'événement
 - La facture doit implanter une méthode pour l'ajout d'une ligne de facture. Cet ajout doit aussi s'occuper de notifier les observateurs de l'événement.
