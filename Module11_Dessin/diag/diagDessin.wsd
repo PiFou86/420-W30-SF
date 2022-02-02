@@ -1,18 +1,18 @@
 @startuml diagDessin
 
 namespace System.Drawing {
-    class Point {}
+    class PointF {}
 }
 
 class ConfigurationRevolution {
-    + Angle : int <<get>> <<set>>
+    + PasAngle : int <<get>> <<set>>
     + LongueurDepart : int <<get>> <<set>>
     + NombreLignes : int <<get>> <<set>>
-    + Pas : int <<get>> <<set>>
-    + PositionDepart : Point <<get>> <<set>>
+    + PasLonguer : int <<get>> <<set>>
+    + PositionDepart : PointF <<get>> <<set>>
 }
 class DessinRevolution <<static>> {
-    + {static} GenererPoints(p_configurationRevolution:ConfigurationRevolution) : List<Point>
+    + {static} GenererPoints(p_configurationRevolution:ConfigurationRevolution) : List<PointF>
 }
 class fDessinLignes <<partial>> {
     + fDessinLignes()
