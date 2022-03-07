@@ -222,7 +222,7 @@ public static class UtilitaireTraitements
 }
 ```
 
-- Créez l'interface "ITraitementImage" qui suit le patron "chaîne de responsabilité". La méthode de traitement doit se nommer "TraiterImage". Cette méthode prend un "ImageManipulable" en paramètres et ne renvoie rien
+- Créez l'interface "ITraitementImage" qui suit le patron "chaîne de responsabilité". Cette interface doit implanter l'interface "ICloneable" (Pour implanter la méthode, renvoyez simplement le résultat de la méthode ["MemberwiseClone"](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone?view=net-6.0)). La méthode de traitement doit se nommer "TraiterImage". Cette méthode prend un "ImageManipulable" en paramètres et ne renvoie rien
 - Créez la classe "TraitementImageConvertirNoirEtBlanc". Cette classe convertit l'ensemble des pixels de l'image en noir et blanc.
 - Ajoutez le code suivant dans la méthode de traitement ainsi que le code nécessaire à l'appel de la suite de la chaîne :
 
@@ -358,7 +358,7 @@ public void TraiterImage(ImageManipulable p_image)
 - À partir de l'objet créé, Allez mettre à jour la propriété "Image" du contrôle "pbImage".
 - Les boutons "^" et "v" permettent de déplacer le traitement de la suite de traitements vers le haut ou le bas.
 - Le bouton "-" permet de supprimer le traitement sélectionné de la suite de traitements.
-- Le bouton "+" permet d'ajouter le traitement sélectionné dans le combobox et de l'ajout à fin de la suite de traitements.
+- Le bouton "+" permet d'ajouter le traitement sélectionné dans le combobox et de l'ajout à fin de la suite de traitements. Pour cela, castez le traitement sélectionné dans le type "CreateurTraitement" et appelez la méthode "Creer".
 - Ajoutez une méthode sur l'événement "SelectedIndexChanged" du contrôle "lbSuiteTraitementsAAppliquer" et mettez à jour la propriété "SelectedObject" du PropertyGrid avec l'objet sélectionné.
 - Testez que vous pouvez bien ajouter des traitements, les déplacer et afficher les propriétés des traitements.
 - Qu'observez-vous ?
