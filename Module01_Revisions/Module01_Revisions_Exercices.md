@@ -19,7 +19,7 @@ Modélisez le problème en faisant apparaître toutes les entités présentes da
 
 - Proposez un diagramme de classes
 - Codez ces classes
-- Faites des méthodes qui renvoient différentes types de cafés dans différents types de contenants
+- Faites des méthodes qui renvoient différents types de cafés dans différents types de contenants
 - Faites les tests unitaires de la génération des chaînes de caractères
 - Faites les tests unitaires de l'ajout d'un liquide dans une tasse et dans un bol
 
