@@ -4,6 +4,8 @@
 
 Reprendre le code présent dans le même répertoire que le fichier d'exercices.
 
+***La correction partielle est dans la solution, ne la consultez pas tout de suite !***
+
 1. Créez un nouveau projet de tests XUnit et appelez le "Tests_Perso_POOII_Module02_TestsUnitaires" et liez le projet à tester
 2. Installez les paquets NuGet "Moq" et "Fluent assertion"
 3. Testez les méthodes et propriétés, en validant le nombre d'appels et le non appel des méthodes/propriétés non essentielles :
