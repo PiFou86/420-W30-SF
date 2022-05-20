@@ -1,0 +1,49 @@
+@startuml Version3
+
+interface IContenant
+{
+    + {abstract} VolumeContenant : decimal <<get>>
+    + {abstract} VolumeMaximum : decimal <<get>>
+    + {abstract} VolumeLiquides : decimal <<get>>
+    + {abstract} Nom : string <<get>>
+    + {abstract} AjouterLiquide(p_liquide : ILiquide)
+    + {abstract} Verser(p_quantiteMl : decimal)
+}
+
+class Contenant
+{
+    + VolumeContenant : decimal <<get>>
+    + VolumeMaximum : decimal <<get>>
+    + VolumeLiquides : decimal <<get>>
+    + Nom : string <<get>>
+    + ctor(p_nom : string, p_volume : decimal)
+    + AjouterLiquide(p_liquide : ILiquide)
+    + Verser(p_quantiteMl : decimal)
+    + ToString() : string <<override>>
+}
+
+IContenant <|.. Contenant
+
+interface ILiquide
+{
+    + {abstract} Volume : decimal <<get>>
+    + {abstract} Nom : string <<get>>
+    + {abstract} DiminuerVolume(p_pourcentage : decimal)
+}
+
+abstract class Liquide
+{
+    + Volume : decimal <<get>> <<private set>>
+    + Nom : string <<get>>
+    + ctor(p_nom : string, p_volume : decimal)
+    + DiminuerVolume(p_pourcentage : decimal)
+    + ToString() : string <<override>>
+}
+
+ILiquide  <.left.   IContenant
+
+Contenant "1" -right-> "n" ILiquide 
+
+ILiquide <|.. Liquide
+
+@enduml

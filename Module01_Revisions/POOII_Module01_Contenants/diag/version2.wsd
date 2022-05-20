@@ -1,0 +1,92 @@
+@startuml Version2
+
+interface IContenant
+{
+    + {abstract} VolumeContenant : decimal <<get>>
+    + {abstract} VolumeMaximum : decimal <<get>>
+    + {abstract} VolumeLiquides : decimal <<get>>
+    + {abstract} Nom : string <<get>>
+    + {abstract} AjouterLiquide(p_liquide : ILiquide)
+    + {abstract} Verser(p_quantiteMl : decimal)
+}
+
+abstract class Contenant
+{
+    - m_liquides : List<ILiquide>
+    + {abstract} VolumeContenant : decimal <<get>>
+    + VolumeMaximum : decimal <<get>>
+    + VolumeLiquides : decimal <<get>>
+    + {abstract} Nom : string <<get>>
+    + AjouterLiquide(p_liquide : ILiquide)
+    + Verser(p_quantiteMl : decimal)
+    + ToString() : string <<override>>
+}
+
+class Bol {
+    + VolumeContenant : decimal <<get>>
+    + Nom : string <<get>>
+}
+
+class Tasse {
+    + VolumeContenant : decimal <<get>>
+    + Nom : string <<get>>
+}
+
+IContenant <|.. Contenant
+
+Contenant <|-- Bol
+
+Contenant <|-- Tasse
+
+interface ILiquide
+{
+    + {abstract} Volume : decimal <<get>>
+    + {abstract} Nom : string <<get>>
+    + {abstract} DiminuerVolume(p_pourcentage : decimal)
+}
+
+abstract class Liquide
+{
+    + {abstract} Volume : decimal <<get>> <<protected set>>
+    + {abstract} Nom : string <<get>>
+    + ctor(p_nom : string, p_volume : decimal)
+    + DiminuerVolume(p_pourcentage : decimal)
+    + ToString() : string <<override>>
+}
+
+ILiquide  <.left.   IContenant
+
+Contenant "1" -right-> "n" ILiquide 
+
+ILiquide <|.. Liquide
+
+class Cafe {
+    + Volume : decimal <<get>> <<protected set>>
+    + Nom : string <<get>>
+    + ctor(p_volume : decimal)
+}
+
+class Chocolat{
+    + Volume : decimal <<get>> <<protected set>>
+    + Nom : string <<get>>
+    + ctor(p_volume : decimal)
+}
+
+class Creme {
+    + Volume : decimal <<get>> <<protected set>>
+    + Nom : string <<get>>
+    + ctor(p_volume : decimal)
+}
+
+class Lait {
+    + Volume : decimal <<get>> <<protected set>>
+    + Nom : string <<get>>
+    + ctor(p_volume : decimal)
+}
+
+Liquide <|-- Cafe
+Liquide <|-- Chocolat
+Liquide <|-- Creme
+Liquide <|-- Lait
+
+@enduml
