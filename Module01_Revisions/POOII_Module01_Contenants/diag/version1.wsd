@@ -60,19 +60,19 @@ Contenant "1" -right-> "n" ILiquide
 ILiquide <|.. Liquide
 
 class Cafe {
-    + ctor()
+    + ctor(p_volume : decimal)
 }
 
 class Chocolat{
-    + ctor()
+    + ctor(p_volume : decimal)
 }
 
 class Creme {
-    + ctor()
+    + ctor(p_volume : decimal)
 }
 
 class Lait {
-    + ctor()
+    + ctor(p_volume : decimal)
 }
 
 Liquide <|-- Cafe
