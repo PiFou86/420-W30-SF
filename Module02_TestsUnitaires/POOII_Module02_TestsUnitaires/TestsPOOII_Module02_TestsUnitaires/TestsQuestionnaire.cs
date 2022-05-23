@@ -46,7 +46,7 @@ namespace TestsPOOII_Module02_TestsUnitaires
             Mock<IQuestion> mockQuestion2Point = new Mock<IQuestion>();
             mockQuestion2Point.Setup(q => q.CorrigerReponse()).Returns(2);
             Mock<IQuestion> mockQuestion3Point = new Mock<IQuestion>();
-            mockQuestion3Point.Setup(q => q.CorrigerReponse()).Returns(4);
+            mockQuestion3Point.Setup(q => q.CorrigerReponse()).Returns(3);
 
             List<IQuestion> questions = new List<IQuestion>()
             {
@@ -55,7 +55,7 @@ namespace TestsPOOII_Module02_TestsUnitaires
                 mockQuestion3Point.Object
             };
             Questionnaire questionnaire = new Questionnaire(questions);
-            int scoreCalculeAttendu = 7;
+            int scoreCalculeAttendu = 6;
 
             // Agir
             questionnaire.CorrigerQuestions();
@@ -99,7 +99,7 @@ namespace TestsPOOII_Module02_TestsUnitaires
             Mock<IQuestion> mockQuestion2Point = new Mock<IQuestion>();
             mockQuestion2Point.SetupGet(q => q.NombrePointsTotal).Returns(2);
             Mock<IQuestion> mockQuestion3Point = new Mock<IQuestion>();
-            mockQuestion3Point.SetupGet(q => q.NombrePointsTotal).Returns(4);
+            mockQuestion3Point.SetupGet(q => q.NombrePointsTotal).Returns(3);
 
             List<IQuestion> questions = new List<IQuestion>()
             {
@@ -108,7 +108,7 @@ namespace TestsPOOII_Module02_TestsUnitaires
                 mockQuestion3Point.Object
             };
             Questionnaire questionnaire = new Questionnaire(questions);
-            int totalPointsAttendu = 7;
+            int totalPointsAttendu = 6;
 
             // Agir
             int totalPointsCalcule = questionnaire.TotalPoints;
@@ -158,7 +158,7 @@ namespace TestsPOOII_Module02_TestsUnitaires
             Mock<IQuestion> mockQuestion2Point = new Mock<IQuestion>();
             mockQuestion2Point.Setup(q => q.CorrigerReponse()).Returns(2);
             Mock<IQuestion> mockQuestion3Point = new Mock<IQuestion>();
-            mockQuestion3Point.Setup(q => q.CorrigerReponse()).Returns(4);
+            mockQuestion3Point.Setup(q => q.CorrigerReponse()).Returns(3);
 
             List<IQuestion> questions = new List<IQuestion>()
             {
@@ -167,7 +167,7 @@ namespace TestsPOOII_Module02_TestsUnitaires
                 mockQuestion3Point.Object
             };
             Questionnaire questionnaire = new Questionnaire(questions);
-            int scoreCalculeAttendu = 7;
+            int scoreCalculeAttendu = 6;
 
             // Agir
             questionnaire.CorrigerQuestions();
