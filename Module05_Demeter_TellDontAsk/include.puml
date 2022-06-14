@@ -1,0 +1,35 @@
+@startuml
+class Cercle {
+    + Centre : Point3d <<get>> <<set>>
+    + Rayon : float <<get>> <<set>>
+}
+class Point3d {
+    + X : double <<get>> <<set>>
+    + Y : double <<get>> <<set>>
+    + Z : double <<get>> <<set>>
+}
+class Polygone {
+    + Sommets : List<Point3d> <<get>> <<set>>
+    + AffConsole() : void
+}
+class Program {
+    {static} Main(args:string[]) : void
+    + {static} dist(a:Point3d, b:Point3d) : double
+    + {static} airee(obj:object) : double
+    + {static} aTriangle(obj:object) : double
+    + {static} affichage_forme_g(obj:object) : void
+    - {static} trigle(sommets:List<Point3d>) : List<object>
+    - {static} bary(ss:List<Point3d>) : Tuple<double, double, double>
+}
+class Triangle {
+    + Point1X : double <<get>> <<set>>
+    + Point1Y : double <<get>> <<set>>
+    + Point1Z : double <<get>> <<set>>
+    + Point2X : double <<get>> <<set>>
+    + Point2Y : double <<get>> <<set>>
+    + Point2Z : double <<get>> <<set>>
+    + Point3X : double <<get>> <<set>>
+    + Point3Y : double <<get>> <<set>>
+    + Point3Z : double <<get>> <<set>>
+}
+@enduml
