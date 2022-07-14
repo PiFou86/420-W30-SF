@@ -3,6 +3,9 @@ class Cercle {
     + Centre : Point3d <<get>> <<set>>
     + Rayon : float <<get>> <<set>>
 }
+
+Cercle --> Point3d
+
 class Point3d {
     + X : double <<get>> <<set>>
     + Y : double <<get>> <<set>>
@@ -12,6 +15,7 @@ class Polygone {
     + Sommets : List<Point3d> <<get>> <<set>>
     + AffConsole() : void
 }
+Polygone --> Point3d
 class Program {
     {static} Main(args:string[]) : void
     + {static} dist(a:Point3d, b:Point3d) : double
@@ -21,6 +25,10 @@ class Program {
     - {static} trigle(sommets:List<Point3d>) : List<object>
     - {static} bary(ss:List<Point3d>) : Tuple<double, double, double>
 }
+Program ..> Point3d
+Program ..> Triangle
+Program ..> Polygone
+Program ..> Cercle
 class Triangle {
     + Point1X : double <<get>> <<set>>
     + Point1Y : double <<get>> <<set>>

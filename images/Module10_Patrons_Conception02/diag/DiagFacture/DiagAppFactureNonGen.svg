@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="688px" preserveAspectRatio="none" style="width:2726px;height:688px;background:#FFFFFF;" version="1.1" viewBox="0 0 2726 688" width="2726px" zoomAndPan="magnify"><defs/><g><!--MD5=[fe50a4f6767356ff4dcdadb85ef8cbdd]
+class IDisposable--><g id="elem_IDisposable"><rect codeLine="8" fill="#FFFFFF" height="64.4883" id="IDisposable" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="111" x="2225.5" y="23.5"/><ellipse cx="2240.5" cy="39.5" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2236.9277,35.7651 L2236.9277,33.6069 L2244.3071,33.6069 L2244.3071,35.7651 L2241.8418,35.7651 L2241.8418,43.8418 L2244.3071,43.8418 L2244.3071,46 L2236.9277,46 L2236.9277,43.8418 L2239.3931,43.8418 L2239.3931,35.7651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="79" x="2254.5" y="44.791">IDisposable</text><line style="stroke:#000000;stroke-width:0.5;" x1="2226.5" x2="2335.5" y1="55.5" y2="55.5"/><line style="stroke:#000000;stroke-width:0.5;" x1="2226.5" x2="2335.5" y1="63.5" y2="63.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="2231.5" y="81.0352">+Dispose()</text></g><!--MD5=[4a297d7cc079299fc3e58f4cc0874618]
+class IObservable--><g id="elem_IObservable"><rect codeLine="12" fill="#FFFFFF" height="64.4883" id="IObservable" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="494" x="935" y="23.5"/><ellipse cx="1090.25" cy="39.5" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1086.6777,35.7651 L1086.6777,33.6069 L1094.0571,33.6069 L1094.0571,35.7651 L1091.5918,35.7651 L1091.5918,43.8418 L1094.0571,43.8418 L1094.0571,46 L1086.6777,46 L1086.6777,43.8418 L1089.1431,43.8418 L1089.1431,35.7651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="81" x="1110.75" y="44.791">IObservable</text><rect fill="#FFFFFF" height="16.1328" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="92" x="1340" y="20.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="90" x="1341" y="33.1016">TypeAObserver</text><line style="stroke:#000000;stroke-width:0.5;" x1="936" x2="1428" y1="55.5" y2="55.5"/><line style="stroke:#000000;stroke-width:0.5;" x1="936" x2="1428" y1="63.5" y2="63.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="482" x="941" y="81.0352">+Subscribe(p_observateur : IObserver&lt;TypeAObserver&gt;) : IDisposable</text></g><!--MD5=[1dcf94be89f1d1c6c4f8f797da90f5fa]
+class IObserver--><g id="elem_IObserver"><rect codeLine="16" fill="#FFFFFF" height="97.4648" id="IObserver" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="260" x="565" y="311"/><ellipse cx="610.75" cy="327" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M607.1777,323.2651 L607.1777,321.1069 L614.5571,321.1069 L614.5571,323.2651 L612.0918,323.2651 L612.0918,331.3418 L614.5571,331.3418 L614.5571,333.5 L607.1777,333.5 L607.1777,331.3418 L609.6431,331.3418 L609.6431,323.2651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="66" x="631.25" y="332.291">IObserver</text><rect fill="#FFFFFF" height="16.1328" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="92" x="736" y="308"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="90" x="737" y="320.6016">TypeAObserver</text><line style="stroke:#000000;stroke-width:0.5;" x1="566" x2="824" y1="343" y2="343"/><line style="stroke:#000000;stroke-width:0.5;" x1="566" x2="824" y1="351" y2="351"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="571" y="368.5352">+OnCompleted()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="571" y="385.0234">+OnError(p_exception : Exception)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="248" x="571" y="401.5117">+OnNext(p_valeur : TypeAObserver)</text></g><!--MD5=[5a7d167ec61c4b0c9d0449a420922069]
+class FactureModel--><g id="elem_FactureModel"><rect codeLine="22" fill="#FFFFFF" height="163.418" id="FactureModel" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="519" x="860.5" y="278"/><ellipse cx="1069.25" cy="294" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1071.7231,300.1431 Q1071.1421,300.4419 1070.5029,300.5913 Q1069.8638,300.7407 1069.1582,300.7407 Q1066.6514,300.7407 1065.3315,299.0889 Q1064.0117,297.437 1064.0117,294.3159 Q1064.0117,291.1865 1065.3315,289.5347 Q1066.6514,287.8828 1069.1582,287.8828 Q1069.8638,287.8828 1070.5112,288.0322 Q1071.1587,288.1816 1071.7231,288.4805 L1071.7231,291.2031 Q1071.0923,290.6221 1070.4988,290.3523 Q1069.9053,290.0825 1069.2744,290.0825 Q1067.9297,290.0825 1067.2449,291.1492 Q1066.5601,292.2158 1066.5601,294.3159 Q1066.5601,296.4077 1067.2449,297.4744 Q1067.9297,298.541 1069.2744,298.541 Q1069.9053,298.541 1070.4988,298.2712 Q1071.0923,298.0015 1071.7231,297.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="1089.75" y="299.291">FactureModel</text><line style="stroke:#000000;stroke-width:0.5;" x1="861.5" x2="1378.5" y1="310" y2="310"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="349" x="866.5" y="327.5352">-m_lignesFactureModel : List&lt;LigneFactureModel&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="392" x="866.5" y="344.0234">-m_observateurs : List&lt;IObserver&lt;FactureModelEvent&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="866.5" y="360.5117">+Total : decimal «get»</text><line style="stroke:#000000;stroke-width:0.5;" x1="861.5" x2="1378.5" y1="367.4648" y2="367.4648"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="866.5" y="385">+ctor()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="507" x="866.5" y="401.4883">+Subscribe(p_observateur : IObserver&lt;FactureModelEvent&gt;) : IDisposable</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="487" x="866.5" y="417.9766">+AjouterLigneFactureModel(p_ligneFactureModel : LigneFactureModel)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="866.5" y="434.4648">+Nouvelle()</text></g><!--MD5=[c84818291bf3337e1a89d913dc8bcd8e]
+class fEcranPrincipal--><g id="elem_fEcranPrincipal"><rect codeLine="32" fill="#FFFFFF" height="113.9531" id="fEcranPrincipal" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="235" x="744.5" y="134"/><ellipse cx="806.75" cy="150" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M809.2231,156.1431 Q808.6421,156.4419 808.0029,156.5913 Q807.3638,156.7407 806.6582,156.7407 Q804.1514,156.7407 802.8315,155.0889 Q801.5117,153.437 801.5117,150.3159 Q801.5117,147.1865 802.8315,145.5347 Q804.1514,143.8828 806.6582,143.8828 Q807.3638,143.8828 808.0112,144.0322 Q808.6587,144.1816 809.2231,144.4805 L809.2231,147.2031 Q808.5923,146.6221 807.9988,146.3523 Q807.4053,146.0825 806.7744,146.0825 Q805.4297,146.0825 804.7449,147.1492 Q804.0601,148.2158 804.0601,150.3159 Q804.0601,152.4077 804.7449,153.4744 Q805.4297,154.541 806.7744,154.541 Q807.4053,154.541 807.9988,154.2712 Q808.5923,154.0015 809.2231,153.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="827.25" y="155.291">fEcranPrincipal</text><line style="stroke:#000000;stroke-width:0.5;" x1="745.5" x2="978.5" y1="166" y2="166"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="750.5" y="183.5352">-m_factureModel : FactureModel</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="750.5" y="200.0234">-m_ecranClient : fEcranClient</text><line style="stroke:#000000;stroke-width:0.5;" x1="745.5" x2="978.5" y1="206.9766" y2="206.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="750.5" y="224.5117">+ctor()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="750.5" y="241">...()</text></g><!--MD5=[8d8e83cc7bb962a860eaa8d553226086]
+class fEcranClient--><g id="elem_fEcranClient"><rect codeLine="39" fill="#FFFFFF" height="97.4648" id="fEcranClient" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="274" x="626" y="7"/><ellipse cx="717.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M719.7231,29.1431 Q719.1421,29.4419 718.5029,29.5913 Q717.8638,29.7407 717.1582,29.7407 Q714.6514,29.7407 713.3315,28.0889 Q712.0117,26.437 712.0117,23.3159 Q712.0117,20.1865 713.3315,18.5347 Q714.6514,16.8828 717.1582,16.8828 Q717.8638,16.8828 718.5112,17.0322 Q719.1587,17.1816 719.7231,17.4805 L719.7231,20.2031 Q719.0923,19.6221 718.4988,19.3523 Q717.9053,19.0825 717.2744,19.0825 Q715.9297,19.0825 715.2449,20.1492 Q714.5601,21.2158 714.5601,23.3159 Q714.5601,25.4077 715.2449,26.4744 Q715.9297,27.541 717.2744,27.541 Q717.9053,27.541 718.4988,27.2712 Q719.0923,27.0015 719.7231,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="737.75" y="28.291">fEcranClient</text><line style="stroke:#000000;stroke-width:0.5;" x1="627" x2="899" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="632" y="56.5352">-m_factureModel : FactureModel</text><line style="stroke:#000000;stroke-width:0.5;" x1="627" x2="899" y1="63.4883" y2="63.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="262" x="632" y="81.0234">+ctor(p_FactureModel : FactureModel)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="632" y="97.5117">...()</text></g><!--MD5=[3f9de1f00e758c192dcabc4661a57ef5]
+class ObservateurEcranCaissier--><g id="elem_ObservateurEcranCaissier"><rect codeLine="45" fill="#FFFFFF" height="179.9063" id="ObservateurEcranCaissier" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="724" x="7" y="502"/><ellipse cx="276.75" cy="518" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M279.2231,524.1431 Q278.6421,524.4419 278.0029,524.5913 Q277.3638,524.7407 276.6582,524.7407 Q274.1514,524.7407 272.8315,523.0889 Q271.5117,521.437 271.5117,518.3159 Q271.5117,515.1865 272.8315,513.5347 Q274.1514,511.8828 276.6582,511.8828 Q277.3638,511.8828 278.0112,512.0322 Q278.6587,512.1816 279.2231,512.4805 L279.2231,515.2031 Q278.5923,514.6221 277.9988,514.3523 Q277.4053,514.0825 276.7744,514.0825 Q275.4297,514.0825 274.7449,515.1492 Q274.0601,516.2158 274.0601,518.3159 Q274.0601,520.4077 274.7449,521.4744 Q275.4297,522.541 276.7744,522.541 Q277.4053,522.541 277.9988,522.2712 Q278.5923,522.0015 279.2231,521.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="176" x="297.25" y="523.291">ObservateurEcranCaissier</text><line style="stroke:#000000;stroke-width:0.5;" x1="8" x2="730" y1="534" y2="534"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="13" y="551.5352">-m_seDesabonner : IDisposable</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="250" x="13" y="568.0234">-m_dgvFactureModel : DataGridView</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="13" y="584.5117">-m_total : TextBox</text><line style="stroke:#000000;stroke-width:0.5;" x1="8" x2="730" y1="591.4648" y2="591.4648"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="712" x="13" y="609">+ctor(p_sujet : IObservable&lt;FactureModelEvent&gt;, p_dgvFactureModel : DataGridView, p_total : TextBox)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="13" y="625.4883">+OnCompleted()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="13" y="641.9766">+OnError(p_exception : Exception)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="273" x="13" y="658.4648">+OnNext(p_valeur : FactureModelEvent)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="13" y="674.9531">+SeDesabonner()</text></g><!--MD5=[bec73016a24bc367c7d31b4374dd78e0]
+class ObservateurEcranClient--><g id="elem_ObservateurEcranClient"><rect codeLine="56" fill="#FFFFFF" height="163.418" id="ObservateurEcranClient" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="510" x="766" y="510.5"/><ellipse cx="935.75" cy="526.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M938.2231,532.6431 Q937.6421,532.9419 937.0029,533.0913 Q936.3638,533.2407 935.6582,533.2407 Q933.1514,533.2407 931.8315,531.5889 Q930.5117,529.937 930.5117,526.8159 Q930.5117,523.6865 931.8315,522.0347 Q933.1514,520.3828 935.6582,520.3828 Q936.3638,520.3828 937.0112,520.5322 Q937.6587,520.6816 938.2231,520.9805 L938.2231,523.7031 Q937.5923,523.1221 936.9988,522.8523 Q936.4053,522.5825 935.7744,522.5825 Q934.4297,522.5825 933.7449,523.6492 Q933.0601,524.7158 933.0601,526.8159 Q933.0601,528.9077 933.7449,529.9744 Q934.4297,531.041 935.7744,531.041 Q936.4053,531.041 936.9988,530.7712 Q937.5923,530.5015 938.2231,529.9204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="956.25" y="531.791">ObservateurEcranClient</text><line style="stroke:#000000;stroke-width:0.5;" x1="767" x2="1275" y1="542.5" y2="542.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="772" y="560.0352">-m_seDesabonner : IDisposable</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="772" y="576.5234">-m_affichage : TextBox</text><line style="stroke:#000000;stroke-width:0.5;" x1="767" x2="1275" y1="583.4766" y2="583.4766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="498" x="772" y="601.0117">+ctor(p_sujet : IObservable&lt;FactureModelEvent&gt;, p_affichage : TextBox)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="772" y="617.5">+OnCompleted()</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="772" y="633.9883">+OnError(p_exception : Exception)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="273" x="772" y="650.4766">+OnNext(p_valeur : FactureModelEvent)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="772" y="666.9648">+SeDesabonner()</text></g><!--MD5=[e10f77185c306f3ec7c31d25613e473c]
+class UnsubscriberFactureModel--><g id="elem_UnsubscriberFactureModel"><rect codeLine="66" fill="#FFFFFF" height="113.9531" id="UnsubscriberFactureModel" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="876" x="1843" y="302.5"/><ellipse cx="2184.75" cy="318.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2187.2231,324.6431 Q2186.6421,324.9419 2186.0029,325.0913 Q2185.3638,325.2407 2184.6582,325.2407 Q2182.1514,325.2407 2180.8315,323.5889 Q2179.5117,321.937 2179.5117,318.8159 Q2179.5117,315.6865 2180.8315,314.0347 Q2182.1514,312.3828 2184.6582,312.3828 Q2185.3638,312.3828 2186.0112,312.5322 Q2186.6587,312.6816 2187.2231,312.9805 L2187.2231,315.7031 Q2186.5923,315.1221 2185.9988,314.8523 Q2185.4053,314.5825 2184.7744,314.5825 Q2183.4297,314.5825 2182.7449,315.6492 Q2182.0601,316.7158 2182.0601,318.8159 Q2182.0601,320.9077 2182.7449,321.9744 Q2183.4297,323.041 2184.7744,323.041 Q2185.4053,323.041 2185.9988,322.7712 Q2186.5923,322.5015 2187.2231,321.9204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="2205.25" y="323.791">UnsubscriberFactureModel</text><line style="stroke:#000000;stroke-width:0.5;" x1="1844" x2="2718" y1="334.5" y2="334.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="318" x="1849" y="352.0352">-m_observer : IObserver&lt;FactureModelEvent&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="370" x="1849" y="368.5234">-m_observers : List&lt;IObserver&lt;FactureModelEvent&gt;&gt;</text><line style="stroke:#000000;stroke-width:0.5;" x1="1844" x2="2718" y1="375.4766" y2="375.4766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="864" x="1849" y="393.0117">+UnsubscribeSujetObservable(p_observers : List&lt;IObserver&lt;FactureModelEvent&gt;&gt;, p_observer : IObserver&lt;TypeAObserver&gt;)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="1849" y="409.5">+Dispose()</text></g><!--MD5=[31459e1ec1d2dbd2858517039066d7c1]
+class FactureModelEvent--><g id="elem_FactureModelEvent"><rect codeLine="73" fill="#FFFFFF" height="97.4648" id="FactureModelEvent" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="373" x="1464.5" y="7"/><ellipse cx="1581.75" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1584.2231,29.1431 Q1583.6421,29.4419 1583.0029,29.5913 Q1582.3638,29.7407 1581.6582,29.7407 Q1579.1514,29.7407 1577.8315,28.0889 Q1576.5117,26.437 1576.5117,23.3159 Q1576.5117,20.1865 1577.8315,18.5347 Q1579.1514,16.8828 1581.6582,16.8828 Q1582.3638,16.8828 1583.0112,17.0322 Q1583.6587,17.1816 1584.2231,17.4805 L1584.2231,20.2031 Q1583.5923,19.6221 1582.9988,19.3523 Q1582.4053,19.0825 1581.7744,19.0825 Q1580.4297,19.0825 1579.7449,20.1492 Q1579.0601,21.2158 1579.0601,23.3159 Q1579.0601,25.4077 1579.7449,26.4744 Q1580.4297,27.541 1581.7744,27.541 Q1582.4053,27.541 1582.9988,27.2712 Q1583.5923,27.0015 1584.2231,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="1602.25" y="28.291">FactureModelEvent</text><line style="stroke:#000000;stroke-width:0.5;" x1="1465.5" x2="1836.5" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="297" x="1470.5" y="56.5352">+Type : FactureModelEventType «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="361" x="1470.5" y="73.0234">+LigneFactureModel : LigneFactureModel «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="287" x="1470.5" y="89.5117">+FactureModel : FactureModel «get» «set»</text><line style="stroke:#000000;stroke-width:0.5;" x1="1465.5" x2="1836.5" y1="96.4648" y2="96.4648"/></g><!--MD5=[c4351454984a78560c59ade1e732899e]
+class FactureModelEventType--><g id="elem_FactureModelEventType"><rect codeLine="79" fill="#FFFFFF" height="80.9766" id="FactureModelEventType" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="195" x="1612.5" y="319"/><ellipse cx="1627.5" cy="335" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1631.1143,341.5 L1623.3945,341.5 L1623.3945,329.1069 L1631.1143,329.1069 L1631.1143,331.2651 L1625.8433,331.2651 L1625.8433,333.938 L1630.6162,333.938 L1630.6162,336.0962 L1625.8433,336.0962 L1625.8433,339.3418 L1631.1143,339.3418 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="1641.5" y="340.291">FactureModelEventType</text><line style="stroke:#000000;stroke-width:0.5;" x1="1613.5" x2="1806.5" y1="351" y2="351"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="1618.5" y="368.5352">AJOUT_LIGNE,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="1618.5" y="385.0234">NOUVELLE</text><line style="stroke:#000000;stroke-width:0.5;" x1="1613.5" x2="1806.5" y1="391.9766" y2="391.9766"/></g><!--MD5=[c274a7dbcc00d65fb8418402ad47cf9a]
+class LigneFactureModel--><g id="elem_LigneFactureModel"><rect fill="#FFFFFF" height="48" id="LigneFactureModel" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="162" x="1415" y="335.5"/><ellipse cx="1430" cy="351.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1432.4731,357.6431 Q1431.8921,357.9419 1431.2529,358.0913 Q1430.6138,358.2407 1429.9082,358.2407 Q1427.4014,358.2407 1426.0815,356.5889 Q1424.7617,354.937 1424.7617,351.8159 Q1424.7617,348.6865 1426.0815,347.0347 Q1427.4014,345.3828 1429.9082,345.3828 Q1430.6138,345.3828 1431.2612,345.5322 Q1431.9087,345.6816 1432.4731,345.9805 L1432.4731,348.7031 Q1431.8423,348.1221 1431.2488,347.8523 Q1430.6553,347.5825 1430.0244,347.5825 Q1428.6797,347.5825 1427.9949,348.6492 Q1427.3101,349.7158 1427.3101,351.8159 Q1427.3101,353.9077 1427.9949,354.9744 Q1428.6797,356.041 1430.0244,356.041 Q1430.6553,356.041 1431.2488,355.7712 Q1431.8423,355.5015 1432.4731,354.9204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="1444" y="356.791">LigneFactureModel</text><line style="stroke:#000000;stroke-width:0.5;" x1="1416" x2="1576" y1="367.5" y2="367.5"/><line style="stroke:#000000;stroke-width:0.5;" x1="1416" x2="1576" y1="375.5" y2="375.5"/></g><!--MD5=[cd7e40fcd15667552aba6edcc9cef03e]
+link FactureModelEvent to FactureModel--><g id="link_FactureModelEvent_FactureModel"><path codeLine="84" d="M1567.45,104.02 C1486.88,149.84 1363.23,220.17 1266.32,275.28 " fill="none" id="FactureModelEvent-to-FactureModel" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1261.72,277.9,1271.5219,276.9389,1266.0691,275.4331,1267.5749,269.9804,1261.72,277.9" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1546.0439" y="125.1546">n</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1266.4161" y="267.2495">1</text></g><!--MD5=[e20e19caac423c01238e60e7bc9581a9]
+link FactureModelEvent to LigneFactureModel--><g id="link_FactureModelEvent_LigneFactureModel"><path codeLine="85" d="M1626.61,104.02 C1593.84,167.87 1536.65,279.29 1510.19,330.86 " fill="none" id="FactureModelEvent-to-LigneFactureModel" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1507.88,335.36,1515.5461,329.1769,1510.1616,330.9109,1508.4276,325.5264,1507.88,335.36" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1614.2628" y="125.1546">n</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1501.8993" y="324.8604">1</text></g><!--MD5=[302fec70eddba89e8c7f4eaacfeff016]
+link FactureModelEvent to FactureModelEventType--><g id="link_FactureModelEvent_FactureModelEventType"><path codeLine="86" d="M1660.28,104.02 C1671.53,161.58 1690.33,257.8 1701.3,313.98 " fill="none" id="FactureModelEvent-to-FactureModelEventType" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1702.27,318.96,1704.4434,309.354,1701.2977,314.0555,1696.5962,310.9097,1702.27,318.96" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1653.0885" y="125.1546">n</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1692.2539" y="308.3002">1</text></g><!--MD5=[86f0a5b38e90a323d72ef5fa9bc7b20e]
+link fEcranPrincipal to FactureModel--><g id="link_fEcranPrincipal_FactureModel"><path codeLine="88" d="M948.99,248.14 C962.38,256.78 976.45,265.86 990.52,274.94 " fill="none" id="fEcranPrincipal-to-FactureModel" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="994.89,277.76,989.5022,269.5155,990.6906,275.0461,985.16,276.2345,994.89,277.76" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="972.78" y="259.4184">«create»</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="951.1044" y="268.6081">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="977.4088" y="268.6043">1</text></g><!--MD5=[72b8c53056e430de27ea88b40825ace3]
+reverse link fEcranClient to fEcranPrincipal--><g id="link_fEcranClient_fEcranPrincipal"><path codeLine="89" d="M801.48,108.39 C807.67,116.74 814.11,125.42 820.37,133.87 " fill="none" id="fEcranClient-backto-fEcranPrincipal" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="798.46,104.32,800.6053,113.9324,801.4372,108.337,807.0325,109.1689,798.46,104.32" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="795.0807" y="125.149">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="807.9345" y="125.037">1</text></g><!--MD5=[037c2e7a83833c2933941451a1b90902]
+reverse link IObserver to FactureModel--><g id="link_IObserver_FactureModel"><path codeLine="92" d="M830.53,359.5 C840.5,359.5 850.46,359.5 860.43,359.5 " fill="none" id="IObserver-backto-FactureModel" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="825.32,359.5,834.32,363.5,830.32,359.5,834.32,355.5,825.32,359.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="833.0854" y="356.6303">n</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="844.6053" y="356.8441">1</text></g><!--MD5=[4c943adc0c6e76a2a9eb3507da83f117]
+link FactureModel to LigneFactureModel--><g id="link_FactureModel_LigneFactureModel"><path codeLine="93" d="M1379.6,359.5 C1389.54,359.5 1399.48,359.5 1409.42,359.5 " fill="none" id="FactureModel-to-LigneFactureModel" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1414.61,359.5,1405.61,355.5,1409.61,359.5,1405.61,363.5,1414.61,359.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1387.4256" y="356.8441">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1399.005" y="356.4142">n</text></g><!--MD5=[9648cb224e9987530c92c5252b6705cd]
+link fEcranClient to FactureModel--><g id="link_fEcranClient_FactureModel"><path codeLine="95" d="M900.11,99.69 C948.64,115.39 992.48,130.23 997,134 C1040.57,170.31 1071.27,226.21 1091.1,273.14 " fill="none" id="fEcranClient-to-FactureModel" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1093.1,277.94,1093.32,268.0936,1091.1719,273.3267,1085.9387,271.1786,1093.1,277.94" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="907.827" y="99.2606">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1082.2514" y="267.2932">1</text></g><!--MD5=[2650b89164d930dddb1cc5b34ae662a9]
+reverse link IObserver to ObservateurEcranCaissier--><g id="link_IObserver_ObservateurEcranCaissier"><path codeLine="97" d="M610.72,420.09 C575.5,444.99 533.83,474.45 495.09,501.84 " fill="none" id="IObserver-backto-ObservateurEcranCaissier" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="607.08,414.09,627.45,408.26,615.16,425.52,607.08,414.09" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6e823e130a0236c19b1ae2608d7fc9cb]
+reverse link IObserver to ObservateurEcranClient--><g id="link_IObserver_ObservateurEcranClient"><path codeLine="98" d="M779.01,419.9 C817.98,447.45 864.89,480.62 907,510.4 " fill="none" id="IObserver-backto-ObservateurEcranClient" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="774.84,425.52,762.55,408.26,782.92,414.09,774.84,425.52" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0a165e78ea2e2c818a8cfb69ac507006]
+reverse link IDisposable to UnsubscriberFactureModel--><g id="link_IDisposable_UnsubscriberFactureModel"><path codeLine="99" d="M2281,107.77 C2281,161.81 2281,246.67 2281,302.45 " fill="none" id="IDisposable-backto-UnsubscriberFactureModel" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="2274,107.68,2281,87.68,2288,107.68,2274,107.68" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[4a3ce135aaf42a2764e8637c87226e16]
+reverse link IObservable to FactureModel--><g id="link_IObservable_FactureModel"><path codeLine="100" d="M1171.57,107.3 C1162.01,153.86 1147.7,223.57 1136.58,277.75 " fill="none" id="IObservable-backto-FactureModel" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1164.72,105.87,1175.6,87.68,1178.43,108.68,1164.72,105.87" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[00d020eeb4b059723618a4874abaf36f]
+@startuml DiagAppFactureNonGen
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+interface IDisposable {
+    + Dispose()
+}
+
+interface IObservable<TypeAObserver> {
+    + Subscribe(p_observateur : IObserver<TypeAObserver>) : IDisposable
+}
+
+interface IObserver<TypeAObserver> {
+    + OnCompleted()
+    + OnError(p_exception : Exception)
+    + OnNext(p_valeur : TypeAObserver)
+}
+
+class FactureModel {
+    - m_lignesFactureModel : List<LigneFactureModel>
+    - m_observateurs : List<IObserver<FactureModelEvent>>
+    + Total : decimal <<get>>
+    + ctor()
+    + Subscribe(p_observateur : IObserver<FactureModelEvent>) : IDisposable
+    + AjouterLigneFactureModel(p_ligneFactureModel : LigneFactureModel)
+    + Nouvelle()
+}
+
+class fEcranPrincipal {
+    - m_factureModel : FactureModel
+    - m_ecranClient : fEcranClient
+    + ctor()
+    ...()
+}
+
+class fEcranClient {
+    - m_factureModel : FactureModel
+    + ctor(p_FactureModel : FactureModel)
+    ...()
+}
+
+class ObservateurEcranCaissier {
+    - m_seDesabonner : IDisposable
+    - m_dgvFactureModel : DataGridView
+    - m_total : TextBox
+    + ctor(p_sujet : IObservable<FactureModelEvent>, p_dgvFactureModel : DataGridView, p_total : TextBox)
+    + OnCompleted()
+    + OnError(p_exception : Exception)
+    + OnNext(p_valeur : FactureModelEvent)
+    + SeDesabonner()
+}
+
+class ObservateurEcranClient {
+    - m_seDesabonner : IDisposable
+    - m_affichage : TextBox
+    + ctor(p_sujet : IObservable<FactureModelEvent>, p_affichage : TextBox)
+    + OnCompleted()
+    + OnError(p_exception : Exception)
+    + OnNext(p_valeur : FactureModelEvent)
+    + SeDesabonner()
+}
+
+class UnsubscriberFactureModel {
+    - m_observer : IObserver<FactureModelEvent>
+    - m_observers : List<IObserver<FactureModelEvent>>
+    + UnsubscribeSujetObservable(p_observers : List<IObserver<FactureModelEvent>>, p_observer : IObserver<TypeAObserver>)
+    + Dispose()
+}
+
+class FactureModelEvent {
+    + Type : FactureModelEventType <<get>> <<set>>
+    + LigneFactureModel : LigneFactureModel <<get>> <<set>>
+    + FactureModel : FactureModel <<get>> <<set>>
+}
+
+enum FactureModelEventType {
+    AJOUT_LIGNE,
+    NOUVELLE
+}
+
+FactureModelEvent "n" - -> "1" FactureModel
+FactureModelEvent "n" - -> "1" LigneFactureModel
+FactureModelEvent "n" - -> "1" FactureModelEventType
+
+fEcranPrincipal "1" -right-> "1" FactureModel : <<create>>
+fEcranPrincipal "1" -left-> "1" fEcranClient
+
+
+FactureModel "1" -left-> "n" IObserver
+FactureModel "1" -right-> "n" LigneFactureModel
+
+fEcranClient "1" - -> "1" FactureModel
+
+IObserver <|.. ObservateurEcranCaissier
+IObserver <|.. ObservateurEcranClient
+IDisposable <|.. UnsubscriberFactureModel
+IObservable <|.. FactureModel
+
+'fEcranClient "1" ..> "1" ObservateurEcranClient : <<create>>
+'fEcranPrincipal "1" ..> "1" ObservateurEcranCaissier : <<create>>
+@enduml
+
+@startuml DiagAppFactureNonGen
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+interface IDisposable {
+    + Dispose()
+}
+
+interface IObservable<TypeAObserver> {
+    + Subscribe(p_observateur : IObserver<TypeAObserver>) : IDisposable
+}
+
+interface IObserver<TypeAObserver> {
+    + OnCompleted()
+    + OnError(p_exception : Exception)
+    + OnNext(p_valeur : TypeAObserver)
+}
+
+class FactureModel {
+    - m_lignesFactureModel : List<LigneFactureModel>
+    - m_observateurs : List<IObserver<FactureModelEvent>>
+    + Total : decimal <<get>>
+    + ctor()
+    + Subscribe(p_observateur : IObserver<FactureModelEvent>) : IDisposable
+    + AjouterLigneFactureModel(p_ligneFactureModel : LigneFactureModel)
+    + Nouvelle()
+}
+
+class fEcranPrincipal {
+    - m_factureModel : FactureModel
+    - m_ecranClient : fEcranClient
+    + ctor()
+    ...()
+}
+
+class fEcranClient {
+    - m_factureModel : FactureModel
+    + ctor(p_FactureModel : FactureModel)
+    ...()
+}
+
+class ObservateurEcranCaissier {
+    - m_seDesabonner : IDisposable
+    - m_dgvFactureModel : DataGridView
+    - m_total : TextBox
+    + ctor(p_sujet : IObservable<FactureModelEvent>, p_dgvFactureModel : DataGridView, p_total : TextBox)
+    + OnCompleted()
+    + OnError(p_exception : Exception)
+    + OnNext(p_valeur : FactureModelEvent)
+    + SeDesabonner()
+}
+
+class ObservateurEcranClient {
+    - m_seDesabonner : IDisposable
+    - m_affichage : TextBox
+    + ctor(p_sujet : IObservable<FactureModelEvent>, p_affichage : TextBox)
+    + OnCompleted()
+    + OnError(p_exception : Exception)
+    + OnNext(p_valeur : FactureModelEvent)
+    + SeDesabonner()
+}
+
+class UnsubscriberFactureModel {
+    - m_observer : IObserver<FactureModelEvent>
+    - m_observers : List<IObserver<FactureModelEvent>>
+    + UnsubscribeSujetObservable(p_observers : List<IObserver<FactureModelEvent>>, p_observer : IObserver<TypeAObserver>)
+    + Dispose()
+}
+
+class FactureModelEvent {
+    + Type : FactureModelEventType <<get>> <<set>>
+    + LigneFactureModel : LigneFactureModel <<get>> <<set>>
+    + FactureModel : FactureModel <<get>> <<set>>
+}
+
+enum FactureModelEventType {
+    AJOUT_LIGNE,
+    NOUVELLE
+}
+
+FactureModelEvent "n" - -> "1" FactureModel
+FactureModelEvent "n" - -> "1" LigneFactureModel
+FactureModelEvent "n" - -> "1" FactureModelEventType
+
+fEcranPrincipal "1" -right-> "1" FactureModel : <<create>>
+fEcranPrincipal "1" -left-> "1" fEcranClient
+
+
+FactureModel "1" -left-> "n" IObserver
+FactureModel "1" -right-> "n" LigneFactureModel
+
+fEcranClient "1" - -> "1" FactureModel
+
+IObserver <|.. ObservateurEcranCaissier
+IObserver <|.. ObservateurEcranClient
+IDisposable <|.. UnsubscriberFactureModel
+IObservable <|.. FactureModel
+
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 06:55:52 EDT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

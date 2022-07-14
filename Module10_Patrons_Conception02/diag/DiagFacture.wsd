@@ -20,85 +20,86 @@ interface IObserver<TypeAObserver> {
     + OnNext(p_valeur : TypeAObserver)
 }
 
-class Facture {
-    - m_lignesFacture : List<LigneFacture>
-    - m_observateurs : List<IObserver<FactureEvent>>
+class FactureModel {
+    - m_lignesFactureModel : List<LigneFactureModel>
+    - m_observateurs : List<IObserver<FactureModelEvent>>
     + Total : decimal <<get>>
     + ctor()
-    + Subscribe(p_observateur : IObserver<FactureEvent>) : IDisposable
-    + AjouterLigneFacture(p_ligneFacture : LigneFacture)
+    + Subscribe(p_observateur : IObserver<FactureModelEvent>) : IDisposable
+    + AjouterLigneFactureModel(p_ligneFactureModel : LigneFactureModel)
     + Nouvelle()
 }
 
 class fEcranPrincipal {
-    - m_facture : Facture
+    - m_factureModel : FactureModel
     - m_ecranClient : fEcranClient
     + ctor()
     ...()
 }
 
 class fEcranClient {
-    - m_facture : Facture
-    + ctor(p_facture : Facture)
+    - m_factureModel : FactureModel
+    + ctor(p_FactureModel : FactureModel)
     ...()
 }
 
 class ObservateurEcranCaissier {
     - m_seDesabonner : IDisposable
-    - m_dgvFacture : DataGridView
+    - m_dgvFactureModel : DataGridView
     - m_total : TextBox
-    + ctor(p_sujet : IObservable<FactureEvent>, p_dgvFacture : DataGridView, p_total : TextBox)
+    + ctor(p_sujet : IObservable<FactureModelEvent>, p_dgvFactureModel : DataGridView, p_total : TextBox)
     + OnCompleted()
     + OnError(p_exception : Exception)
-    + OnNext(p_valeur : FactureEvent)
+    + OnNext(p_valeur : FactureModelEvent)
     + SeDesabonner()
 }
 
 class ObservateurEcranClient {
     - m_seDesabonner : IDisposable
     - m_affichage : TextBox
-    + ctor(p_sujet : IObservable<FactureEvent>, p_affichage : TextBox)
+    + ctor(p_sujet : IObservable<FactureModelEvent>, p_affichage : TextBox)
     + OnCompleted()
     + OnError(p_exception : Exception)
-    + OnNext(p_valeur : FactureEvent)
+    + OnNext(p_valeur : FactureModelEvent)
     + SeDesabonner()
 }
 
-class UnsubscriberFacture {
-    - m_observer : IObserver<FactureEvent>
-    - m_observers : List<IObserver<FactureEvent>>
-    + UnsubscribeSujetObservable(p_observers : List<IObserver<FactureEvent>>, p_observer : IObserver<TypeAObserver>)
+class UnsubscriberFactureModel {
+    - m_observer : IObserver<FactureModelEvent>
+    - m_observers : List<IObserver<FactureModelEvent>>
+    + UnsubscribeSujetObservable(p_observers : List<IObserver<FactureModelEvent>>, p_observer : IObserver<TypeAObserver>)
     + Dispose()
 }
 
-class FactureEvent {
-    + Type : FactureEventType <<get>> <<set>>
-    + LigneFacture : LigneFacture <<get>> <<set>>
-    + Facture : Facture <<get>> <<set>>
+class FactureModelEvent {
+    + Type : FactureModelEventType <<get>> <<set>>
+    + LigneFactureModel : LigneFactureModel <<get>> <<set>>
+    + FactureModel : FactureModel <<get>> <<set>>
 }
 
-enum FactureEventType {
+enum FactureModelEventType {
     AJOUT_LIGNE,
     NOUVELLE
 }
 
-FactureEvent "n" --> "1" Facture
-FactureEvent "n" --> "1" LigneFacture
-FactureEvent "n" --> "1" FactureEventType
+FactureModelEvent "n" --> "1" FactureModel
+FactureModelEvent "n" --> "1" LigneFactureModel
+FactureModelEvent "n" --> "1" FactureModelEventType
 
-fEcranPrincipal "1" -right-> "1" Facture : <<create>>
+fEcranPrincipal "1" -right-> "1" FactureModel : <<create>>
 fEcranPrincipal "1" -left-> "1" fEcranClient
 
 
-Facture "1" -left-> "n" IObserver
-Facture "1" -right-> "n" LigneFacture
+FactureModel "1" -left-> "n" IObserver
+FactureModel "1" -right-> "n" LigneFactureModel
 
-fEcranClient "1" --> "1" Facture
+fEcranClient "1" --> "1" FactureModel
 
 IObserver <|.. ObservateurEcranCaissier
 IObserver <|.. ObservateurEcranClient
-IDisposable <|.. UnsubscriberFacture
-IObservable <|.. Facture
+IDisposable <|.. UnsubscriberFactureModel
+IObserver <.. UnsubscriberFactureModel
+IObservable <|.. FactureModel
 
 'fEcranClient "1" ..> "1" ObservateurEcranClient : <<create>>
 'fEcranPrincipal "1" ..> "1" ObservateurEcranCaissier : <<create>>

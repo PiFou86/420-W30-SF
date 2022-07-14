@@ -18,6 +18,9 @@ Le schéma suivant représente une vue globale de l'application avec des observa
 Le schéma suivant représente une vue globale de l'application avec des observateurs génériques (version de l'exercice suivant) :
 
 ![Diagramme de classes](../images/Module10_Patrons_Conception02/diag/DiagFactureGen/DiagAppFactureGen.png)
+
+La version génériques permet de limiter le nombre de classes en prenant une stratégie en paramètres. Cette stratégie correspond au traitement de l'événement. Cette version évite aussi de passer les éléments graphiques en paramètres du constructeur.
+
 </details>
 
 ### Exercice 1.1 - Écran principal
@@ -25,7 +28,7 @@ Le schéma suivant représente une vue globale de l'application avec des observa
 - Reproduisez l'écran principal
   - Pour l'affichage de la facture, utilisez un "DataGridView". Empêchez l'édition dans ce contrôle.
   - Pour la simulation, mettez tous les contrôles dans un "GroupBox".
-  - Les saisies d'entiers ou de décimaux doivent être effectuées avec des contrôles de type "NumericUpDown
+  - Les saisies d'entiers ou de décimaux doivent être effectuées avec des contrôles de type "NumericUpDown"
 
 ![Contrôles fPrincipale](img/fPrincipale_composants.png)
 
@@ -41,25 +44,25 @@ Reproduisez l'écran client :
 
 ### Exercice 1.3 - Facture
 
-Pour simplifier le codage, il y aura une seule instance de "Facture". Cette instance sera créée par "fPrincipal". La facture est le sujet et les deux fenêtres vont créer des observateurs sur elle. Seul le simulateur de scanner ("Simuler") et le paiement ("Payer") pourront agir directement la facture.
+Pour simplifier le codage, il y aura une seule instance de "FactureModel". Cette instance sera créée par "fPrincipal". La facture est le sujet et les deux fenêtres vont créer des observateurs sur elle. Seul le simulateur de scanner ("Simuler") et le paiement ("Payer") pourront agir directement la facture.
 
 Étapes à suivre pour cette partie de l'exercice:
 
-- Créez la classe "Facture" qui permet de stocker des lignes de facture
+- Créez la classe "FactureModel" qui permet de stocker des lignes de facture
 - Une ligne de facture à une description, une quantité, un prix unitaire et un total
-- La facture doit implanter l'interface "IObservable". Le type d'éléments envoyé pour les notifications est "FactureEvent".
-- "FactureEvent" contient trois propriétés :
-  - Type : type de l'événement, soit "AJOUT_LIGNE" envoyé pour l'ajout d'une ligne dans la facture, soit "NOUVELLE" pour la création d'une nouvelle facture. Pour cette propriété, créez le type TypeEvenementFacture comment [étant un "enum"](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum)
-  - LigneFacture : référence de la ligne de facture quand le type d'événement est "AJOUT_LIGNE", null sinon
-  - Facture : référence de la facture qui a déclenchée l'événement
+- La facture doit implanter l'interface "IObservable". Le type d'éléments envoyé pour les notifications est "FactureModelEvent".
+- "FactureModelEvent" contient trois propriétés :
+  - Type : type de l'événement, soit "AJOUT_LIGNE" envoyé pour l'ajout d'une ligne dans la facture, soit "NOUVELLE" pour la création d'une nouvelle facture. Pour cette propriété, créez le type "TypeEvenementFactureModel" comment [étant un "enum"](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum)
+  - LigneFactureModel : référence de la ligne de facture quand le type d'événement est "AJOUT_LIGNE", null sinon
+  - FactureModel : référence de la facture qui a déclenchée l'événement
 - La facture doit implanter une méthode pour l'ajout d'une ligne de facture. Cet ajout doit aussi s'occuper de notifier les observateurs de l'événement.
 - La facture doit implanter une méthode pour la suppression de toutes les lignes de la facture. Cet ajout doit aussi s'occuper de notifier les observateurs de l'événement.
 
 ### Exercice 1.4 - Observateurs
 
-- Créez la classe "ObservateurFacture" qui implante l'interface "IObserver<FactureEvent>"
-- Cette classe doit avoir un constructeur par initialisation qui prend une lambda en paramètres et qui réagit au "FactureEvent" passé en paramètres
-- En utilisant la classe "ObservateurFacture" et des lambdas appropriées :
+- Créez la classe "ObservateurFactureModel" qui implante l'interface "IObserver<FactureModelEvent>"
+- Cette classe doit avoir un constructeur par initialisation qui prend une lambda en paramètres et qui réagit au "FactureModelEvent" passé en paramètres
+- En utilisant la classe "ObservateurFactureModel" et des lambdas appropriées :
   - Au moment de la réception d'une nouvelle ligne :
     - Ajoutez la ligne dans le "DataGridView"
     - Affichez la ligne ajoutée sur l'écran du client
