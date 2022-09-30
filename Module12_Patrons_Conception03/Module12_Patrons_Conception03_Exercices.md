@@ -349,13 +349,12 @@ public void TraiterImage(ImageManipulable p_image)
 
 - Pour chacun des traitements :
   - Ajoutez l'attribut "Description" avec une courte description. Exemple :
-```csharp
-    [Description("Filtre sépia")]
-    public class TraitementImageFiltreSepia : ITraitementImage
-    {
-    ...
-```
-
+    ```csharp
+        [Description("Filtre sépia")]
+        public class TraitementImageFiltreSepia : ITraitementImage
+        {
+        ...
+    ```
   - Écrivez les méthodes "ToString" qui, à partir de la classe utilitaire, renvoie la description du traitement.
 
 ### Exercice 1.3 - Animation de l'interface !
