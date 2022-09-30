@@ -12,6 +12,24 @@ Par exemple, à partir de la première image et après application des traitemen
 
 ![Traitement N&B et médiane](filtres_n&b_bruit.png)
 
+Une image peut être vue comme un tableau à deux dimensions où chaque case correspond à une mesure "d'une couleur".
+
+Généralement, une image va être représentée par un tableau 1D de bytes (```byte[]```) qui stocke généralement trois composantes (i.e. un couple de trois valeurs) d'une couleur. On utilise classiquement l'espace de couleur RVB (Rouge / Vert / Bleu) avec 8 bits par couleur. Dans ce cas, on a l'intensité de chaque composante pour un pixel (**Pic**ture **El**ement).
+
+![Zoom sur les pixels](composition_image_rgb.png)
+
+Une image est donc une suite de pixels qui eux-même sont représentés par un triplet qui contiennent l'intensité des trois couleurs additives (R / V / B). On pourrait donc penser qu'une image 30 de largeur par 30 de hauteur nécessitera 30 * 30 * 3 = 2 700 octects. En fait, pour des raisons d'optimisation, on va chercher à aligner nos données en mémoire. Il se peut qu'on utilise plus d'octets utilisés que ce qui est nécessaire dans l'absolu. Ainsi, la bibliothèque que nous utilisons cherche à représenter chaque ligne d'une image avec un sous-tableau d'une longueur multiple de 4. Pour avoir la longueur d'une ligne, il faudra utiliser la propriété [```Stride```](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.imaging.bitmapdata.stride). De plus, toujours avec notre bibliothèque, les composantes sont représentées en ordre inverse.
+
+Par exemple si on a une image de 3 par 3 pixels, avec la première ligne rouge, la seconde verte et la troisième bleue, elle sera représentée par le tableau de bytes suivant (où P est une valeur de remplissage) : 
+
+```
+[
+  0,   0, 255     ,   0,   0, 255    ,   0 ,  0, 255,       P, P, P,
+  0, 255,   0     ,   0, 255,   0    ,   0, 255,   0,       P, P, P,
+255,   0,   0     , 255,   0,   0    , 255,   0,   0,       P, P, P
+]
+```
+
 <details>
     <summary>Proposition de diagramme de classes (Voir après réflexion personnelle !)</summary>
 
