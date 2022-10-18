@@ -49,12 +49,12 @@ L'algorithme de consolidation des données fonctionne comme suit :
   - Les interfaces se suffisent à elle-même ici : on ne veut pas les implanter
   - Laissez la méthode "ConsoliderDonneesDestination" de la classe "TraitementLotsConsolidationAbonnes" vide pour le moment.
 
-Pour chacun des cas qui suivent, vous devez :
+Pour chacun des cas de test qui suivent, vous devez :
 
-- Analysez sur papier le cas de test suivant : 
- - Quels sont vos ensembles de données source et destination ?
- - Quels méthodes devraient être appelées ?
-- Écrivez un test unitaire qui permet de tester la méthode "ConsoliderDonneesDestination" avec ce dernier cas
+- Analysez sur papier le cas de test suivant :
+  - Quels sont vos ensembles de données source et destination ?
+  - Quels méthodes devraient être appelées ?
+- Écrivez un test unitaire qui permet de tester la méthode "ConsoliderDonneesDestination" avec le cas de test courant
 - Codez la méthode "ConsoliderDonneesDestination" afin de faire passer le test avec un minimum d'efforts
 
 Cas de test :
