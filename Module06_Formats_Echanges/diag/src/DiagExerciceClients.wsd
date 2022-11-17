@@ -64,7 +64,7 @@ package CoucheAccesDonnees.JSON {
         + Etat : string <<get>> <<set>>
         + Pays : string  <<get>> <<set>>
         + ctor()
-        + ctor(p_client : Adresse)
+        + ctor(p_adresse : Adresse)
         + VersEntite() : Adresse
     }
 
@@ -112,7 +112,7 @@ package CoucheAccesDonnees.XML {
         + Etat : string <<get>> <<set>>
         + Pays : string  <<get>> <<set>>
         + ctor()
-        + ctor(p_client : Adresse)
+        + ctor(p_adresse : Adresse)
         + VersEntite() : Adresse
     }
 }
