@@ -38,7 +38,7 @@ namespace POOII_Module02_TestsUnitaires
             this.AfficherScrore();
         }
 
-        public void AfficherScrore()
+        public void AfficherScore()
         {
             throw new NotImplementedException();
         }
