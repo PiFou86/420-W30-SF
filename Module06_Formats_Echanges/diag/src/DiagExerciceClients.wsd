@@ -123,13 +123,13 @@ package Application {
     class ClientUIConsole {
         - m_depotClient : IDepotClients
         + ctor(p_depotClient : IDepotClients)
-        + AfficherMenu()
-        + SaisirChoixMenu() : int
+        - AfficherMenu()
+        - SaisirChoixMenu() : int
         + ExecuterUI()
-        + SaisirClientAvecAdresse() : Client
-        + AfficherClient(p_client: Client)
-        + RechercherEtAfficherClientParId()
-        + ListerEtAfficherClients()
+        - SaisirClientAvecAdresse() : Client
+        - AfficherClient(p_client: Client)
+        - RechercherEtAfficherClientParId()
+        - ListerEtAfficherClients()
         - GenererAdresseAleatoire() : Adresse
     }
 }
