@@ -4,7 +4,7 @@
 
 Vous devez écrire un programme contenant des personnes qui sont propriétaires de voitures. Ces entités contiennent minimalement un champ identifiant unique. Cet identifiant doit être de type entier.
 
-Chaque objet, de type Voiture ou Personne, doit avoir un identifiant qui est unique au travers de l'application et ce quelque soit son type.
+Chaque objet, de type Voiture ou Personne, doit avoir un identifiant qui est unique au travers de l'application et ce quelque soit son type. L'identifiant doit être un entier qui s'incrémente au fil est à mesure de la création d'identifiants.
 
 Prendre en compte qu’une Voiture appartient à 0 ou n Personne et qu’une Personne à 0 ou n Voiture.
 

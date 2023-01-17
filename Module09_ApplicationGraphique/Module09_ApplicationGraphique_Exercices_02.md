@@ -36,7 +36,7 @@ Pour rendre l'application plus propre, on devrait ajouter une couche de services
   - "fSaisieClient" :
     - "AcceptButton" : "bEnregistrer"
     - "CancelButton" : "bAnnuler"
-    - "FormBorderStyle" : "FixedSingle"
+    - "FormBorderStyle" : "FixedToolWindow"
 
 ## Exercice 2 - Fenêtre "fSaisieClient"
 
