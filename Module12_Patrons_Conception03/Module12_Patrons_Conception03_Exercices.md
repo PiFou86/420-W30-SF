@@ -24,9 +24,9 @@ Par exemple si on a une image de 3 par 3 pixels, avec la première ligne rouge, 
 
 ```
 [
-  0,   0, 255     ,   0,   0, 255    ,   0 ,  0, 255,       P, P, P,
+255,   0,   0     , 255,   0,   0    , 255,   0,   0,       P, P, P,
   0, 255,   0     ,   0, 255,   0    ,   0, 255,   0,       P, P, P,
-255,   0,   0     , 255,   0,   0    , 255,   0,   0,       P, P, P
+  0,   0, 255     ,   0,   0, 255    ,   0 ,  0, 255,       P, P, P
 ]
 ```
 
@@ -294,7 +294,7 @@ for (int colonne = 0; colonne < width; colonne++)
 Array.Copy(res, raw, raw.Length);
 ```
 
-- Créez la classe "TraitementImageContours" qui effectue un filtre passe haut qui correspond à un des algorithmes de détection de contours. Cette classe hérite de "TraitementImageMasque". Copiez-y la méthode suivante :
+- Créez la classe "TraitementImageContours" qui effectue un filtre passe-haut qui correspond à un des algorithmes de détection de contours. Cette classe hérite de "TraitementImageMasque". Copiez-y la méthode suivante :
 
 ```csharp
 private static byte TraiterDonnees(byte[] p_donnees)
