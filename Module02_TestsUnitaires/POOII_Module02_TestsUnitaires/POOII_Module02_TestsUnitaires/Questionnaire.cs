@@ -35,7 +35,7 @@ namespace POOII_Module02_TestsUnitaires
         {
             this.PoserQuestions();
             this.CorrigerQuestions();
-            this.AfficherScrore();
+            this.AfficherScore();
         }
 
         public void AfficherScore()
