@@ -56,7 +56,7 @@ class ObservateurFactureModel {
 class UnsubscriberFactureModel {
     - m_observer : IObserver<FactureModelEvent>
     - m_observers : List<IObserver<FactureModelEvent>>
-    + UnsubscribeSujetObservable(p_observers : List<IObserver<FactureModelEvent>>, p_observer : IObserver<TypeAObserver>)
+    + ctor(p_observers : List<IObserver<FactureModelEvent>>, p_observer : IObserver<TypeAObserver>)
     + Dispose()
 }
 
