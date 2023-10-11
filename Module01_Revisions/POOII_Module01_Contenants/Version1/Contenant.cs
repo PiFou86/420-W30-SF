@@ -5,6 +5,7 @@ namespace Version1;
 public abstract class Contenant : IContenant
 {
     private List<ILiquide> m_liquides;
+
     public decimal VolumeContenant { get; }
     public string Nom { get; }
     public decimal VolumeMaximum { get => this.VolumeContenant * 0.95m; }

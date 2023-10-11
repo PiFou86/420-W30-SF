@@ -79,7 +79,7 @@ namespace TestsPOOII_Module02_TestsUnitaires
             // Arranger
             List<IQuestion> questions = new List<IQuestion>();
             string nomParametreEnErreurAttendu = "p_listeQuestions";
-            string messageAttendu = "La liste de questions ne doit pas  tre vide (Parameter 'p_listeQuestions')";
+            string messageAttendu = "La liste de questions ne doit pas être vide (Parameter 'p_listeQuestions')";
 
             // Agir && Assert
             ArgumentException ae = Assert.Throws<ArgumentException>(() =>

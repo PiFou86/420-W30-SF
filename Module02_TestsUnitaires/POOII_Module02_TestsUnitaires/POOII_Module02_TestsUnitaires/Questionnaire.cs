@@ -25,7 +25,7 @@ namespace POOII_Module02_TestsUnitaires
             }
             if (p_listeQuestions.Count == 0)
             {
-                throw new ArgumentException("La liste de questions ne doit pas être vide", nameof(p_listeQuestions));
+                throw new ArgumentException("La liste de questions ne doit pas être vide", nameof(p_listeQuestions));
             }
 
             this.Questions = new List<IQuestion>(p_listeQuestions);
