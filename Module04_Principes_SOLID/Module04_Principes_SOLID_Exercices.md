@@ -136,7 +136,7 @@ Comment pourriez-vous améliorer le code ?
 
 ```csharp
 public class ATM {
-    private TypeTirroir m_typeTiroir;
+    private TypeTiroir m_typeTiroir;
     private ITiroirArgent m_tiroirArgent;
 
     public ATM(TypeTirroir p_typeTiroir) {
