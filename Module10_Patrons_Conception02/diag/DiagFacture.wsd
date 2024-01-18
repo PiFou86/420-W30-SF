@@ -38,7 +38,7 @@ class fEcranPrincipal {
 }
 
 class fEcranClient {
-    + ctor()
+    + ctor(p_factureModel : FactureModel)
     ...()
 }
 
