@@ -10,14 +10,14 @@ interface IDisposable {
     + Dispose()
 }
 
-interface IObservable<TypeAObserver> {
-    + Subscribe(p_observateur : IObserver<TypeAObserver>) : IDisposable
+interface IObservable<TypeEvenement> {
+    + Subscribe(p_observateur : IObserver<TypeEvenement>) : IDisposable
 }
 
-interface IObserver<TypeAObserver> {
+interface IObserver<TypeEvenement> {
     + OnCompleted()
     + OnError(p_exception : Exception)
-    + OnNext(p_valeur : TypeAObserver)
+    + OnNext(p_valeur : TypeEvenement)
 }
 
 class FactureModel {
@@ -38,8 +38,7 @@ class fEcranPrincipal {
 }
 
 class fEcranClient {
-    - m_factureModel : FactureModel
-    + ctor(p_FactureModel : FactureModel)
+    + ctor()
     ...()
 }
 
@@ -67,7 +66,7 @@ class ObservateurEcranClient {
 class UnsubscriberFactureModel {
     - m_observer : IObserver<FactureModelEvent>
     - m_observers : List<IObserver<FactureModelEvent>>
-    + UnsubscribeSujetObservable(p_observers : List<IObserver<FactureModelEvent>>, p_observer : IObserver<TypeAObserver>)
+    + UnsubscribeSujetObservable(p_observers : List<IObserver<FactureModelEvent>>, p_observer : IObserver<FactureModelEvent>)
     + Dispose()
 }
 
@@ -92,8 +91,6 @@ fEcranPrincipal "1" -left-> "1" fEcranClient
 
 FactureModel "1" -left-> "n" IObserver
 FactureModel "1" -right-> "n" LigneFactureModel
-
-fEcranClient "1" --> "1" FactureModel
 
 IObserver <|.. ObservateurEcranCaissier
 IObserver <|.. ObservateurEcranClient
