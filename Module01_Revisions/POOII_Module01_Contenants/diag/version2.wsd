@@ -56,7 +56,7 @@ abstract class Liquide
 
 ILiquide  <.left.   IContenant
 
-Contenant "1" -right-> "n" ILiquide 
+Contenant "1" -right-> "n" ILiquide : \t
 
 ILiquide <|.. Liquide
 
