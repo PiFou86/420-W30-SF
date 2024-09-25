@@ -1,27 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 
-namespace POOII_Module07_Patrons_Conception01_PreparationCours
+namespace POOII_Module07_Patrons_Conception01_PreparationCours;
+
+public interface SaluerStrategieV1
 {
-    public interface SaluerStrategieV1
-    {
-        void Executer();
-    }
+    void Executer();
+}
 
-    public class SaluerConsoleFrancaisStrategieV1 : SaluerStrategieV1
-    {
-        public void Executer()
-        {
-            Console.Out.WriteLine("Bonjour !");
-        }
-    }
+public class SaluerConsoleFrancaisStrategieV1 : SaluerStrategieV1
+{
+    public void Executer()
+    {
+        Console.Out.WriteLine("Bonjour !");
+    }
+}
 
-    public class SaluerConsoleAnglaisStrategieV1 : SaluerStrategieV1
-    {
-        public void Executer()
-        {
-            Console.Out.WriteLine("Hello !");
-        }
-    }
+public class SaluerConsoleAnglaisStrategieV1 : SaluerStrategieV1
+{
+    public void Executer()
+    {
+        Console.Out.WriteLine("Hello !");
+    }
 }
