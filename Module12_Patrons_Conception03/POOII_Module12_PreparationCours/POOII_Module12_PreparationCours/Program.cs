@@ -15,12 +15,12 @@ class Program
 
     private static void Example2()
     {
-        // Segment -> Rectangle -> Ellipse
+        // Segment -> Rectangle -> Ellipse
         IDessinForme dfSansSentinelle = new DessinerFormeEllipse();
         dfSansSentinelle = new DessinerFormeRectangle() { Suivant = dfSansSentinelle };
         dfSansSentinelle = new DessinerFormeSegment() { Suivant = dfSansSentinelle };
 
-        // Segment -> Rectangle -> Ellipse -> Sentinelle
+        // Segment -> Rectangle -> Ellipse -> Sentinelle
         IDessinForme dfAvecSentinelle = new DessinerFormeSentinelle();
         dfAvecSentinelle = new DessinerFormeEllipse() { Suivant = dfAvecSentinelle };
         dfAvecSentinelle = new DessinerFormeRectangle() { Suivant = dfAvecSentinelle };
@@ -61,12 +61,12 @@ class Program
 
     private static void Exemple1()
     {
-        // tcc1 : MetteEnMajuscules -> SupprimerDiacritics -> AjouterPrefixeSuffixe
+        // tcc1 : MetteEnMajuscules -> SupprimerDiacritics -> AjouterPrefixeSuffixe
         ITraitementChaineCaracteres tcc1 = new TraitementChaineCaracteresAjouterPrefixeSuffixe("<p>", "</p>");
         tcc1 = new TraitementChaineCaracteresSupprimerDiacritiques() { Suivant = tcc1 };
         tcc1 = new TraitementChaineCaracteresMettreEnMajuscules() { Suivant = tcc1 };
 
-        // tcc2 : AjouterPrefixeSuffixe -> SupprimerDiacritics
+        // tcc2 : AjouterPrefixeSuffixe -> SupprimerDiacritics
         ITraitementChaineCaracteres tcc2 = new TraitementChaineCaracteresSupprimerDiacritiques();
         tcc2 = new TraitementChaineCaracteresAjouterPrefixeSuffixe("<p>", "</p>") { Suivant = tcc2 };
 

@@ -2,5 +2,5 @@
 
 public abstract class InstructionBFModifierValeur : InstructionBF
 {
-    // rien
+    // rien
 }
