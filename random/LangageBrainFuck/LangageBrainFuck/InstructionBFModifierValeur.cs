@@ -1,7 +1,6 @@
-﻿namespace LangageBrainFuck
+﻿namespace LangageBrainFuck;
+
+public abstract class InstructionBFModifierValeur : InstructionBF
 {
-    public abstract class InstructionBFModifierValeur : InstructionBF
-    {
-        // rien
-    }
+    // rien
 }
