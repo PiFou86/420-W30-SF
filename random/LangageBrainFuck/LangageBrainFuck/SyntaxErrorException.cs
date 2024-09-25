@@ -1,7 +1,5 @@
-﻿using System.Runtime.Serialization;
-using System;
+﻿using System;
 
-[Serializable]
 internal class SyntaxErrorException : Exception
 {
     public SyntaxErrorException()
@@ -13,10 +11,6 @@ internal class SyntaxErrorException : Exception
     }
 
     public SyntaxErrorException(string message, Exception innerException) : base(message, innerException)
-    {
-    }
-
-    protected SyntaxErrorException(SerializationInfo info, StreamingContext context) : base(info, context)
     {
     }
 }
