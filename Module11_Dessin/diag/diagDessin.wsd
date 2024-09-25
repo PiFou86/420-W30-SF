@@ -1,5 +1,7 @@
 @startuml diagDessin
 
+set separator none
+
 namespace System.Drawing {
     class PointF {}
 }

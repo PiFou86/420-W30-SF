@@ -45,7 +45,7 @@ class UnsubscriberSujetObservable {
     + Dispose()
 }
 
-SujetObservable "1" -right-> "n" IObserver
+SujetObservable "1" -right-> "n" IObserver : \t
 IObserver <|.. ObservateurXYZ
 IDisposable <|.. UnsubscriberSujetObservable
 IObservable <|.. SujetObservable

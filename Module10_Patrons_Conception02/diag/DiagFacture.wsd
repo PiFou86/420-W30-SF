@@ -86,10 +86,10 @@ FactureModelEvent "n" --> "1" LigneFactureModel
 FactureModelEvent "n" --> "1" FactureModelEventType
 
 fEcranPrincipal "1" -right-> "1" FactureModel : <<create>>
-fEcranPrincipal "1" -left-> "1" fEcranClient
+fEcranPrincipal "1" -left-> "1" fEcranClient : \t
 
 
-FactureModel "1" -left-> "n" IObserver
+FactureModel "1" -left-> "n" IObserver : \t
 FactureModel "1" -right-> "n" LigneFactureModel
 
 IObserver <|.. ObservateurEcranCaissier
