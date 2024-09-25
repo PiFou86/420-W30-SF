@@ -14,7 +14,7 @@ public class UnsubscribeChaineObservable : IDisposable
         this._observers = p_observateurs;
     }
 
-    // PFL : dettach
+    // PFL : dettach
     public void Dispose()
     {
         this._observers.Remove(this._observer);

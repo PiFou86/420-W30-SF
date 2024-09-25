@@ -8,7 +8,7 @@ public class TraitementChaineCaracteresSupprimerDiacritiques : ITraitementChaine
 {
     public ITraitementChaineCaracteres Suivant { get; set; }
 
-    // Code : https://stackoverflow.com/questions/249087/how-do-i-remove-diacritics-accents-from-a-string-in-net
+    // Code : https://stackoverflow.com/questions/249087/how-do-i-remove-diacritics-accents-from-a-string-in-net
     public string TraiterChaineCaracteres(string p_chaine)
     {
         if (p_chaine is null)

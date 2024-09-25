@@ -7,12 +7,12 @@ using System.Linq;
 
 namespace Module08_Exercice01_Base_Console;
 
-// Code adapté du code de Paul Vachon
+// Code adapté du code de Paul Vachon
 internal class GenerateurDonnees
 {
     private static Random _generateurNombres = new Random(DateTime.Now.Millisecond);
 
-    // Utilitaires
+    // Utilitaires
     public static List<Client> GenererClients(int p_nombreClients)
     {
         return Enumerable.Range(1, _generateurNombres.Next(1, p_nombreClients + 1))
@@ -21,7 +21,7 @@ internal class GenerateurDonnees
     }
     public static Client GenererClient()
     {
-        // https://fr.wikipedia.org/wiki/Liste_des_noms_de_famille_les_plus_courants_au_Québec
+        // https://fr.wikipedia.org/wiki/Liste_des_noms_de_famille_les_plus_courants_au_Québec
         string[] noms = [
             "Tremblay",
             "Gagnon",
@@ -39,7 +39,7 @@ internal class GenerateurDonnees
             "Lévesque",
             "Bergeron",
         ];
-        // https://www.retraitequebec.gouv.qc.ca/fr/services-en-ligne-outils/banque-de-prenoms/Pages/recherche_par_popularite.aspx?AnRefBp=2019&NbPre=10
+        // https://www.retraitequebec.gouv.qc.ca/fr/services-en-ligne-outils/banque-de-prenoms/Pages/recherche_par_popularite.aspx?AnRefBp=2019&NbPre=10
         string[] prenoms = [
             "olivia",
             "emma",

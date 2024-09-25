@@ -9,7 +9,7 @@ class Program
         SingletonV3_ThreadSafe s = SingletonV3_ThreadSafe.Instance;
         s.ExempleMehodeDeVotreInstanceUnique();
 
-        // Ou
+        // Ou
 
         SingletonV3_ThreadSafe.Instance.ExempleMehodeDeVotreInstanceUnique();
 
@@ -20,7 +20,7 @@ class Program
         ApplicationXYZUIV1 app = new ApplicationXYZUIV1(new SaluerConsoleFrancaisStrategieV1());
         app.AccueillirUtilisateur();
 
-        // Ou
+        // Ou
 
         app.Saluer = new SaluerConsoleAnglaisStrategieV1();
         app.AccueillirUtilisateur();
@@ -32,14 +32,14 @@ class Program
         ApplicationXYZUIV2 app2 = new ApplicationXYZUIV2(SaluerStrategieV2.SaluerConsoleFrancaisStrategieV2);
         app2.AccueillirUtilisateur();
 
-        // Ou
+        // Ou
 
         app2.Saluer = SaluerStrategieV2.SaluerConsoleAnglaisStrategieV2;
         app2.AccueillirUtilisateur();
 
-        // Ou
+        // Ou
 
-        app2.Saluer = () => Console.Out.WriteLine("Kaixo !");
+        app2.Saluer = () => Console.Out.WriteLine("Kaixo !");
         app2.AccueillirUtilisateur();
 
     }

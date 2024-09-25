@@ -39,7 +39,7 @@ public class ChaineObservateurGenerique : IObserver<string>
         throw new NotImplementedException();
     }
 
-    // PFL : update
+    // PFL : update
     public void OnNext(string p_valeur)
     {
         this._action(p_valeur);

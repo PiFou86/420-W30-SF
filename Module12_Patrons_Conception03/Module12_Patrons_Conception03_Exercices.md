@@ -20,7 +20,7 @@ Généralement, une image va être représentée par un tableau 1D de bytes (```
 
 Une image est donc une suite de pixels qui eux-même sont représentés par un triplet qui contiennent l'intensité des trois couleurs additives (R / V / B). On pourrait donc penser qu'une image 30 de largeur par 30 de hauteur nécessitera 30 * 30 * 3 = 2 700 octects. En fait, pour des raisons d'optimisation, on va chercher à aligner nos données en mémoire. Il se peut qu'on utilise plus d'octets utilisés que ce qui est nécessaire dans l'absolu. Ainsi, la bibliothèque que nous utilisons cherche à représenter chaque ligne d'une image avec un sous-tableau d'une longueur multiple de 4. Pour avoir la longueur d'une ligne, il faudra utiliser la propriété [```Stride```](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.imaging.bitmapdata.stride). De plus, toujours avec notre bibliothèque, les composantes sont représentées en ordre inverse.
 
-Par exemple si on a une image de 3 par 3 pixels, avec la première ligne rouge, la seconde verte et la troisième bleue, elle sera représentée par le tableau de bytes suivant (où P est une valeur de remplissage) : 
+Par exemple si on a une image de 3 par 3 pixels, avec la première ligne rouge, la seconde verte et la troisième bleue, elle sera représentée par le tableau de bytes suivant (où P est une valeur de remplissage) :
 
 ```
 [
@@ -68,7 +68,7 @@ Par exemple si on a une image de 3 par 3 pixels, avec la première ligne rouge, 
   - bAppliquerSuiteTraitements : Button
   - bSuiteTraitementsDeplacerBas : Button
   - bSuiteTraitementsDeplacerHaut : Button
-  - lbSuiteTraitementsAAppliquer : ListBox 
+  - lbSuiteTraitementsAAppliquer : ListBox
 - Ajoutez le menu "Fichier" ainsi que le sous-menu "Ouvrir"
 - Mise à part les contrôles du panel "pControlSuiteTraitements", tous les contrôles utilisent un positionnement de type "Dock" soit avec l'option Bottom, Top ou Fill. Attention, le contrôle qui utilise le type Fill doit être placé en dernier dans le conteneur qui le contient.
 
@@ -107,7 +107,7 @@ public class ImageManipulable
     {
         if (!this.Locked)
         {
-            // Lock the bitmap's bits.  
+            // Lock the bitmap's bits.
             Rectangle rect = new Rectangle(0, 0, this.m_bitmap.Width, this.m_bitmap.Height);
             this.m_bmpData =
                 this.m_bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadWrite,
@@ -245,14 +245,14 @@ public static class UtilitaireTraitements
 - Ajoutez le code suivant dans la méthode de traitement ainsi que le code nécessaire à l'appel de la suite de la chaîne :
 
 ```csharp
-byte[] raw = p_image.Raw;
-for (int longueur = 0; longueur < raw.Length / 3; longueur++)
+byte[] raw = p_image.Raw;
+for (int longueur = 0; longueur < raw.Length / 3; longueur++)
 {
-    int l3 = longueur * 3;
-    byte luminance = (byte)((raw[l3] + raw[l3 + 1] + raw[l3 + 2]) / 3);
-    raw[l3] = luminance;
-    raw[l3 + 1] = luminance;
-    raw[l3 + 2] = luminance;
+    int l3 = longueur * 3;
+    byte luminance = (byte)((raw[l3] + raw[l3 + 1] + raw[l3 + 2]) / 3);
+    raw[l3] = luminance;
+    raw[l3 + 1] = luminance;
+    raw[l3 + 2] = luminance;
 }
 ```
 

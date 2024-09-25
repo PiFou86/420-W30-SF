@@ -18,7 +18,7 @@ class Program
         IUnityContainer conteneur = new UnityContainer();
 
         conteneur.RegisterType<IDepotClients, DepotClientsXML>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { _fichierDepotClientsXML }));
-        //conteneur.RegisterType<IDepotClients, DepotClientsJSON>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { _fichierDepotClientsJSON }));
+        //conteneur.RegisterType<IDepotClients, DepotClientsJSON>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { _fichierDepotClientsJSON }));
 
         ClientUIConsole clientUIConsole = conteneur.Resolve<ClientUIConsole>();
         //clientUIConsole.ExecuterUI();

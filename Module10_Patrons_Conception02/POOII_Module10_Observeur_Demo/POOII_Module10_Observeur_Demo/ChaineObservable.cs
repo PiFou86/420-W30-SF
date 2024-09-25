@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace POOII_Module10_Observeur_Demo;
 
-// Sujet
+// Sujet
 public class ChaineObservable : IObservable<string>
 {
     private List<IObserver<string>> m_observeurs;
@@ -33,7 +33,7 @@ public class ChaineObservable : IObservable<string>
         );
     }
 
-    // PFL : attach
+    // PFL : attach
     public IDisposable Subscribe(IObserver<string> p_observateur)
     {
         if (p_observateur is null)
