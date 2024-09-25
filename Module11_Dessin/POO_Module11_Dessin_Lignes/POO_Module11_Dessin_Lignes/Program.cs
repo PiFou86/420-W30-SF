@@ -6,8 +6,8 @@ namespace POO_Module11_Dessin_Lignes;
 static class Program
 {
     /// <summary>
-            ///  The main entry point for the application.
-            /// </summary>
+    ///  The main entry point for the application.
+    /// </summary>
     [STAThread]
     static void Main()
     {
