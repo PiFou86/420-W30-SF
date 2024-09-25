@@ -1,13 +1,9 @@
-﻿using Module06_Formats_Echanges_PreparationCours.Entites;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Module06_Formats_Echanges_PreparationCours.Entites;
 
-namespace Module06_Formats_Echanges_PreparationCours.Depots
+namespace Module06_Formats_Echanges_PreparationCours.Depots;
+
+interface DepotDessin
 {
-    interface DepotDessin
-    {
-        Dessin LireDepot();
-        void EnregistrerDessin(Dessin p_dessin);
-    }
+    Dessin LireDepot();
+    void EnregistrerDessin(Dessin p_dessin);
 }

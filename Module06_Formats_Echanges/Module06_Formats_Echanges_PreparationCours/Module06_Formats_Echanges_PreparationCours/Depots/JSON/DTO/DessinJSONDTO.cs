@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO
+namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO;
+
+public class DessinJSONDTO
 {
-    public class DessinJSONDTO
-    {
-        public List<FormeJSONDTO> Formes { get; set; }
-    }
+    public List<FormeJSONDTO> Formes { get; set; }
 }
