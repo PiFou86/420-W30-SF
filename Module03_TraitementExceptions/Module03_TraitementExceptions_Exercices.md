@@ -28,9 +28,12 @@ using (StreamReader sr = new StreamReader(nomFichier))
 
 Le but de l'exercice est de se doter d'une bibliothèque permettant de faire des calculs sur des matrices 2D.
 
-En cas de paramètres incorrectes, vous devez créer vos propres exceptions. Créez la classe d'exception "DimensionsNonConcordantesException". Elle devrait vous servir pour les préconditions. (De quelle classe vos classes d'exception vont hériter ?)
+En cas de paramètres incorrectes, vous devez créer vos propres exceptions. Créez la classe d'exception `DimensionsNonConcordantesException`. Elle devrait vous servir pour les préconditions.
 
-Créez la classe "Matrice2D" qui permet de représenter des matrices 2D. Le type de valeurs de votre matrice est float.
+>[!TIP]
+>De quelle classe vos classes d'exception vont hériter ?
+
+Créez la classe `Matrice2D` qui permet de représenter des matrices 2D. Le type de valeurs de votre matrice est *float*.
 
 Les données peuvent être représentées par une tableau à deux dimensions. Pour cela, vous pouvez vous inspirer de l'exemple suivant sur les tableaux 2D :
 
@@ -50,48 +53,54 @@ for (int indiceLigne = 0; indiceLigne < tableau2D.GetLength(0); indiceLigne++)
 }
 ```
 
-Écrivez les propriétés suivantes :
+#### Écrivez les propriétés suivantes :
 
-- [ [int p_ligne, int p_colonne] ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/using-indexers) : permet d'accèder en lecture et en écriture (get/set) à une valeur par sa ligne et sa colonne
-- NombreDeLignes (get seulement) : permet de connaitre le nombre de lignes de la matrice
-- NombreDeColonnes (get seulement) : permet de connaitre le nombre de colonnes de la matrice
+> [!IMPORTANT]
+> Consultez la documentation afin de savoir comment utiliser les [indexeurs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/using-indexers)
 
-Écrivez les constructeurs d'initialisations suivants :
+- **[int p_ligne, int p_colonne]** : permet d'accèder en lecture et en écriture (get/set) à une valeur par sa ligne et sa colonne
+- **NombreDeLignes** (get seulement) : permet de connaitre le nombre de lignes de la matrice
+- **NombreDeColonnes** (get seulement) : permet de connaitre le nombre de colonnes de la matrice
+
+#### Écrivez les constructeurs d'initialisations suivants :
 
 - Deux paramètres : prend en paramètres le nombre de lignes et de colonnes et construit une matrice avec ces dimensions données
-- Un paramètre : prend en paramètres un tableau deux dimensions de float et construit une matrice avec les mêmes dimensions que le tableau passé en paramètres et avec les mêmes données
+- Un paramètre : prend en paramètres un tableau deux dimensions de *float* et construit une matrice avec les mêmes dimensions que le tableau passé en paramètres et avec les mêmes données
 
-Écrivez les méthodes suivantes :
+#### Écrivez les méthodes suivantes :
 
-- "Equals" : prend en paramètres une autre matrice et renvoie vrai si elle est égale à votre objet courant, faux sinon.
-- "Identite" : prend en paramètres une dimension de matrice et renvoie la matrice carré identité correspondante à la dimension.
-- "Transpose" : prend une matrice en paramètre et renvoie sa transposée.
+- **Equals** : prend en paramètres une autre matrice et renvoie vrai si elle est égale à votre objet courant, faux sinon.
+- **Identite** : prend en paramètres une dimension de matrice et renvoie la matrice carré identité correspondante à la dimension.
+- **Transpose** : prend une matrice en paramètre et renvoie sa transposée.
 
-Écrivez les opérateurs suivants ([Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading)) :
+#### Écrivez les opérateurs suivants :
+
+> [!IMPORTANT]
+> Consultez la documentation afin de savoir comment surcharger les [opérateurs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading)
 
 - \* : prend deux matrices en paramètres et renvoie le résultat de la multiplication de ces deux matrices
 - \* : prend une matrice et une valeur v en paramètres et renvoie le résultat de la multiplication de chaque valeur de la matrice par la valeur v
 - +/-: prend deux matrices en paramètres et renvoie une nouvelle matrice dont chaque case correspond à la somme des cases aux mêmes coordonnées prisent dans les deux opérandes
 
-Écrivez les tests unitaires pour la classe "Matrice2D".
+#### Écrivez les tests unitaires pour la classe `Matrice2D`.
 
 ## Exercice 3 - Voiture (Optionnel)
 
 ![Digramme de classes de Voiture](../images/Module03_TraitementExceptions/diag/src/Voiture_exercice01/Voiture.png)
 
-Créez la classe "Voiture" en suivant le modèle de classes fourni.
+Créez la classe `Voiture` en suivant le modèle de classes fourni.
 
 La voiture a une vitesse à 0 quand elle est à l'arrêt. La voiture ne peut s'arrêter qu'une fois la vitesse inférieure à 5 km/h et sa vitesse devient nulle.
 
 La voiture ne peut pas accélerer au delà de 230 km / h et ne peut pas avoir une vitesse inférieure à 0 km / h.
 
-La méthode "AfficherEtat" affiche la marque de la voiture, son modèle, son statut d'alimentation et sa vitesse.
+La méthode **AfficherEtat** affiche la marque de la voiture, son modèle, son statut d'alimentation et sa vitesse.
 
 Le constructeur initialise les valeurs de marque et de modèle en utilisant les valeurs passées en paramètres. Vous devez aussi mettre la valeur de vitesse à 0 et le statut de démarrage à faux.
 
-Vos méthodes doivent lever des exceptions personnalisées comme : VoitureDemarreeException, VoitureArreteeException, VitesseMaximaleAtteinteException, etc.
+Vos méthodes doivent lever des exceptions personnalisées comme : **VoitureDemarreeException**, **VoitureArreteeException**, **VitesseMaximaleAtteinteException**, etc.
 
-Écrivez un sous-programme qui permet de :
+#### Écrivez un sous-programme qui permet de :
 
 1. Créer une nouvelle voiture
 2. Démarrer la voiture
@@ -103,4 +112,4 @@ Vos méthodes doivent lever des exceptions personnalisées comme : VoitureDemarr
 
 Le programme ne doit pas planter aux yeux de l'utilisateur.
 
-Écrivez les tests unitaires des méthodes testables, c'est à dire celles qui n'affiche pas d'information et n'en demande pas à l'utilisateur.
+#### Écrivez les tests unitaires des méthodes testables, c'est à dire celles qui n'affiche pas d'information et n'en demande pas à l'utilisateur.
