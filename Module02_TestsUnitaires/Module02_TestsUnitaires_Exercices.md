@@ -20,9 +20,9 @@ Reprendre le code présent dans le même répertoire que le fichier d'exercices.
 > [!TIP]
 > Consulter la documentation des moq ici à ce sujet : https://github.com/devlooped/moq/wiki/Quickstart#verification
 
-1. Modifiez le code dans **PoserQuestions** afin que celui-ci appelle plusieurs fois la méthode **PoserQuestion** des questions. Validez que certains de vos tests échoues.
+4. Modifiez le code dans **PoserQuestions** afin que celui-ci appelle plusieurs fois la méthode **PoserQuestion** des questions. Validez que certains de vos tests échoues.
 
-2. Modifiez le code dans **PoserQuestions** afin que celui-ci appelle d'autres méthodes et propriétés des questions. Validez que certains de vos tests échoues.
+5. Modifiez le code dans **PoserQuestions** afin que celui-ci appelle d'autres méthodes et propriétés des questions. Validez que certains de vos tests échoues.
 
 ## Exercice 2 - Consolidation d'un dépôt de données
 
