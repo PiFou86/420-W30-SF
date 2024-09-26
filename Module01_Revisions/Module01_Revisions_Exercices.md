@@ -74,6 +74,9 @@ Pièce : Valve à eau, part - #1234, numéro série -  #0481
 
 **Pour les plus téméraires** : écrivez une méthode qui, à partir du pièce, renvoie sa nomenclature (BOM : Bill of Materials)
 
+> [!NOTE]
+> Consultez la page Wikipédia afin de savoir qu'est-ce que la [nomenclature](https://fr.wikipedia.org/wiki/Nomenclature_(logistique))
+
 Toujours avec le même exemple :
 
 ```console
