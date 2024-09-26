@@ -4,33 +4,41 @@
 
 Reprendre le code présent dans le même répertoire que le fichier d'exercices.
 
-***La correction partielle est dans la solution, ne la consultez pas tout de suite !***
+> [!WARNING]
+> ***La correction partielle est dans la solution, ne la consultez pas tout de suite !***
 
-1. Créez un nouveau projet de tests xUnit et appelez le "Tests_Perso_POOII_Module02_Tests" et liez le projet à tester
-2. Installez les paquets NuGet "Moq" et "Fluent assertion"
-3. Testez les méthodes et propriétés, en validant le nombre d'appels et le non appel des méthodes/propriétés non essentielles :
-   1. CorrigerQuestions
-   2. TotalPoints
-   3. Score
-   4. PoserQuestions
-4. Modifiez le code de PoserQuestions afin que celui-ci appelle plusieurs fois la méthode PoserQuestion des questions. Validez que certains de vos tests échoues.
-5. Modifiez le code de PoserQuestions afin que celui-ci appelle d'autres méthodes et propriétés des questions. Validez que certains de vos tests échoues.
+1. Créez un nouveau projet de tests **xUnit** et appelez le `Tests_Perso_POOII_Module02_Tests` et liez le projet à tester
+
+2. Installez les paquets **NuGet** [Moq](https://www.nuget.org/packages/Moq/) et [Fluent assertion](https://www.nuget.org/packages/fluentassertions/)
+
+3. Testez les méthodes et propriétés en vérifiant que les méthodes essentielles sont appelées le bon nombre de fois et en assurant que les méthodes ou propriétés non pertinentes (ou non essentielles) ne sont pas appelées de manière inattendue :
+   - **CorrigerQuestions**
+   - **TotalPoints**
+   - **Score**
+   - **PoserQuestions**
+
+> [!TIP]
+> Consulter la documentation des moq ici à ce sujet : https://github.com/devlooped/moq/wiki/Quickstart#verification
+
+1. Modifiez le code dans **PoserQuestions** afin que celui-ci appelle plusieurs fois la méthode **PoserQuestion** des questions. Validez que certains de vos tests échoues.
+
+2. Modifiez le code dans **PoserQuestions** afin que celui-ci appelle d'autres méthodes et propriétés des questions. Validez que certains de vos tests échoues.
 
 ## Exercice 2 - Consolidation d'un dépôt de données
 
-Vous devez écrire un programme ("TraitementLotsConsolidationAbonnes") qui met à jours le dépôt de données destination contenant des abonnées à partir d'un autre dépôt de données source.
+Vous devez écrire un programme `TraitementLotsConsolidationAbonnes` qui met à jours le dépôt de données destination contenant des abonnées à partir d'un autre dépôt de données source.
 
 ### Description
 
-Le dépôt source est représenté par l'interface "IDepotImportationAbonnes" qui ne comporte qu'une méthode "ObtenirAbonnes" qui renvoie un "IEnumerable<Abonne>". Le dépôt destination est représenté par l'interface "IDepotAbonnes" qui comporte les quatre méthodes de CRUD ainsi qu'une méthode qui renvoie tous les abonnements :
+Le dépôt source est représenté par l'interface `IDepotImportationAbonnes` qui ne comporte qu'une méthode **ObtenirAbonnes** qui renvoie un *IEnumerable\<Abonne\>*. Le dépôt destination est représenté par l'interface `IDepotAbonnes` qui comporte les quatre méthodes de **CRUD** ainsi qu'une méthode qui renvoie tous les abonnements :
 
-- "AjouterAbonne" : ajoute un abonné actif au dépôt
-- "ObtenirAbonne" : renvoi un abonné quelque soit son statut
-- "ObtenirAbonnes" : renvoi tous les abonnés actifs
-- "MettreAJourAbonne" : met à jour les informations d'un abonné actif
-- "DesactiverAbonne" : modifie le statut d'un abonné actif pour le mettre à faux
+- **AjouterAbonne** : ajoute un abonné actif au dépôt
+- **ObtenirAbonne** : renvoi un abonné quelque soit son statut
+- **ObtenirAbonnes** : renvoi tous les abonnés actifs
+- **MettreAJourAbonne** : met à jour les informations d'un abonné actif
+- **DesactiverAbonne** : modifie le statut d'un abonné actif pour le mettre à faux
 
-Le schéma UML suivant résume ce qui touche à "TraitementLotsConsolidationAbonnes".
+Le schéma UML suivant résume ce qui touche à `TraitementLotsConsolidationAbonnes`.
 
 ![Diagramme classes Abonnés](../images/Module02_TestsUnitaires/diag/abonnes/Abonnes.png)
 
@@ -42,22 +50,22 @@ L'algorithme de consolidation des données fonctionne comme suit :
 
 ### À faire
 
-- Créez un nouveau projet nommé "M02_UT_ConsolidationAbonnes" de type console
+- Créez un nouveau projet nommé `M02_UT_ConsolidationAbonnes` de type console
 - Codez les classes du diagramme :
-  - La fonction "main" va ici rester vide
-  - La classe "Abonne" ne contient pas de logique, seulement des propriétés et la méthode "Equals" qui est à redéfinir. La méthode "Equals" ne tient pas compte de l'état "Actif"
-  - Les interfaces se suffisent à elle-même ici : on ne veut pas les implanter
-  - Laissez la méthode "ConsoliderDonneesDestination" de la classe "TraitementLotsConsolidationAbonnes" vide pour le moment.
+  - Ici, la fonction ***main*** va rester vide
+  - La classe `Abonne` ne contient pas de logique, seulement des propriétés et la méthode **Equals** qui est à redéfinir. La méthode **Equals** ne tient pas compte de l'état **Actif**
+  - Ici, les interfaces se suffisent à elle-même : on ne veut pas les implanter
+  - Laissez la méthode **ConsoliderDonneesDestination** de la classe `TraitementLotsConsolidationAbonnes` vide pour le moment.
 
-Pour chacun des cas de test qui suivent, vous devez :
+#### Pour chacun des cas de test qui suivent, vous devez :
 
 - Analysez sur papier le cas de test suivant :
   - Quels sont vos ensembles de données source et destination ?
   - Quels méthodes devraient être appelées ?
-- Écrivez un test unitaire qui permet de tester la méthode "ConsoliderDonneesDestination" avec le cas de test courant
-- Codez la méthode "ConsoliderDonneesDestination" afin de faire passer le test avec un minimum d'efforts
+- Écrivez un test unitaire qui permet de tester la méthode **ConsoliderDonneesDestination** avec le cas de test courant
+- Codez la méthode **ConsoliderDonneesDestination** afin de faire passer le test avec un minimum d'efforts
 
-Cas de test :
+#### Cas de test :
 
 1. La source contient un abonné et la destination n'en contient pas.
 2. La source ne contient pas d'abonné et la destination contient un abonné.
