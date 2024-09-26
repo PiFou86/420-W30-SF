@@ -21,7 +21,7 @@ Les contenants et les liquides doivent pouvoir être transformés facilement en 
 - Pour un liquide, on extrait son nom et son volume.
 
 > [!TIP]
-> Rappel : Faut-il utiliser un modificateur sur une méthode par défaut ?
+> Rappel : Faut-il utiliser un modificateur pour redéfinir une méthode par défaut ?
 
 **Répondez à la question suivante :** Selon vous, est-il convenable d'utiliser des énumérations pour les types contenants et liquides ? Pourquoi ?
 
