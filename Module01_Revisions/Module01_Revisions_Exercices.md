@@ -8,12 +8,29 @@ Chaque liquide a un volume. Le volume total ne doit pas dépasser le volume du c
 
 Les contenants disponibles sont du type bol ou tasse. Une tasse a un volume de 250ml. Un bol a un volume de 350 ml.
 
-Un liquide peut être ajouté à un contenant tant que celui-ci n'est pas plein. Un contenant peut perdre du volume en le transférant (dans ce cas, chaque liquide perd un volume proportionnel au mélange initial).
+Un liquide peut être ajouté à un contenant tant que celui-ci n'est pas plein.
+
+Un contenant peut perdre du volume en le transférant (dans ce cas, chaque liquide perd un volume proportionnel au mélange initial).
+
+> [!NOTE]
+> Le volume perdu est à votre discretion et n'est pas obligatoire dans l'exercice
 
 Les contenants et les liquides doivent pouvoir être transformés facilement en chaînes de caractères afin, par exemple, de facilement être affichés :
 
 - Pour un contenant, on extrait l'ensemble des liquides mélangés, le volume total maximum (capacité), le volume utilisé et le pourcentage de remplissage.
 - Pour un liquide, on extrait son nom et son volume.
+
+> [!TIP]
+> Rappel : Faut-il utiliser un modificateur sur une méthode par défaut ?
+
+**Répondez à la question suivante :** Selon vous, est-il convenable d'utiliser des énumérations pour les types contenants et liquides ? Pourquoi ?
+
+<details>
+  <summary>Réponse proposée</summary>
+
+  > Non, il n'est pas idéal d'utiliser des énumérations pour les types de contenants et de liquides. Les membres d'énumération sont des constantes et leur texte doit être en majuscules, peu adaptés à l'affichage, et manquent de flexibilité pour manipuler des volumes ou ajouter des propriétés spécifiques. Les classes offrent plus de souplesse.
+</details>
+</br>
 
 Modélisez le problème en faisant apparaître toutes les entités présentes dans le texte.
 
