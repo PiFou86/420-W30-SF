@@ -30,7 +30,6 @@ Les contenants et les liquides doivent pouvoir être transformés facilement en 
 
   > Non, il n'est pas idéal d'utiliser des énumérations pour les types de contenants et de liquides. Les membres d'énumération sont des constantes et leur texte doit être en majuscules, peu adaptés à l'affichage, et manquent de flexibilité pour manipuler des volumes ou ajouter des propriétés spécifiques. Les classes offrent plus de souplesse.
 </details>
-</br>
 
 Modélisez le problème en faisant apparaître toutes les entités présentes dans le texte.
 
