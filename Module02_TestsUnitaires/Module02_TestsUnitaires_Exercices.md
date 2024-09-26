@@ -17,8 +17,8 @@ Reprendre le code présent dans le même répertoire que le fichier d'exercices.
    - **Score**
    - **PoserQuestions**
 
-> [!TIP]
-> Consulter la documentation des moq ici à ce sujet : https://github.com/devlooped/moq/wiki/Quickstart#verification
+> [!IMPORTANT]
+> Consultez la documentation afin de savoir comment utiliser les [Moq](https://github.com/devlooped/moq/wiki/Quickstart#verification)
 
 4. Modifiez le code dans **PoserQuestions** afin que celui-ci appelle plusieurs fois la méthode **PoserQuestion** des questions. Validez que certains de vos tests échoues.
 
