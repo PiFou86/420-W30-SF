@@ -71,7 +71,7 @@ Démarche :
       - GC.Entites
       - GC.DAL.JSON
       - GC.DAL.XML
-- Dans une autre instance de Visual Studio ouvrez la solution "Module08_Exercice01_Base"
+- Dans une autre instance de Visual Studio ouvrez la solution "Module08_Exercice01_Base" présente dans ce répertoire
 - En adaptant leurs espaces de nommage, copiez les classes de la solution fournie dans les projets adéquat de votre nouvelle solution "GestionClients"
 - Lancez (exécutez) chacun de vos trois exécutables, c'est à dire, le projet d'interface utilisateur et les deux traitements batch.
 - Faites un diagramme (vous pouvez utiliser un diagramme de packages) qui explicite les liens entre les projets de la solution : un rectangle par projet et un lien qui part du projet vers un autre s'il y a une dépendance.
@@ -102,26 +102,12 @@ Le but de cette section est de pouvoir lancer les trois applications consoles su
 - Pour lire la configuration, basez-vous sur le fragment de code suivant qui ajoute le fichier JSON comme source de configuration et va chercher les valeurs :
 
 ```csharp
-// Version manuelle
-IConfigurationRoot configuration = 
-    new ConfigurationBuilder()
-          .SetBasePath(Directory.GetParent(AppContext.BaseDirectory).FullName)
-          .AddJsonFile("appsettings.json", false)
-          .Build();
-
-string repertoireDepotClient = configuration["RepertoireDepotsClients"];
-string nomFichierDepotClient = configuration["NomFichierDepotClients"];
-string cheminComplet = Path.Combine(repertoireDepotClient, nomFichierDepotClient);
-
-string typeDepot = configuration["TypeDepot"];
-
 // Version avec HostApplicationBuilder
 string repertoireDepotClient = builder.Configuration["RepertoireDepotsClients"];
 string nomFichierDepotClient = builder.Configuration["NomFichierDepotClients"];
 string cheminComplet = Path.Combine(repertoireDepotClient, nomFichierDepotClient);
 
 string typeDepot = builder.Configuration["TypeDepot"];
-
 ```
 
 - Pour le choix du type de dépot, vous pouvez vous inspirer du fragment de code suivant :
