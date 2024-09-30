@@ -23,7 +23,86 @@ Modélisez le problème en faisant apparaître toutes les entités présentes da
 - Faites les tests unitaires de la génération des chaînes de caractères
 - Faites les tests unitaires de l'ajout d'un liquide dans une tasse et dans un bol
 
-## Exercice 2 - Assemblage
+## Exercice 2 - Injection de dépendances
+
+**Pour vous aider, regardez l'exemple donné dans ce répertoire : "POOII_M01_InjectionDependances"**
+
+Dans cet exercice nous allons créer une interface `IJournal` qui définit les méthodes :
+
+- `Information(string message)` qui permet de journaliser un message de type information
+- `Avertissement(string message)` qui permet de journaliser un message de type avertissement
+- `Erreur(string message)` qui permet de journaliser un message de type erreur
+
+Nous allons ensuite créer les classes `ConsoleJournal`, `ConsoleJournalAvecHeure` et `FichierJournal` qui implémentent l'interface `IJournal`. 
+
+La classe `ConsoleJournalAvecHeure` ajoute l'heure devant chaque message journalisé. 
+
+La classe `FichierJournal` journalise les messages dans un fichier texte dont le nom est passé en paramètre du constructeur. De plus, chaque écriture se fait sur une nouvelle ligne avec la date, l'heure et le type de message. Exemples : "2024-09-29 17:17:04 - Information - L'application démarre", "2024-09-29 17:17:04 - Erreur - Impossible de se connecter à la base de données".
+
+Dans les implantations sur la console, les messages de type information sont affichés en vert, les messages de type avertissement en jaune et les messages de type erreur en rouge. Ils sont aussi affichés sur le bon flux : standard pour les messages de types information et avertissement  (`Console.Out`) et erreur pour les messages de type erreur (`Console.Error`).
+
+La classe `Application` qui prend en paramètre un objet de type IJournal dans son constructeur. Cette classe a une méthode Run qui affiche un message de type information, un message de type avertissement et un message de type erreur.
+
+La classe `program` enregistre la classe `ConsoleJournal` ou `ConsoleJournalAvecHeure` ou `FichierJournal` pour l'interface `IJournal` et qui crée une instance de la classe `Application` en lui passant l'objet enregistré. Le choix de la classe doit être effectuée à partir de la configuration qui se trouve dans le fichier `appsettings.json`.
+
+```json
+{
+  "journal": "ConsoleJournal"
+}
+```
+
+Étapes à suivre :
+
+- Créez la solution "POOII_M01_E02_DI" :
+  - Créez un projet de type console "POOII_M01_E02_DI_Console"
+  - Créez un projet de type bibliothèque de classes "POOII_M01_E02_DI_Journaux"
+  - Créez un projet de type bibliothèque de classes "POOII_M01_E02_DI_Interfaces"
+  - Ajoutez les références nécessaires :
+    - "POOII_M01_E02_DI_Interfaces" (Projet) dans "POOII_M01_E02_DI_Console"
+    - "POOII_M01_E02_DI_Journaux" (Projet) dans "POOII_M01_E02_DI_Console"
+    - "Microsoft.Extensions.Hosting" (Nuget) dans "POOII_M01_E02_DI_Console"
+    - "POOII_M01_E02_DI_Interfaces" (Projet) dans "POOII_M01_E02_DI_Journaux"
+- Ajoutez les interfaces dans le projet "POOII_M01_E02_DI_Interfaces"
+- Ajoutez les classes qui implante `IJournal` dans le projet "POOII_M01_E02_DI_Journaux"
+- Ajoutez la classe `Application` dans le projet "POOII_M01_E02_DI_Console"
+- Modifiez la classe `Program` pour enregistrer la classe `ConsoleJournal` ou `ConsoleJournalAvecHeure` ou `FichierJournal` pour l'interface `IJournal` et qui crée une instance de la classe `Application` en lui passant l'objet enregistré.
+
+## Exercice 3 - Linq
+
+Dans cet exercice, vous allez réviser/apprendre les bases de Linq.
+
+### Exercice 3.1 - Linq sur des entiers
+
+- Créez la solution "POOII_M01_E03_Linq" avec le projet de type console "POOII_M01_E03_Linq_Console"
+- Créez la liste d'entiers `nombres` qui contient les nombres de 1 à 100
+- Affichez les nombres de 1 à 100 en une ligne de code (utilisez `string.Join`)
+- Effectuez les requêtes LinQ suivantes :
+  - Affichez les nombres pairs en une ligne de code (utilisez `string.Join`, `Where`)
+  - Affichez les nombres impairs en une ligne de code (utilisez `Where` et `ForEach`)
+  - Affichez les valeurs de 3 à 300 de 3 en 3 à partir de la liste `nombres` (utilisez `Select` et `string.Join`)
+
+### Exercice 3.2 - Linq sur des objets
+
+- Récupérez les fichiers du répertoire Linq. Ils contiennent une liste de produits que vous pouvez récupérer avec la méthode `DonneesLINQ.CreateProductList`, ainsi que la classe `ObjectDumper` qui permet d'afficher les objets de manière plus lisible avec la méthode `Write`. Ajoutez ces fichiers à votre projet.
+- Effectuez les requêtes LinQ suivantes :
+  - Affichez la liste des produits triés par prix (utilisez `OrderBy` et `ObjectDumper.Write`)
+  - Affichez la liste des produits dont le nom contient `z` (utilisez `Where` et `ObjectDumper.Write`)
+  - Affichez la liste des produits dont le prix est supérieur à 100 (utilisez `Where` et `ObjectDumper.Write`)
+  - Affichez la liste des noms de produits dont le prix est supérieur à 100 et dont le nom contient `z` (utilisez `Where` et `ObjectDumper.Write`)
+  - Affichez le produit le plus cher (utilisez `OrderBy` et `First` et `ObjectDumper.Write`)
+  - Affichez le produit dont l'identifiant est `23` (utilisez `Where` et `Single` et `ObjectDumper.Write`)
+  - Affichez le produit dont l'identifiant est `123` (utilisez `Where` et `SingleOrDefault` et `ObjectDumper.Write`)
+- Répondez aux questions suivantes :
+  - Quelle est la différence entre `Single` et `SingleOrDefault` ?
+  - Quelle est la différence entre `First` et `FirstOrDefault` ?
+  - Quelle est la différence entre `Single` et `First` ?
+
+### Exercice 3.3 - Aller plus loin
+
+-  https://github.com/dotnet/try-samples/tree/main/101-linq-samples
+- 
+
+## Exercice 4 - Assemblage (Optionnel)
 
 Une pièce est composée de 0 ou de plusieurs autres pièces. Une pièce peut être soit de type pièces d'assemblage (vis, rivêts), soit de type moulée ou de type usinée.
 
