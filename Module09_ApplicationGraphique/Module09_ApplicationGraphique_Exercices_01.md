@@ -4,7 +4,7 @@ Dans cette première partie du module, nous allons utiliser créer une première
 
 ## Exercice 1 - Super bloc-notes - Design
 
-- Créez le projet Visual Studio "Module 09 - Super bloc-notes" de type "Windows Forms App (.Net Core)" (il faut minimalement avoir .Net Core 3.1)
+- Créez le projet Visual Studio "Module 09 - Super bloc-notes" de type "Windows Forms App (.Net Core)"
 - Modifiez la fenêtre principale :
   - Nom de la classe : "fPrincipale"
   - Titre : "Super Bloc-notes"
