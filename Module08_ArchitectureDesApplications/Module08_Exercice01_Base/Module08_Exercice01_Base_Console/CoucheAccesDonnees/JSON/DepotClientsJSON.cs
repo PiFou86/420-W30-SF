@@ -1,6 +1,6 @@
 ﻿using Module08_Exercice01_Base_Console.CoucheAccesDonnees.JSON.DTO;
 using Module08_Exercice01_Base_Console.Entites;
-//using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -47,12 +47,12 @@ public class DepotClientsJSON : IDepotClients
         if (File.Exists(this.m_nomFichier))
         {
             string json = File.ReadAllText(this.m_nomFichier);
-            //JsonSerializerSettings settings = new JsonSerializerSettings
+            //JsonSerializerSettings settings = new JsonSerializerSettings
             //{
-            //    TypeNameHandling = TypeNameHandling.Auto,
-            //    Formatting = Formatting.Indented
+            //    TypeNameHandling = TypeNameHandling.Auto,
+            //    Formatting = Formatting.Indented
             //};
-            //clients = JsonConvert.DeserializeObject<List<ClientJsonDTO>>(json, settings);
+            //clients = JsonConvert.DeserializeObject<List<ClientJsonDTO>>(json, settings);
             clients = JsonSerializer.Deserialize<List<ClientJsonDTO>>(json);
         }
         else
@@ -80,12 +80,12 @@ public class DepotClientsJSON : IDepotClients
 
     private void SauvegarderDepot(List<ClientJsonDTO> clientsDTO)
     {
-        //JsonSerializerSettings settings = new JsonSerializerSettings
+        //JsonSerializerSettings settings = new JsonSerializerSettings
         //{
-        //    TypeNameHandling = TypeNameHandling.Auto,
-        //    Formatting = Formatting.Indented
+        //    TypeNameHandling = TypeNameHandling.Auto,
+        //    Formatting = Formatting.Indented
         //};
-        //string json = JsonConvert.SerializeObject(clientsDTO, settings);
+        //string json = JsonConvert.SerializeObject(clientsDTO, settings);
         string json = JsonSerializer.Serialize(
             clientsDTO,
             new JsonSerializerOptions()

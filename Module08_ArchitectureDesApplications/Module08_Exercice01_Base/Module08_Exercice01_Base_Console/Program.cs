@@ -5,7 +5,7 @@ using Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML;
 using Module08_Exercice01_Base_Console.Entites;
 using Module08_Exercice01_Base_Console.TraitementLot;
 using System.IO;
-//using Unity;
+//using Unity;
 
 namespace Module08_Exercice01_Base_Console;
 
@@ -18,18 +18,18 @@ class Program
         GenererFichiersDepotSiNonExistant(false);
 
         // Vieille version Unity
-        //IUnityContainer conteneur = new UnityContainer();
+        //IUnityContainer conteneur = new UnityContainer();
 
-        //conteneur.RegisterType<IDepotClients, DepotClientsXML>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { _fichierDepotClientsXML }));
-        //conteneur.RegisterType<IDepotClients, DepotClientsJSON>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { _fichierDepotClientsJSON }));
+        //conteneur.RegisterType<IDepotClients, DepotClientsXML>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { _fichierDepotClientsXML }));
+        //conteneur.RegisterType<IDepotClients, DepotClientsJSON>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { _fichierDepotClientsJSON }));
 
-        //ClientUIConsole clientUIConsole = conteneur.Resolve<ClientUIConsole>();
+        //ClientUIConsole clientUIConsole = conteneur.Resolve<ClientUIConsole>();
         ////clientUIConsole.ExecuterUI();
 
-        //ITraitementLot tl = null;
-        //tl = conteneur.Resolve<TraitementLot.ModifierNomPrenomPremiereLettreMajuscules.ModifierNomPrenomPremiereLettreMajusculesTraitementLot>();
+        //ITraitementLot tl = null;
+        //tl = conteneur.Resolve<TraitementLot.ModifierNomPrenomPremiereLettreMajuscules.ModifierNomPrenomPremiereLettreMajusculesTraitementLot>();
         //tl.Executer();
-        //tl = conteneur.Resolve<TraitementLot.ModifierPaysMajusculesClients.ModifierPaysMajusculesClientsTraitementLot>();
+        //tl = conteneur.Resolve<TraitementLot.ModifierPaysMajusculesClients.ModifierPaysMajusculesClientsTraitementLot>();
         //tl.Executer();
 
         // Nouvelle version avec les outils .Net natifs
