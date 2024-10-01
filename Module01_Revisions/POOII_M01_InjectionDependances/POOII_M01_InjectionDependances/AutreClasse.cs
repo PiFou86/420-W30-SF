@@ -5,19 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace POOII_M01_InjectionDependances
-{
-    internal class AutreClasse
-    {
-        private ISalutation m_salutation;
-        public AutreClasse(ISalutation salutation)
-        {
-            this.m_salutation = salutation;
-        }
+namespace POOII_M01_InjectionDependances;
 
-        public void Saluer(string nom)
-        {
-            this.m_salutation.Saluer(nom);
-        }
+internal class AutreClasse
+{
+    private ISalutation m_salutation;
+    public AutreClasse(ISalutation salutation)
+    {
+        this.m_salutation = salutation;
+    }
+
+    public void Saluer(string nom)
+    {
+        this.m_salutation.Saluer(nom);
     }
 }
