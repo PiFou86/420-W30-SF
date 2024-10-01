@@ -38,7 +38,7 @@ public class ATM
                 transaction.ExecuterTransaction();
                 m_tiroirArgent.DistribuerArgent(p_montant);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 transaction.Annuler();
             }

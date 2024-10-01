@@ -2,13 +2,8 @@
 using Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO;
 using Module06_Formats_Echanges_PreparationCours.Entites;
 //using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization.Metadata;
 
 namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON;
 

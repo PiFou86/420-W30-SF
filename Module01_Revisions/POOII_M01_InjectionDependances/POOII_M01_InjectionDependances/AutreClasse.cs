@@ -1,9 +1,4 @@
 ﻿using M01_DI_Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace POOII_M01_InjectionDependances;
 

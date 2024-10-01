@@ -4,7 +4,6 @@ using Module08_Exercice01_Base_Console.CoucheAccesDonnees.JSON;
 using Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML;
 using Module08_Exercice01_Base_Console.Entites;
 using Module08_Exercice01_Base_Console.TraitementLot;
-using System;
 using System.IO;
 //using Unity;
 
