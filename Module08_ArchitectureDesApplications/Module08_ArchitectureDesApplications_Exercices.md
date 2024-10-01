@@ -71,7 +71,7 @@ Démarche :
       - GC.Entites
       - GC.DAL.JSON
       - GC.DAL.XML
-- Dans une autre instance de Visual Studio ouvrez la solution "Module08_Exercice01_Base"
+- Dans une autre instance de Visual Studio ouvrez la solution "Module08_Exercice01_Base" présente dans ce répertoire
 - En adaptant leurs espaces de nommage, copiez les classes de la solution fournie dans les projets adéquat de votre nouvelle solution "GestionClients"
 - Lancez (exécutez) chacun de vos trois exécutables, c'est à dire, le projet d'interface utilisateur et les deux traitements batch.
 - Faites un diagramme (vous pouvez utiliser un diagramme de packages) qui explicite les liens entre les projets de la solution : un rectangle par projet et un lien qui part du projet vers un autre s'il y a une dépendance.
@@ -80,10 +80,11 @@ Démarche :
 
 Le but de cette section est de pouvoir lancer les trois applications consoles sur **le même dépot de clients**. Pour cela, vous allez devoir positionner les fichiers de données dans un emplacement accessible par vos applications consoles et leurs indiquer le chemin. Dans cette partie, on se propose d'utiliser les classes du cadriciel .Net afin de lire la configuration dans un fichier JSON.
 
-- Dans vos projets de type console, installez les packages Nuget suivants :  
-  - Microsoft.Extensions.Configuration
+- Dans vos projets de type console, installez le package Nuget suivant :  
+  - Microsoft.Extensions.Hosting
+  <!-- - Microsoft.Extensions.Configuration
   - Microsoft.Extensions.Configuration.FileExtensions
-  - Microsoft.Extensions.Configuration.Json
+  - Microsoft.Extensions.Configuration.Json -->
 
 - Dans chaque projet "Console", créez un fichier JSON nommé "appsettings.json" (nom usuellement utilisé dans les applications .Net Core) :
 
@@ -101,17 +102,12 @@ Le but de cette section est de pouvoir lancer les trois applications consoles su
 - Pour lire la configuration, basez-vous sur le fragment de code suivant qui ajoute le fichier JSON comme source de configuration et va chercher les valeurs :
 
 ```csharp
-IConfigurationRoot configuration = 
-    new ConfigurationBuilder()
-          .SetBasePath(Directory.GetParent(AppContext.BaseDirectory).FullName)
-          .AddJsonFile("appsettings.json", false)
-          .Build();
-
-string repertoireDepotClient = configuration["RepertoireDepotsClients"];
-string nomFichierDepotClient = configuration["NomFichierDepotClients"];
+// Version avec HostApplicationBuilder
+string repertoireDepotClient = builder.Configuration["RepertoireDepotsClients"];
+string nomFichierDepotClient = builder.Configuration["NomFichierDepotClients"];
 string cheminComplet = Path.Combine(repertoireDepotClient, nomFichierDepotClient);
 
-string typeDepot = configuration["TypeDepot"];
+string typeDepot = builder.Configuration["TypeDepot"];
 ```
 
 - Pour le choix du type de dépot, vous pouvez vous inspirer du fragment de code suivant :
@@ -120,10 +116,14 @@ string typeDepot = configuration["TypeDepot"];
 switch (typeDepot.ToLower())
 {
     case "json":
-        conteneur.RegisterType<IDepotClients, DepotClientsJSON>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { cheminComplet }));
+        builder.Services.AddScoped<IDepotClients, DepotClientsJSON>(
+          serviceProvider => new DepotClientsJSON(cheminComplet)
+        );
         break;
     case "xml":
-        conteneur.RegisterType<IDepotClients, DepotClientsXML>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { cheminComplet }));
+        builder.Services.AddScoped<IDepotClients, DepotClientsXML>(
+          serviceProvider => new DepotClientsXML(cheminComplet)
+        );
         break;
     default:
         throw new InvalidOperationException("le type de dépot n'est pas valide, mettre json ou xml");

@@ -1,7 +1,16 @@
-﻿namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-public class Point2DJSONDTO
+namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO
 {
-    public int X { get; set; }
-    public int Y { get; set; }
+    public class Point2DJSONDTO
+    {
+        public Point2DJSONDTO()
+        {
+            ;
+        }
+        public int X { get; set; }
+        public int Y { get; set; }
+    }
 }

@@ -13,7 +13,7 @@ Pour rendre l'application plus propre, on devrait ajouter une couche de services
 
 ## Exercice 1 - Création du projet et des formulaires
 
-- Créez la solution "POOII_Module09_GestionClients" avec un projet de type "Windows Forms App (.Net Core)" (il faut minimalement avoir .Net Core 3.1)
+- Créez la solution "POOII_Module09_GestionClients" avec un projet de type "Windows Forms App (.Net Core)"
 - Renommer le nom de la fenêtre principale et de ses classes pour "fPrincipale"
 - Dans le nouveau projet créé, installez les packages Nuget suivants :
   - Microsoft.Extensions.Configuration
