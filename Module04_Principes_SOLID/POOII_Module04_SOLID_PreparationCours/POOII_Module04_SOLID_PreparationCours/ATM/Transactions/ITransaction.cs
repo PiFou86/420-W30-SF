@@ -1,11 +1,8 @@
-﻿using System;
+﻿namespace POOII_Module04_SOLID_PreparationCours.ATM.Transactions;
 
-namespace POOII_Module04_SOLID_PreparationCours.ATM.Transactions
+public interface ITransaction
 {
-    public interface ITransaction
-    {
-        bool EstValide();
-        void ExecuterTransaction();
-        void Annuler();
-    }
+    bool EstValide();
+    void ExecuterTransaction();
+    void Annuler();
 }

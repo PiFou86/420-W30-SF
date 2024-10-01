@@ -1,15 +1,13 @@
 ﻿// Copyright © Microsoft Corporation.  All Rights Reserved.
-// This code released under the terms of the 
+// This code released under the terms of the
 // Microsoft Public License (MS-PL, http://opensource.org/licenses/ms-pl.html.)
 //
 //Copyright (C) Microsoft Corporation.  All rights reserved.
 
-using System;
-using System.IO;
+#pragma warning disable 8600, 8602, 8604, 8625
+
 using System.Collections;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Linq;
 using System.Diagnostics;
 
 public class ObjectDumper
@@ -20,7 +18,8 @@ public class ObjectDumper
 
         StackTrace st = new StackTrace();
         StackFrame sf = st.GetFrame(1);
-        if (fromMethod == null) {
+        if (fromMethod == null)
+        {
             fromMethod = sf.GetMethod().Name;
         }
 
@@ -198,3 +197,5 @@ public class ObjectDumper
         }
     }
 }
+
+#pragma warning restore 8600, 8602, 8604, 8625

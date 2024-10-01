@@ -1,8 +1,7 @@
-﻿namespace LangageBrainFuck
+﻿namespace LangageBrainFuck;
+
+public interface IInterpreteur
 {
-    public interface IInterpreteur
-    {
-        void ChargerProgramme(string codeDuProgramme);
-        void Executer();
-    }
+    void ChargerProgramme(string codeDuProgramme);
+    void Executer();
 }

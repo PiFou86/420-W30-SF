@@ -1,13 +1,12 @@
-﻿namespace LangageBrainFuck
-{
-    public abstract class InstructionBF : IInstruction
-    {
-        public IInstruction InstructionSuivante { get; set; }
-        public InformationInstruction InformationInstruction { get; set; }
+﻿namespace LangageBrainFuck;
 
-        public virtual IInstruction Executer(IMemoireTravail p_memoireTravail)
-        {
-            return this.InstructionSuivante;
-        }
-    }
+public abstract class InstructionBF : IInstruction
+{
+    public IInstruction InstructionSuivante { get; set; }
+    public InformationInstruction InformationInstruction { get; set; }
+
+    public virtual IInstruction Executer(IMemoireTravail p_memoireTravail)
+    {
+        return this.InstructionSuivante;
+    }
 }

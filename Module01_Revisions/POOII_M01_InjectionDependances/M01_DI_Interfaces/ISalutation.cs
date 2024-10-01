@@ -1,7 +1,6 @@
-﻿namespace M01_DI_Interfaces
+﻿namespace M01_DI_Interfaces;
+
+public interface ISalutation
 {
-    public interface ISalutation
-    {
-        public void Saluer(string? nom = null);
-    }
+    public void Saluer(string? nom = null);
 }

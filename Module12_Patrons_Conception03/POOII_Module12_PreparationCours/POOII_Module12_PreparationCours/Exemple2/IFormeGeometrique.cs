@@ -1,6 +1,5 @@
-﻿namespace POOII_Module12_PreparationCours.Exemple2
+﻿namespace POOII_Module12_PreparationCours.Exemple2;
+
+public interface IFormeGeometrique
 {
-    public interface IFormeGeometrique
-    {
-    }
 }

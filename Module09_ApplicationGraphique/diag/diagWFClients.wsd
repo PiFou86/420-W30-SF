@@ -14,7 +14,7 @@ Program ..> fPrincipale : <<create>>
 Program ..> IDepotClients : <<create>>
 
 
-fPrincipale "1" -left-> "1" IDepotClients
+fPrincipale "1" -left-> "1" IDepotClients : \t
 
 interface IDepotClients {
     AjouterClient(p_client:Client) : void
