@@ -8,12 +8,28 @@ Chaque liquide a un volume. Le volume total ne doit pas dépasser le volume du c
 
 Les contenants disponibles sont du type bol ou tasse. Une tasse a un volume de 250ml. Un bol a un volume de 350 ml.
 
-Un liquide peut être ajouté à un contenant tant que celui-ci n'est pas plein. Un contenant peut perdre du volume en le transférant (dans ce cas, chaque liquide perd un volume proportionnel au mélange initial).
+Un liquide peut être ajouté à un contenant tant que celui-ci n'est pas plein.
+
+Un contenant peut perdre du volume en le transférant (dans ce cas, chaque liquide perd un volume proportionnel au mélange initial).
+
+> [!NOTE]
+> Le volume perdu est à votre discretion et n'est pas obligatoire dans l'exercice
 
 Les contenants et les liquides doivent pouvoir être transformés facilement en chaînes de caractères afin, par exemple, de facilement être affichés :
 
 - Pour un contenant, on extrait l'ensemble des liquides mélangés, le volume total maximum (capacité), le volume utilisé et le pourcentage de remplissage.
 - Pour un liquide, on extrait son nom et son volume.
+
+> [!TIP]
+> Rappel : Faut-il utiliser un modificateur pour redéfinir une méthode par défaut ?
+
+**Répondez à la question suivante :** Selon vous, est-il convenable d'utiliser des énumérations pour les types contenants et liquides ? Pourquoi ?
+
+<details>
+  <summary>Réponse proposée</summary>
+
+  > Non, il n'est pas idéal d'utiliser des énumérations pour les types de contenants et de liquides. Les membres d'énumération sont des constantes et leur texte doit être en majuscules, peu adaptés à l'affichage, et manquent de flexibilité pour manipuler des volumes ou ajouter des propriétés spécifiques. Les classes offrent plus de souplesse.
+</details>
 
 Modélisez le problème en faisant apparaître toutes les entités présentes dans le texte.
 
@@ -25,21 +41,24 @@ Modélisez le problème en faisant apparaître toutes les entités présentes da
 
 ## Exercice 2 - Injection de dépendances
 
-**Pour vous aider, regardez l'exemple donné dans ce répertoire : "POOII_M01_InjectionDependances"**
+> [!NOTE]
+> **Pour vous aider, regardez l'exemple donné dans ce répertoire : "POOII_M01_InjectionDependances"**
 
 Dans cet exercice nous allons créer une interface `IJournal` qui définit les méthodes :
 
-- `Information(string message)` qui permet de journaliser un message de type information
-- `Avertissement(string message)` qui permet de journaliser un message de type avertissement
-- `Erreur(string message)` qui permet de journaliser un message de type erreur
+- **Information(*string message*)** : permet de journaliser un message de type information
+- **Avertissement(*string message*)** : permet de journaliser un message de type avertissement
+- **Erreur(*string message*)** : permet de journaliser un message de type erreur
 
-Nous allons ensuite créer les classes `ConsoleJournal`, `ConsoleJournalAvecHeure` et `FichierJournal` qui implémentent l'interface `IJournal`. 
+Nous allons ensuite créer les classes `ConsoleJournal`, `ConsoleJournalAvecHeure` et `FichierJournal` qui implémentent l'interface `IJournal`.
 
-La classe `ConsoleJournalAvecHeure` ajoute l'heure devant chaque message journalisé. 
+La classe `ConsoleJournalAvecHeure` ajoute l'heure devant chaque message journalisé.
 
-La classe `FichierJournal` journalise les messages dans un fichier texte dont le nom est passé en paramètre du constructeur. De plus, chaque écriture se fait sur une nouvelle ligne avec la date, l'heure et le type de message. Exemples : "2024-09-29 17:17:04 - Information - L'application démarre", "2024-09-29 17:17:04 - Erreur - Impossible de se connecter à la base de données".
+La classe `FichierJournal` journalise les messages dans un fichier texte dont le nom est passé en paramètre du constructeur. De plus, chaque écriture se fait sur une nouvelle ligne avec la date, l'heure et le type de message. Exemples :
+- 2024-09-29 17:17:04 - Information - L'application démarre
+- 2024-09-29 17:17:04 - Erreur - Impossible de se connecter à la base de données
 
-Dans les implantations sur la console, les messages de type information sont affichés en vert, les messages de type avertissement en jaune et les messages de type erreur en rouge. Ils sont aussi affichés sur le bon flux : standard pour les messages de types information et avertissement  (`Console.Out`) et erreur pour les messages de type erreur (`Console.Error`).
+Dans les implantations sur la console, les messages de type information sont affichés en vert, les messages de type avertissement en jaune et les messages de type erreur en rouge. Ils sont aussi affichés sur le bon flux : standard pour les messages de types information et avertissement  (***Console.Out***) et erreur pour les messages de type erreur (***Console.Error***).
 
 La classe `Application` qui prend en paramètre un objet de type IJournal dans son constructeur. Cette classe a une méthode Run qui affiche un message de type information, un message de type avertissement et un message de type erreur.
 
@@ -100,7 +119,7 @@ Dans cet exercice, vous allez réviser/apprendre les bases de Linq.
 ### Exercice 3.3 - Aller plus loin
 
 -  https://github.com/dotnet/try-samples/tree/main/101-linq-samples
-- 
+-
 
 ## Exercice 4 - Assemblage (Optionnel)
 
@@ -136,6 +155,9 @@ Pièce : Valve à eau, part - #1234, numéro série -  #0481
 ```
 
 **Pour les plus téméraires** : écrivez une méthode qui, à partir du pièce, renvoie sa nomenclature (BOM : Bill of Materials)
+
+> [!NOTE]
+> Consultez la page Wikipédia afin de savoir qu'est-ce que la [nomenclature BOM](https://fr.wikipedia.org/wiki/Nomenclature_(logistique))
 
 Toujours avec le même exemple :
 
