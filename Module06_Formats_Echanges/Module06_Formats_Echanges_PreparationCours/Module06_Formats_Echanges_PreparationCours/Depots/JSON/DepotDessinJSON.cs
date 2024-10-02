@@ -1,11 +1,14 @@
 ﻿using AutoMapper;
 using Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO;
 using Module06_Formats_Echanges_PreparationCours.Entites;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization.Metadata;
 
 namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON
 {
@@ -24,12 +27,14 @@ namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON
             IMapper mapper = CreerOutilConversionEntity2DTO();
             DessinJSONDTO dessinDTO = mapper.Map<DessinJSONDTO>(p_dessin);
  
-            JsonSerializerSettings settings = new JsonSerializerSettings
-            {
-                TypeNameHandling = TypeNameHandling.Auto,
-                Formatting = Formatting.Indented
-            };
-            string chaineJson = JsonConvert.SerializeObject(dessinDTO, settings);
+            //JsonSerializerSettings settings = new JsonSerializerSettings
+            //{
+            //    TypeNameHandling = TypeNameHandling.Auto,
+            //    Formatting = Formatting.Indented
+            //};
+            //string chaineJson = JsonConvert.SerializeObject(dessinDTO, settings);
+            JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions() { WriteIndented = true };
+            string chaineJson = JsonSerializer.Serialize(dessinDTO, jsonSerializerOptions);
             File.WriteAllText(this.m_nomFichier, chaineJson);
         }
 
@@ -38,11 +43,12 @@ namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON
             IMapper mapper = CreerOutilConversionDTO2Entity();
 
             string chaineJson = File.ReadAllText(this.m_nomFichier);
-            JsonSerializerSettings settings = new JsonSerializerSettings
-            {
-                TypeNameHandling = TypeNameHandling.Auto
-            };
-            DessinJSONDTO dessinDTO = JsonConvert.DeserializeObject<DessinJSONDTO>(chaineJson, settings);
+            //JsonSerializerSettings settings = new JsonSerializerSettings
+            //{
+            //    TypeNameHandling = TypeNameHandling.Auto
+            //};
+            //DessinJSONDTO dessinDTO = JsonConvert.DeserializeObject<DessinJSONDTO>(chaineJson, settings);
+            DessinJSONDTO dessinDTO = JsonSerializer.Deserialize<DessinJSONDTO>(chaineJson);
 
             Dessin dessin = mapper.Map<Dessin>(dessinDTO);
 
