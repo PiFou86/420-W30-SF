@@ -43,7 +43,7 @@ Une adresse est définie par :
 3. Écrivez deux classes qui implante l'interface précédente et qui implantent  respectivement un dépot de type XML (le format est libre) et un dépôt JSON.
 4. Créez une application console qui permet de manipuler un dépôt à l'aide d'un menu. L'application console doit être codée dans la classe "ClientUIConsole". Elle reçoit le dépôt au moment de son initialisation.
 Afin de simplifier l'écriture du code, la saisie de l'adresse peut-être simulée par une méthode qui renvoie des adresses aléatoires.
-5. Utilisez le cadriciel d'injection de dépendances "Unity" afin d'injecter le dépot au moment de l'instanciation d'un objet de la classe "ClientUIConsole" ([Rappels : injection de dépendances](https://www.youtube.com/watch?v=-spiIEfFzpw)).
+5. Utilisez l'injection de dépendances, revoir exercice [Module 1](../Module01_Revisions/Module01_Revisions_Exercices.md)
 6. Dans l'interface de dépot clients, ajoutez une méthode qui permet de modifier un client.
 7. Créez une interface "TraitementLot" qui contient seulement la méthode "Executer" qui ne prend pas de paramètre et ne renvoie rien
 8. Créez une autre classe "ModifierNomPrenomPremiereLettreMajusculesTraitementLot" qui implante l'interface précédente. Le traitement parcours la liste de clients et doit modifier leur nom et/ou prénom s'ils l'un d'eux ou les deux ne débutent pas par une majuscule. Dans le cas contraire, ils ne doivent pas être enregistrés.
