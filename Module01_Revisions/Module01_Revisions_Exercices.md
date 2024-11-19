@@ -27,6 +27,8 @@ Modélisez le problème en faisant apparaître toutes les entités présentes da
 
 **Pour vous aider, regardez l'exemple donné dans ce répertoire : "POOII_M01_InjectionDependances"**
 
+La démarche générale est présentée ci-dessous. Les étapes principales sont détaillées plus bas dans la partie `Étapes à suivre`.
+
 Dans cet exercice nous allons créer une interface `IJournal` qui définit les méthodes :
 
 - `Information(string message)` qui permet de journaliser un message de type information
