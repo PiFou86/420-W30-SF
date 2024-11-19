@@ -39,7 +39,7 @@ Nous allons ensuite créer les classes `ConsoleJournal`, `ConsoleJournalAvecHeur
 
 La classe `ConsoleJournalAvecHeure` ajoute l'heure devant chaque message journalisé. 
 
-La classe `FichierJournal` journalise les messages dans un fichier texte dont le nom est passé en paramètre du constructeur. De plus, chaque écriture se fait sur une nouvelle ligne avec la date, l'heure et le type de message. Exemples : "2024-09-29 17:17:04 - Information - L'application démarre", "2024-09-29 17:17:04 - Erreur - Impossible de se connecter à la base de données".
+La classe `FichierJournal` journalise les messages dans un fichier texte dont le nom est contenu dans une constante. De plus, chaque écriture se fait sur une nouvelle ligne avec la date, l'heure et le type de message. Exemples : "2024-09-29 17:17:04 - Information - L'application démarre", "2024-09-29 17:17:04 - Erreur - Impossible de se connecter à la base de données".
 
 Dans les implantations sur la console, les messages de type information sont affichés en vert, les messages de type avertissement en jaune et les messages de type erreur en rouge. Ils sont aussi affichés sur le bon flux : standard pour les messages de types information et avertissement  (`Console.Out`) et erreur pour les messages de type erreur (`Console.Error`).
 
