@@ -65,7 +65,12 @@ La classe `program` enregistre la classe `ConsoleJournal` ou `ConsoleJournalAvec
 - Ajoutez les interfaces dans le projet "POOII_M01_E02_DI_Interfaces"
 - Ajoutez les classes qui implante `IJournal` dans le projet "POOII_M01_E02_DI_Journaux"
 - Ajoutez la classe `Application` dans le projet "POOII_M01_E02_DI_Console"
-- Modifiez la classe `Program` pour enregistrer la classe `ConsoleJournal` ou `ConsoleJournalAvecHeure` ou `FichierJournal` pour l'interface `IJournal` et qui crée une instance de la classe `Application` en lui passant l'objet enregistré.
+- Modifiez la classe `Program` pour enregistrer la classe `ConsoleJournal` ou `ConsoleJournalAvecHeure` ou `FichierJournal` pour l'interface `IJournal` et qui crée une instance de la classe `Application` en lui passant l'objet enregistré. Testez les différentes configuration
+- Une fois vos tests manuels réalisés, créez le fichier "appsettings.json" à la racine du projet "POOII_M01_E02_DI_Console" :
+  - Copiez / collez le contenu du code JSON présenté plus haut
+  - À partir de l'explorateur de solution, faites un clic droit sur le fichier et choissisez "Propriétés" (*Properties*). Dans les propriétés, placez-vous au niveau de la propriété "Copier dans le répertoire de sortie" (*Copy to Output Directory*) et choisissez "Toujours copier" (*Copy always*) (Pour valider le fonctionnement, après la prochaine génération du projet, le fichier `appsettings.json` se trouvera dans le répertoire de sortie à côté de votre fichier exécutable).
+- Modifiez votre code pour tenir compte de la configuration en prenant le projet démonstration en exemple
+- Testez différentes configurations
 
 ## Exercice 3 - Linq
 
