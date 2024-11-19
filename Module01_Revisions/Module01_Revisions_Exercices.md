@@ -59,11 +59,13 @@ La classe `program` enregistre la classe `ConsoleJournal` ou `ConsoleJournalAvec
   - Créez un projet de type console "POOII_M01_E02_DI_Console"
   - Créez un projet de type bibliothèque de classes "POOII_M01_E02_DI_Journaux"
   - Créez un projet de type bibliothèque de classes "POOII_M01_E02_DI_Interfaces"
-  - Ajoutez les références nécessaires :
-    - "POOII_M01_E02_DI_Interfaces" (Projet) dans "POOII_M01_E02_DI_Console"
-    - "POOII_M01_E02_DI_Journaux" (Projet) dans "POOII_M01_E02_DI_Console"
-    - "Microsoft.Extensions.Hosting" (Nuget) dans "POOII_M01_E02_DI_Console"
-    - "POOII_M01_E02_DI_Interfaces" (Projet) dans "POOII_M01_E02_DI_Journaux"
+  - Ajoutez les références nécessaires (Clic droit sur le projet où l'on veut ajouter une référence de projet et choisir `Ajouter > Référence de projet` (*Add > Project reference*) ) :
+    - `POOII_M01_E02_DI_Console` :
+      - `POOII_M01_E02_DI_Interfaces`
+      - `POOII_M01_E02_DI_Journaux`
+    - `POOII_M01_E02_DI_Journaux` :
+      - `POOII_M01_E02_DI_Interfaces`
+  - Ajoutez le package nuget "Microsoft.Extensions.Hosting" dans "POOII_M01_E02_DI_Console" (Clic droit de la souris `Ajouter un package NuGet` (*Manage NuGet Packages...*))
 - Ajoutez les interfaces dans le projet "POOII_M01_E02_DI_Interfaces"
 - Ajoutez les classes qui implante `IJournal` dans le projet "POOII_M01_E02_DI_Journaux"
 - Ajoutez la classe `Application` dans le projet "POOII_M01_E02_DI_Console"
