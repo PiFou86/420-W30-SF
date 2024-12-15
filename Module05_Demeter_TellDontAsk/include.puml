@@ -23,7 +23,7 @@ class Program {
     + {static} aTriangle(obj:object) : double
     + {static} affichage_forme_g(obj:object) : void
     - {static} trigle(sommets:List<Point3d>) : List<object>
-    - {static} bary(ss:List<Point3d>) : Tuple<double, double, double>
+    - {static} bary(ss:List<Point3d>) : Tuple<double, double, double>
 }
 Program ..> Point3d
 Program ..> Triangle

@@ -1,6 +1,5 @@
-﻿namespace LangageBrainFuck
+﻿namespace LangageBrainFuck;
+
+public class InstructionBFBoucleDebut : InstructionBFBoucle
 {
-    public class InstructionBFBoucleDebut : InstructionBFBoucle
-    {
-    }
 }

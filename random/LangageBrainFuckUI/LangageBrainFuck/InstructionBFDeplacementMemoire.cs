@@ -1,7 +1,6 @@
-﻿namespace LangageBrainFuck
+﻿namespace LangageBrainFuck;
+
+public abstract class InstructionBFDeplacementMemoire : InstructionBF
 {
-    public abstract class InstructionBFDeplacementMemoire : InstructionBF
-    {
-        // rien
-    }
+    // rien
 }

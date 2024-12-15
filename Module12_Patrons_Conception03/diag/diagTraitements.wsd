@@ -46,8 +46,8 @@ abstract class TraitementImageMasque {
     + Suivant : ITraitementImage <<get>> <<set>>
     - m_largeur : int = 3
     + Largeur : int <<get>> <<set>>
-    + Transformation : Func<byte[], byte> <<get>> <<set>>
-    + TraitementImageMasque(p_transformation:Func<byte[], byte>)
+    + Transformation : Func<byte[], byte> <<get>> <<set>>
+    + TraitementImageMasque(p_transformation:Func<byte[], byte>)
     + TraiterImage(p_image:ImageManipulable) : void
     + <<override>> ToString() : string
     + Clone() : object

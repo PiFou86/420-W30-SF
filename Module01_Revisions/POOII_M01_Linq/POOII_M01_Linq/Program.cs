@@ -1,7 +1,6 @@
 ﻿
 // Exercice 3.1
 using ExperimentationsLINQ;
-using System.Linq;
 
 List<int> nombres = Enumerable.Range(1, 100).ToList();
 Console.Out.WriteLine($"Nombres : {string.Join(" ", nombres)}");
@@ -28,4 +27,3 @@ ObjectDumper.Write(DonneesLINQ.CreateProductList().Where(p => p.ProductID == 23)
 
 Console.Out.WriteLine("Affichez le produit dont l'identifiant est `123`");
 ObjectDumper.Write(DonneesLINQ.CreateProductList().Where(p => p.ProductID == 123).SingleOrDefault());
-

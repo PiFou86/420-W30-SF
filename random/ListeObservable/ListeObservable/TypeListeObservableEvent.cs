@@ -1,8 +1,7 @@
-﻿namespace WindowsFormsApp1
+﻿namespace WindowsFormsApp1;
+
+public enum TypeListeObservableEvent
 {
-    public enum TypeListeObservableEvent
-    {
-        AJOUTER,
-        VIDER
-    }
+    AJOUTER,
+    VIDER
 }

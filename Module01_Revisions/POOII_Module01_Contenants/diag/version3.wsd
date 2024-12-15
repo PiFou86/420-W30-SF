@@ -31,7 +31,7 @@ interface ILiquide
     + {abstract} DiminuerVolume(p_pourcentage : decimal)
 }
 
-abstract class Liquide
+class Liquide
 {
     + Volume : decimal <<get>> <<private set>>
     + Nom : string <<get>>
@@ -42,7 +42,7 @@ abstract class Liquide
 
 ILiquide  <.left.   IContenant
 
-Contenant "1" -right-> "n" ILiquide 
+Contenant "1" -right-> "n" ILiquide : \t
 
 ILiquide <|.. Liquide
 

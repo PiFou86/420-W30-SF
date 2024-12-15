@@ -1,12 +1,11 @@
-﻿using System;
+﻿using System;
 
-namespace POOII_Module02_TestsUnitaires
+namespace POOII_Module02_TestsUnitaires;
+
+class Program
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+    }
 }
