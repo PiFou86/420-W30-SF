@@ -1,14 +1,14 @@
-﻿using AutoMapper;
+﻿// PFL : Décommentez pour utiliser l'auto mapper
+//#define AUTO_MAPPER
+
+#if AUTO_MAPPER
+using AutoMapper;
+#endif
+
 using Module06_Formats_Echanges_PreparationCours.Depots.JSON.DTO;
 using Module06_Formats_Echanges_PreparationCours.Entites;
-//using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization.Metadata;
 
 namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON
 {
@@ -23,16 +23,14 @@ namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON
 
         public void EnregistrerDessin(Dessin p_dessin)
         {
-            // Méthode 2 : Bibliothèque automapper
-            IMapper mapper = CreerOutilConversionEntity2DTO();
+#if AUTO_MAPPER
+            // Méthode 2 : Bibliothèque automapper
+            IMapper mapper = CreerOutilConversionEntity2DTO();
             DessinJSONDTO dessinDTO = mapper.Map<DessinJSONDTO>(p_dessin);
- 
-            //JsonSerializerSettings settings = new JsonSerializerSettings
-            //{
-            //    TypeNameHandling = TypeNameHandling.Auto,
-            //    Formatting = Formatting.Indented
-            //};
-            //string chaineJson = JsonConvert.SerializeObject(dessinDTO, settings);
+#else
+            DessinJSONDTO dessinDTO = new DessinJSONDTO(p_dessin);
+#endif
+
             JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions() { WriteIndented = true };
             string chaineJson = JsonSerializer.Serialize(dessinDTO, jsonSerializerOptions);
             File.WriteAllText(this.m_nomFichier, chaineJson);
@@ -40,22 +38,22 @@ namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON
 
         public Dessin LireDepot()
         {
-            IMapper mapper = CreerOutilConversionDTO2Entity();
-
             string chaineJson = File.ReadAllText(this.m_nomFichier);
-            //JsonSerializerSettings settings = new JsonSerializerSettings
-            //{
-            //    TypeNameHandling = TypeNameHandling.Auto
-            //};
-            //DessinJSONDTO dessinDTO = JsonConvert.DeserializeObject<DessinJSONDTO>(chaineJson, settings);
+
             DessinJSONDTO dessinDTO = JsonSerializer.Deserialize<DessinJSONDTO>(chaineJson);
 
-            Dessin dessin = mapper.Map<Dessin>(dessinDTO);
+#if AUTO_MAPPER
+            IMapper mapper = CreerOutilConversionDTO2Entity();
+            Dessin dessin = mapper.Map<Dessin>(dessinDTO);
+#else
+            Dessin dessin = dessinDTO.VersEntite();
+#endif
 
-            return dessin;
+            return dessin;
         }
 
-        private static IMapper CreerOutilConversionEntity2DTO()
+#if AUTO_MAPPER
+        private static IMapper CreerOutilConversionEntity2DTO()
         {
             MapperConfiguration mc = new MapperConfiguration(
                 cfg =>
@@ -101,5 +99,6 @@ namespace Module06_Formats_Echanges_PreparationCours.Depots.JSON
 
             return mc.CreateMapper();
         }
+#endif
     }
 }

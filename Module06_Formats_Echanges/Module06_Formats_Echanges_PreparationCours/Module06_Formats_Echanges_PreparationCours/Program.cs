@@ -3,9 +3,7 @@ using Module06_Formats_Echanges_PreparationCours.Depots.JSON;
 using Module06_Formats_Echanges_PreparationCours.Depots.XML.FormatAttributs;
 using Module06_Formats_Echanges_PreparationCours.Depots.XML.FormatElements;
 using Module06_Formats_Echanges_PreparationCours.Entites;
-using System;
 using System.Collections.Generic;
-using System.IO;
 
 namespace Module06_Formats_Echanges_PreparationCours
 {
@@ -56,7 +54,7 @@ namespace Module06_Formats_Echanges_PreparationCours
                 )
             );
 
-            dessin.AjouterForme(new Cercle(new Point2D() { X = 0, Y = 0 }, 5));
+            dessin.AjouterForme(new Cercle(new Point2D() { X = 42, Y = 23 }, 5));
 
             return dessin;
         }
