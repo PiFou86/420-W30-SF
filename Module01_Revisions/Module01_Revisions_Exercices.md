@@ -108,8 +108,8 @@ Dans cet exercice, vous allez réviser/apprendre les bases de Linq.
 
 ### Exercice 3.3 - Aller plus loin
 
--  https://github.com/dotnet/try-samples/tree/main/101-linq-samples
-- 
+- https://github.com/dotnet/try-samples/tree/main/101-linq-samples
+- https://github.com/PiFou86/420-W20-SF/blob/master/Module10_Linq/Module10_Linq_Exercices.md
 
 ## Exercice 4 - Assemblage (Optionnel)
 
