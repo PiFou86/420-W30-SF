@@ -56,6 +56,7 @@ Démarche :
       - GC.DAL.JSON
       - GC.DAL.XML
       - GC.Batch
+      - Microsoft.Extensions.Hosting (Nuget)
   - GC.Batch.ModifierPaysMajusculesClients :
     - Type : Application console
     - Contiendra : La classe du traitement et un nouveau programme principale qui l'instancie
@@ -64,6 +65,7 @@ Démarche :
       - GC.DAL.JSON
       - GC.DAL.XML
       - GC.Batch
+      - Microsoft.Extensions.Hosting (Nuget)
   - GC.ConsoleUI :
     - Type : Application console
     - Contiendra : votre interface console avec le menu et les appels au dépot
@@ -71,6 +73,7 @@ Démarche :
       - GC.Entites
       - GC.DAL.JSON
       - GC.DAL.XML
+      - Microsoft.Extensions.Hosting (Nuget)
 - Dans une autre instance de Visual Studio ouvrez la solution "Module08_Exercice01_Base" présente dans ce répertoire
 - En adaptant leurs espaces de nommage, copiez les classes de la solution fournie dans les projets adéquat de votre nouvelle solution "GestionClients"
 - Lancez (exécutez) chacun de vos trois exécutables, c'est à dire, le projet d'interface utilisateur et les deux traitements batch.
@@ -79,12 +82,6 @@ Démarche :
 ## Exercice 2 - Rendons la solution configurable...
 
 Le but de cette section est de pouvoir lancer les trois applications consoles sur **le même dépot de clients**. Pour cela, vous allez devoir positionner les fichiers de données dans un emplacement accessible par vos applications consoles et leurs indiquer le chemin. Dans cette partie, on se propose d'utiliser les classes du cadriciel .Net afin de lire la configuration dans un fichier JSON.
-
-- Dans vos projets de type console, installez le package Nuget suivant :  
-  - Microsoft.Extensions.Hosting
-  <!-- - Microsoft.Extensions.Configuration
-  - Microsoft.Extensions.Configuration.FileExtensions
-  - Microsoft.Extensions.Configuration.Json -->
 
 - Dans chaque projet "Console", créez un fichier JSON nommé "appsettings.json" (nom usuellement utilisé dans les applications .Net Core) :
 
