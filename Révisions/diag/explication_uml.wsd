@@ -1,0 +1,55 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Personne {
+  - m_dateNaissance: DateOnly
+  + DateNaissance: DateOnly <<get>> <<private set>>
+  + Age: int <<get>>
+  + Nom: string <<get>> <<private set>>
+  + Prenom: string <<get>> <<private set>>
+  + ctor(nom: string, prenom: string, dateNaissance: DateOnly)
+  + ToString(): string <<override>>
+}
+
+interface Vehicule <<I>> 
+{
+  + Marque: string <<get>> <<private set>>
+  + Modele: string <<get>> <<private set>>
+  + Annee: int <<get>> <<private set>>
+  + ToString(): string <<override>>
+}
+
+class Voiture <<A>> {
+  - m_moteur: Moteur
+  - m_roues: Roue[4]
+  + Marque: string <<get>> <<abstract>>
+  + Modele: string <<get>> <<abstract>>
+  + Moteur: Moteur <<get>> <<private set>>
+  + ctor(moteur: Moteur)
+  + ToString(): string <<override>>
+}
+class Moteur {
+  - m_cylindree: double
+  + Cylindree: double <<get>> <<private set>>
+  + ToString(): string <<override>>
+}
+class ID4 {
+  - m_annee: int
+  + Marque: string <<get>>
+  + Modele: string <<get>>
+  + Annee: int <<get>> <<private set>>
+  + ToString(): string <<override>>
+}
+
+class Roue {
+  - m_diametre: double
+  + Diametre: double <<get>> <<private set>>
+  + ToString(): string <<override>>
+}
+
+Vehicule <|.. Voiture
+Voiture <|-- ID4
+Voiture "1" -right-> "1" Moteur
+Voiture "1" -left-> "4" Roue
+
+@enduml
