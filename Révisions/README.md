@@ -370,3 +370,8 @@ Les microservices sont conçus pour être déployés et gérés indépendamment 
 Les microservices ont généralement leurs propres bases de données et sont responsables de la gestion de leur propre état. Cela permet de réduire le couplage entre les services et de faciliter la mise à l'échelle horizontale, car chaque service peut être déployé et mis à l'échelle indépendamment des autres.
 
 Un autre avantage des microservices est qu'ils peuvent être développés dans des technologies différentes, ce qui permet aux équipes de choisir les outils et les langages qui conviennent le mieux à chaque service. Cela favorise également l'innovation et la réutilisation des services existants. Cet avantage peut aussi être un inconvénient, car cela peut entraîner une complexité accrue dans la gestion des dépendances et des versions des services. Il est aussi risqué pour une entreprise de se retrouver avec des équipes qui utilisent des technologies différentes, car cela peut rendre la gestion des compétences et la formation plus difficiles.
+
+
+## Réalisation
+
+Ces questions réponses ont été réalisées avec l'assistance de l'IA générative.
