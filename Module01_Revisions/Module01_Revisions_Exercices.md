@@ -1,5 +1,11 @@
 # Module 01 - Révisions
 
+Exercices de révisions sur la POO, l'injection de dépendances et Linq.
+
+Des notions de base sont aussi rappelées dans [Révisions POO](../Révisions/README.md).
+
+Des exemples de code sont disponibles dans le répertoire courant de ce module.
+
 ## Exercice 1 - Tasses
 
 Un contenant peut contenir plusieurs liquides. Les liquides disponibles sont du lait, du café, de la crème et du chocolat.
