@@ -120,6 +120,12 @@ public class CompteEpargne
 }
 ```
 
+## 5 Bis. Est-ce que je dois écrire des commentaires dans mon code ? *
+
+Non, il faut éviter d'écrire des commentaires dans le code. Les commentaires peuvent rendre le code plus difficile à lire et à comprendre, car ils peuvent être obsolètes ou trompeurs. Il est préférable d'utiliser des noms de variables, de méthodes et de classes explicites pour rendre le code auto-documenté. Si vous devez ajouter des commentaires, assurez-vous qu'ils sont clairs, concis et pertinents.
+
+Un code est comme une blague : si vous devez l'expliquer, c'est qu'il n'est pas bon.
+
 ## 6. Qu'est-ce qu'une donnée membre ? *
 
 Une donnée membre (ou variable d'instance) est une variable qui est définie à l'intérieur d'une classe et qui est associée à chaque instance de cette classe. Les données membres représentent l'état de l'objet et peuvent être utilisées pour stocker des informations spécifiques à chaque instance. Les méthodes de la classe peuvent accéder et modifier ces données membres pour refléter le comportement de l'objet. Les données membres ne doivent pas être confondues avec les variables locales, qui sont définies à l'intérieur d'une méthode et ne sont accessibles qu'à l'intérieur de cette méthode.
@@ -370,7 +376,6 @@ Les microservices sont conçus pour être déployés et gérés indépendamment 
 Les microservices ont généralement leurs propres bases de données et sont responsables de la gestion de leur propre état. Cela permet de réduire le couplage entre les services et de faciliter la mise à l'échelle horizontale, car chaque service peut être déployé et mis à l'échelle indépendamment des autres.
 
 Un autre avantage des microservices est qu'ils peuvent être développés dans des technologies différentes, ce qui permet aux équipes de choisir les outils et les langages qui conviennent le mieux à chaque service. Cela favorise également l'innovation et la réutilisation des services existants. Cet avantage peut aussi être un inconvénient, car cela peut entraîner une complexité accrue dans la gestion des dépendances et des versions des services. Il est aussi risqué pour une entreprise de se retrouver avec des équipes qui utilisent des technologies différentes, car cela peut rendre la gestion des compétences et la formation plus difficiles.
-
 
 ## Réalisation
 
