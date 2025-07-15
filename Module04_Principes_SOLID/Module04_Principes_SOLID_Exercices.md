@@ -13,7 +13,7 @@ Pour ces exercices, vous avez le temps, le partage des idées doit prendre plus 
 Soit le code suivant qui est installé dans une application de tableau de bord de véhicule :
 
 ```csharp
-public interface Vehicule {
+public interface IVehicule {
     double ObtenirVolumeRestantReservoirEnGallon();
     double ObtenirVolumeRestantReservoirEnLitre();
 }
@@ -35,7 +35,7 @@ Que veut généralement savoir l'utilisateur de cette application ?
     <summary>Proposition de solution #1</summary>
 
 ``` csharp
-public interface Vehicule
+public interface IInformationEnergie
 {
     double ObtenirPourcentageEnergieRestante();
 }
@@ -46,8 +46,9 @@ public interface Vehicule
     <summary>Proposition de solution #2</summary>
 
 ```csharp
-public interface Vehicule
+public interface IInformationDistance
 {
+    // Utilisation des unités internationales
     double ObtenirNombreKmRestants();
 }
 ```
@@ -58,7 +59,7 @@ public interface Vehicule
 Que dire de la classe Automobiliste ? Comment l'améliorer ?
 
 ```csharp
-public interface Voiture
+public interface IVoiture
 {
     TypeVoiture GetTypeVoiture();
     void RemplirReservoir();
@@ -68,7 +69,7 @@ public interface Voiture
 }
 
 public class Automobiliste {
-    private Voiture m_voiture;
+    private IVoiture m_voiture;
     
     public void Remplir()
     {
@@ -109,14 +110,14 @@ Quel(s) principe(s) sont violés ici ?
     <summary>Proposition de solution #1</summary>
 
 ``` csharp
-public interface Voiture
+public interface IVoiture
 {
     void AjouterEnergie();
 }
 
 public class Automobiliste
 {
-    private Voiture m_voiture;
+    private IVoiture m_voiture;
     
     public void AjouterEnergie()
     {
@@ -139,17 +140,17 @@ public class ATM {
     private TypeTiroir m_typeTiroir;
     private ITiroirArgent m_tiroirArgent;
 
-    public ATM(TypeTirroir p_typeTiroir) {
+    public ATM(TypeTiroir p_typeTiroir) {
         this.m_typeTiroir = p_typeTiroir;
         switch (this.m_typeTiroir)
         {
             case TypeTiroir.COM:
                 this.m_tiroirArgent = new TiroirArgentCOM();
                 break;
-            case TypeTirroir.LPT:
+            case TypeTiroir.LPT:
                 this.m_tiroirArgent = new TiroirArgentLPT();
                 break;
-            case TypeTirroir.USB:
+            case TypeTiroir.USB:
                 this.m_tiroirArgent = new TiroirArgentUSB();
                 break;
             default:
