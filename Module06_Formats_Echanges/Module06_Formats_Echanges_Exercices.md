@@ -68,12 +68,35 @@ Afin de simplifier l'écriture du code, la saisie de l'adresse peut-être simul�
 Inspirez-vous du code suivant :
 
 ```csharp
-IUnityContainer conteneur = new UnityContainer();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddScoped<TraitementLot.ModifierNomPrenomPremiereLettreMajuscules.ModifierNomPrenomPremiereLettreMajusculesTraitementLot>();
+builder.Services.AddScoped<TraitementLot.ModifierPaysMajusculesClients.ModifierPaysMajusculesClientsTraitementLot>();
+builder.Services.AddScoped<ClientUIConsole>();
 
-conteneur.RegisterType<IDepotClients, DepotClientsJSON>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { cheminComplet }));
+builder.Services.AddScoped<IDepotClients, DepotClientsJSON>(serviceProvider => new DepotClientsJSON(_fichierDepotClientsJSON));
+// Ou
+//builder.Services.AddScoped<IDepotClients, DepotClientsXML>(serviceProvider => new DepotClientsXML(_fichierDepotClientsXML));
 
-ClientUIConsole clientUIConsole = conteneur.Resolve<ClientUIConsole>();
-clientUIConsole.ExecuterUI();
+IHost host = builder.Build();
+
+ITraitementLot traitementLot = null;
+using (IServiceScope scope = host.Services.CreateScope())
+{
+    traitementLot = scope.ServiceProvider.GetService<TraitementLot.ModifierNomPrenomPremiereLettreMajuscules.ModifierNomPrenomPremiereLettreMajusculesTraitementLot>();
+    traitementLot.Executer();
+}
+
+using (IServiceScope scope = host.Services.CreateScope())
+{
+    traitementLot = scope.ServiceProvider.GetService<TraitementLot.ModifierPaysMajusculesClients.ModifierPaysMajusculesClientsTraitementLot>();
+    traitementLot.Executer();
+}
+
+using (IServiceScope scope = host.Services.CreateScope())
+{
+    ClientUIConsole clientUIConsole = scope.ServiceProvider.GetService<ClientUIConsole>();
+    clientUIConsole.ExecuterUI();
+}
 ```
 
 </details>
