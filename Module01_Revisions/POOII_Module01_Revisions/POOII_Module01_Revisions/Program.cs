@@ -87,7 +87,7 @@ namespace POOII_Module01_Revisions
                             },
                             new PieceAssemblage()
                             {
-                                Description = "Visse M8",
+                                Description = "Vis M8",
                                 NumeroSerie = "3774",
                                 Reference = "8757",
                                 Pieces = new List<Piece>()
@@ -97,7 +97,7 @@ namespace POOII_Module01_Revisions
                             },
                             new PieceAssemblage()
                             {
-                                Description = "Visse M8",
+                                Description = "Vis M8",
                                 NumeroSerie = "3774",
                                 Reference = "8757",
                                 Pieces = new List<Piece>()
@@ -107,7 +107,7 @@ namespace POOII_Module01_Revisions
                             },
                             new PieceAssemblage()
                             {
-                                Description = "Visse M8",
+                                Description = "Vis M8",
                                 NumeroSerie = "3774",
                                 Reference = "8757",
                                 Pieces = new List<Piece>()
@@ -117,7 +117,7 @@ namespace POOII_Module01_Revisions
                             },
                             new PieceAssemblage()
                             {
-                                Description = "Visse M8",
+                                Description = "Vis M8",
                                 NumeroSerie = "3774",
                                 Reference = "8757",
                                 Pieces = new List<Piece>()
@@ -146,7 +146,7 @@ namespace POOII_Module01_Revisions
                             },
                             new PieceAssemblage()
                             {
-                                Description = "Visse M8",
+                                Description = "Vis M8",
                                 NumeroSerie = "3774",
                                 Reference = "8757",
                                 Pieces = new List<Piece>()
@@ -156,7 +156,7 @@ namespace POOII_Module01_Revisions
                             },
                             new PieceAssemblage()
                             {
-                                Description = "Visse M8",
+                                Description = "Vis M8",
                                 NumeroSerie = "3774",
                                 Reference = "8757",
                                 Pieces = new List<Piece>()
@@ -166,7 +166,7 @@ namespace POOII_Module01_Revisions
                             },
                             new PieceAssemblage()
                             {
-                                Description = "Visse M8",
+                                Description = "Vis M8",
                                 NumeroSerie = "3774",
                                 Reference = "8757",
                                 Pieces = new List<Piece>()
@@ -176,7 +176,7 @@ namespace POOII_Module01_Revisions
                             },
                             new PieceAssemblage()
                             {
-                                Description = "Visse M8",
+                                Description = "Vis M8",
                                 NumeroSerie = "3774",
                                 Reference = "8757",
                                 Pieces = new List<Piece>()
