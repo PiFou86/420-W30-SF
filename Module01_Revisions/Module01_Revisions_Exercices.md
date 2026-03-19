@@ -138,16 +138,16 @@ Pièce : Valve à eau, part - #1234, numéro série -  #0481
     Pièce : Poigné, part - #3157, numéro série -  #2547
   Pièce : Couvercle latérale, part - #1987, numéro série -  #0374
     Pièce : Couvercle Monobloc, part - #1257, numéro série -  #9874
-    Pièce : Visse M8, part - #8757, numéro série -  #3774
-    Pièce : Visse M8, part - #8757, numéro série -  #3774
-    Pièce : Visse M8, part - #8757, numéro série -  #3774
-    Pièce : Visse M8, part - #8757, numéro série -  #3774
+    Pièce : Vis M8, part - #8757, numéro série -  #3774
+    Pièce : Vis M8, part - #8757, numéro série -  #3774
+    Pièce : Vis M8, part - #8757, numéro série -  #3774
+    Pièce : Vis M8, part - #8757, numéro série -  #3774
   Pièce : Couvercle latérale, part - #1987, numéro série -  #0374
     Pièce : Couvercle Monobloc, part - #1257, numéro série -  #9874
-    Pièce : Visse M8, part - #8757, numéro série -  #3774
-    Pièce : Visse M8, part - #8757, numéro série -  #3774
-    Pièce : Visse M8, part - #8757, numéro série -  #3774
-    Pièce : Visse M8, part - #8757, numéro série -  #3774
+    Pièce : Vis M8, part - #8757, numéro série -  #3774
+    Pièce : Vis M8, part - #8757, numéro série -  #3774
+    Pièce : Vis M8, part - #8757, numéro série -  #3774
+    Pièce : Vis M8, part - #8757, numéro série -  #3774
 ```
 
 **Pour les plus téméraires** : écrivez une méthode qui, à partir du pièce, renvoie sa nomenclature (BOM : Bill of Materials)
@@ -164,5 +164,5 @@ Pin                                     1687       1
 Système d'activation                    1887       1
 Couvercle latérale                      1987       2
 Poigné                                  3157       1
-Visse M8                                8757       8
+Vis M8                                  8757       8
 ```
