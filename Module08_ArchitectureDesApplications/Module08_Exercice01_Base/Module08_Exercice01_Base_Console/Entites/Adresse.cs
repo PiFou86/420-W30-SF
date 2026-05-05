@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Module08_Exercice01_Base_Console.Entites
 {
@@ -35,10 +33,26 @@ namespace Module08_Exercice01_Base_Console.Entites
             {
                 throw new ArgumentOutOfRangeException(nameof(p_pays));
             }
+            if (string.IsNullOrWhiteSpace(p_odonyme))
+            {
+                throw new ArgumentOutOfRangeException(nameof(p_odonyme));
+            }
+            if (string.IsNullOrWhiteSpace(p_typeVoie))
+            {
+                throw new ArgumentOutOfRangeException(nameof(p_typeVoie));
+            } 
+            if (string.IsNullOrWhiteSpace(p_etat))
+            {
+                throw new ArgumentOutOfRangeException(nameof(p_etat));
+            }
+            if (p_numeroCivique <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(p_numeroCivique));
+            }
 
             this.AdresseId = p_AdresseId;
             this.NumeroCivique = p_numeroCivique;
-            this.InformationSupplementaire = p_informationSupplementaire;
+            this.InformationSupplementaire = p_informationSupplementaire ?? string.Empty;
             this.Odonyme = p_odonyme;
             this.TypeVoie = p_typeVoie;
             this.CodePostal = p_codePostal;

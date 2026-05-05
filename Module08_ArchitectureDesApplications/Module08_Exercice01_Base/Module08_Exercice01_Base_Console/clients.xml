@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Client>
+    <ClientId>56e6641a-1b4e-4c85-85d6-e1bf63693b42</ClientId>
+    <Nom>Tremblay</Nom>
+    <Prenom>liam</Prenom>
+    <Adresses>
+      <Adresse>
+        <AdresseId>e1e94756-beca-43e1-96c4-c02557554560</AdresseId>
+        <NumeroCivique>3011</NumeroCivique>
+        <InformationComplementaire>rang de terre</InformationComplementaire>
+        <Odonyme>des roses</Odonyme>
+        <TypeVoie>Rang</TypeVoie>
+        <CodePostal>G3D G6X</CodePostal>
+        <NomMunicipalite>St-Georges</NomMunicipalite>
+        <Etat>Quebec</Etat>
+        <Pays>Russie</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>ad4e5cbd-f602-4cb8-a007-dedc8cf54875</AdresseId>
+        <NumeroCivique>9663</NumeroCivique>
+        <InformationComplementaire>route dangereuse</InformationComplementaire>
+        <Odonyme>des roses</Odonyme>
+        <TypeVoie>Boulevard</TypeVoie>
+        <CodePostal>G6X 2X4</CodePostal>
+        <NomMunicipalite>Ste-Foy</NomMunicipalite>
+        <Etat>Quebec</Etat>
+        <Pays>Russie</Pays>
+      </Adresse>
+    </Adresses>
+  </Client>
+  <Client>
+    <ClientId>69b95006-e0f8-438c-8e03-6d597bec693a</ClientId>
+    <Nom>Pelletier</Nom>
+    <Prenom>noah</Prenom>
+    <Adresses>
+      <Adresse>
+        <AdresseId>016a33cb-38fa-41c8-9392-937762d25f0f</AdresseId>
+        <NumeroCivique>9180</NumeroCivique>
+        <InformationComplementaire>rang de terre</InformationComplementaire>
+        <Odonyme>des perchaudes</Odonyme>
+        <TypeVoie>Rue</TypeVoie>
+        <CodePostal>G6X 2X4</CodePostal>
+        <NomMunicipalite>St-Georges</NomMunicipalite>
+        <Etat>Saskatchewan</Etat>
+        <Pays>Canada</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>f124f8a1-91c5-4f4c-9772-31537c48267f</AdresseId>
+        <NumeroCivique>6551</NumeroCivique>
+        <InformationComplementaire>belle route asphaltée</InformationComplementaire>
+        <Odonyme>des roses</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>G6X 2X4</CodePostal>
+        <NomMunicipalite>St-Georges</NomMunicipalite>
+        <Etat>Saskatchewan</Etat>
+        <Pays>Canada</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>be83b9cc-1c4f-46dc-9faf-12a33264de8f</AdresseId>
+        <NumeroCivique>3065</NumeroCivique>
+        <InformationComplementaire>rang de gravelle</InformationComplementaire>
+        <Odonyme>des perchaudes</Odonyme>
+        <TypeVoie>Rue</TypeVoie>
+        <CodePostal>G3D G6X</CodePostal>
+        <NomMunicipalite>Beauceville</NomMunicipalite>
+        <Etat>Saskatchewan</Etat>
+        <Pays>France</Pays>
+      </Adresse>
+      <Adresse>
+        <AdresseId>31da9c54-55e2-4595-b9f3-b08cd5df53ca</AdresseId>
+        <NumeroCivique>3040</NumeroCivique>
+        <InformationComplementaire>rang de terre</InformationComplementaire>
+        <Odonyme>des perchaudes</Odonyme>
+        <TypeVoie>Avenue</TypeVoie>
+        <CodePostal>G3D G6X</CodePostal>
+        <NomMunicipalite>Quebec</NomMunicipalite>
+        <Etat>Quebec</Etat>
+        <Pays>USA</Pays>
+      </Adresse>
+    </Adresses>
+  </Client>
+</ArrayOfClient>

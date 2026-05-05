@@ -1,12 +1,13 @@
-﻿using Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML.DTO;
-using Module08_Exercice01_Base_Console.Entites;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
 using System.Xml;
 using System.Xml.Serialization;
+
+using Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML.DTO;
+using Module08_Exercice01_Base_Console.Entites;
 
 namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML
 {
@@ -15,6 +16,11 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML
         private string m_nomFichier;
         public DepotClientsXML(string p_nomFichier)
         {
+            if (string.IsNullOrEmpty(p_nomFichier))
+            {
+                throw new ArgumentException("Le nom de fichier est null ou vide.", nameof(p_nomFichier));
+            }
+
             this.m_nomFichier = p_nomFichier;
         }
 
@@ -24,6 +30,7 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML
             {
                 throw new ArgumentNullException(nameof(p_client));
             }
+
             List<ClientXMLDTO> clientsDTO = this.ListerClientsDTO();
             if (clientsDTO.Any(c => c.ClientId == p_client.ClientId))
             {
@@ -39,25 +46,29 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML
         public List<Client> ListerClients()
         {
             List<ClientXMLDTO> clientsDTO = this.ListerClientsDTO();
+
             return clientsDTO.Select(cDTO => cDTO.VersEntite()).ToList();
         }
 
         private List<ClientXMLDTO> ListerClientsDTO()
         {
-            List<ClientXMLDTO> clients = null;
+            List<ClientXMLDTO>? clients = null;
             if (File.Exists(this.m_nomFichier))
             {
-                XmlReader document = XmlReader.Create(this.m_nomFichier);
-                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<ClientXMLDTO>));
-                clients = xmlSerializer.Deserialize(document) as List<ClientXMLDTO>;
-                document.Close();
-            }
-            else
-            {
-                clients = new List<ClientXMLDTO>();
-            }
+                try
+                {
+                    XmlReader document = XmlReader.Create(this.m_nomFichier);
+                    XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<ClientXMLDTO>));
+                    clients = xmlSerializer.Deserialize(document) as List<ClientXMLDTO> ?? new List<ClientXMLDTO>();
+                    document.Close();
+                }
+                catch (Exception)
+                {
+                    ; // Pas la bonne façon ici mais suffisante pour le contexte de l'exercice.
+                }
+            }
 
-            return clients;
+            return clients ?? new List<ClientXMLDTO>();
         }
 
         public void ModifierClient(Client p_client)
@@ -90,7 +101,7 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML
             }
         }
 
-        public Client RechercherClient(Guid p_clientId)
+        public Client? ObtenirClient(Guid p_clientId)
         {
             return this.ListerClientsDTO()
                 .Where(client => client.ClientId == p_clientId)

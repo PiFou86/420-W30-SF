@@ -11,10 +11,15 @@ namespace Module08_Exercice01_Base_Console
     // Code adapté du code de Paul Vachon
     public class ClientUIConsole
     {
-        private IDepotClients m_depotClient;
+        private readonly IDepotClients m_depotClient;
 
         public ClientUIConsole(IDepotClients p_depotClient)
         {
+            if (p_depotClient is null)
+            {
+                throw new ArgumentNullException(nameof(p_depotClient), "Le dépôt de clients ne peut pas être null.");
+            }
+
             this.m_depotClient = p_depotClient;
         }
 
@@ -46,7 +51,7 @@ namespace Module08_Exercice01_Base_Console
                 }
             }
         }
-        public void AfficherMenu()
+        public static void AfficherMenu()
         {
             Console.Out.WriteLine("MENU PRINCIPAL");
             Console.Out.WriteLine("[1] Ajouter un nouveau client avec ses adresses(aléatoires)");
@@ -54,20 +59,27 @@ namespace Module08_Exercice01_Base_Console
             Console.Out.WriteLine("[3] Lister et afficher tous les clients");
             Console.Out.WriteLine("[0] Quitter");
         }
-        public int SaisirChoixMenu()
+        public static int SaisirChoixMenu()
         {
             int choix = -1;
-            while (choix < 0 || choix > 3)
-            {
-                Console.Out.WriteLine("Entrez votre choix, de 0 a 3:");
-                choix = Convert.ToInt32(Console.In.ReadLine());
-            }
+            do
+            {
+                Console.Out.WriteLine("Entrez votre choix, de 0 a 3:");
+                string? input = Console.In.ReadLine();
+                if (!int.TryParse(input, out choix))
+                {
+                    Console.Out.WriteLine("Veuillez entrer un nombre valide.");
+                    choix = -1;
+                }
+            }
+            while (choix < 0 || choix > 3);
+
             return choix;
         }
-        public Client SaisirClientAvecAdresse()
+        public static Client SaisirClientAvecAdresse()
         {
-            string nom = null;
-            string prenom = null;
+            string? nom = null;
+            string? prenom = null;
             int nombreAdresses = 0;
             do
             {
@@ -92,7 +104,11 @@ namespace Module08_Exercice01_Base_Console
             do
             {
                 Console.Out.WriteLine("Combien d'adresse voulez vous générer?");
-                nombreAdresses = Convert.ToInt32(Console.In.ReadLine());
+                if (!int.TryParse(Console.In.ReadLine(), out  nombreAdresses))
+                {
+                    Console.Out.WriteLine("Veuillez entrer un nombre valide.");
+                    nombreAdresses = 0;
+                }
                 if (nombreAdresses < 1)
                 {
                     Console.Out.WriteLine("Le nombre d'addresses doit être suppérieur à 0");
@@ -108,11 +124,21 @@ namespace Module08_Exercice01_Base_Console
         public void RechercherEtAfficherClientParGuid()
         {
             Console.Out.WriteLine("Entrez le Guid du client pour commencer la recherche :");
-            Guid guidClient = Guid.Parse(Console.In.ReadLine());
-            AfficherClient(this.m_depotClient.RechercherClient(guidClient));
+            if (!Guid.TryParse(Console.In.ReadLine(), out Guid guidClient))
+            {
+                Console.Out.WriteLine("Le format du Guid est invalide.");
+                return;
+            }
+            AfficherClient(this.m_depotClient.ObtenirClient(guidClient));
         }
-        public void AfficherClient(Client p_client)
+        public static void AfficherClient(Client? p_client)
         {
+			if (p_client == null)
+			{
+				Console.Out.WriteLine("Client(null)");
+				return;
+			}
+
             Console.Out.WriteLine("Client :");
             Console.Out.WriteLine($"\tId : {p_client.ClientId}");
             Console.Out.WriteLine($"\tPrénom : {p_client.Prenom}");

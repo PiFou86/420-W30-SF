@@ -1,8 +1,7 @@
-﻿using Module08_Exercice01_Base_Console.Entites;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 using System.Xml.Serialization;
+
+using Module08_Exercice01_Base_Console.Entites;
 
 namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML.DTO
 {
@@ -11,8 +10,13 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML.DTO
     {
         public AdresseXMLDTO() { }
 
-        public AdresseXMLDTO(Adresse p_adresse)
+        public AdresseXMLDTO(Adresse? p_adresse)
         {
+            if (p_adresse is null)
+            {
+                throw new ArgumentNullException(nameof(p_adresse), "L'adresse ne peut pas être null.");
+            }
+
             this.AdresseId = p_adresse.AdresseId;
             this.NumeroCivique = p_adresse.NumeroCivique;
             this.InformationComplementaire = p_adresse.InformationSupplementaire;
@@ -24,20 +28,20 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.XML.DTO
             this.Pays = p_adresse.Pays;
         }
 
-        public Guid AdresseId { get; set; }
-        public int NumeroCivique { get; set; }
-
         public Adresse VersEntite()
         {
             return new Adresse(this.AdresseId, this.NumeroCivique, this.InformationComplementaire, this.Odonyme, this.TypeVoie, this.CodePostal, this.NomMunicipalite, this.Etat, this.Pays);
         }
 
-        public string InformationComplementaire { get; set; }
-        public string Odonyme { get; set; }
-        public string TypeVoie { get; set; }
-        public string CodePostal { get; set; }
-        public string NomMunicipalite { get; set; }
-        public string Etat { get; set; }
-        public string Pays { get; set; }
+        public Guid AdresseId { get; set; } = Guid.Empty;
+        public int NumeroCivique { get; set; } = 0;
+
+        public string InformationComplementaire { get; set; } = string.Empty;
+        public string Odonyme { get; set; } = string.Empty;
+        public string TypeVoie { get; set; } = string.Empty;
+        public string CodePostal { get; set; } = string.Empty;
+        public string NomMunicipalite { get; set; } = string.Empty;
+        public string Etat { get; set; } = string.Empty;
+        public string Pays { get; set; } = string.Empty;
     }
 }

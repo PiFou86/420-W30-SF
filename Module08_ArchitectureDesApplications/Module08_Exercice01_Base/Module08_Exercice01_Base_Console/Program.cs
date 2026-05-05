@@ -8,7 +8,7 @@ using System;
 using System.IO;
 //using Unity;
 
-namespace Module08_Exercice01_Base_Console
+namespace Module08_Exercice01_Base_Console  
 {
     class Program
     {
@@ -16,49 +16,41 @@ namespace Module08_Exercice01_Base_Console
         private static string _fichierDepotClientsXML = "clients.xml";
         static void Main(string[] args)
         {
-            GenererFichiersDepotSiNonExistant(false);
-
-            // Vieille version Unity
-            //IUnityContainer conteneur = new UnityContainer();
-
-            //conteneur.RegisterType<IDepotClients, DepotClientsXML>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { _fichierDepotClientsXML }));
-            //conteneur.RegisterType<IDepotClients, DepotClientsJSON>(TypeLifetime.Singleton, new Unity.Injection.InjectionConstructor(new object[] { _fichierDepotClientsJSON }));
-
-            //ClientUIConsole clientUIConsole = conteneur.Resolve<ClientUIConsole>();
-            ////clientUIConsole.ExecuterUI();
-
-            //ITraitementLot tl = null;
-            //tl = conteneur.Resolve<TraitementLot.ModifierNomPrenomPremiereLettreMajuscules.ModifierNomPrenomPremiereLettreMajusculesTraitementLot>();
-            //tl.Executer();
-            //tl = conteneur.Resolve<TraitementLot.ModifierPaysMajusculesClients.ModifierPaysMajusculesClientsTraitementLot>();
-            //tl.Executer();
+            GenererFichiersDepotSiNonExistant(false);
 
             // Nouvelle version avec les outils .Net natifs
             HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
             builder.Services.AddScoped<TraitementLot.ModifierNomPrenomPremiereLettreMajuscules.ModifierNomPrenomPremiereLettreMajusculesTraitementLot>();
             builder.Services.AddScoped<TraitementLot.ModifierPaysMajusculesClients.ModifierPaysMajusculesClientsTraitementLot>();
+            builder.Services.AddScoped<ClientUIConsole>();
 
             builder.Services.AddScoped<IDepotClients, DepotClientsJSON>(serviceProvider => new DepotClientsJSON(_fichierDepotClientsJSON));
             // Ou
             //builder.Services.AddScoped<IDepotClients, DepotClientsXML>(serviceProvider => new DepotClientsXML(_fichierDepotClientsXML));
 
             IHost host = builder.Build();
-            
-            ITraitementLot traitementLot = null;
+
+            ITraitementLot? traitementLot = null;
             using (IServiceScope scope = host.Services.CreateScope())
             {
-                traitementLot = scope.ServiceProvider.GetService<TraitementLot.ModifierNomPrenomPremiereLettreMajuscules.ModifierNomPrenomPremiereLettreMajusculesTraitementLot>();
-                traitementLot.Executer();
+                traitementLot = scope.ServiceProvider.GetRequiredService<TraitementLot.ModifierNomPrenomPremiereLettreMajuscules.ModifierNomPrenomPremiereLettreMajusculesTraitementLot>();
+                traitementLot?.Executer();
             }
 
             using (IServiceScope scope = host.Services.CreateScope())
             {
-                traitementLot = scope.ServiceProvider.GetService<TraitementLot.ModifierPaysMajusculesClients.ModifierPaysMajusculesClientsTraitementLot>();
-                traitementLot.Executer();
+                traitementLot = scope.ServiceProvider.GetRequiredService<TraitementLot.ModifierPaysMajusculesClients.ModifierPaysMajusculesClientsTraitementLot>();
+                traitementLot?.Executer();
+            }
+
+            using (IServiceScope scope = host.Services.CreateScope())
+            {
+                ClientUIConsole clientUIConsole = scope.ServiceProvider.GetRequiredService<ClientUIConsole>();
+                clientUIConsole?.ExecuterUI();
             }
         }
 
-        private static void GenererFichiersDepotSiNonExistant(bool p_forceCreation)
+        private static void GenererFichiersDepotSiNonExistant(bool p_forceCreation)
         {
             bool fichierDepotClientJSONExiste = File.Exists(_fichierDepotClientsJSON);
             bool fichierDepotClientXMLExiste = File.Exists(_fichierDepotClientsXML);
@@ -77,7 +69,7 @@ namespace Module08_Exercice01_Base_Console
             {
                 GenerateurDonnees.GenererDepotJsonClients(_fichierDepotClientsJSON);
             }
-            if (!fichierDepotClientJSONExiste || p_forceCreation)
+            if (!fichierDepotClientXMLExiste || p_forceCreation)
             {
                 GenerateurDonnees.GenererDepotXMLClients(_fichierDepotClientsXML);
             }

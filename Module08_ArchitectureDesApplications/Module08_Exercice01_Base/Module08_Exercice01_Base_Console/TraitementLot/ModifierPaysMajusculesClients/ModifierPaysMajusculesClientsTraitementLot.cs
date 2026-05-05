@@ -5,14 +5,19 @@ using System.Text;
 
 namespace Module08_Exercice01_Base_Console.TraitementLot.ModifierPaysMajusculesClients
 {
-    class ModifierPaysMajusculesClientsTraitementLot : ITraitementLot
+    public class ModifierPaysMajusculesClientsTraitementLot : ITraitementLot
     {
         private readonly IDepotClients m_depotClients;
 
         public ModifierPaysMajusculesClientsTraitementLot(IDepotClients p_depotClients)
         {
-            this.m_depotClients = p_depotClients;
-        }
+            if (p_depotClients is null)
+            {
+                throw new ArgumentNullException(nameof(p_depotClients), "Le dépôt de clients ne peut pas être null.");
+            }
+
+            this.m_depotClients = p_depotClients;
+        }
 
         public void Executer()
         {
@@ -25,7 +30,7 @@ namespace Module08_Exercice01_Base_Console.TraitementLot.ModifierPaysMajuscules
                 foreach (Adresse adresse in client.Adresses)
                 {
                     Adresse adresseCourante = adresse;
-                    if (adresse.Pays != adresse.Pays.ToUpper())
+                    if (adresse.Pays != adresse.Pays.ToUpperInvariant())
                     {
                         adresseCourante = new Adresse(
                             adresse.AdresseId,
@@ -36,7 +41,7 @@ namespace Module08_Exercice01_Base_Console.TraitementLot.ModifierPaysMajuscules
                             adresse.CodePostal,
                             adresse.NomMunicipalite,
                             adresse.Etat,
-                            adresse.Pays.ToUpper()
+                            adresse.Pays.ToUpperInvariant()
                         );
                         aAuMoinsUneAdresseModifiee = true;
                     }
@@ -45,13 +50,12 @@ namespace Module08_Exercice01_Base_Console.TraitementLot.ModifierPaysMajuscules
 
                 if (aAuMoinsUneAdresseModifiee)
                 {
-                    foreach (Adresse adresse in adresses)
+                    foreach (Adresse adresseModifiee in adresses)
                     {
-                        client.AjouterModifierAdresse(adresse);
+                        client.AjouterModifierAdresse(adresseModifiee);
                     }
                     this.m_depotClients.ModifierClient(client);
                 }
-
             }
         }
     }

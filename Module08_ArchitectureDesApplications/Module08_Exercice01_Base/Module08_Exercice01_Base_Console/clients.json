@@ -1,0 +1,93 @@
+[
+  {
+    "ClientId": "95359be6-6413-4b20-94ae-813bf61e6c07",
+    "Nom": "Morin",
+    "Prenom": "Alice",
+    "Adresses": [
+      {
+        "AdresseId": "55750cbb-a2a9-471d-8f10-0e4570cfe961",
+        "NumeroCivique": 3477,
+        "InformationComplementaire": "route\u00A0dangereuse",
+        "Odonyme": "de\u00A0la\u00A0grande\u00A0route",
+        "TypeVoie": "Boulevard",
+        "CodePostal": "GX8\u00A02P2",
+        "NomMunicipalite": "St-Georges",
+        "Etat": "Ontario",
+        "Pays": "USA"
+      },
+      {
+        "AdresseId": "0ee3b200-9b3d-401f-8db6-5f435586a4ee",
+        "NumeroCivique": 7563,
+        "InformationComplementaire": "rang\u00A0de\u00A0gravelle",
+        "Odonyme": "du\u00A0pommier",
+        "TypeVoie": "Boulevard",
+        "CodePostal": "G6X\u00A02X4",
+        "NomMunicipalite": "Quebec",
+        "Etat": "Alberta",
+        "Pays": "CANADA"
+      },
+      {
+        "AdresseId": "ac8351e6-f204-48b8-9fc5-5cf4a6b1924d",
+        "NumeroCivique": 1232,
+        "InformationComplementaire": "rang\u00A0de\u00A0gravelle",
+        "Odonyme": "des\u00A0perchaudes",
+        "TypeVoie": "Avenue",
+        "CodePostal": "G5X\u00A01X5",
+        "NomMunicipalite": "Quebec",
+        "Etat": "Alberta",
+        "Pays": "RUSSIE"
+      },
+      {
+        "AdresseId": "c74068f3-f8c9-4595-b598-a9884843298b",
+        "NumeroCivique": 3443,
+        "InformationComplementaire": "rang\u00A0de\u00A0gravelle",
+        "Odonyme": "de\u00A0la\u00A0grande\u00A0route",
+        "TypeVoie": "Avenue",
+        "CodePostal": "GX8\u00A02P2",
+        "NomMunicipalite": "Quebec",
+        "Etat": "Alberta",
+        "Pays": "RUSSIE"
+      }
+    ]
+  },
+  {
+    "ClientId": "3e1f3cf3-9b4c-4e14-9617-2ae9b7bae50b",
+    "Nom": "wqe",
+    "Prenom": "Qwer",
+    "Adresses": [
+      {
+        "AdresseId": "4ddcd6d8-23d6-4bfc-86f0-f0e37945329b",
+        "NumeroCivique": 5032,
+        "InformationComplementaire": "rang\u00A0de\u00A0gravelle",
+        "Odonyme": "des\u00A0roses",
+        "TypeVoie": "Boulevard",
+        "CodePostal": "GX8\u00A02P2",
+        "NomMunicipalite": "Beauceville",
+        "Etat": "Saskatchewan",
+        "Pays": "USA"
+      },
+      {
+        "AdresseId": "ffefeaeb-a83c-4266-bbb3-754fa991e750",
+        "NumeroCivique": 7099,
+        "InformationComplementaire": "rang\u00A0de\u00A0terre",
+        "Odonyme": "de\u00A0la\u00A0grande\u00A0route",
+        "TypeVoie": "Rue",
+        "CodePostal": "GX8\u00A02P2",
+        "NomMunicipalite": "Quebec",
+        "Etat": "Quebec",
+        "Pays": "Russie"
+      },
+      {
+        "AdresseId": "d2cc5467-32c4-424a-9217-0944b3680997",
+        "NumeroCivique": 44,
+        "InformationComplementaire": "rang\u00A0de\u00A0gravelle",
+        "Odonyme": "de\u00A0la\u00A0grande\u00A0route",
+        "TypeVoie": "Avenue",
+        "CodePostal": "GX8\u00A02P2",
+        "NomMunicipalite": "St-Georges",
+        "Etat": "Saskatchewan",
+        "Pays": "France"
+      }
+    ]
+  }
+]

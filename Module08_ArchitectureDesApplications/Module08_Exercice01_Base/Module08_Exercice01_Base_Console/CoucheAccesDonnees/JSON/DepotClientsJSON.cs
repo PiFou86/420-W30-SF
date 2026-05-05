@@ -1,12 +1,12 @@
-﻿using Module08_Exercice01_Base_Console.CoucheAccesDonnees.JSON.DTO;
-using Module08_Exercice01_Base_Console.Entites;
-//using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System;
+using System.Collections.Generic;
 using System.Text.Json;
+using System.Linq;
+using System.IO;
+
+using Module08_Exercice01_Base_Console.CoucheAccesDonnees.JSON.DTO;
+using Module08_Exercice01_Base_Console.Entites;
+
 
 namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.JSON
 {
@@ -15,6 +15,11 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.JSON
         private string m_nomFichier;
         public DepotClientsJSON(string p_nomFichier)
         {
+            if (string.IsNullOrWhiteSpace(p_nomFichier))
+            {
+                throw new ArgumentException("Le nom du fichier ne peut pas être null ou vide.", nameof(p_nomFichier));
+            }
+
             this.m_nomFichier = p_nomFichier;
         }
 
@@ -24,6 +29,7 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.JSON
             {
                 throw new ArgumentNullException(nameof(p_client));
             }
+
             List<ClientJsonDTO> clientsDTO = this.ListerClientsDTO();
             if (clientsDTO.Any(c => c.ClientId == p_client.ClientId))
             {
@@ -39,29 +45,28 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.JSON
         public List<Client> ListerClients()
         {
             List<ClientJsonDTO> clientsDTO = this.ListerClientsDTO();
+
             return clientsDTO.Select(cDTO => cDTO.VersEntite()).ToList();
         }
 
         private List<ClientJsonDTO> ListerClientsDTO()
         {
-            List<ClientJsonDTO> clients = null;
+            List<ClientJsonDTO>? clients = null;
             if (File.Exists(this.m_nomFichier))
             {
                 string json = File.ReadAllText(this.m_nomFichier);
-                //JsonSerializerSettings settings = new JsonSerializerSettings
-                //{
-                //    TypeNameHandling = TypeNameHandling.Auto,
-                //    Formatting = Formatting.Indented
-                //};
-                //clients = JsonConvert.DeserializeObject<List<ClientJsonDTO>>(json, settings);
-                clients = JsonSerializer.Deserialize<List<ClientJsonDTO>>(json);
-            }
-            else
-            {
-                clients = new List<ClientJsonDTO>();
+
+                try
+                {
+                    clients = JsonSerializer.Deserialize<List<ClientJsonDTO>>(json);
+                }
+                catch (Exception)
+                {
+                    ; // Pas la bonne façon ici mais suffisante pour le contexte de l'exercice.
+                }
             }
 
-            return clients;
+            return clients ?? new List<ClientJsonDTO>();
         }
 
         public void ModifierClient(Client p_client)
@@ -81,12 +86,6 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.JSON
 
         private void SauvegarderDepot(List<ClientJsonDTO> clientsDTO)
         {
-            //JsonSerializerSettings settings = new JsonSerializerSettings
-            //{
-            //    TypeNameHandling = TypeNameHandling.Auto,
-            //    Formatting = Formatting.Indented
-            //};
-            //string json = JsonConvert.SerializeObject(clientsDTO, settings);
             string json = JsonSerializer.Serialize(
                 clientsDTO,
                 new JsonSerializerOptions()
@@ -97,7 +96,7 @@ namespace Module08_Exercice01_Base_Console.CoucheAccesDonnees.JSON
             File.WriteAllText(this.m_nomFichier, json);
         }
 
-        public Client RechercherClient(Guid p_clientId)
+        public Client? ObtenirClient(Guid p_clientId)
         {
             return this.ListerClientsDTO()
             .Where(client => client.ClientId == p_clientId)

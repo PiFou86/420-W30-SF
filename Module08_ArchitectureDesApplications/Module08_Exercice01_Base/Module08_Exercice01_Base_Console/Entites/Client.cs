@@ -39,8 +39,7 @@ namespace Module08_Exercice01_Base_Console.Entites
             this.ClientId = p_clientId;
             this.Nom = p_nom;
             this.Prenom = p_prenom;
-            this.m_adresses = new List<Adresse>();
-            this.m_adresses.AddRange(p_adresses);
+            this.m_adresses = new List<Adresse>(p_adresses);
         }
 
         public void AjouterModifierAdresse(Adresse p_adresse)

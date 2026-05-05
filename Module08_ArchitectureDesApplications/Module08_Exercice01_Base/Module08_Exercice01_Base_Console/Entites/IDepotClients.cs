@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Module08_Exercice01_Base_Console.Entites
 {
@@ -8,7 +7,7 @@ namespace Module08_Exercice01_Base_Console.Entites
     {
         void AjouterClient(Client p_client);
         List<Client> ListerClients();
-        Client RechercherClient(Guid p_guid);
+        Client? ObtenirClient(Guid p_clientId);
         void ModifierClient(Client p_client);
     }
 }

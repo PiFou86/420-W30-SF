@@ -1,18 +1,22 @@
 ﻿using Module08_Exercice01_Base_Console.Entites;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Globalization;
-
+using System.Text;
 
 namespace Module08_Exercice01_Base_Console.TraitementLot.ModifierNomPrenomPremiereLettreMajuscules
 {
-    class ModifierNomPrenomPremiereLettreMajusculesTraitementLot : ITraitementLot
+    public class ModifierNomPrenomPremiereLettreMajusculesTraitementLot : ITraitementLot
     {
         private readonly IDepotClients m_depotClients;
 
         public ModifierNomPrenomPremiereLettreMajusculesTraitementLot(IDepotClients p_depotClients)
         {
+            if (p_depotClients is null)
+            {
+                throw new ArgumentNullException(nameof(p_depotClients), "Le dépôt de clients ne peut pas être null.");
+            }
+
             this.m_depotClients = p_depotClients;
         }
 

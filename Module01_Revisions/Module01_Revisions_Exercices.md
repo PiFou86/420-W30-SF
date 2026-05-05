@@ -1,18 +1,21 @@
 # Module 01 - Révisions
 
-Exercices de révisions sur la POO, l'injection de dépendances et Linq.
+Ce module vous propose une série d’exercices pour réviser et approfondir les concepts fondamentaux de la programmation orientée objet (POO), l’injection de dépendances et l’utilisation de LINQ en C#.  
+Vous travaillerez sur la modélisation d’objets, la conception de classes, la gestion des dépendances dans une application, ainsi que sur la manipulation et l’interrogation de collections de données avec LINQ.
 
-Des notions de base sont aussi rappelées dans [Révisions POO](../Révisions/README.md).
+Des rappels de notions de base sont disponibles dans [Révisions POO](../Révisions/README.md).
 
-Des exemples de code sont disponibles dans le répertoire courant de ce module.
+Des exemples de code sont également fournis dans le répertoire courant de ce module.
+
+---
 
 ## Exercice 1 - Tasses
 
-Un contenant peut contenir plusieurs liquides. Les liquides disponibles sont du lait, du café, de la crème et du chocolat.
+Un contenant peut contenir plusieurs liquides. Les liquides disponibles sont : lait, café, crème et chocolat.
 
-Chaque liquide a un volume. Le volume total ne doit pas dépasser le volume du contenant moins 5%.
+Chaque liquide a un volume. Le volume total ne doit pas dépasser 95% du volume du contenant (5% de marge).
 
-Les contenants disponibles sont du type bol ou tasse. Une tasse a un volume de 250ml. Un bol a un volume de 350 ml.
+Les contenants disponibles sont de type bol ou tasse. Une tasse a un volume de 250ml. Un bol a un volume de 350 ml.
 
 Un liquide peut être ajouté à un contenant tant que celui-ci n'est pas plein. Un contenant peut perdre du volume en le transférant (dans ce cas, chaque liquide perd un volume proportionnel au mélange initial).
 
@@ -21,13 +24,16 @@ Les contenants et les liquides doivent pouvoir être transformés facilement en 
 - Pour un contenant, on extrait l'ensemble des liquides mélangés, le volume total maximum (capacité), le volume utilisé et le pourcentage de remplissage.
 - Pour un liquide, on extrait son nom et son volume.
 
-Modélisez le problème en faisant apparaître toutes les entités présentes dans le texte.
+**À faire :**
 
-- Proposez un diagramme de classes
-- Codez ces classes
-- Faites des méthodes qui renvoient différents types de cafés dans différents types de contenants
-- Faites les tests unitaires de la génération des chaînes de caractères
-- Faites les tests unitaires de l'ajout d'un liquide dans une tasse et dans un bol
+- Modélisez le problème en faisant apparaître toutes les entités présentes dans le texte.
+- Proposez un diagramme de classes (UML ou équivalent).
+- Codez ces classes.
+- Implémentez des méthodes qui renvoient différents types de cafés dans différents types de contenants (ex : café au lait, moka, etc.).
+- Écrivez des tests unitaires pour la génération des chaînes de caractères.
+- Écrivez des tests unitaires pour l'ajout d'un liquide dans une tasse et dans un bol.
+
+---
 
 ## Exercice 2 - Injection de dépendances
 
@@ -35,23 +41,25 @@ Modélisez le problème en faisant apparaître toutes les entités présentes da
 
 La démarche générale est présentée ci-dessous. Les étapes principales sont détaillées plus bas dans la partie `Étapes à suivre`.
 
-Dans cet exercice nous allons créer une interface `IJournal` qui définit les méthodes :
+Dans cet exercice, vous allez créer une interface `IJournal` qui définit les méthodes suivantes :
 
-- `Information(string message)` qui permet de journaliser un message de type information
-- `Avertissement(string message)` qui permet de journaliser un message de type avertissement
-- `Erreur(string message)` qui permet de journaliser un message de type erreur
+- `Information(string message)` : journaliser un message de type information.
+- `Avertissement(string message)` : journaliser un message de type avertissement.
+- `Erreur(string message)` : journaliser un message de type erreur.
 
-Nous allons ensuite créer les classes `ConsoleJournal`, `ConsoleJournalAvecHeure` et `FichierJournal` qui implémentent l'interface `IJournal`. 
+Vous allez ensuite créer les classes suivantes qui implémentent l'interface `IJournal` :
+- `ConsoleJournal`
+- `ConsoleJournalAvecHeure` (ajoute l'heure devant chaque message journalisé)
+- `FichierJournal` (journalise les messages dans un fichier texte dont le nom est contenu dans une constante. Chaque écriture se fait sur une nouvelle ligne avec la date, l'heure et le type de message. Exemples : "2024-09-29 17:17:04 - Information - L'application démarre", "2024-09-29 17:17:04 - Erreur - Impossible de se connecter à la base de données")
 
-La classe `ConsoleJournalAvecHeure` ajoute l'heure devant chaque message journalisé. 
+Dans les implantations sur la console :
 
-La classe `FichierJournal` journalise les messages dans un fichier texte dont le nom est contenu dans une constante. De plus, chaque écriture se fait sur une nouvelle ligne avec la date, l'heure et le type de message. Exemples : "2024-09-29 17:17:04 - Information - L'application démarre", "2024-09-29 17:17:04 - Erreur - Impossible de se connecter à la base de données".
+- Les messages de type information sont affichés en vert, avertissement en jaune, erreur en rouge.
+- Les messages information et avertissement sont affichés sur le flux standard (`Console.Out`), les erreurs sur le flux erreur (`Console.Error`).
 
-Dans les implantations sur la console, les messages de type information sont affichés en vert, les messages de type avertissement en jaune et les messages de type erreur en rouge. Ils sont aussi affichés sur le bon flux : standard pour les messages de types information et avertissement  (`Console.Out`) et erreur pour les messages de type erreur (`Console.Error`).
+La classe `Application` prend en paramètre un objet de type `IJournal` dans son constructeur. Elle possède une méthode `Run` qui affiche un message de chaque type.
 
-La classe `Application` qui prend en paramètre un objet de type IJournal dans son constructeur. Cette classe a une méthode Run qui affiche un message de type information, un message de type avertissement et un message de type erreur.
-
-La classe `program` enregistre la classe `ConsoleJournal` ou `ConsoleJournalAvecHeure` ou `FichierJournal` pour l'interface `IJournal` et qui crée une instance de la classe `Application` en lui passant l'objet enregistré. Le choix de la classe doit être effectuée à partir de la configuration qui se trouve dans le fichier `appsettings.json`.
+La classe `Program` enregistre la classe `ConsoleJournal`, `ConsoleJournalAvecHeure` ou `FichierJournal` pour l'interface `IJournal` et crée une instance de la classe `Application` en lui passant l'objet enregistré. Le choix de la classe doit être effectué à partir de la configuration dans le fichier `appsettings.json` :
 
 ```json
 {
@@ -59,7 +67,7 @@ La classe `program` enregistre la classe `ConsoleJournal` ou `ConsoleJournalAvec
 }
 ```
 
-Étapes à suivre :
+**Étapes à suivre :**
 
 - Créez la solution "POOII_M01_E02_DI" :
   - Créez un projet de type console "POOII_M01_E02_DI_Console"
@@ -88,13 +96,13 @@ Dans cet exercice, vous allez réviser/apprendre les bases de Linq.
 
 ### Exercice 3.1 - Linq sur des entiers
 
-- Créez la solution "POOII_M01_E03_Linq" avec le projet de type console "POOII_M01_E03_Linq_Console"
-- Créez la liste d'entiers `nombres` qui contient les nombres de 1 à 100
-- Affichez les nombres de 1 à 100 en une ligne de code (utilisez `string.Join`)
+- Créez la solution "POOII_M01_E03_Linq" avec le projet de type console "POOII_M01_E03_Linq_Console".
+- Créez la liste d'entiers `nombres` qui contient les nombres de 1 à 100.
+- Affichez les nombres de 1 à 100 en une ligne de code (utilisez `string.Join`).
 - Effectuez les requêtes LinQ suivantes :
-  - Affichez les nombres pairs en une ligne de code (utilisez `string.Join`, `Where`)
-  - Affichez les nombres impairs en une ligne de code (utilisez `Where` et `ForEach`)
-  - Affichez les valeurs de 3 à 300 de 3 en 3 à partir de la liste `nombres` (utilisez `Select` et `string.Join`)
+  - Affichez les nombres pairs en une ligne de code (utilisez `string.Join`, `Where`).
+  - Affichez les nombres impairs en une ligne de code (utilisez `Where` et `ForEach`).
+  - Affichez les valeurs de 3 à 300 de 3 en 3 à partir de la liste `nombres` (utilisez `Select` et `string.Join`).
 
 ### Exercice 3.2 - Linq sur des objets
 
@@ -117,13 +125,15 @@ Dans cet exercice, vous allez réviser/apprendre les bases de Linq.
 - https://github.com/dotnet/try-samples/tree/main/101-linq-samples
 - https://github.com/PiFou86/420-W20-SF/blob/master/Module10_Linq/Module10_Linq_Exercices.md
 
+---
+
 ## Exercice 4 - Assemblage (Optionnel)
 
-Une pièce est composée de 0 ou de plusieurs autres pièces. Une pièce peut être soit de type pièces d'assemblage (vis, rivêts), soit de type moulée ou de type usinée.
+Une pièce est composée de 0 ou de plusieurs autres pièces. Une pièce peut être soit de type pièce d'assemblage (vis, rivêts), soit de type moulée ou de type usinée.
 
-Chaque pièce a une description, un numéro de série et une référence. Chaque pièce peut être transformée en chaînes de caractères. Chaque pièce se décrit et demande aux pièces qui le composent de se décrire.
+Chaque pièce a une description, un numéro de série et une référence. Chaque pièce peut être transformée en chaîne de caractères. Chaque pièce se décrit et demande aux pièces qui la composent de se décrire.
 
-Afin de rendre compte de la hiérarchie des pièces (pièces composées de pièces, etc.), les chaînes doivent être préfixées par des espaces dépendants de leur niveau. (2 espaces par niveau)
+Afin de rendre compte de la hiérarchie des pièces (pièces composées de pièces, etc.), les chaînes doivent être préfixées par des espaces dépendants de leur niveau (2 espaces par niveau).
 
 Exemple basé sur l'illustration proposée par Eder Rafael Do Monte Melo ([fichier PowerPoint plus détaillé](Illustration_Piece_Eder/Assemblage.pptx)) :
 
