@@ -12,7 +12,7 @@ Bob a aussi spécifié qu'il est très facile de rajouter des formes si vous res
 
 ## Exercice 1 - Analyse du code
 
-1. Ouvrez la solution Visualt Studio "POOII_Module05_Demeter_TellDontAsk_Console".
+1. Ouvrez la solution Visual Studio "POOII_Module05_Demeter_TellDontAsk_Console".
 2. Analysez le code et faites son diagramme de classes
 3. Quels constats faites-vous de ce code ?
 

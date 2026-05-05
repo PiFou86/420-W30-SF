@@ -56,7 +56,8 @@ public interface IInformationDistance
 
 ## Exercice 2 – Et si on faisait de l’orientée objets ?
 
-Que dire de la classe Automobiliste ? Comment l'améliorer ?
+- Proposez le diagramme de classes du code ci-dessous
+- Que dire de la classe Automobiliste ? Comment l'améliorer ?
 
 ```csharp
 public interface IVoiture
@@ -131,9 +132,9 @@ public class Automobiliste
 
 ## Exercice 3 – Détecter les dépendances et les minimiser
 
-Quelles sont les dépendances ? Que pouvez-vous dire du constructeur et de la méthode "Retirer" ?
-
-Comment pourriez-vous améliorer le code ?
+- Proposez le diagramme de classes du code ci-dessous
+- Quelles sont les dépendances ? Que pouvez-vous dire du constructeur et de la méthode "Retirer" ?
+- Comment pourriez-vous améliorer le code ?
 
 ```csharp
 public class ATM {
